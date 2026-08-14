@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lパチスロ 革命機ヴァルヴレイヴ2 設定判別ツール</title><link rel="stylesheet" href="vvv2-style.css"></head>
+<body><main class="app">
+<header><h1>Lパチスロ 革命機ヴァルヴレイヴ2</h1><p>設定判別ツール</p></header>
+<section class="card input-card">
+<div class="toggle-row"><span>総ゲーム数で判別</span><button id="gameMode" class="toggle on" aria-pressed="true"><i></i></button><b id="modeLabel">ON</b></div>
+<div class="games"><label>総ゲーム数<input id="games" type="number" min="0" inputmode="numeric" placeholder="0"></label><label>開始ゲーム数<input id="startGames" type="number" min="0" inputmode="numeric" placeholder="0"></label></div>
+<div class="rows">
+<div class="row"><span>初当り回数</span><div class="counter"><button data-key="first" data-delta="-1">−</button><b id="first">0</b><button data-key="first" data-delta="1">＋</button></div></div>
+<div class="row"><span>BAR揃い時AT直撃</span><div class="counter"><button data-key="barDirect" data-delta="-1">−</button><b id="barDirect">0</b><button data-key="barDirect" data-delta="1">＋</button></div></div>
+<div class="row"><span>特殊テーブル</span><div class="counter"><button data-key="specialTable" data-delta="-1">−</button><b id="specialTable">0</b><button data-key="specialTable" data-delta="1">＋</button></div></div>
+<div class="row"><span>ハラキリドライブ</span><div class="counter"><button data-key="harakiri" data-delta="-1">−</button><b id="harakiri">0</b><button data-key="harakiri" data-delta="1">＋</button></div></div>
+</div>
+<button id="judge" class="primary">設定を判別する</button><button id="reset" class="secondary">リセット</button>
+</section>
+<section class="card result"><h2>設定判別結果</h2><div id="resultText" class="resultText">入力して判別してください</div><div id="bars"></div></section>
+<section class="card hints"><h2>設定示唆・判定材料</h2>
+<details open><summary>CZ・ボーナス終了画面</summary><div class="choice" data-group="ending"><button data-min="1">白枠<br><small>デフォルト</small></button><button data-min="3">青枠①<br><small>奇数＆高設定示唆[弱]</small></button><button data-min="2">青枠②<br><small>偶数設定示唆</small></button><button data-min="4">赤枠①<br><small>高設定示唆[弱]</small></button><button data-min="5">赤枠②<br><small>高設定示唆[強]</small></button><button data-min="2">紫枠<br><small>設定2以上濃厚</small></button><button data-min="4">銀枠<br><small>設定4以上濃厚</small></button><button data-min="6">金枠<br><small>設定6濃厚</small></button></div></details>
+<details><summary>サブモニター（バッフェ）</summary><div class="choice"><button data-odd="1">無人タイプ<br><small>奇数設定示唆</small></button><button data-even="1">有人タイプ<br><small>偶数設定示唆</small></button></div></details>
+<details><summary>マギウスマーク</summary><div class="choice"><button data-min="4">4個<br><small>天国＋設定4以上濃厚</small></button><button data-min="5">5個<br><small>天国＋設定5以上濃厚</small></button><button data-min="6">6個<br><small>天国＋設定6濃厚</small></button></div></details>
+<details><summary>ATラウンド開始画面</summary><div class="choice"><button data-min="3">マリエ水着<br><small>高設定示唆[弱]</small></button><button data-min="5">ルーン漏れ1号機<br><small>高設定示唆[強]</small></button><button data-min="4">200年後のサキ<br><small>設定4以上濃厚</small></button><button data-min="6">リーゼロッテ<br><small>設定6濃厚</small></button></div></details>
+<details><summary>ATゲーム数（ゾロ目上乗せ）</summary><div class="choice"><button data-min="2">＋22G<br><small>設定2以上濃厚</small></button><button data-min="4">＋44G<br><small>設定4以上濃厚</small></button><button data-min="6">＋66G<br><small>設定6濃厚</small></button></div></details>
+<details><summary>AT・上位AT終了画面</summary><div class="choice"><button data-min="6">コックピットあり<br><small>設定6濃厚</small></button></div></details>
+<details><summary>ハラキリチャレンジ</summary><div class="choice"><button data-min="4">夢夢ちゃんピース・群<br><small>設定4以上濃厚</small></button></div></details>
+<details><summary>獲得枚数表示</summary><div class="choice"><button data-min="4">456枚OVER<br><small>設定4以上濃厚</small></button><button data-min="5">555枚OVER<br><small>設定5以上濃厚</small></button><button data-min="6">666枚OVER<br><small>設定6濃厚</small></button></div></details>
+</section><footer>設定判別ツール</footer></main><script src="vvv2-app.js"></script></body></html>
