@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{console.log('戦国コレクション6：作成中....');});
