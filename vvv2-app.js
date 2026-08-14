@@ -1,0 +1,13 @@
+const settings=[1,2,4,5,6];
+const state={first:0,barDirect:0,specialTable:0,harakiri:0,forcedMin:1,odd:0,even:0};
+const rates={first:[476,473,464,459,456],barDirect:[3,3.5,4,5,7],specialTable:[1,2,4,8,12],harakiri:[5,7,10,13,17]};
+const $=id=>document.getElementById(id);
+document.querySelectorAll('.counter button').forEach(b=>b.onclick=()=>{const k=b.dataset.key;state[k]=Math.max(0,state[k]+Number(b.dataset.delta));$(k).textContent=state[k]});
+let totalMode=true;
+$('gameMode').onclick=()=>{totalMode=!totalMode;$('gameMode').classList.toggle('on',totalMode);$('modeLabel').textContent=totalMode?'ON':'OFF';$('gameMode').setAttribute('aria-pressed',totalMode)};
+document.querySelectorAll('.choice button').forEach(b=>b.onclick=()=>{const group=b.closest('.choice');if(group)group.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');if(b.dataset.min)state.forcedMin=Math.max(state.forcedMin,Number(b.dataset.min));if(b.dataset.odd)state.odd++;if(b.dataset.even)state.even++});
+function games(){const g=Number($('games').value||0),s=Number($('startGames').value||0);return totalMode?g:Math.max(0,g-s)}
+function poissonScore(g,n,rate){if(!g)return 0;const lam=g/rate;if(n===0)return -lam;let lf=0;for(let i=2;i<=n;i++)lf+=Math.log(i);return n*Math.log(lam)-lam-lf}
+function judge(){const g=games();if(g<=0){alert('判別対象ゲーム数を入力してください。');return}const scores=[];for(let i=0;i<settings.length;i++){let s=0;s+=poissonScore(g,state.first,rates.first[i]);s+=poissonScore(g,state.barDirect,rates.barDirect[i]);s+=poissonScore(g,state.specialTable,rates.specialTable[i]);s+=poissonScore(g,state.harakiri,rates.harakiri[i]);if(state.odd&&(settings[i]%2===1))s+=.35;if(state.even&&(settings[i]%2===0))s+=.35;if(settings[i]<state.forcedMin)s-=30;scores.push(s)}const mx=Math.max(...scores),w=scores.map(x=>Math.exp(x-mx)),sum=w.reduce((a,b)=>a+b,0),p=w.map(x=>x/sum*100),best=p.indexOf(Math.max(...p));$('resultText').textContent=`設定${settings[best]}が最有力　｜　判別対象 ${g}G`;$('bars').innerHTML=p.map((v,i)=>`<div class="barrow"><b>設定${settings[i]}</b><div class="track"><div class="bar" style="width:${v.toFixed(1)}%"></div></div><span>${v.toFixed(1)}%</span></div>`).join('');document.querySelector('.result').scrollIntoView({behavior:'smooth'})}
+function reset(){Object.assign(state,{first:0,barDirect:0,specialTable:0,harakiri:0,forcedMin:1,odd:0,even:0});['first','barDirect','specialTable','harakiri'].forEach(k=>$(k).textContent=0);$('games').value='';$('startGames').value='';document.querySelectorAll('.choice button').forEach(x=>x.classList.remove('selected'));$('resultText').textContent='入力して判別してください';$('bars').innerHTML=''}
+$('judge').onclick=judge;$('reset').onclick=reset;
