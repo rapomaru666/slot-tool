@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f4f6;
+  color: #111827;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Noto Sans JP",
+    "Yu Gothic",
+    sans-serif;
+}
+
+.app { width: min(100%, 980px); margin: 0 auto; padding: 18px 12px 40px; }
+.header { text-align: center; margin-bottom: 18px; }
+.header h1 { margin: 0; font-size: clamp(22px, 5vw, 32px); line-height: 1.4; font-weight: 800; }
+.card { background: #fff; border-radius: 16px; padding: 18px; margin-bottom: 14px; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+.games-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); align-items: center; gap: 14px; margin-bottom: 16px; }
+.games-row label { font-weight: 700; }
+.games-row input { width: 100%; height: 48px; border: 1px solid #d1d5db; border-radius: 10px; padding: 0 14px; font-size: 17px; background: #fff; }
+.bonus-grid { display: grid; gap: 10px; }
+.bonus-row { display: grid; grid-template-columns: minmax(0, 1fr) 180px; align-items: center; gap: 14px; }
+.bonus-row > span { font-size: 15px; font-weight: 700; white-space: nowrap; }
+.counter { width: 180px; height: 46px; display: grid; grid-template-columns: 48px 1fr 48px; border: 1px solid #d1d5db; border-radius: 10px; overflow: hidden; background: #fff; }
+.counter-btn { border: 0; background: #e5e7eb; color: #111827; font-size: 22px; font-weight: 800; cursor: pointer; touch-action: manipulation; }
+.counter-btn:active { transform: scale(.96); }
+.counter span { display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; }
+.action-area { display: grid; gap: 10px; margin-bottom: 14px; }
+.judge-btn,.reset-btn { width: 100%; height: 52px; border: 0; border-radius: 12px; font-size: 17px; font-weight: 800; cursor: pointer; }
+.judge-btn { background: #111827; color: #fff; }
+.reset-btn { background: #e5e7eb; color: #111827; }
+.result-card { display: none; }
+.result-card.visible { display: block; }
+.result-card h2,.hint-section h2 { margin: 0 0 14px; font-size: 20px; }
+.prediction { font-size: 22px; font-weight: 800; margin-bottom: 18px; }
+.graph { display: grid; gap: 12px; }
+.graph-row { display: grid; grid-template-columns: 55px minmax(0, 1fr) 48px; align-items: center; gap: 8px; }
+.setting-name { font-size: 14px; font-weight: 700; }
+.bar-bg { height: 18px; background: #e5e7eb; border-radius: 999px; overflow: hidden; }
+.bar { width: 0; height: 100%; background: #111827; border-radius: 999px; transition: width .35s ease; }
+.percent { text-align: right; font-size: 14px; font-weight: 700; }
+.notice,.hint-note { margin: 12px 0 0; color: #6b7280; font-size: 12px; line-height: 1.6; }
+.hint-section select { width: 100%; height: 48px; border: 1px solid #d1d5db; border-radius: 10px; background: #fff; padding: 0 12px; font-size: 15px; }
+.hint-list { display: grid; gap: 7px; }
+.hint-row { display: grid; grid-template-columns: 150px minmax(0, 1fr) 180px; align-items: center; gap: 10px; min-height: 50px; padding: 4px 0; border-bottom: 1px solid #eef0f3; }
+.hint-row:last-child { border-bottom: 0; }
+.hint-row label { font-size: 14px; font-weight: 700; white-space: nowrap; }
+.hint-row > span { color: #4b5563; font-size: 13px; line-height: 1.4; }
+footer { text-align: center; color: #9ca3af; font-size: 12px; line-height: 1.7; padding-top: 4px; }
+@media (max-width: 700px) {
+  .app { padding: 10px 8px 28px; }
+  .header { margin-bottom: 12px; }
+  .header h1 { font-size: 21px; }
+  .card { padding: 14px 12px; border-radius: 13px; }
+  .games-row { grid-template-columns: 1fr; gap: 6px; }
+  .games-row input { height: 46px; }
+  .bonus-row { grid-template-columns: minmax(0, 1fr) 160px; gap: 8px; }
+  .bonus-row > span { font-size: 14px; }
+  .counter { width: 160px; height: 44px; grid-template-columns: 44px 1fr 44px; }
+  .counter-btn { font-size: 21px; }
+  .hint-row { grid-template-columns: minmax(80px, 1fr) minmax(105px, 1.5fr) 145px; gap: 6px; min-height: 47px; }
+  .hint-row label { font-size: 12px; }
+  .hint-row > span { font-size: 11px; }
+  .hint-row .counter { width: 145px; height: 42px; grid-template-columns: 40px 1fr 40px; }
+  .hint-row .counter button { font-size: 19px; }
+  .hint-row .counter span { font-size: 15px; }
+  .result-card h2,.hint-section h2 { font-size: 18px; }
+  .prediction { font-size: 19px; }
+  .graph-row { grid-template-columns: 45px minmax(0, 1fr) 42px; gap: 6px; }
+  .bar-bg { height: 16px; }
+  .percent { font-size: 12px; }
+}
+@media (max-width: 430px) {
+  .bonus-row { grid-template-columns: minmax(0, 1fr) 142px; }
+  .bonus-row .counter { width: 142px; grid-template-columns: 39px 1fr 39px; }
+  .hint-row { grid-template-columns: minmax(65px, .9fr) minmax(92px, 1.5fr) 132px; }
+  .hint-row .counter { width: 132px; grid-template-columns: 36px 1fr 36px; }
+  .hint-row label { font-size: 11px; }
+  .hint-row > span { font-size: 10px; }
+}
