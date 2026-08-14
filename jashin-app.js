@@ -1,140 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const state = { koakuma: 0, big: 0, episode: 0, jt: 0 };
-  const rates = {
-    bonus: [253.1, 248.1, 241.6, 222.5, 211.8, 210.0],
-    jt: [758.2, 746.3, 722.8, 655.9, 615.9, 606.2]
-  };
-
-  function getValue(id) {
-    return state[id] || 0;
-  }
-
-  function setValue(id, value) {
-    state[id] = Math.max(0, value);
-    const element = document.getElementById(`${id}-value`);
-    if (element) element.textContent = state[id];
-  }
-
-  document.querySelectorAll(".counter-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      const target = button.dataset.target;
-      if (!target) return;
-      const amount = button.classList.contains("plus") ? 1 : -1;
-      setValue(target, getValue(target) + amount);
-    });
-  });
-
-  function logFactorial(n) {
-    let result = 0;
-    for (let i = 2; i <= n; i++) result += Math.log(i);
-    return result;
-  }
-
-  function poissonLogLikelihood(games, count, rate) {
-    if (!games || count < 0) return 0;
-    const lambda = games / rate;
-    if (lambda <= 0) return 0;
-    return count === 0
-      ? -lambda
-      : count * Math.log(lambda) - lambda - logFactorial(count);
-  }
-
-  function calculateProbabilities(games) {
-    const bonusCount = getValue("koakuma") + getValue("big") + getValue("episode");
-    const jtCount = getValue("jt");
-    const logs = [];
-
-    for (let setting = 0; setting < 6; setting++) {
-      let score = 0;
-      score += poissonLogLikelihood(games, bonusCount, rates.bonus[setting]);
-      score += poissonLogLikelihood(games, jtCount, rates.jt[setting]);
-      logs.push(score);
-    }
-
-    const maxLog = Math.max(...logs);
-    const weights = logs.map(value => Math.exp(value - maxLog));
-    const total = weights.reduce((sum, value) => sum + value, 0);
-    return total ? weights.map(value => value / total * 100) : weights.map(() => 0);
-  }
-
-  function updateGraph(probabilities) {
-    for (let setting = 1; setting <= 6; setting++) {
-      const percentage = probabilities[setting - 1] || 0;
-      const text = document.getElementById(`setting-percent-${setting}`);
-      const bar = document.getElementById(`setting-bar-${setting}`);
-      if (text) text.textContent = `${Math.round(percentage)}%`;
-      if (bar) bar.style.width = `${Math.max(0, Math.min(100, percentage))}%`;
-    }
-  }
-
-  function updatePrediction(probabilities) {
-    const element = document.getElementById("prediction-text");
-    if (!element) return;
-    const max = Math.max(...probabilities);
-    if (!max || !Number.isFinite(max)) {
-      element.textContent = "設定予測：判定材料不足";
-      return;
-    }
-    const best = probabilities.indexOf(max) + 1;
-    element.textContent = `設定予測：設定${best}が最有力`;
-  }
-
-  function judge() {
-    const currentGames = Number(document.getElementById("games")?.value || 0);
-    const startGames = Number(document.getElementById("start-games")?.value || 0);
-
-    if (currentGames < 0 || startGames < 0) {
-      alert("ゲーム数は0以上で入力してください。");
-      return;
-    }
-    if (currentGames < startGames) {
-      alert("総ゲーム数は開始ゲーム数以上にしてください。");
-      return;
-    }
-
-    const effectiveGames = currentGames - startGames;
-    if (effectiveGames <= 0) {
-      alert("総ゲーム数と開始ゲーム数の差が0Gです。実戦ゲーム数を入力してください。");
-      return;
-    }
-
-    const bonusCount = getValue("koakuma") + getValue("big") + getValue("episode");
-    const jtCount = getValue("jt");
-    if (bonusCount === 0 && jtCount === 0) {
-      alert("BONUSまたはJTの初当り回数を入力してください。");
-      return;
-    }
-
-    const probabilities = calculateProbabilities(effectiveGames);
-    updateGraph(probabilities);
-    updatePrediction(probabilities);
-
-    const result = document.getElementById("result-section");
-    if (result) {
-      result.classList.add("visible");
-      setTimeout(() => result.scrollIntoView({ behavior: "smooth", block: "start" }), 80);
-    }
-  }
-
-  function reset() {
-    Object.keys(state).forEach(id => setValue(id, 0));
-    const games = document.getElementById("games");
-    const startGames = document.getElementById("start-games");
-    if (games) games.value = "";
-    if (startGames) startGames.value = "";
-
-    for (let setting = 1; setting <= 6; setting++) {
-      const text = document.getElementById(`setting-percent-${setting}`);
-      const bar = document.getElementById(`setting-bar-${setting}`);
-      if (text) text.textContent = "0%";
-      if (bar) bar.style.width = "0%";
-    }
-
-    const prediction = document.getElementById("prediction-text");
-    if (prediction) prediction.textContent = "-";
-    document.getElementById("result-section")?.classList.remove("visible");
-  }
-
-  document.getElementById("judge-btn")?.addEventListener("click", judge);
-  document.getElementById("reset-btn")?.addEventListener("click", reset);
+document.addEventListener("DOMContentLoaded",()=>{
+const state={koakuma:0,big:0,episode:0,jt:0};
+const rates={bonus:[253.1,248.1,241.6,222.5,211.8,210.0],jt:[758.2,746.3,722.8,655.9,615.9,606.2]};
+let totalMode=true;
+const getValue=id=>state[id]||0;
+function setValue(id,value){state[id]=Math.max(0,Number(value)||0);const e=document.getElementById(`${id}-value`);if(e)e.textContent=state[id]}
+document.querySelectorAll(".counter-btn").forEach(button=>button.addEventListener("click",()=>{const target=button.dataset.target;if(!target)return;setValue(target,getValue(target)+(button.classList.contains("plus")?1:-1))}));
+document.getElementById("game-mode")?.addEventListener("click",()=>{totalMode=!totalMode;const b=document.getElementById("game-mode");b.classList.toggle("on",totalMode);document.getElementById("mode-label").textContent=totalMode?"ON":"OFF"});
+function logFactorial(n){let r=0;for(let i=2;i<=n;i++)r+=Math.log(i);return r}
+function poissonLogLikelihood(games,count,rate){if(!games||count<0)return 0;const lambda=games/rate;if(lambda<=0)return 0;return count===0?-lambda:count*Math.log(lambda)-lambda-logFactorial(count)}
+function effectiveGames(){const current=Number(document.getElementById("games")?.value||0);const start=Number(document.getElementById("start-games")?.value||0);return totalMode?current:Math.max(0,current-start)}
+function calculateProbabilities(games){const bonusCount=getValue("koakuma")+getValue("big")+getValue("episode"),jtCount=getValue("jt"),logs=[];for(let s=0;s<6;s++){logs.push(poissonLogLikelihood(games,bonusCount,rates.bonus[s])+poissonLogLikelihood(games,jtCount,rates.jt[s]))}const max=Math.max(...logs),weights=logs.map(v=>Math.exp(v-max)),sum=weights.reduce((a,b)=>a+b,0);return sum?weights.map(v=>v/sum*100):weights.map(()=>0)}
+function render(p){for(let s=1;s<=6;s++){const v=p[s-1]||0,e=document.getElementById(`setting-percent-${s}`),bar=document.getElementById(`setting-bar-${s}`);if(e)e.textContent=`${Math.round(v)}%`;if(bar)bar.style.width=`${Math.max(0,Math.min(100,v))}%`}const max=Math.max(...p),best=p.indexOf(max)+1;document.getElementById("prediction-text").textContent=max&&Number.isFinite(max)?`設定予測：設定${best}が最有力`:"設定予測：判定材料不足"}
+function judge(){const current=Number(document.getElementById("games")?.value||0),start=Number(document.getElementById("start-games")?.value||0);if(current<0||start<0){alert("ゲーム数は0以上で入力してください。");return}if(!totalMode&&current<start){alert("総ゲーム数は開始ゲーム数以上にしてください。");return}const games=effectiveGames();if(games<=0){alert("判別対象ゲーム数を入力してください。");return}const bonus=getValue("koakuma")+getValue("big")+getValue("episode"),jt=getValue("jt");if(bonus===0&&jt===0){alert("BONUSまたはJTの初当り回数を入力してください。");return}render(calculateProbabilities(games));const result=document.getElementById("result-section");result?.classList.add("visible");setTimeout(()=>result?.scrollIntoView({behavior:"smooth",block:"start"}),80)}
+function reset(){Object.keys(state).forEach(id=>setValue(id,0));["games","start-games"].forEach(id=>{const e=document.getElementById(id);if(e)e.value=""});for(let s=1;s<=6;s++){const e=document.getElementById(`setting-percent-${s}`),bar=document.getElementById(`setting-bar-${s}`);if(e)e.textContent="0%";if(bar)bar.style.width="0%"}document.getElementById("prediction-text").textContent="-";document.getElementById("result-section")?.classList.remove("visible")}
+document.getElementById("judge-btn")?.addEventListener("click",judge);document.getElementById("reset-btn")?.addEventListener("click",reset);
 });
