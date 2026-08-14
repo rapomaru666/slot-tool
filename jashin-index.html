@@ -3,23 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>邪神ちゃんドロップキック設定判別ツール</title>
+  <title>L 邪神ちゃんドロップキック 設定判別ツール</title>
   <link rel="stylesheet" href="jashin-style.css">
 </head>
 <body>
 <main class="app">
-  <header class="header"><h1>邪神ちゃんドロップキック設定判別ツール</h1></header>
+  <header class="header">
+    <h1>L 邪神ちゃんドロップキック 設定判別ツール</h1>
+  </header>
+
   <section class="card input-card">
-    <div class="games-row"><label for="games">総ゲーム数</label><input id="games" type="number" min="1" inputmode="numeric" placeholder="数字を入力"></div>
+    <div class="games-row">
+      <label for="games">現在の総ゲーム数</label>
+      <input id="games" type="number" min="0" inputmode="numeric" placeholder="データランプの総G数">
+    </div>
+    <div class="games-row">
+      <label for="start-games">開始ゲーム数</label>
+      <input id="start-games" type="number" min="0" inputmode="numeric" placeholder="打ち始め時の総G数">
+    </div>
+
     <div class="bonus-grid">
-      <div class="bonus-row"><span>小悪魔BONUS</span><div class="counter"><button type="button" class="counter-btn minus" data-target="koakuma">−</button><span id="koakuma-value">0</span><button type="button" class="counter-btn plus" data-target="koakuma">＋</button></div></div>
-      <div class="bonus-row"><span>BIG BONUS</span><div class="counter"><button type="button" class="counter-btn minus" data-target="big">−</button><span id="big-value">0</span><button type="button" class="counter-btn plus" data-target="big">＋</button></div></div>
-      <div class="bonus-row"><span>エピソードB</span><div class="counter"><button type="button" class="counter-btn minus" data-target="episode">−</button><span id="episode-value">0</span><button type="button" class="counter-btn plus" data-target="episode">＋</button></div></div>
+      <div class="bonus-row important">
+        <span>小悪魔BONUS</span>
+        <div class="counter"><button type="button" class="counter-btn minus" data-target="koakuma">−</button><span id="koakuma-value">0</span><button type="button" class="counter-btn plus" data-target="koakuma">＋</button></div>
+      </div>
+      <div class="bonus-row important">
+        <span>BIG BONUS</span>
+        <div class="counter"><button type="button" class="counter-btn minus" data-target="big">−</button><span id="big-value">0</span><button type="button" class="counter-btn plus" data-target="big">＋</button></div>
+      </div>
+      <div class="bonus-row important">
+        <span>EPISODE BONUS</span>
+        <div class="counter"><button type="button" class="counter-btn minus" data-target="episode">−</button><span id="episode-value">0</span><button type="button" class="counter-btn plus" data-target="episode">＋</button></div>
+      </div>
+      <div class="bonus-row">
+        <span>JT（人生シアター）初当り</span>
+        <div class="counter"><button type="button" class="counter-btn minus" data-target="jt">−</button><span id="jt-value">0</span><button type="button" class="counter-btn plus" data-target="jt">＋</button></div>
+      </div>
     </div>
   </section>
-  <section class="action-area"><button id="judge-btn" class="judge-btn">設定を判別する</button><button id="reset-btn" class="reset-btn">リセット</button></section>
+
+  <section class="card hint-section">
+    <h2>設定判別材料</h2>
+    <div class="rate-list">
+      <div class="rate-block">
+        <div class="rate-title">BONUS初当り</div>
+        <div class="rate-note">小悪魔BONUS・BIG BONUS・EPISODE BONUSの合計回数</div>
+      </div>
+      <div class="rate-block">
+        <div class="rate-title">JT初当り</div>
+        <div class="rate-note">人生シアターの初当り回数</div>
+      </div>
+    </div>
+    <p class="notice">現在公開されている主要な設定差はBONUS初当り・JT初当り。未確認の設定示唆は推測で追加していません。</p>
+  </section>
+
+  <section class="action-area">
+    <button id="judge-btn" class="judge-btn">設定を判別する</button>
+    <button id="reset-btn" class="reset-btn">リセット</button>
+  </section>
+
   <section id="result-section" class="card result-card">
-    <h2>設定予測</h2><div class="prediction" id="prediction-text">-</div>
+    <h2>設定予測</h2>
+    <div id="prediction-text" class="prediction">-</div>
     <div class="graph">
       <div class="graph-row"><span class="setting-name">設定1</span><div class="bar-bg"><div id="setting-bar-1" class="bar"></div></div><span id="setting-percent-1" class="percent">0%</span></div>
       <div class="graph-row"><span class="setting-name">設定2</span><div class="bar-bg"><div id="setting-bar-2" class="bar"></div></div><span id="setting-percent-2" class="percent">0%</span></div>
@@ -28,36 +73,13 @@
       <div class="graph-row"><span class="setting-name">設定5</span><div class="bar-bg"><div id="setting-bar-5" class="bar"></div></div><span id="setting-percent-5" class="percent">0%</span></div>
       <div class="graph-row"><span class="setting-name">設定6</span><div class="bar-bg"><div id="setting-bar-6" class="bar"></div></div><span id="setting-percent-6" class="percent">0%</span></div>
     </div>
-    <p class="notice">※設定予測は入力された実戦データ・設定示唆をもとにした参考値です。</p>
+    <p class="notice">※設定予測は公開されている設定別確率と入力値から算出した参考値です。</p>
   </section>
-  <section class="card hint-section"><h2>② クジラッキートロフィー</h2><select id="trophy"><option value="none">なし</option><option value="copper">銅トロフィー（設定2以上濃厚）</option><option value="silver">銀トロフィー（設定3以上濃厚）</option><option value="gold">金トロフィー（設定4以上濃厚）</option><option value="kumanomi">クマノミ柄トロフィー（設定5以上濃厚）</option><option value="rainbow">虹トロフィー（設定6濃厚）</option></select><p class="hint-note">ボーナス終了画面などで確認したトロフィーを選択してください。</p></section>
-  <section class="card hint-section"><h2>③ 小悪魔BONUS中 キャラ紹介</h2><p class="hint-note">出現したキャラの回数を入力してください。<br>回数が増えるほど設定予測に反映されます。</p><div class="hint-list">
-    <div class="hint-row"><label>邪神ちゃん</label><span>デフォルト</span><div class="counter"><button class="counter-btn minus" data-target="char_jashin">−</button><span id="char_jashin-value">0</span><button class="counter-btn plus" data-target="char_jashin">＋</button></div></div>
-    <div class="hint-row"><label>ミノス</label><span>奇数設定示唆［弱］</span><div class="counter"><button class="counter-btn minus" data-target="char_minos">−</button><span id="char_minos-value">0</span><button class="counter-btn plus" data-target="char_minos">＋</button></div></div>
-    <div class="hint-row"><label>メデューサ</label><span>奇数設定示唆［強］</span><div class="counter"><button class="counter-btn minus" data-target="char_medusa">−</button><span id="char_medusa-value">0</span><button class="counter-btn plus" data-target="char_medusa">＋</button></div></div>
-    <div class="hint-row"><label>ぺこら</label><span>偶数設定示唆［弱］</span><div class="counter"><button class="counter-btn minus" data-target="char_pekora">−</button><span id="char_pekora-value">0</span><button class="counter-btn plus" data-target="char_pekora">＋</button></div></div>
-    <div class="hint-row"><label>ぽぽろん</label><span>偶数設定示唆［強］</span><div class="counter"><button class="counter-btn minus" data-target="char_poporon">−</button><span id="char_poporon-value">0</span><button class="counter-btn plus" data-target="char_poporon">＋</button></div></div>
-    <div class="hint-row"><label>ゆりねA</label><span>高設定示唆［弱］</span><div class="counter"><button class="counter-btn minus" data-target="char_yurine_a">−</button><span id="char_yurine_a-value">0</span><button class="counter-btn plus" data-target="char_yurine_a">＋</button></div></div>
-    <div class="hint-row"><label>ゆりねB</label><span>高設定示唆［強］</span><div class="counter"><button class="counter-btn minus" data-target="char_yurine_b">−</button><span id="char_yurine_b-value">0</span><button class="counter-btn plus" data-target="char_yurine_b">＋</button></div></div>
-    <div class="hint-row"><label>悪だくみ</label><span>設定2以上濃厚</span><div class="counter"><button class="counter-btn minus" data-target="char_akudakumi">−</button><span id="char_akudakumi-value">0</span><button class="counter-btn plus" data-target="char_akudakumi">＋</button></div></div>
-    <div class="hint-row"><label>水着</label><span>設定4以上濃厚</span><div class="counter"><button class="counter-btn minus" data-target="char_swimsuit">−</button><span id="char_swimsuit-value">0</span><button class="counter-btn plus" data-target="char_swimsuit">＋</button></div></div>
-    <div class="hint-row"><label>パジャマ</label><span>設定5以上濃厚</span><div class="counter"><button class="counter-btn minus" data-target="char_pajamas">−</button><span id="char_pajamas-value">0</span><button class="counter-btn plus" data-target="char_pajamas">＋</button></div></div>
-    <div class="hint-row"><label>全員集合</label><span>設定6濃厚</span><div class="counter"><button class="counter-btn minus" data-target="char_all">−</button><span id="char_all-value">0</span><button class="counter-btn plus" data-target="char_all">＋</button></div></div>
-  </div></section>
-  <section class="card hint-section"><h2>④ AT終了画面</h2><p class="hint-note">出現した画面の回数を入力してください。<br>示唆の種類と回数を設定予測へ反映します。</p><div class="hint-list">
-    <div class="hint-row"><label>邪神ちゃん</label><span>デフォルト</span><div class="counter"><button class="counter-btn minus" data-target="at_jashin">−</button><span id="at_jashin-value">0</span><button class="counter-btn plus" data-target="at_jashin">＋</button></div></div>
-    <div class="hint-row"><label>ミノス</label><span>奇数設定示唆［弱］</span><div class="counter"><button class="counter-btn minus" data-target="at_minos">−</button><span id="at_minos-value">0</span><button class="counter-btn plus" data-target="at_minos">＋</button></div></div>
-    <div class="hint-row"><label>メデューサ</label><span>奇数設定示唆［強］</span><div class="counter"><button class="counter-btn minus" data-target="at_medusa">−</button><span id="at_medusa-value">0</span><button class="counter-btn plus" data-target="at_medusa">＋</button></div></div>
-    <div class="hint-row"><label>ぺこら</label><span>偶数設定示唆［弱］</span><div class="counter"><button class="counter-btn minus" data-target="at_pekora">−</button><span id="at_pekora-value">0</span><button class="counter-btn plus" data-target="at_pekora">＋</button></div></div>
-    <div class="hint-row"><label>ぽぽろん</label><span>偶数設定示唆［強］</span><div class="counter"><button class="counter-btn minus" data-target="at_poporon">−</button><span id="at_poporon-value">0</span><button class="counter-btn plus" data-target="at_poporon">＋</button></div></div>
-    <div class="hint-row"><label>ゆりねA</label><span>高設定示唆［弱］</span><div class="counter"><button class="counter-btn minus" data-target="at_yurine_a">−</button><span id="at_yurine_a-value">0</span><button class="counter-btn plus" data-target="at_yurine_a">＋</button></div></div>
-    <div class="hint-row"><label>ゆりねB</label><span>高設定示唆［強］</span><div class="counter"><button class="counter-btn minus" data-target="at_yurine_b">−</button><span id="at_yurine_b-value">0</span><button class="counter-btn plus" data-target="at_yurine_b">＋</button></div></div>
-    <div class="hint-row"><label>悪だくみ</label><span>設定2以上濃厚</span><div class="counter"><button class="counter-btn minus" data-target="at_akudakumi">−</button><span id="at_akudakumi-value">0</span><button class="counter-btn plus" data-target="at_akudakumi">＋</button></div></div>
-    <div class="hint-row"><label>水着</label><span>設定4以上濃厚</span><div class="counter"><button class="counter-btn minus" data-target="at_swimsuit">−</button><span id="at_swimsuit-value">0</span><button class="counter-btn plus" data-target="at_swimsuit">＋</button></div></div>
-    <div class="hint-row"><label>パジャマ</label><span>設定5以上濃厚</span><div class="counter"><button class="counter-btn minus" data-target="at_pajamas">−</button><span id="at_pajamas-value">0</span><button class="counter-btn plus" data-target="at_pajamas">＋</button></div></div>
-    <div class="hint-row"><label>全員集合</label><span>設定6濃厚</span><div class="counter"><button class="counter-btn minus" data-target="at_all">−</button><span id="at_all-value">0</span><button class="counter-btn plus" data-target="at_all">＋</button></div></div>
-  </div></section>
-  <footer><div>v1.9</div><div>実戦データ＋設定示唆から設定候補を判別</div></footer>
+
+  <footer>
+    <div>2026年8月版</div>
+    <div>公開情報をもとに設定判別要素を更新しています</div>
+  </footer>
 </main>
 <script src="jashin-app.js"></script>
 </body>
