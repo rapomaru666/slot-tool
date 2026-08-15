@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "source": "github-index-pages",
+  "exclude": ["tokyoghoul"],
+  "tools": []
+}
