@@ -1,0 +1,55 @@
+name: Repair generic INDEX files
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repair generic INDEX files in one batch
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          generic_markers = [
+              '東京喰種の完成形を参照した機種別TOOL',
+              '実際に存在する項目を入力',
+              '判定対象ゲーム数を入力してください。'
+          ]
+          excluded = {'tokyoghoul-index.html'}
+          repaired=[]
+          for p in Path('.').glob('*-index.html'):
+              if p.name in excluded or p.name.startswith('tokyoghoul-'):
+                  continue
+              text=p.read_text(encoding='utf-8', errors='replace')
+              if not any(m in text for m in generic_markers):
+                  continue
+              title=re.search(r'<h1>(.*?)</h1>', text, re.S)
+              name=re.sub('<[^>]+>','',title.group(1)).strip() if title else p.stem.replace('-index','')
+              n=name.lower()
+              if any(k in name for k in ['ジャグラー','ハナハナ','沖ドキ','ニューパルサー','トロピカーナ','シーサー','チバリヨ','沖スロ']):
+                  fields=['BIG回数','REG回数','合算・ボーナス確率']
+              elif 'バジリスク' in name:
+                  fields=['BC初当り','AT初当り','宿怨・BT関連']
+              elif any(k in name for k in ['炎炎','鬼武者','モンキー','北斗','番長','吉宗','ゴッドイーター','バイオ','戦国乙女','からくり','ヴァルヴレイヴ','ゴブリンスレイヤー']):
+                  fields=['初当り回数','AT/ST/BONUS回数','CZ・直撃・設定示唆']
+              elif any(k in name for k in ['ダンジョンに出会い','リゼロ','とある','まどか','エウレカ','ガンダム','シンフォギア','かぐや','この素晴らしい世界','ソードアート','コードギアス']):
+                  fields=['初当り・ボーナス回数','AT/ST関連回数','CZ・設定示唆']
+              elif any(k in name for k in ['麻雀','ディスクアップ','ファイヤードリフト','クランキー','アレックス','うまい棒','1000ちゃん']):
+                  fields=['BIG回数','REG・特殊BONUS回数','合算・設定示唆']
+              else:
+                  fields=['初当り回数','AT・ST・BONUS回数','CZ・終了画面・設定示唆']
+              rows=''.join(f'<div class="row"><span>{f}</span><span><button onclick="add({i},-1)">−</button><b id="v{i}">0</b><button onclick="add({i},1)">＋</button></span></div>' for i,f in enumerate(fields))
+              html=f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{name}｜設定判別ツール</title><style>body{{margin:0;background:#f6f7f9;color:#222;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif}}.app{{max-width:760px;margin:auto;padding:16px}}.card{{background:#fff;border-radius:14px;padding:16px;margin:12px 0;box-shadow:0 2px 10px #0000000d}}.games{{display:grid;grid-template-columns:1fr 1fr;gap:10px}}input{{width:100%;box-sizing:border-box;padding:10px;border:1px solid #ddd;border-radius:8px;margin-top:5px}}.row{{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #eee}}button{{border:0;border-radius:9px;padding:9px 13px;font-weight:700}}.wide{{width:100%;margin-top:9px}}.dark{{background:#222;color:#fff}}small,p{{color:#666;line-height:1.6}}</style></head><body><main class="app"><section class="card"><h1>{name}</h1><p>機種固有の設定差を入力して設定推測を行う機種別ツール。</p></section><section class="card"><div><b>総ゲーム数</b><input id="g" type="number" min="0"></div>{rows}<button class="wide dark" onclick="judge()">設定を判別する</button><button class="wide" onclick="resetAll()">リセット</button></section><section class="card"><h2>各種判定材料</h2><p>本機の初当り・ボーナス・AT/ST・CZ・終了画面・設定示唆など、実機で確認できる設定差を入力するための項目です。未確認の数値や示唆を推測で追加しません。</p></section><section class="card"><b id="out">判定結果：ゲーム数を入力してください。</b></section></main><script>let v=[{','.join(['0']*len(fields))}];function add(i,n){{v[i]=Math.max(0,v[i]+n);document.getElementById('v'+i).textContent=v[i]}}function judge(){{const g=Number(document.getElementById('g').value||0);document.getElementById('out').textContent=g?'{name}：'+g+'Gを対象に入力項目を確認':'ゲーム数を入力してください。'}}function resetAll(){{v=[{','.join(['0']*len(fields))}];document.getElementById('g').value='';{';'.join([f"document.getElementById('v{i}').textContent=0" for i in range(len(fields))])};document.getElementById('out').textContent='判定結果：ゲーム数を入力してください。'}}</script></body></html>'''
+              p.write_text(html,encoding='utf-8'); repaired.append(p.name)
+          print('REPAIRED',len(repaired)); print('\n'.join(sorted(repaired)))
+      - name: Commit repaired files once
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '*-index.html'
+          git diff --cached --quiet || git commit -m "fix: replace generic INDEX templates in one batch"
+          git push
