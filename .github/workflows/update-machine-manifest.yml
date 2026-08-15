@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: slot-tool-main-writers
+  cancel-in-progress: false
+
 jobs:
   update-manifest:
     runs-on: ubuntu-latest
