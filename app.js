@@ -8,6 +8,10 @@ function addTool([href,label,title,year='']){if(container.querySelector('a[href=
 function prettyName(file){return file.replace(/-index\.html$/,'').replace(/[-_]+/g,' ').replace(/\b\w/g,m=>m.toUpperCase())}
 async function discoverAllTools(){
   try{
+    const r=await fetch('machines.json?'+Date.now(),{cache:'no-store'});
+    if(r.ok){const manifest=await r.json();if(Array.isArray(manifest.tools)&&manifest.tools.length){manifest.tools.forEach(x=>{if(x.file)addTool([x.file,prettyName(x.file),'L '+prettyName(x.file),''])});return}}
+  }catch(e){console.warn('manifest load failed',e)}
+  try{
     const files=[];
     for(let page=1;page<=10;page++){
       const r=await fetch('https://api.github.com/repos/rapomaru666/slot-tool/contents/?ref=main&per_page=100&page='+page,{cache:'no-store'});
@@ -18,7 +22,7 @@ async function discoverAllTools(){
       if(batch.length<100)break;
     }
     files.filter(x=>x.type==='file'&&/-index\.html$/.test(x.name)&&x.name!=='index.html'&&!x.path.startsWith('backup/')).forEach(x=>addTool([x.name,prettyName(x.name),'L '+prettyName(x.name),'']))
-  }catch(e){console.warn('portal auto discovery failed',e)}
+  }catch(e){console.warn('portal discovery failed',e)}
 }
 function counterName(tool){const raw=tool.getAttribute('href')||'';const file=raw.split('/').pop().split('?')[0].replace(/\.html$/,'');return file.replace(/[^a-zA-Z0-9_-]/g,'-')}
 function counterGet(name){return fetch('https://api.counterapi.dev/v1/'+encodeURIComponent(COUNTER_NAMESPACE)+'/'+encodeURIComponent(name),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>Number(d&&d.count||d&&d.value||0)).catch(()=>0)}
