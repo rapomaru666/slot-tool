@@ -1,0 +1,114 @@
+name: Audit INDEX completeness
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit all master-list machines
+        shell: python
+        run: |
+          import re
+          from pathlib import Path
+          from datetime import date
+
+          master = Path('SLOT-TOOL-MASTER-LIST-2026-2021.md').read_text(encoding='utf-8')
+          lines = master.splitlines()
+          machines=[]
+          year=None
+          for line in lines:
+              m=re.match(r'## (202[1-5])年', line)
+              if m:
+                  year=m.group(1); continue
+              if year and line.strip() and not line.startswith('#'):
+                  if line.startswith('既存登録分'): continue
+                  for raw in line.split(' / '):
+                      name=raw.strip()
+                      if not name or name=='東京喰種': continue
+                      if name not in [x[1] for x in machines]:
+                          machines.append((year,name))
+
+          # Build an exact title -> index file map from every index in the repo.
+          index_map={}
+          for p in Path('.').glob('*-index.html'):
+              if p.name.startswith('tokyoghoul-'): continue
+              text=p.read_text(encoding='utf-8',errors='ignore')
+              titles=[]
+              for pat in [r'<h1[^>]*>(.*?)</h1>', r'<title[^>]*>(.*?)</title>']:
+                  for x in re.findall(pat,text,re.I|re.S):
+                      x=re.sub(r'<[^>]+>','',x).strip()
+                      x=re.sub(r'\s+',' ',x)
+                      x=re.sub(r'｜設定判別ツール$','',x)
+                      titles.append(x)
+              for t in titles:
+                  if t and t not in index_map:
+                      index_map[t]=p.name
+
+          # Also use the generic machine-name map as a second exact lookup.
+          generic=Path('d4dj-index.html').read_text(encoding='utf-8',errors='ignore')
+          mm=re.search(r'const M=(\{.*?\});const slug=',generic,re.S)
+          name_map={}
+          if mm:
+              import json
+              name_map=json.loads(mm.group(1))
+          slug_by_name={v:f'{k}-index.html' for k,v in name_map.items()}
+
+          incomplete=[]
+          checked=0
+          for year,name in machines:
+              checked += 1
+              path=index_map.get(name) or slug_by_name.get(name)
+              if not path or not Path(path).exists():
+                  incomplete.append((year,name,'INDEXなし',''))
+                  continue
+              text=Path(path).read_text(encoding='utf-8',errors='ignore')
+              if '作成中....' in text:
+                  incomplete.append((year,name,'作成中',path))
+
+          assert checked == 375, f'Expected 375 machines, parsed {checked}'
+
+          out=[]
+          out.append('# SLOT-TOOL 未完成LIST（2026〜2021）')
+          out.append('')
+          out.append(f'更新日：{date.today().isoformat()}')
+          out.append('')
+          out.append('## 🔴 判定ルール')
+          out.append('- マスターLIST掲載の375台を全件確認。')
+          out.append('- INDEXあり・完成 → 完成。')
+          out.append('- INDEXあり・「作成中....」 → 未完成。')
+          out.append('- INDEXなし → 未完成。')
+          out.append('- 東京喰種は対象外。')
+          out.append('')
+          total=0
+          for y in ['2025','2024','2023','2022','2021']:
+              items=[x for x in incomplete if x[0]==y]
+              out.append(f'## {y}年')
+              out.append(f'**未完成：{len(items)}件**')
+              for i,(_,name,reason,path) in enumerate(items,1):
+                  suffix=f' → `{path}`' if path else ''
+                  out.append(f'{i}. **{name}** — {reason}{suffix}')
+              out.append('')
+              total += len(items)
+          out.append('## 375台中の未完成件数')
+          out.append(f'**{total}件**')
+          out.append('')
+          out.append(f'確認済み：**{checked}/375台**')
+          out.append('')
+          Path('SLOT-TOOL-INCOMPLETE-LIST-2026-2021.md').write_text('\n'.join(out)+'\n',encoding='utf-8')
+          print(f'CHECKED={checked}/375')
+          print(f'INCOMPLETE={total}')
+          for x in incomplete:
+              print('INCOMPLETE_ITEM',x)
+      - name: Commit audited list
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add SLOT-TOOL-INCOMPLETE-LIST-2026-2021.md
+          git diff --cached --quiet || git commit -m "375台のINDEX有無を突合して未完成LISTを更新"
+          git push
