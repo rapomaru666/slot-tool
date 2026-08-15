@@ -4,6 +4,9 @@ on:
     branches: [main]
 permissions:
   contents: write
+concurrency:
+  group: slot-tool-main-writers
+  cancel-in-progress: false
 jobs:
   repair:
     runs-on: ubuntu-latest
@@ -29,7 +32,6 @@ jobs:
                   continue
               title=re.search(r'<h1>(.*?)</h1>', text, re.S)
               name=re.sub('<[^>]+>','',title.group(1)).strip() if title else p.stem.replace('-index','')
-              n=name.lower()
               if any(k in name for k in ['ジャグラー','ハナハナ','沖ドキ','ニューパルサー','トロピカーナ','シーサー','チバリヨ','沖スロ']):
                   fields=['BIG回数','REG回数','合算・ボーナス確率']
               elif 'バジリスク' in name:
