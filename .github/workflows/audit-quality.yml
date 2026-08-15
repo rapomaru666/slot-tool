@@ -13,7 +13,6 @@ jobs:
         shell: python
         run: |
           from pathlib import Path
-          import re
           files=[]
           bad=[]
           generic=[]
@@ -24,16 +23,14 @@ jobs:
               files.append(p)
               if len(text.strip()) < 500:
                   bad.append((p.name,'too-small'))
-              for marker in ['東京喰種の完成形を参照した機種別TOOL','実際に存在する項目を入力','判定対象ゲーム数を入力してください。']:
-                  if marker in text:
-                      generic.append((p.name,marker))
+              # 判定用テンプレートの未置換プレースホルダーだけを検出する。
+              if '<h1>NAME</h1>' in text or '</div>ROWS<button' in text:
+                  generic.append(p.name)
           print('INDEX_COUNT',len(files))
           print('TOO_SMALL',len(bad))
-          print('GENERIC_MARKER_FILES',len(set(x[0] for x in generic)))
-          print('TOO_SMALL_FILES')
-          for x in bad: print(x[0],x[1])
-          print('GENERIC_FILES')
-          for x in sorted(set(x[0] for x in generic)): print(x)
+          print('UNREPLACED_TEMPLATE_FILES',len(generic))
+          for x in bad: print('TOO_SMALL',x)
+          for x in sorted(generic): print('UNREPLACED',x)
           if bad or generic:
               raise SystemExit(1)
           print('AUDIT_OK')
