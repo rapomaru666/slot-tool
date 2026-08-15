@@ -1,0 +1,39 @@
+name: Audit INDEX quality
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit INDEX files
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          files=[]
+          bad=[]
+          generic=[]
+          for p in Path('.').glob('*-index.html'):
+              if p.name.startswith('tokyoghoul-'):
+                  continue
+              text=p.read_text(encoding='utf-8', errors='replace')
+              files.append(p)
+              if len(text.strip()) < 500:
+                  bad.append((p.name,'too-small'))
+              for marker in ['東京喰種の完成形を参照した機種別TOOL','実際に存在する項目を入力','判定対象ゲーム数を入力してください。']:
+                  if marker in text:
+                      generic.append((p.name,marker))
+          print('INDEX_COUNT',len(files))
+          print('TOO_SMALL',len(bad))
+          print('GENERIC_MARKER_FILES',len(set(x[0] for x in generic)))
+          print('TOO_SMALL_FILES')
+          for x in bad: print(x[0],x[1])
+          print('GENERIC_FILES')
+          for x in sorted(set(x[0] for x in generic)): print(x)
+          if bad or generic:
+              raise SystemExit(1)
+          print('AUDIT_OK')
