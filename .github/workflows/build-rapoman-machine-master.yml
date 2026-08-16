@@ -42,31 +42,36 @@ jobs:
           def norm(s):
               return re.sub(r'[\s　・･‐‑‒–—―ー－:：/／\\()（）\[\]【】「」『』,.，．!！?？~〜～\'\"]+','',s).lower()
 
+          # Existing 2021-2025 master list is the source of truth for titles/year.
           for year in range(2021,2026):
               m=re.search(rf'^## {year}年[^\n]*\n(.*?)(?=^## |\Z)',src,re.M|re.S)
               if not m: continue
-              body=m.group(1).strip()
-              body=' '.join(line.strip() for line in body.splitlines() if line.strip() and not line.startswith('#'))
+              body=' '.join(line.strip() for line in m.group(1).splitlines() if line.strip() and not line.startswith('#'))
               for name in [clean_name(x) for x in body.split(' / ')]:
-                  if not name or name.startswith('注記'): continue
-                  machines.append({'name':name,'year':year,'source':'existing-master-list'})
+                  if name and not name.startswith('注記'):
+                      machines.append({'name':name,'year':year,'source':'existing-master-list'})
 
-          y2026=[]
+          # Build an index-title lookup from existing TOOL pages without changing them.
+          pages=[]
           for fn in glob.glob('*-index.html'):
-              if fn.startswith('tokyoghoul-'):
-                  continue
+              if fn.startswith('tokyoghoul-'): continue
               try: text=Path(fn).read_text(encoding='utf-8',errors='ignore')
               except: continue
-              if not re.search(r'2026(?:年|[/.-])',text):
-                  continue
-              candidates=[]
+              titles=[]
               for pat in [r'<h1[^>]*>(.*?)</h1>',r'<h2[^>]*>(.*?)</h2>',r'<title[^>]*>(.*?)</title>']:
-                  mm=re.search(pat,text,re.I|re.S)
-                  if mm: candidates.append(clean_name(mm.group(1)))
-              name=next((x for x in candidates if x and 'RAPOMARU' not in x.upper() and '設定判別' not in x), None)
-              if not name and candidates: name=candidates[0]
-              if name:
-                  y2026.append({'name':name,'year':2026,'source':'repository-page','file':fn})
+                  for mm in re.finditer(pat,text,re.I|re.S):
+                      t=clean_name(mm.group(1))
+                      t=re.sub(r'\s*[｜|]\s*RAPOMARU.*$','',t,flags=re.I)
+                      t=re.sub(r'\s*設定判別ツール.*$','',t)
+                      if t: titles.append(t)
+              pages.append({'file':fn,'titles':list(dict.fromkeys(titles)),'text':text})
+
+          # Reconstruct 2026 from repository pages, git history, and portal pending data.
+          y2026=[]
+          for p in pages:
+              if not re.search(r'2026(?:年|[/.-])',p['text']): continue
+              name=next((x for x in p['titles'] if 'RAPOMARU' not in x.upper() and '設定判別' not in x),None)
+              if name: y2026.append({'name':name,'year':2026,'source':'repository-page','file':p['file']})
 
           try:
               log=subprocess.check_output(['git','log','--all','--pretty=%s'],text=True,encoding='utf-8',errors='ignore')
@@ -77,8 +82,7 @@ jobs:
                       name=clean_name(mm.group(1))
                       if name and 'ポータル' not in name and '機種' not in name:
                           y2026.append({'name':name,'year':2026,'source':'git-history'})
-          except Exception:
-              pass
+          except Exception: pass
 
           if Path('app.js').exists():
               app=Path('app.js').read_text(encoding='utf-8',errors='ignore')
@@ -87,12 +91,10 @@ jobs:
                   for title in re.findall(r"\['[^']*','[^']*','([^']*)'\]",mm.group(1)):
                       y2026.append({'name':clean_name(title),'year':2026,'source':'portal-pending'})
 
-          ded={}
-          priority={'repository-page':3,'portal-pending':2,'git-history':1}
+          ded={}; priority={'repository-page':3,'portal-pending':2,'git-history':1}
           for row in y2026:
               k=norm(row['name'])
-              if not k: continue
-              if k not in ded or priority.get(row['source'],0)>priority.get(ded[k]['source'],0):
+              if k and (k not in ded or priority.get(row['source'],0)>priority.get(ded[k]['source'],0)):
                   ded[k]=row
           machines.extend(sorted(ded.values(),key=lambda x:x['name']))
 
@@ -102,24 +104,36 @@ jobs:
               if k in seen: continue
               seen.add(k); final.append(row)
 
+          # Link master rows to existing pages. Exact normalized title wins; otherwise a unique containment match.
+          title_map={}
+          for p in pages:
+              for t in p['titles']:
+                  k=norm(t)
+                  if k: title_map.setdefault(k,set()).add(p['file'])
+          for row in final:
+              if row.get('file') and Path(row['file']).exists():
+                  row['toolStatus']='available'; row['toolUrl']=row['file']; continue
+              k=norm(row['name']); matches=set(title_map.get(k,set()))
+              if not matches and len(k)>=6:
+                  for tk,files in title_map.items():
+                      if len(tk)>=6 and (k in tk or tk in k): matches.update(files)
+              if len(matches)==1:
+                  row['file']=next(iter(matches)); row['toolStatus']='available'; row['toolUrl']=row['file']
+              else:
+                  row['toolStatus']='pending'
+
           final.sort(key=lambda x:(x['year'],x['name']))
           counts={str(y):sum(1 for x in final if x['year']==y) for y in range(2021,2027)}
+          statusCounts={'available':sum(x['toolStatus']=='available' for x in final),'pending':sum(x['toolStatus']=='pending' for x in final)}
           out={
-              'schemaVersion':1,
+              'schemaVersion':2,
               'name':'RAPOMAN machine master',
               'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),
-              'rules':{
-                  'portalModified':False,
-                  'tokyoGhoulProtected':True,
-                  'machineType':'pachislot',
-                  'fieldsExtensible':True
-              },
-              'counts':counts,
-              'total':len(final),
-              'machines':final
+              'rules':{'tokyoGhoulProtected':True,'machineType':'pachislot','fieldsExtensible':True,'portalUsesThisMaster':True},
+              'counts':counts,'statusCounts':statusCounts,'total':len(final),'machines':final
           }
           Path('RAPOMAN-MACHINE-MASTER.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          print(json.dumps({'counts':counts,'total':len(final)},ensure_ascii=False))
+          print(json.dumps({'counts':counts,'statusCounts':statusCounts,'total':len(final)},ensure_ascii=False))
           PY
       - name: Commit JSON
         run: |
