@@ -1,22 +1,28 @@
 # RAPOMARU X Auto Post
 
-@rapomaru777 用のX自動投稿準備領域。
+@rapomaru777 用のX自動投稿領域。
 
-## 仕組み
-1. `queue.json` に投稿候補を保存
-2. GitHub Actions が定期実行
-3. `scripts/build_feed.py` が公開時刻を過ぎた投稿だけ `feed.xml` に出力
-4. IFTTT の RSS → X 連携が `feed.xml` の新着を検知して自動投稿
+## 現行の仕組み
+1. 翌日分の確定本文を `x-auto/thread-YYYY-MM-DD.json` に保存
+2. GitHub Actions を毎日 20:00 JST（11:00 UTC）に実行
+3. 実行日の翌日の日付に対応する thread ファイルを自動選択
+4. 各投稿が280文字以内であることを投稿直前に検証
+5. Buffer API 経由で X（@rapomaru777）へ投稿
+6. 成功した投稿は `x-auto/published.json` に記録し、同じ対象日の重複投稿を防止
 
-## 重要
-- X本文は280文字以内
-- 「明日の強い店」は保存済み運用ルールに従って作成
+## 固定運用ルール
+- 毎日夜20:00 JSTに翌日分を自動投稿する
+- 投稿先は X アカウント `@rapomaru777`
+- 投稿経路は GitHub Actions → Buffer → X を基本とする
+- 本文は280文字以内。超過時は投稿せずエラーにする
+- `thread-YYYY-MM-DD.json` が存在しない日は安全にスキップする
+- `published.json` に投稿済み記録がある対象日は再投稿しない
+- 「明日の強い店」は保存済み運用ルールに従って作成する
 - 🌈/🏆は相対順位ではなく絶対評価
-- queue内は内部ランキング順
-- 投稿時刻までは `feed.xml` に出さない
+- 掲載順は内部ランキング上位順を基本とする
 
-## RSS URL
-https://rapomaru666.github.io/slot-tool/x-auto/feed.xml
+## 投稿履歴
+`x-auto/published.json` に対象日、Buffer投稿ID、X投稿URL、送信時刻を保存する。
 
-## 現在
-8/17分は `queue.json` に下書き登録済み。ただし公開時刻は未設定のため、自動投稿は発火しない。
+## 旧RSS方式
+`feed.xml` / IFTTT 経由の仕組みは旧方式として残っているが、現行のX投稿は Buffer 経由を優先する。
