@@ -42,7 +42,6 @@ jobs:
           def norm(s):
               return re.sub(r'[\s　・･‐‑‒–—―ー－:：/／\\()（）\[\]【】「」『』,.，．!！?？~〜～\'\"]+','',s).lower()
 
-          # Existing 2021-2025 master list is the source of truth for titles/year.
           for year in range(2021,2026):
               m=re.search(rf'^## {year}年[^\n]*\n(.*?)(?=^## |\Z)',src,re.M|re.S)
               if not m: continue
@@ -51,7 +50,6 @@ jobs:
                   if name and not name.startswith('注記'):
                       machines.append({'name':name,'year':year,'source':'existing-master-list'})
 
-          # Build an index-title lookup from existing TOOL pages without changing them.
           pages=[]
           for fn in glob.glob('*-index.html'):
               if fn.startswith('tokyoghoul-'): continue
@@ -64,9 +62,8 @@ jobs:
                       t=re.sub(r'\s*[｜|]\s*RAPOMARU.*$','',t,flags=re.I)
                       t=re.sub(r'\s*設定判別ツール.*$','',t)
                       if t: titles.append(t)
-              pages.append({'file':fn,'titles':list(dict.fromkeys(titles)),'text':text})
+              pages.append({'file':fn,'titles':list(dict.fromkeys(titles)),'text':text,'ghoulBase':('ghoul-base.js' in text or 'ghoul-base-style.css' in text)})
 
-          # Reconstruct 2026 from repository pages, git history, and portal pending data.
           y2026=[]
           for p in pages:
               if not re.search(r'2026(?:年|[/.-])',p['text']): continue
@@ -104,34 +101,29 @@ jobs:
               if k in seen: continue
               seen.add(k); final.append(row)
 
-          # Link master rows to existing pages. Exact normalized title wins; otherwise a unique containment match.
-          title_map={}
+          title_map={}; page_by_file={p['file']:p for p in pages}
           for p in pages:
               for t in p['titles']:
                   k=norm(t)
                   if k: title_map.setdefault(k,set()).add(p['file'])
           for row in final:
               if row.get('file') and Path(row['file']).exists():
-                  row['toolStatus']='available'; row['toolUrl']=row['file']; continue
-              k=norm(row['name']); matches=set(title_map.get(k,set()))
-              if not matches and len(k)>=6:
-                  for tk,files in title_map.items():
-                      if len(tk)>=6 and (k in tk or tk in k): matches.update(files)
-              if len(matches)==1:
-                  row['file']=next(iter(matches)); row['toolStatus']='available'; row['toolUrl']=row['file']
+                  row['toolStatus']='available'; row['toolUrl']=row['file']
               else:
-                  row['toolStatus']='pending'
+                  k=norm(row['name']); matches=set(title_map.get(k,set()))
+                  if not matches and len(k)>=6:
+                      for tk,files in title_map.items():
+                          if len(tk)>=6 and (k in tk or tk in k): matches.update(files)
+                  if len(matches)==1:
+                      row['file']=next(iter(matches)); row['toolStatus']='available'; row['toolUrl']=row['file']
+                  else:
+                      row['toolStatus']='pending'
+              row['ghoulBase']=bool(row.get('file') and row['file'] in page_by_file and page_by_file[row['file']]['ghoulBase'])
 
           final.sort(key=lambda x:(x['year'],x['name']))
           counts={str(y):sum(1 for x in final if x['year']==y) for y in range(2021,2027)}
-          statusCounts={'available':sum(x['toolStatus']=='available' for x in final),'pending':sum(x['toolStatus']=='pending' for x in final)}
-          out={
-              'schemaVersion':2,
-              'name':'RAPOMAN machine master',
-              'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),
-              'rules':{'tokyoGhoulProtected':True,'machineType':'pachislot','fieldsExtensible':True,'portalUsesThisMaster':True},
-              'counts':counts,'statusCounts':statusCounts,'total':len(final),'machines':final
-          }
+          statusCounts={'available':sum(x['toolStatus']=='available' for x in final),'pending':sum(x['toolStatus']=='pending' for x in final),'ghoulBase':sum(x.get('ghoulBase') for x in final)}
+          out={'schemaVersion':3,'name':'RAPOMAN machine master','generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'rules':{'tokyoGhoulProtected':True,'machineType':'pachislot','fieldsExtensible':True,'portalUsesThisMaster':True},'counts':counts,'statusCounts':statusCounts,'total':len(final),'machines':final}
           Path('RAPOMAN-MACHINE-MASTER.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           print(json.dumps({'counts':counts,'statusCounts':statusCounts,'total':len(final)},ensure_ascii=False))
           PY
