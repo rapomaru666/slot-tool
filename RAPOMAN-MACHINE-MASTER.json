@@ -20,7 +20,7 @@
     "available": 352,
     "pending": 65,
     "ghoulBase": 350,
-    "ghoulCompleteShell": 345
+    "ghoulCompleteShell": 344
   },
   "total": 417,
   "machines": [
@@ -3870,8 +3870,7 @@
       "file": "hokutotensei2-index.html",
       "toolStatus": "available",
       "toolUrl": "hokutotensei2-index.html",
-      "ghoulBase": true,
-      "ghoulCompleteShell": true
+      "ghoulBase": true
     },
     {
       "name": "スマスロ 攻殻機動隊",

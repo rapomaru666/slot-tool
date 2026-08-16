@@ -1,2 +1,3 @@
-targets=345
-changed=345
+targets=344
+changed=344
+restored_existing=hokutotensei2-index.html
