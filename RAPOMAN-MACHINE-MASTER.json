@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "name": "RAPOMAN machine master",
-  "generatedAt": "2026-08-16T01:31:16.839755+00:00",
+  "generatedAt": "2026-08-16T01:34:21.538637+00:00",
   "rules": {
-    "portalModified": false,
     "tokyoGhoulProtected": true,
     "machineType": "pachislot",
-    "fieldsExtensible": true
+    "fieldsExtensible": true,
+    "portalUsesThisMaster": true
   },
   "counts": {
     "2021": 72,
@@ -16,2104 +16,3229 @@
     "2025": 74,
     "2026": 44
   },
+  "statusCounts": {
+    "available": 352,
+    "pending": 67
+  },
   "total": 419,
   "machines": [
     {
       "name": "CCエンジェル",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "ccenjieru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "ccenjieru-index.html"
     },
     {
       "name": "GⅠ優駿倶楽部3",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "giyuushunkurabu3-index.html",
+      "toolStatus": "available",
+      "toolUrl": "giyuushunkurabu3-index.html"
     },
     {
       "name": "HIT128",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "hit128-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hit128-index.html"
     },
     {
       "name": "Re:ゼロから始める異世界生活Apex Vacation",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "re-zerokarahajimeruisekaiseikatsuapex-vacation-index.html",
+      "toolStatus": "available",
+      "toolUrl": "re-zerokarahajimeruisekaiseikatsuapex-vacation-index.html"
     },
     {
       "name": "S Lucky海物語",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "s-luckyumimonogatari-index.html",
+      "toolStatus": "available",
+      "toolUrl": "s-luckyumimonogatari-index.html"
     },
     {
       "name": "SLOTアルドノア・ゼロ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slotarudonoa-zero-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slotarudonoa-zero-index.html"
     },
     {
       "name": "SLOTタブー・タトゥー",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slottabuu-tatouu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slottabuu-tatouu-index.html"
     },
     {
       "name": "SLOT劇場版魔法少女まどか☆マギカ 前後編",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slotgekijoubanmahoushoujomadoka-magika-zenkouhen-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slotgekijoubanmahoushoujomadoka-magika-zenkouhen-index.html"
     },
     {
       "name": "Sデジタルトラッド",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sdejitarutoraddo-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sdejitarutoraddo-index.html"
     },
     {
       "name": "SトリプルクラウンV-30",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "storipurukuraunv-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "storipurukuraunv-30-index.html"
     },
     {
       "name": "S牙狼ー黄金騎士ー",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "skibaookamiiougonkishii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "skibaookamiiougonkishii-index.html"
     },
     {
       "name": "ぱちすろ沖ハナ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurookihana-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurookihana-index.html"
     },
     {
       "name": "もっと！クレアの秘宝伝 女神と歌声と太陽の子供達",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "motto-kureanohihouden-megamitoutagoetotaiyounokodomotachi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "motto-kureanohihouden-megamitoutagoetotaiyounokodomotachi-index.html"
     },
     {
       "name": "シンデレラブレイド４",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "shindererabureido4-index.html",
+      "toolStatus": "available",
+      "toolUrl": "shindererabureido4-index.html"
     },
     {
       "name": "スターパルサー",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sutaaparusaa-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sutaaparusaa-index.html"
     },
     {
       "name": "スーパーハナハナ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "suupaahanahana-index.html",
+      "toolStatus": "available",
+      "toolUrl": "suupaahanahana-index.html"
     },
     {
       "name": "チバリヨー30",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "chibariyoo30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "chibariyoo30-index.html"
     },
     {
       "name": "デジスロ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "dejisuro-index.html",
+      "toolStatus": "available",
+      "toolUrl": "dejisuro-index.html"
     },
     {
       "name": "ニューハナハナゴールド-30",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nyuuhanahanagoorudo-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nyuuhanahanagoorudo-30-index.html"
     },
     {
       "name": "ニューパルサーDX3",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nyuuparusaadx3-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nyuuparusaadx3-index.html"
     },
     {
       "name": "ニューパルサーSPⅢ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nyuuparusaaspiii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nyuuparusaaspiii-index.html"
     },
     {
       "name": "ノーゲーム・ノーライフTHE SLOT",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "noogeemu-nooraifuthe-slot-index.html",
+      "toolStatus": "available",
+      "toolUrl": "noogeemu-nooraifuthe-slot-index.html"
     },
     {
       "name": "ハイサイシオサイ2",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "haisaishiosai2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "haisaishiosai2-index.html"
     },
     {
       "name": "パチスロANEMONE 交響詩篇エウレカセブンHI-EVOLUTION",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroanemone-koukyoushiheneurekasebunhi-evolution-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroanemone-koukyoushiheneurekasebunhi-evolution-index.html"
     },
     {
       "name": "パチスロAngel Beats！",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroangel-beats-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroangel-beats-index.html"
     },
     {
       "name": "パチスロGANTZ極 THE SURVIVAL GAME",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurogantzkyoku-the-survival-game-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurogantzkyoku-the-survival-game-index.html"
     },
     {
       "name": "パチスロKING黄門ちゃま",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokingkoumonchama-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokingkoumonchama-index.html"
     },
     {
       "name": "パチスロWake Up,Girls！Seven Memories",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurowake-up-girls-seven-memories-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurowake-up-girls-seven-memories-index.html"
     },
     {
       "name": "パチスロうしおととら 雷槍一閃",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroushiototora-kaminariyariissen-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroushiototora-kaminariyariissen-index.html"
     },
     {
       "name": "パチスロうまい棒",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroumaibou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroumaibou-index.html"
     },
     {
       "name": "パチスロかまいたちの夜",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokamaitachinoyoru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokamaitachinoyoru-index.html"
     },
     {
       "name": "パチスロアイドルマスター ミリオンライブ！シアターフェスティバル",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroaidorumasutaa-mirionraibu-shiataafesuteibaru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroaidorumasutaa-mirionraibu-shiataafesuteibaru-index.html"
     },
     {
       "name": "パチスロガメラ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurogamera-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurogamera-index.html"
     },
     {
       "name": "パチスロガールズ＆パンツァー劇場版",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurogaaruzu-pantsuaagekijouban-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurogaaruzu-pantsuaagekijouban-index.html"
     },
     {
       "name": "パチスロコードギアス反逆のルルーシュ3",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokoodogiasuhangyakunoruruushu3-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokoodogiasuhangyakunoruruushu3-index.html"
     },
     {
       "name": "パチスロゴッドイーター ジ・アニメーション",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurogoddoiitaa-ji-animeeshon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurogoddoiitaa-ji-animeeshon-index.html"
     },
     {
       "name": "パチスロツインエンジェルPARTY",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurotsuin-enjieruparty-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurotsuin-enjieruparty-index.html"
     },
     {
       "name": "パチスロバイオハザード7 レジデントイービル",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurobaiohazaado7-rejidentoiibiru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurobaiohazaado7-rejidentoiibiru-index.html"
     },
     {
       "name": "パチスロフレームアームズ・ガール",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurofureemuaamuzu-gaaru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurofureemuaamuzu-gaaru-index.html"
     },
     {
       "name": "パチスロマクロスデルタ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuromakurosuderuta-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuromakurosuderuta-index.html"
     },
     {
       "name": "パチスロモンスターハンター：ワールド黄金狩猟",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuromonsutaahantaa-waarudoougonshuryou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuromonsutaahantaa-waarudoougonshuryou-index.html"
     },
     {
       "name": "パチスロラブ嬢II＋",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurorabujouii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurorabujouii-index.html"
     },
     {
       "name": "パチスロリング 運命の秒刻",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroringu-unmeinobyoukoku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroringu-unmeinobyoukoku-index.html"
     },
     {
       "name": "パチスロロリクラ☆ほーるど！",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurororikura-hoorudo-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurororikura-hoorudo-index.html"
     },
     {
       "name": "パチスロ北斗の拳 宿命",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurohokutonoken-shukumei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurohokutonoken-shukumei-index.html"
     },
     {
       "name": "パチスロ戦国乙女 暁の関ヶ原-DARKNESS",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurosengokuotome-akatsukinokankehara-darkness-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurosengokuotome-akatsukinokankehara-darkness-index.html"
     },
     {
       "name": "パチスロ戦姫絶唱シンフォギア 勇気の歌",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurosenhimezesshoushinfogia-yuukinouta-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurosenhimezesshoushinfogia-yuukinouta-index.html"
     },
     {
       "name": "パチスロ東京レイヴンズ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurotoukyoureivunzu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurotoukyoureivunzu-index.html"
     },
     {
       "name": "パチスロ楽園追放",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurorakuentsuihou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurorakuentsuihou-index.html"
     },
     {
       "name": "パチスロ百花繚乱サムライガールズ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurohyakkaryouransamuraigaaruzu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurohyakkaryouransamuraigaaruzu-index.html"
     },
     {
       "name": "パチスロ花の慶次 武威",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurohananokeiji-bui-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurohananokeiji-bui-index.html"
     },
     {
       "name": "パチスロ鉄拳4デビルVer.",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurotekken4debiruver-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurotekken4debiruver-index.html"
     },
     {
       "name": "パチスロ零",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurorei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurorei-index.html"
     },
     {
       "name": "パチスロ青の祓魔師",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroaonofutsumashi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroaonofutsumashi-index.html"
     },
     {
       "name": "パチスロ頭文字D",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokashiramojid-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokashiramojid-index.html"
     },
     {
       "name": "パチスロ麻雀物語4",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuromaajanmonogatari4-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuromaajanmonogatari4-index.html"
     },
     {
       "name": "ファンキージャグラー2",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "fankiijaguraa2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "fankiijaguraa2-index.html"
     },
     {
       "name": "マイジャグラーV",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "maijaguraav-index.html",
+      "toolStatus": "available",
+      "toolUrl": "maijaguraav-index.html"
     },
     {
       "name": "マジカルハロウィン～Trick or Treat！～",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "majikaruharouin-trick-or-treat-index.html",
+      "toolStatus": "available",
+      "toolUrl": "majikaruharouin-trick-or-treat-index.html"
     },
     {
       "name": "ワンチャンス1000",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "wanchansu1000-index.html",
+      "toolStatus": "available",
+      "toolUrl": "wanchansu1000-index.html"
     },
     {
       "name": "主役は銭形３",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "shuyakuhazenigata3-index.html",
+      "toolStatus": "available",
+      "toolUrl": "shuyakuhazenigata3-index.html"
     },
     {
       "name": "南国育ち-30",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nangokusodachi-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nangokusodachi-30-index.html"
     },
     {
       "name": "戦国乙女3～天剣を継ぐもの～",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sengokuotome3-tentsurugiwotsugumono-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sengokuotome3-tentsurugiwotsugumono-index.html"
     },
     {
       "name": "政宗3",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "masamune3-index.html",
+      "toolStatus": "available",
+      "toolUrl": "masamune3-index.html"
     },
     {
       "name": "新ハナビ",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "shinhanabi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "shinhanabi-index.html"
     },
     {
       "name": "沖ドキ！DUO",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okidoki-duo-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okidoki-duo-index.html"
     },
     {
       "name": "泡盛",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "awamori-index.html",
+      "toolStatus": "available",
+      "toolUrl": "awamori-index.html"
     },
     {
       "name": "秘宝伝 解き放たれた女神",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "hihouden-tokihouttaretamegami-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hihouden-tokihouttaretamegami-index.html"
     },
     {
       "name": "絶対衝撃III",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "zettaishougekiiii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "zettaishougekiiii-index.html"
     },
     {
       "name": "豪炎高校應援團 檄",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "gouhonookoukououendan-geki-index.html",
+      "toolStatus": "available",
+      "toolUrl": "gouhonookoukououendan-geki-index.html"
     },
     {
       "name": "鬼浜爆走紅蓮隊 狂闘旅情編",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "onihamabakusougurentai-kyoutouryojouhen-index.html",
+      "toolStatus": "available",
+      "toolUrl": "onihamabakusougurentai-kyoutouryojouhen-index.html"
     },
     {
       "name": "麻雀格闘倶楽部 真",
       "year": 2021,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "maajankakutoukurabu-makoto-index.html",
+      "toolStatus": "available",
+      "toolUrl": "maajankakutoukurabu-makoto-index.html"
     },
     {
       "name": "BLACK LAGOON ZERO bullet MAX",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "black-lagoon-zero-bullet-max-index.html",
+      "toolStatus": "available",
+      "toolUrl": "black-lagoon-zero-bullet-max-index.html"
     },
     {
       "name": "CREA Newクレアの秘宝伝",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "crea-newkureanohihouden-index.html",
+      "toolStatus": "available",
+      "toolUrl": "crea-newkureanohihouden-index.html"
     },
     {
       "name": "HEY！エリートサラリーマン鏡",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "hey-eriitosarariimankagami-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hey-eriitosarariimankagami-index.html"
     },
     {
       "name": "HYPER A-30 BLUE FALCON",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "hyper-a-30-blue-falcon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hyper-a-30-blue-falcon-index.html"
     },
     {
       "name": "Lバキ強くなりたくば喰らえ!!!",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lbakitsuyokunaritakubakurae-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lbakitsuyokunaritakubakurae-index.html"
     },
     {
       "name": "S BIG 島唄30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "s-big-shimauta30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "s-big-shimauta30-index.html"
     },
     {
       "name": "S2027",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "s2027-index.html",
+      "toolStatus": "available",
+      "toolUrl": "s2027-index.html"
     },
     {
       "name": "SLOT STEINS;GATE",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slot-steins-gate-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slot-steins-gate-index.html"
     },
     {
       "name": "SLOTえとたま",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slotetotama-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slotetotama-index.html"
     },
     {
       "name": "SLOTとある科学の超電磁砲",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slottoarukagakunochoudenjihou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slottoarukagakunochoudenjihou-index.html"
     },
     {
       "name": "SLOTマッピー",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slotmappii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slotmappii-index.html"
     },
     {
       "name": "Sアバサー25/30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sabasaa25-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sabasaa25-30-index.html"
     },
     {
       "name": "Sキャッツ・アイ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "skyattsu-ai-index.html",
+      "toolStatus": "available",
+      "toolUrl": "skyattsu-ai-index.html"
     },
     {
       "name": "Sスーパー海物語 IN JAPAN 祭",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "ssuupaaumimonogatari-in-japan-matsuri-index.html",
+      "toolStatus": "available",
+      "toolUrl": "ssuupaaumimonogatari-in-japan-matsuri-index.html"
     },
     {
       "name": "Sルパン三世",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "srupansansei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "srupansansei-index.html"
     },
     {
       "name": "S黄門ちゃま喝2",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "skoumonchamakatsu2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "skoumonchamakatsu2-index.html"
     },
     {
       "name": "ぱちすろけものフレンズ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokemonofurenzu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokemonofurenzu-index.html"
     },
     {
       "name": "ぱちスロ ウルトラマンタロウ 暴君SPEC",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-urutoramantarou-boukunspec-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-urutoramantarou-boukunspec-index.html"
     },
     {
       "name": "ぱちスロ ギャグダー",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-gyagudaa-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-gyagudaa-index.html"
     },
     {
       "name": "もっと！チバリヨ-30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "motto-chibariyo-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "motto-chibariyo-30-index.html"
     },
     {
       "name": "アカジン-30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "akajin-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "akajin-30-index.html"
     },
     {
       "name": "シリウス",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "shiriusu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "shiriusu-index.html"
     },
     {
       "name": "スマスロリノヘブン",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurorinohebun-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurorinohebun-index.html"
     },
     {
       "name": "スーパーハナハナ2-30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "suupaahanahana2-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "suupaahanahana2-30-index.html"
     },
     {
       "name": "スーパーリオエース",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "suupaarioeesu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "suupaarioeesu-index.html"
     },
     {
       "name": "スーパーリノSP",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "suupaarinosp-index.html",
+      "toolStatus": "available",
+      "toolUrl": "suupaarinosp-index.html"
     },
     {
       "name": "ナナイロサンゴ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nanairosango-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nanairosango-index.html"
     },
     {
       "name": "ニューゲッターマウス",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nyuugettaamausu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nyuugettaamausu-index.html"
     },
     {
       "name": "ハイスクールD×D2 ハーレム王に俺はある",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "haisukuurudxd2-haaremuouniorehaaru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "haisukuurudxd2-haaremuouniorehaaru-index.html"
     },
     {
       "name": "ハッピージャグラーVⅢ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "happiijaguraaviii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "happiijaguraaviii-index.html"
     },
     {
       "name": "ハナハナホウオウ～天翔～25&30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "hanahanahouou-tenshou-25-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hanahanahouou-tenshou-25-30-index.html"
     },
     {
       "name": "バーサスリヴァイズ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "baasasurivaizu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "baasasurivaizu-index.html"
     },
     {
       "name": "パチスロ FAIRY TAIL2",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-fairy-tail2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-fairy-tail2-index.html"
     },
     {
       "name": "パチスロ RYUKYU BEAT-30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-ryukyu-beat-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-ryukyu-beat-30-index.html"
     },
     {
       "name": "パチスロ TIGER & BUNNY SP",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-tiger-bunny-sp-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-tiger-bunny-sp-index.html"
     },
     {
       "name": "パチスロ この素晴らしい世界に祝福を！",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-konosubarashiisekainishukufukuwo-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-konosubarashiisekainishukufukuwo-index.html"
     },
     {
       "name": "パチスロ アクエリオン ALL STARS",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-akuerion-all-stars-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-akuerion-all-stars-index.html"
     },
     {
       "name": "パチスロ アラジンAクラシック",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-arajinakurashikku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-arajinakurashikku-index.html"
     },
     {
       "name": "パチスロ ゼーガペイン2",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-zeegapein2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-zeegapein2-index.html"
     },
     {
       "name": "パチスロ ダンまち外伝 ソード・オラトリア",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-danmachigaiden-soodo-oratoria-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-danmachigaiden-soodo-oratoria-index.html"
     },
     {
       "name": "パチスロ ディスクアップ2",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-disukuappu2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-disukuappu2-index.html"
     },
     {
       "name": "パチスロ ドリフターズ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-dorifutaazu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-dorifutaazu-index.html"
     },
     {
       "name": "パチスロ ピンクパンサーSP",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-pinkupansaasp-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-pinkupansaasp-index.html"
     },
     {
       "name": "パチスロ 幼女戦記",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-youjosenki-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-youjosenki-index.html"
     },
     {
       "name": "パチスロ 新鬼武者",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-shinonimusha-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-shinonimusha-index.html"
     },
     {
       "name": "パチスロ 月華 雅",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-gatsuhana-masa-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-gatsuhana-masa-index.html"
     },
     {
       "name": "パチスロ 蒼天の拳4",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-soutennokobushi4-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-soutennokobushi4-index.html"
     },
     {
       "name": "パチスロ 魔法少女育成計画",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-mahoushoujoikuseikeikaku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-mahoushoujoikuseikeikaku-index.html"
     },
     {
       "name": "パチスロBOOWY",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroboowy-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroboowy-index.html"
     },
     {
       "name": "パチスロひぐらしのなく頃に祭2 カケラ遊び編",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurohigurashinonakugoronimatsuri2-kakeraasobihen-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurohigurashinonakugoronimatsuri2-kakeraasobihen-index.html"
     },
     {
       "name": "パチスロデビルメイクライ5",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurodebirumeikurai5-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurodebirumeikurai5-index.html"
     },
     {
       "name": "パチスロハードボイルド",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurohaadoboirudo-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurohaadoboirudo-index.html"
     },
     {
       "name": "パチスロバイオハザードRE:2",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurobaiohazaadore-2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurobaiohazaadore-2-index.html"
     },
     {
       "name": "パチスロペルソナ5",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroperusona5-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroperusona5-index.html"
     },
     {
       "name": "パチスロボンバーガール",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurobonbaagaaru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurobonbaagaaru-index.html"
     },
     {
       "name": "パチスロミクちゃんとイドムンのミラクルチャレンジ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuromikuchantoidomunnomirakurucharenji-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuromikuchantoidomunnomirakurucharenji-index.html"
     },
     {
       "name": "パチスロ春一番",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroharuichiban-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroharuichiban-index.html"
     },
     {
       "name": "パチスロ犬夜叉",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroinuyasha-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroinuyasha-index.html"
     },
     {
       "name": "パチスロ甲鉄城のカバネリ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokoutetsushironokabaneri-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokoutetsushironokabaneri-index.html"
     },
     {
       "name": "パチスロ真俺の空",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuromakotoorenosora-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuromakotoorenosora-index.html"
     },
     {
       "name": "パチスロ笑ゥせぇるすまん4",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurowaraiuseerusuman4-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurowaraiuseerusuman4-index.html"
     },
     {
       "name": "パチスロ聖闘士星矢 冥王復活",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurohijiritoushihoshiya-meioufukkatsu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurohijiritoushihoshiya-meioufukkatsu-index.html"
     },
     {
       "name": "パチスロ言い訳はさせないわよ by激壇蜜",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroiiwakehasasenaiwayo-bygekidanmitsu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroiiwakehasasenaiwayo-bygekidanmitsu-index.html"
     },
     {
       "name": "パチスロ這いよれ！ニャル子さん",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurohaiyore-nyarukosan-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurohaiyore-nyarukosan-index.html"
     },
     {
       "name": "パチスロ鉄拳4アルティメットデビルVer.",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurotekken4aruteimettodebiruver-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurotekken4aruteimettodebiruver-index.html"
     },
     {
       "name": "パチスロ鉄拳5",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurotekken5-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurotekken5-index.html"
     },
     {
       "name": "パチスロ閃乱カグラ BURST UP",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurosenrankagura-burst-up-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurosenrankagura-burst-up-index.html"
     },
     {
       "name": "パチスロ革命機ヴァルヴレイヴ",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokakumeikivaruvureivu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokakumeikivaruvureivu-index.html"
     },
     {
       "name": "メルヘンクエスト",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "meruhenkuesuto-index.html",
+      "toolStatus": "available",
+      "toolUrl": "meruhenkuesuto-index.html"
     },
     {
       "name": "ラストユートピア",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "rasutoyuutopia-index.html",
+      "toolStatus": "available",
+      "toolUrl": "rasutoyuutopia-index.html"
     },
     {
       "name": "ヴィーナスゾーン",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "viinasuzoon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "viinasuzoon-index.html"
     },
     {
       "name": "十字架5",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "juujika5-index.html",
+      "toolStatus": "available",
+      "toolUrl": "juujika5-index.html"
     },
     {
       "name": "南国物語-30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nangokumonogatari-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nangokumonogatari-30-index.html"
     },
     {
       "name": "押忍！番長ZERO",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "ounin-banchouzero-index.html",
+      "toolStatus": "available",
+      "toolUrl": "ounin-banchouzero-index.html"
     },
     {
       "name": "政宗 戦極",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "masamune-senkyoku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "masamune-senkyoku-index.html"
     },
     {
       "name": "新世紀エヴァンゲリオン～魂の共鳴～",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "shinseikievangerion-tamashiinokyoumei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "shinseikievangerion-tamashiinokyoumei-index.html"
     },
     {
       "name": "来雷エイサー30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "raikaminarieisaa30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "raikaminarieisaa30-index.html"
     },
     {
       "name": "沖ドキ！GOLD",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okidoki-gold-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okidoki-gold-index.html"
     },
     {
       "name": "沖ワニマル-25&30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okiwanimaru-25-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okiwanimaru-25-30-index.html"
     },
     {
       "name": "沖縄フェスティバル-30",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okinawafesuteibaru-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okinawafesuteibaru-30-index.html"
     },
     {
       "name": "花火絶景",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "hanabizekkei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hanabizekkei-index.html"
     },
     {
       "name": "超ギラギラ爺サマー",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "chougiragirajiisamaa-index.html",
+      "toolStatus": "available",
+      "toolUrl": "chougiragirajiisamaa-index.html"
     },
     {
       "name": "鬼浜爆走紅連隊 激闘謳歌編",
       "year": 2022,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "onihamabakusoukurenairentai-gekitououkahen-index.html",
+      "toolStatus": "available",
+      "toolUrl": "onihamabakusoukurenairentai-gekitououkahen-index.html"
     },
     {
       "name": "L エヴァンゲリオン ～未来への創造～",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "l-evangerion-miraihenosouzou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "l-evangerion-miraihenosouzou-index.html"
     },
     {
       "name": "L リングにかけろ 1 V",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L009 RE:CYBORG",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "l009-re-cyborg-index.html",
+      "toolStatus": "available",
+      "toolUrl": "l009-re-cyborg-index.html"
     },
     {
       "name": "Lゴブリンスレイヤー",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lgoburinsureiyaa-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lgoburinsureiyaa-index.html"
     },
     {
       "name": "Lベルセルク無双",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lberuserukumusou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lberuserukumusou-index.html"
     },
     {
       "name": "Lラブ嬢3～Wご指名はいかがですか？～",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lrabujou3-wgoshimeihaikagadesuka-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lrabujou3-wgoshimeihaikagadesuka-index.html"
     },
     {
       "name": "L主役は銭形4",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lshuyakuhazenigata4-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lshuyakuhazenigata4-index.html"
     },
     {
       "name": "L大工の源さん 超夢源",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "ldaikunogensan-chouyumegen-index.html",
+      "toolStatus": "available",
+      "toolUrl": "ldaikunogensan-chouyumegen-index.html"
     },
     {
       "name": "L戦国乙女4 戦乱に閃く炯眼の軍師",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lsengokuotome4-senrannihiramekukeigannogunshi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lsengokuotome4-senrannihiramekukeigannogunshi-index.html"
     },
     {
       "name": "L花の慶次～佐渡攻めの章",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lhananokeiji-sadosemenoshou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lhananokeiji-sadosemenoshou-index.html"
     },
     {
       "name": "S OZ1-AA-30",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "s-oz1-aa-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "s-oz1-aa-30-index.html"
     },
     {
       "name": "S 織田信奈の野望 全国版",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "s-odashinnanoyabou-zenkokuban-index.html",
+      "toolStatus": "available",
+      "toolUrl": "s-odashinnanoyabou-zenkokuban-index.html"
     },
     {
       "name": "SLOTメイドインアビス",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slotmeidoin-abisu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slotmeidoin-abisu-index.html"
     },
     {
       "name": "Sスロドル",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "ssurodoru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "ssurodoru-index.html"
     },
     {
       "name": "SモモキュンソードDX",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "smomokyunsoododx-index.html",
+      "toolStatus": "available",
+      "toolUrl": "smomokyunsoododx-index.html"
     },
     {
       "name": "S大花満",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "soohanaman-index.html",
+      "toolStatus": "available",
+      "toolUrl": "soohanaman-index.html"
     },
     {
       "name": "ぱちスロ にゃんこ大戦争 BIGBANG",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-nyankodaisensou-bigbang-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-nyankodaisensou-bigbang-index.html"
     },
     {
       "name": "ぱちスロ 乃木坂46",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-nogizaka46-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-nogizaka46-index.html"
     },
     {
       "name": "もっとチバリヨ-25",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "mottochibariyo-25-index.html",
+      "toolStatus": "available",
+      "toolUrl": "mottochibariyo-25-index.html"
     },
     {
       "name": "アナザーゴッドハーデス-解き放たれし槍撃ver.",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "anazaagoddohaadesu-tokihouttareshiyarigekiver-index.html",
+      "toolStatus": "available",
+      "toolUrl": "anazaagoddohaadesu-tokihouttareshiyarigekiver-index.html"
     },
     {
       "name": "ウルトラちゃぶ台返し",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "urutorachabudaikaeshi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "urutorachabudaikaeshi-index.html"
     },
     {
       "name": "キングハナハナ-30",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "kinguhanahana-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kinguhanahana-30-index.html"
     },
     {
       "name": "クランキークレスト",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "crankycrest-index.html",
+      "toolStatus": "available",
+      "toolUrl": "crankycrest-index.html"
     },
     {
       "name": "ゴーゴージャグラー3",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "googoojaguraa3-index.html",
+      "toolStatus": "available",
+      "toolUrl": "googoojaguraa3-index.html"
     },
     {
       "name": "ジャベリン",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "jaberin-index.html",
+      "toolStatus": "available",
+      "toolUrl": "jaberin-index.html"
     },
     {
       "name": "スマスロ バイオハザード:ヴェンデッタ",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-baiohazaado-vendetta-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-baiohazaado-vendetta-index.html"
     },
     {
       "name": "スマスロ 戦国BASARA GIGA",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-sengokubasara-giga-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-sengokubasara-giga-index.html"
     },
     {
       "name": "スマスロとある魔術の禁書目録",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurotoarumajutsunokinshomokuroku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurotoarumajutsunokinshomokuroku-index.html"
     },
     {
       "name": "スマスロキン肉マン～7人の悪魔超人編～",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurokinnikuman-7ninnoakumachoujinhen-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurokinnikuman-7ninnoakumachoujinhen-index.html"
     },
     {
       "name": "スマスロバジリスク～甲賀忍法帖～絆2 天膳 BLACK EDITION",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurobajirisuku-koukaninpouchou-kizuna2-tenzen-black-edition-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurobajirisuku-koukaninpouchou-kizuna2-tenzen-black-edition-index.html"
     },
     {
       "name": "スマスロモンキーターンV",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ劇場版 魔法少女まどか☆マギカf-フォルテ",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurogekijouban-mahoushoujomadoka-magikaf-forute-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurogekijouban-mahoushoujomadoka-magikaf-forute-index.html"
     },
     {
       "name": "スマスロ北斗の拳",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurohokutonoken-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurohokutonoken-index.html"
     },
     {
       "name": "スマスロ転生したらスライムだった件",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurotenshoushitarasuraimudattaken-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurotenshoushitarasuraimudattaken-index.html"
     },
     {
       "name": "スロット ソードアート・オンライン",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "surotto-soodoaato-onrain-index.html",
+      "toolStatus": "available",
+      "toolUrl": "surotto-soodoaato-onrain-index.html"
     },
     {
       "name": "スーハナライジング-30",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "suuhanaraijingu-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "suuhanaraijingu-30-index.html"
     },
     {
       "name": "スーパービンゴネオクラシック",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "suupaabingoneokurashikku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "suupaabingoneokurashikku-index.html"
     },
     {
       "name": "スーパービンゴネオクラシック-30",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "suupaabingoneokurashikku-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "suupaabingoneokurashikku-30-index.html"
     },
     {
       "name": "デジスロ JAC IN バージョン",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "dejisuro-jac-in-baajon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "dejisuro-jac-in-baajon-index.html"
     },
     {
       "name": "ドラゴンハナハナ～閃光～-30",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "doragonhanahana-senkou-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "doragonhanahana-senkou-30-index.html"
     },
     {
       "name": "ニューシオサイ",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "newshiosai-index.html",
+      "toolStatus": "available",
+      "toolUrl": "newshiosai-index.html"
     },
     {
       "name": "パチスロ からくりサーカス",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-karakurisaakasu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-karakurisaakasu-index.html"
     },
     {
       "name": "パチスロ ケンガンアシュラ",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-kengan-ashura-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-kengan-ashura-index.html"
     },
     {
       "name": "パチスロ モンスターハンターワールド：アイスボーン",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-monsutaahantaawaarudo-aisuboon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-monsutaahantaawaarudo-aisuboon-index.html"
     },
     {
       "name": "パチスロ 戦国†恋姫",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-sengoku-koihime-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-sengoku-koihime-index.html"
     },
     {
       "name": "パチスロ 戦国無双3M",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-sengokumusou3m-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-sengokumusou3m-index.html"
     },
     {
       "name": "パチスロ 探偵オペラ ミルキィホームズＲ 大収穫祭!!!!",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-tanteiopera-mirukiihoomuzur-daishuukakumatsuri-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-tanteiopera-mirukiihoomuzur-daishuukakumatsuri-index.html"
     },
     {
       "name": "パチスロ 緋弾のアリアII",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-hidannoariaii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-hidannoariaii-index.html"
     },
     {
       "name": "パチスロ 蛇喰夢子という女",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-jabamiyumekotoiuonna-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-jabamiyumekotoiuonna-index.html"
     },
     {
       "name": "パチスロOVERLORD絶対支配者光臨II",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurooverlordzettaishihaishakourinii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurooverlordzettaishihaishakourinii-index.html"
     },
     {
       "name": "パチスロコードギアス反逆のルルーシュ3 C.C.&Kallen ver.",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokoodogiasuhangyakunoruruushu3-c-c-kallen-ver-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokoodogiasuhangyakunoruruushu3-c-c-kallen-ver-index.html"
     },
     {
       "name": "パチスロファイヤードリフト",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurofaiyaadorifuto-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurofaiyaadorifuto-index.html"
     },
     {
       "name": "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO TYPE-ART",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokoukyoushiheneurekasebun-hi-evolution-zero-type-art-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokoukyoushiheneurekasebun-hi-evolution-zero-type-art-index.html"
     },
     {
       "name": "パチスロ傷物語-始マリノ刻",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokizumonogo-shimarinokoku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokizumonogo-shimarinokoku-index.html"
     },
     {
       "name": "パチスロ機動戦士ガンダムユニコーン",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokidousenshigandamuyunikoon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokidousenshigandamuyunikoon-index.html"
     },
     {
       "name": "パチスロ炎炎ノ消防隊",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurohonoohonoonoshouboutai-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurohonoohonoonoshouboutai-index.html"
     },
     {
       "name": "パチスロ琉神－30 スイカバージョン",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuroryuukami-30-suikabaajon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuroryuukami-30-suikabaajon-index.html"
     },
     {
       "name": "パチスロ盾の勇者の成り上がり",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurotatenoyuushanonariagari-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurotatenoyuushanonariagari-index.html"
     },
     {
       "name": "ファミスタ回胴版!!",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "famisutakaidouhan-index.html",
+      "toolStatus": "available",
+      "toolUrl": "famisutakaidouhan-index.html"
     },
     {
       "name": "マジカルハロウィン8",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "magicalhalloween8-index.html",
+      "toolStatus": "available",
+      "toolUrl": "magicalhalloween8-index.html"
     },
     {
       "name": "回胴式遊技機 グランベルム",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "kaidoushikiyuugiki-guranberumu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kaidoushikiyuugiki-guranberumu-index.html"
     },
     {
       "name": "戦国コレクション5",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sengokukorekushon5-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sengokukorekushon5-index.html"
     },
     {
       "name": "戦国コレクション５超極楽ＬＯＯＰ",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sengokukorekushon5chougokurakuloop-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sengokukorekushon5chougokurakuloop-index.html"
     },
     {
       "name": "燃えチバ-30",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "moechiba-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "moechiba-30-index.html"
     },
     {
       "name": "真天下布武",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "makototenkafubu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "makototenkafubu-index.html"
     },
     {
       "name": "課長 熊田工作",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "kachou-kumadakousaku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kachou-kumadakousaku-index.html"
     },
     {
       "name": "防空少女ラブキューレ2〜極限の共鳴〜",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "boukuushoujorabukyuure2-kyokugennokyoumei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "boukuushoujorabukyuure2-kyokugennokyoumei-index.html"
     },
     {
       "name": "麻雀格闘倶楽部 覚醒",
       "year": 2023,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "maajankakutoukurabu-kakusei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "maajankakutoukurabu-kakusei-index.html"
     },
     {
       "name": "A-SLOT+ この素晴らしい世界に祝福を！",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "a-slot-konosubarashiisekainishukufukuwo-index.html",
+      "toolStatus": "available",
+      "toolUrl": "a-slot-konosubarashiisekainishukufukuwo-index.html"
     },
     {
       "name": "L D4DJ Pachi-Slot Mix",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "l-d4dj-pachi-slot-mix-index.html",
+      "toolStatus": "available",
+      "toolUrl": "l-d4dj-pachi-slot-mix-index.html"
     },
     {
       "name": "L ToLOVEるダークネス",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "toloveru-darkness-index.html",
+      "toolStatus": "available",
+      "toolUrl": "toloveru-darkness-index.html"
     },
     {
       "name": "L アカメが斬る！2",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "l-akamegakiru-2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "l-akamegakiru-2-index.html"
     },
     {
       "name": "L ウルトラマンティガ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "l-urutoramanteiga-index.html",
+      "toolStatus": "available",
+      "toolUrl": "l-urutoramanteiga-index.html"
     },
     {
       "name": "L 仮面ライダー 7RIDERS",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "l-kamenraidaa-7riders-index.html",
+      "toolStatus": "available",
+      "toolUrl": "l-kamenraidaa-7riders-index.html"
     },
     {
       "name": "L 新・必殺仕置人 回胴 CRASH SPEC",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "shikoten-index.html",
+      "toolStatus": "available",
+      "toolUrl": "shikoten-index.html"
     },
     {
       "name": "L 無職転生 ～異世界行ったら本気だす～",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "mushokutensei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "mushokutensei-index.html"
     },
     {
       "name": "L 真・一騎当千",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Lうる星やつら",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "luruhoshiyatsura-index.html",
+      "toolStatus": "available",
+      "toolUrl": "luruhoshiyatsura-index.html"
     },
     {
       "name": "Lストライクウィッチーズ2",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lsutoraikuuitchiizu2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lsutoraikuuitchiizu2-index.html"
     },
     {
       "name": "Lスーパービンゴネオ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "superbingoneo-index.html",
+      "toolStatus": "available",
+      "toolUrl": "superbingoneo-index.html"
     },
     {
       "name": "Lダブルアタック2 withOZS-1000＆RAPHAEL",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "doubleattack2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "doubleattack2-index.html"
     },
     {
       "name": "Lダンベル何キロ持てる？",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "dumbbell-index.html",
+      "toolStatus": "available",
+      "toolUrl": "dumbbell-index.html"
     },
     {
       "name": "Lバンドリ！",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "bangdream-index.html",
+      "toolStatus": "available",
+      "toolUrl": "bangdream-index.html"
     },
     {
       "name": "Lパチスロ かぐや様は告らせたい",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lpachisuro-kaguyasamahakokurasetai-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lpachisuro-kaguyasamahakokurasetai-index.html"
     },
     {
       "name": "Lパチスロ マクロスフロンティア4",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lpachisuro-makurosufuronteia4-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lpachisuro-makurosufuronteia4-index.html"
     },
     {
       "name": "Lパチスロ 炎炎ノ消防隊",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lpachisuro-honoohonoonoshouboutai-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lpachisuro-honoohonoonoshouboutai-index.html"
     },
     {
       "name": "Lパチスロガールズ＆パンツァー 最終章",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lpachisurogaaruzu-pantsuaa-saishuushou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lpachisurogaaruzu-pantsuaa-saishuushou-index.html"
     },
     {
       "name": "Lパチスロ戦姫絶唱シンフォギア 正義の歌",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lpachisurosenhimezesshoushinfogia-seiginouta-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lpachisurosenhimezesshoushinfogia-seiginouta-index.html"
     },
     {
       "name": "Lパチスロ閃乱カグラ2 SHINOVI MASTER",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lpachisurosenrankagura2-shinovi-master-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lpachisurosenrankagura2-shinovi-master-index.html"
     },
     {
       "name": "Lルパン三世 大航海者の秘宝",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Lワンパンマン",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "onepunchman-index.html",
+      "toolStatus": "available",
+      "toolUrl": "onepunchman-index.html"
     },
     {
       "name": "L不二子BT",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L南国育ち",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nangoku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nangoku-index.html"
     },
     {
       "name": "L聖闘士星矢海皇覚醒CUSTOM EDITION",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lhijiritoushihoshiyakaioukakuseicustom-edition-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lhijiritoushihoshiyakaioukakuseicustom-edition-index.html"
     },
     {
       "name": "SLOT忍者じゃじゃ丸くん",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "slotninjajajamarukun-index.html",
+      "toolStatus": "available",
+      "toolUrl": "slotninjajajamarukun-index.html"
     },
     {
       "name": "Sky Love",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sky-love-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sky-love-index.html"
     },
     {
       "name": "Sバハマ30",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sbahama30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sbahama30-index.html"
     },
     {
       "name": "アオハル♪操 A-LIVE",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "ウルトラミラクルジャグラー",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "ultramj-index.html",
+      "toolStatus": "available",
+      "toolUrl": "ultramj-index.html"
     },
     {
       "name": "キングクリエーター30",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "kingcreator30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kingcreator30-index.html"
     },
     {
       "name": "ジャグラーガールズSS",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "jugglergirls-index.html",
+      "toolStatus": "available",
+      "toolUrl": "jugglergirls-index.html"
     },
     {
       "name": "スマスロ ゲゲゲの鬼太郎 覚醒",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-gegegenokitarou-kakusei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-gegegenokitarou-kakusei-index.html"
     },
     {
       "name": "スマスロ コードギアス 反逆のルルーシュ／復活のルルーシュ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-koodogiasu-hangyakunoruruushu-fukkatsunoruruushu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-koodogiasu-hangyakunoruruushu-fukkatsunoruruushu-index.html"
     },
     {
       "name": "スマスロ ゴッドイーター リザレクション",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-goddoiitaa-rizarekushon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-goddoiitaa-rizarekushon-index.html"
     },
     {
       "name": "スマスロ ゴールデンカムイ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "goldenkamuy-index.html",
+      "toolStatus": "available",
+      "toolUrl": "goldenkamuy-index.html"
     },
     {
       "name": "スマスロ ストライク・ザ・ブラッド",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-sutoraiku-za-buraddo-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-sutoraiku-za-buraddo-index.html"
     },
     {
       "name": "スマスロ ストリートファイターV 挑戦者の道",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-sutoriitofaitaav-chousenshanomichi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-sutoriitofaitaav-chousenshanomichi-index.html"
     },
     {
       "name": "スマスロ トロピカーナ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ バイオハザードヴィレッジ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-baiohazaadovirejji-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-baiohazaadovirejji-index.html"
     },
     {
       "name": "スマスロ モンスターハンターライズ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-monsutaahantaaraizu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-monsutaahantaaraizu-index.html"
     },
     {
       "name": "スマスロ 一方通行 とある魔術の禁書目録",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ 沖ドキ！DUO アンコール",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okidoki-duo-encore-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okidoki-duo-encore-index.html"
     },
     {
       "name": "スマスロ 秘宝伝",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ 聖戦士ダンバイン",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ 鬼武者3",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロキングパルサー",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurokinguparusaa-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurokinguparusaa-index.html"
     },
     {
       "name": "スマスロ交響詩篇エウレカセブン4 HI-EVOLUTION",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurokoukyoushiheneurekasebun4-hi-evolution-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurokoukyoushiheneurekasebun4-hi-evolution-index.html"
     },
     {
       "name": "スマスロ痛いのは嫌なので防御力に極振りしたいと思います。",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuroitainohaiyananodebougyoryokunikyokufurishitaitoomoimasu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuroitainohaiyananodebougyoryokunikyokufurishitaitoomoimasu-index.html"
     },
     {
       "name": "スマスロ真・北斗無双",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "hokutomusou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hokutomusou-index.html"
     },
     {
       "name": "スマスロ頭文字D 2nd",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "initiald2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "initiald2-index.html"
     },
     {
       "name": "スマート沖スロ ドラゴンハナハナ～閃光～",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumaatookisuro-doragonhanahana-senkou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumaatookisuro-doragonhanahana-senkou-index.html"
     },
     {
       "name": "スマート沖スロ 超華祭",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumaatookisuro-chouhanamatsuri-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumaatookisuro-chouhanamatsuri-index.html"
     },
     {
       "name": "スロット Re:ゼロから始める異世界生活 season2",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "surotto-re-zerokarahajimeruisekaiseikatsu-season2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "surotto-re-zerokarahajimeruisekaiseikatsu-season2-index.html"
     },
     {
       "name": "スロット ゾンビランドサガ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "surotto-zonbirandosaga-index.html",
+      "toolStatus": "available",
+      "toolUrl": "surotto-zonbirandosaga-index.html"
     },
     {
       "name": "チバリヨ２",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "chibariyo2-2024-index.html",
+      "toolStatus": "available",
+      "toolUrl": "chibariyo2-2024-index.html"
     },
     {
       "name": "トリプルクラウンフォーユー",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "triplecrown4u-index.html",
+      "toolStatus": "available",
+      "toolUrl": "triplecrown4u-index.html"
     },
     {
       "name": "ドラゴンハナハナ～閃光～",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "dragonhanahana-index.html",
+      "toolStatus": "available",
+      "toolUrl": "dragonhanahana-index.html"
     },
     {
       "name": "ニューパルサーSP4 with 太鼓の達人",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nyuuparusaasp4-with-taikonotatsujin-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nyuuparusaasp4-with-taikonotatsujin-index.html"
     },
     {
       "name": "パチスロ ガメラ2",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-gamera2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-gamera2-index.html"
     },
     {
       "name": "パチスロ ダンジョンに出会いを求めるのは間違っているだろうか2",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisuro-danjonnideaiwomotomerunohamachigatsuteirudarouka2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisuro-danjonnideaiwomotomerunohamachigatsuteirudarouka2-index.html"
     },
     {
       "name": "パチスロL黄門ちゃま天",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurolkoumonchamaten-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurolkoumonchamaten-index.html"
     },
     {
       "name": "パチスロ武装神姫",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurobusoushinki-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurobusoushinki-index.html"
     },
     {
       "name": "パチスロ金のかぼちゃ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "pachisurokinnokabocha-index.html",
+      "toolStatus": "available",
+      "toolUrl": "pachisurokinnokabocha-index.html"
     },
     {
       "name": "ミスタージャグラー",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "mister-juggler-index.html",
+      "toolStatus": "available",
+      "toolUrl": "mister-juggler-index.html"
     },
     {
       "name": "ワードオブライツII",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "waadooburaitsuii-index.html",
+      "toolStatus": "available",
+      "toolUrl": "waadooburaitsuii-index.html"
     },
     {
       "name": "今日から俺は!! パチスロ編",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "kyoukaraoreha-pachisurohen-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kyoukaraoreha-pachisurohen-index.html"
     },
     {
       "name": "吉宗ＲＩＳＩＮＧ",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "yoshimunerising-index.html",
+      "toolStatus": "available",
+      "toolUrl": "yoshimunerising-index.html"
     },
     {
       "name": "忍魂参 ～奥義皆伝ノ章～",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "nintamashiisan-ougikaidennoshou-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nintamashiisan-ougikaidennoshou-index.html"
     },
     {
       "name": "押忍！番長4",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "桃太郎電鉄 ～パチスロも定番！～",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "沖シーサー -30",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okishiisaa-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okishiisaa-30-index.html"
     },
     {
       "name": "沖ドキ！BLACK",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okidoki-black-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okidoki-black-index.html"
     },
     {
       "name": "沖ドキ！ゴージャス（25φ）",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okidoki-goojasu-25phi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okidoki-goojasu-25phi-index.html"
     },
     {
       "name": "沖ドキ！ゴージャス（30φ）",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okidoki-goojasu-30phi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okidoki-goojasu-30phi-index.html"
     },
     {
       "name": "賞金首Angel",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "shokinkubi-angel-index.html",
+      "toolStatus": "available",
+      "toolUrl": "shokinkubi-angel-index.html"
     },
     {
       "name": "Ｌ 犬夜叉2",
       "year": 2024,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "l-inuyasha2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "l-inuyasha2-index.html"
     },
     {
       "name": "A-SLOT+ ディスクアップ ULTRAREMIX",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L ToLOVEるダークネス TRANCE ver.8.7",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "toloveru-darkness-index.html",
+      "toolStatus": "available",
+      "toolUrl": "toloveru-darkness-index.html"
     },
     {
       "name": "L ULTRAMAN",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "ultraman-index.html",
+      "toolStatus": "available",
+      "toolUrl": "ultraman-index.html"
     },
     {
       "name": "L にゃんこ大戦争 超神速",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L アズールレーン THE ANIMATION",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L サラリーマン金太郎",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L ダーリン・イン・ザ・フランキス",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L 仮面ライダー電王",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L 少女☆歌劇 レヴュースタァライト -The SLOT",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "revuestarlight-index.html",
+      "toolStatus": "available",
+      "toolUrl": "revuestarlight-index.html"
     },
     {
       "name": "L 無職転生 ～異世界行ったら本気だす～",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "mushokutensei-index.html",
+      "toolStatus": "available",
+      "toolUrl": "mushokutensei-index.html"
     },
     {
       "name": "L 絶対衝激IV",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L 絶対衝激～PLATONIC HEART～",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L 荒野のコトブキ飛行隊",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "LBジャックポット",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "LBトリプルクラウン",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "LBパチスロ ヱヴァンゲリヲン ～約束の扉～",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "LBパチスロ1000ちゃんA",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "1000chan-a-index.html",
+      "toolStatus": "available",
+      "toolUrl": "1000chan-a-index.html"
     },
     {
       "name": "LBプレミアムうまい棒",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Lいざ！番長",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Lうしおととら白面決戦VH",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "lushiototorashirafukessenvh-index.html",
+      "toolStatus": "available",
+      "toolUrl": "lushiototorashirafukessenvh-index.html"
     },
     {
       "name": "Lゴジラ",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Lパチスロ ありふれた職業で世界最強",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Lパチスロ シン・エヴァンゲリオン",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Lパチスロ 機動戦士ガンダムSEED",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Lパチスロ 革命機ヴァルヴレイヴ2",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L不二子BT",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L主役は銭形5",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L咲-Saki-頂上決戦",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L島娘",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L転生したら剣でした",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "L麻雀物語",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "SHAKE BONUS TRIGGER",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "SLOT ドルアーガの塔",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "Sister Quest",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sister-quest-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sister-quest-index.html"
     },
     {
       "name": "てぃだどんどん",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "teidadondon-index.html",
+      "toolStatus": "available",
+      "toolUrl": "teidadondon-index.html"
     },
     {
       "name": "わたしの幸せな結婚",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "アレックス ブライト",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "クレアの秘宝伝 ～はじまりの扉と太陽の石～ ボーナストリガーver.",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "kureanohihouden-hajimarinotobiratotaiyounoishi-boonasutorigaaver-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kureanohihouden-hajimarinotobiratotaiyounoishi-boonasutorigaaver-index.html"
     },
     {
       "name": "スターハナハナ-30",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sutaahanahana-30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sutaahanahana-30-index.html"
     },
     {
       "name": "スマスロ とある科学の超電磁砲2",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ ようこそ実力至上主義の教室へ",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-youkosojitsuryokushijoushuginokyoushitsuhe-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-youkosojitsuryokushijoushuginokyoushitsuhe-index.html"
     },
     {
       "name": "スマスロ アイドルマスター ミリオンライブ！ネクストプロローグ",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-aidorumasutaa-mirionraibu-nekusutopuroroogu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-aidorumasutaa-mirionraibu-nekusutopuroroogu-index.html"
     },
     {
       "name": "スマスロ ギルティクラウン2",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-giruteikuraun2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-giruteikuraun2-index.html"
     },
     {
       "name": "スマスロ シャーマンキング",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-shaamankingu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-shaamankingu-index.html"
     },
     {
       "name": "スマスロ デビル メイ クライ 5 スタイリッシュトライブ",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-debiru-mei-kurai-5-sutairisshutoraibu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-debiru-mei-kurai-5-sutairisshutoraibu-index.html"
     },
     {
       "name": "スマスロ ドルアーガの塔",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ バイオハザード5",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-baiohazaado5-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-baiohazaado5-index.html"
     },
     {
       "name": "スマスロ バベル",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ マギアレコード魔法少女まどか☆マギカ外伝",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-magiarekoodomahoushoujomadoka-magikagaiden-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-magiarekoodomahoushoujomadoka-magikagaiden-index.html"
     },
     {
       "name": "スマスロ 化物語",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "bakemonogatari-index.html",
+      "toolStatus": "available",
+      "toolUrl": "bakemonogatari-index.html"
     },
     {
       "name": "スマスロ 新鬼武者3",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ 東京リベンジャーズ",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ 沖ドキ！DUO アンコール",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "okidoki-duo-encore-index.html",
+      "toolStatus": "available",
+      "toolUrl": "okidoki-duo-encore-index.html"
     },
     {
       "name": "スマスロ 秘宝伝",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ 緑ドン VIVA!情熱南米編 REVIVAL",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasuro-midoridon-viva-jounetsunanbeihen-revival-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasuro-midoridon-viva-jounetsunanbeihen-revival-index.html"
     },
     {
       "name": "スマスロスーパーブラックジャック",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumasurosuupaaburakkujakku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumasurosuupaaburakkujakku-index.html"
     },
     {
       "name": "スマスロニューパルサーBT",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロネオプラネット",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "スマート沖スロ アメイジングライブ",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "sumaatookisuro-ameijinguraibu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "sumaatookisuro-ameijinguraibu-index.html"
     },
     {
       "name": "スマート沖スロ スターハナハナ",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "starhanahana-index.html",
+      "toolStatus": "available",
+      "toolUrl": "starhanahana-index.html"
     },
     {
       "name": "チバリヨ2プラス",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "ネオアイムジャグラーEX",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "ハイビリターン-30",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "バーニングエクスプレス",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "パチスロなめ猫",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "プリズムナナ",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "マジカルハロウィン ボーナストリガー",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "マタドールIII",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "七つの魔剣が支配する",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "吉宗",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "回胴黙示録カイジ 狂宴",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "翔べ！ハーレムエース",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "tobe-haaremueesu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "tobe-haaremueesu-index.html"
     },
     {
       "name": "花笠",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "file": "karyuu-index.html",
+      "toolStatus": "available",
+      "toolUrl": "karyuu-index.html"
     },
     {
       "name": "銀河英雄伝説 Die Neue These",
       "year": 2025,
-      "source": "existing-master-list"
+      "source": "existing-master-list",
+      "toolStatus": "pending"
     },
     {
       "name": "A-SLOT+ 異世界かるてっと BT",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "aslot-isekaiquartet-index.html",
+      "toolStatus": "available",
+      "toolUrl": "aslot-isekaiquartet-index.html"
+    },
+    {
+      "name": "L 邪神ちゃんドロップキック",
+      "year": 2026,
+      "source": "repository-page",
+      "file": "jashin-index.html",
+      "toolStatus": "available",
+      "toolUrl": "jashin-index.html"
     },
     {
       "name": "LBスロットGALFY",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "galfy-index.html",
+      "toolStatus": "available",
+      "toolUrl": "galfy-index.html"
     },
     {
       "name": "Lすーぱぁびん娘",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "superbin-index.html",
+      "toolStatus": "available",
+      "toolUrl": "superbin-index.html"
     },
     {
       "name": "Lアクダマドライブ",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "akudama-index.html",
+      "toolStatus": "available",
+      "toolUrl": "akudama-index.html"
     },
     {
       "name": "Lタクトオーパス デスティニー",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "takt-opus-index.html",
+      "toolStatus": "available",
+      "toolUrl": "takt-opus-index.html"
     },
     {
       "name": "Lパチスロ うみねこのなく頃に2",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "umineko2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "umineko2-index.html"
     },
     {
       "name": "Lパチスロ からくりサーカス2",
       "year": 2026,
       "source": "repository-page",
-      "file": "karakuri2-index.html"
+      "file": "karakuri2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "karakuri2-index.html"
     },
     {
       "name": "Lパチスロ 喰霊‐零‐Re",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "toolStatus": "pending"
     },
     {
       "name": "Lパチスロ 炎炎ノ消防隊2",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "enen2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "enen2-index.html"
     },
     {
       "name": "L南国育ちSPECIAL",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "nangoku-special-index.html",
+      "toolStatus": "available",
+      "toolUrl": "nangoku-special-index.html"
     },
     {
       "name": "L戦国乙女5",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "toolStatus": "pending"
     },
     {
       "name": "L戦国乙女5 業火を穿つ宿焔の双刃",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "toolStatus": "pending"
     },
     {
       "name": "L範馬刃牙",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "hanmabataki-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hanmabataki-index.html"
     },
     {
       "name": "L虚構推理",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "kyokoshisuiri-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kyokoshisuiri-index.html"
     },
     {
       "name": "ULTRAMAN 最終決戦",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "ultraman-final-index.html",
+      "toolStatus": "available",
+      "toolUrl": "ultraman-final-index.html"
     },
     {
       "name": "アニマルスロットドッチ",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "animal-slot-docchi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "animal-slot-docchi-index.html"
     },
     {
       "name": "ガンダムユニコーン 覚醒DRIVE",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "gundam-unicorn-drive-index.html",
+      "toolStatus": "available",
+      "toolUrl": "gundam-unicorn-drive-index.html"
     },
     {
       "name": "スマスロ BIRDIE WING",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "birdiewing-index.html",
+      "toolStatus": "available",
+      "toolUrl": "birdiewing-index.html"
     },
     {
       "name": "スマスロ とある魔術の禁書目録2",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "toaru-index.html",
+      "toolStatus": "available",
+      "toolUrl": "toaru-index.html"
     },
     {
       "name": "スマスロ とんでもスキルで異世界放浪メシ",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "tondemo-skill-index.html",
+      "toolStatus": "available",
+      "toolUrl": "tondemo-skill-index.html"
     },
     {
       "name": "スマスロ やじきた道中記参る！",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "yajikita-index.html",
+      "toolStatus": "available",
+      "toolUrl": "yajikita-index.html"
     },
     {
       "name": "スマスロ ゴブリンスレイヤーII",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "goblinslayer2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "goblinslayer2-index.html"
     },
     {
       "name": "スマスロ サンダーV",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "thunderv-index.html",
+      "toolStatus": "available",
+      "toolUrl": "thunderv-index.html"
     },
     {
       "name": "スマスロ ストリートファイター6",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "streetfighter6-index.html",
+      "toolStatus": "available",
+      "toolUrl": "streetfighter6-index.html"
     },
     {
       "name": "スマスロ ハナビ",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "hanabi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hanabi-index.html"
     },
     {
       "name": "スマスロ バイオハザードRE:3",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "bio-re3-index.html",
+      "toolStatus": "available",
+      "toolUrl": "bio-re3-index.html"
     },
     {
       "name": "スマスロ ビッグドリーム THE GOLDEN PUSHER",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "bigdream-golden-pusher-index.html",
+      "toolStatus": "available",
+      "toolUrl": "bigdream-golden-pusher-index.html"
     },
     {
       "name": "スマスロ ミリオンゴッド‐神々の軌跡‐",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "toolStatus": "pending"
     },
     {
       "name": "スマスロ ヨルムンガンド",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "yormungand-index.html",
+      "toolStatus": "available",
+      "toolUrl": "yormungand-index.html"
     },
     {
       "name": "スマスロ 北斗の拳 転生の章2",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "hokutotensei2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "hokutotensei2-index.html"
     },
     {
       "name": "スマスロ 攻殻機動隊",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "koukaku-index.html",
+      "toolStatus": "available",
+      "toolUrl": "koukaku-index.html"
     },
     {
       "name": "スマスロケロット5BT",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "kerotto5bt-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kerotto5bt-index.html"
     },
     {
       "name": "スマスロスーパーリオエース2",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "superrioace2-index.html",
+      "toolStatus": "available",
+      "toolUrl": "superrioace2-index.html"
     },
     {
       "name": "スマスロ鉄拳6",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "tekken6-index.html",
+      "toolStatus": "available",
+      "toolUrl": "tekken6-index.html"
     },
     {
       "name": "スマート沖スロ ダークハイビ",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "darkhaibi-index.html",
+      "toolStatus": "available",
+      "toolUrl": "darkhaibi-index.html"
     },
     {
       "name": "スマート沖スロ ニューキングハナハナV",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "newkinghanahana-v-index.html",
+      "toolStatus": "available",
+      "toolUrl": "newkinghanahana-v-index.html"
     },
     {
       "name": "スロット ソードアート・オンラインII",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "surotto-soodoaato-onrain-index.html",
+      "toolStatus": "available",
+      "toolUrl": "surotto-soodoaato-onrain-index.html"
     },
     {
       "name": "スロット ワールドダイスター",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "world-dai-star-index.html",
+      "toolStatus": "available",
+      "toolUrl": "world-dai-star-index.html"
     },
     {
       "name": "ニューキングハナハナV-30",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "newkinghanahana-v30-index.html",
+      "toolStatus": "available",
+      "toolUrl": "newkinghanahana-v30-index.html"
     },
     {
       "name": "ローティス",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "file": "rotis-index.html",
+      "toolStatus": "available",
+      "toolUrl": "rotis-index.html"
     },
     {
       "name": "甲鉄城のカバネリ 海門決戦",
       "year": 2026,
-      "source": "git-history"
+      "source": "git-history",
+      "file": "kabaneri-unato-index.html",
+      "toolStatus": "available",
+      "toolUrl": "kabaneri-unato-index.html"
     },
     {
       "name": "真打 吉宗",
       "year": 2026,
-      "source": "git-history"
-    },
-    {
-      "name": "設定予測",
-      "year": 2026,
-      "source": "repository-page",
-      "file": "jashin-index.html"
+      "source": "git-history",
+      "file": "shinuchi-yoshimune-index.html",
+      "toolStatus": "available",
+      "toolUrl": "shinuchi-yoshimune-index.html"
     },
     {
       "name": "Ｌ ULTRAMAN 最終決戦",
       "year": 2026,
-      "source": "portal-pending"
+      "source": "portal-pending",
+      "toolStatus": "pending"
     }
   ]
 }
