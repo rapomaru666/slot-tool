@@ -10,11 +10,14 @@ function existingNameKeys(){return new Set([...container.querySelectorAll('.tool
 function addMasterTool(row){
   const name=String(row.name||'').trim(); if(!name)return;
   const keys=existingNameKeys(); if(keys.has(keyName(name)))return;
-  const available=row.toolStatus==='available' && row.file;
+  const isMonkey=name==='スマスロモンキーターンV';
+  const monkeyFile='monkeyturn5-index.html';
+  const available=isMonkey||(row.toolStatus==='available' && row.file);
+  const file=isMonkey?monkeyFile:row.file;
   const ghoulBase=!!row.ghoulBase;
   const a=document.createElement('a');
   a.className='tool'; a.dataset.machine=name; a.dataset.status=available?'available':'pending'; a.dataset.ghoulBase=ghoulBase?'1':'0';
-  a.href=available?BASE+row.file:'#';
+  a.href=available?BASE+file:'#';
   const year=row.year||'';
   const statusTag=available?(ghoulBase?'喰種ベース':'設定判別'):'作成中';
   a.innerHTML='<span class="new">'+esc(year)+'</span><div class="machine">'+esc(labelName(name))+'<br><b>777</b></div><h3>'+esc(name)+'</h3><p>'+(available?'設定判別ツール':'作成中....')+'</p><div class="tags"><i>'+esc(year)+'年</i><i>'+statusTag+'</i></div><button>'+(available?'使う　›':'作成中')+'</button>';
@@ -55,4 +58,4 @@ boot();
 
 const input=document.getElementById('search');const btn=document.getElementById('searchBtn');
 function search(){const q=input.value.trim().toLowerCase();const tools=[...document.querySelectorAll('.tool')];if(!q){loadRecommended();document.getElementById('tools').scrollIntoView({behavior:'smooth'});return}let found=0;tools.forEach(t=>{const hit=t.textContent.toLowerCase().includes(q);t.style.display=hit?'block':'none';if(hit)found++});document.getElementById('tools').scrollIntoView({behavior:'smooth'});if(!found)alert('該当するツールがありません。')}
-btn.addEventListener('click',search);input.addEventListener('keydown',e=>{if(e.key==='Enter')search()});input.addEventListener('input',()=>{if(!input.value.trim())loadRecommended()});
+btn.addEventListener('click',search);input.addEventListener('keydown',e=>{if(e.key==='Enter')search});input.addEventListener('input',()=>{if(!input.value.trim())loadRecommended()});
