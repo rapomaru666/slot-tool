@@ -11,11 +11,13 @@ function addMasterTool(row){
   const name=String(row.name||'').trim(); if(!name)return;
   const keys=existingNameKeys(); if(keys.has(keyName(name)))return;
   const available=row.toolStatus==='available' && row.file;
+  const ghoulBase=!!row.ghoulBase;
   const a=document.createElement('a');
-  a.className='tool'; a.dataset.machine=name; a.dataset.status=available?'available':'pending';
+  a.className='tool'; a.dataset.machine=name; a.dataset.status=available?'available':'pending'; a.dataset.ghoulBase=ghoulBase?'1':'0';
   a.href=available?BASE+row.file:'#';
   const year=row.year||'';
-  a.innerHTML='<span class="new">'+esc(year)+'</span><div class="machine">'+esc(labelName(name))+'<br><b>777</b></div><h3>'+esc(name)+'</h3><p>'+(available?'設定判別ツール':'作成中....')+'</p><div class="tags"><i>'+esc(year)+'年</i><i>'+(available?'設定判別':'作成中')+'</i></div><button>'+(available?'使う　›':'作成中')+'</button>';
+  const statusTag=available?(ghoulBase?'喰種ベース':'設定判別'):'作成中';
+  a.innerHTML='<span class="new">'+esc(year)+'</span><div class="machine">'+esc(labelName(name))+'<br><b>777</b></div><h3>'+esc(name)+'</h3><p>'+(available?'設定判別ツール':'作成中....')+'</p><div class="tags"><i>'+esc(year)+'年</i><i>'+statusTag+'</i></div><button>'+(available?'使う　›':'作成中')+'</button>';
   container.appendChild(a);
 }
 
@@ -27,7 +29,6 @@ async function discoverAllTools(){
       if(Array.isArray(master.machines)&&master.machines.length){master.machines.forEach(addMasterTool);return}
     }
   }catch(e){console.warn('master load failed',e)}
-  // Fallback: old manifest. This keeps the portal usable if the master cannot be loaded.
   try{
     const r=await fetch('machines.json?'+Date.now(),{cache:'no-store'});
     if(r.ok){const manifest=await r.json();if(Array.isArray(manifest.tools))manifest.tools.forEach(x=>{if(x.file)addMasterTool({name:x.file.replace(/-index\.html$/,'').replace(/[-_]+/g,' '),year:'',file:x.file,toolStatus:'available'})})}
