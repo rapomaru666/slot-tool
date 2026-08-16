@@ -58,4 +58,4 @@ boot();
 
 const input=document.getElementById('search');const btn=document.getElementById('searchBtn');
 function search(){const q=input.value.trim().toLowerCase();const tools=[...document.querySelectorAll('.tool')];if(!q){loadRecommended();document.getElementById('tools').scrollIntoView({behavior:'smooth'});return}let found=0;tools.forEach(t=>{const hit=t.textContent.toLowerCase().includes(q);t.style.display=hit?'block':'none';if(hit)found++});document.getElementById('tools').scrollIntoView({behavior:'smooth'});if(!found)alert('該当するツールがありません。')}
-btn.addEventListener('click',search);input.addEventListener('keydown',e=>{if(e.key==='Enter')search});input.addEventListener('input',()=>{if(!input.value.trim())loadRecommended()});
+btn.addEventListener('click',search);input.addEventListener('keydown',e=>{if(e.key==='Enter')search()});input.addEventListener('input',()=>{if(!input.value.trim())loadRecommended()});
