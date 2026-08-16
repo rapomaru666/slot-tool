@@ -78,7 +78,7 @@ mutation = f'''mutation PublishThreadNow {{
     }}
   }}) {{
     ... on PostActionSuccess {{
-      post {{ id status sentAt sharedNow shareMode externalLink threadCount }}
+      post {{ id status sentAt sharedNow shareMode externalLink }}
     }}
     ... on MutationError {{ message }}
   }}
