@@ -1,42 +1,9 @@
-name: One-time correct bulk Ghoul-base count
+name: One-time Ghoul-base bulk migration (completed)
 on:
-  push:
-    paths:
-      - '.github/workflows/one-time-complete-344.yml'
-permissions:
-  contents: write
+  workflow_dispatch:
 jobs:
-  correct:
+  disabled:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Restore pre-existing complete tool and correct JSON
-        continue-on-error: true
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json,subprocess
-          # Restore Hokuto Tensei2 exactly to its prior Tokyo-Ghoul-base completed version.
-          old=subprocess.check_output(['git','show','d0e87efb50f1a1158be8ad68f6459dc20d49f548:hokutotensei2-index.html'])
-          Path('hokutotensei2-index.html').write_bytes(old)
-          master=json.loads(Path('RAPOMAN-MACHINE-MASTER.json').read_text(encoding='utf-8'))
-          for r in master.get('machines',[]):
-              if r.get('file')=='hokutotensei2-index.html':
-                  r['ghoulBase']=True
-                  r.pop('ghoulCompleteShell',None)
-          sc=master.setdefault('statusCounts',{})
-          sc['ghoulBase']=sum(bool(r.get('ghoulBase')) for r in master.get('machines',[]))
-          sc['ghoulCompleteShell']=sum(bool(r.get('ghoulCompleteShell')) for r in master.get('machines',[]))
-          Path('RAPOMAN-MACHINE-MASTER.json').write_text(json.dumps(master,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          Path('RAPOMAN-BULK-344-RESULT.txt').write_text('targets=344\nchanged=344\nrestored_existing=hokutotensei2-index.html\n',encoding='utf-8')
-          PY
-      - name: Commit correction
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add hokutotensei2-index.html RAPOMAN-MACHINE-MASTER.json RAPOMAN-BULK-344-RESULT.txt
-          git diff --cached --quiet && exit 0
-          git commit -m "Correct bulk completion to 344 and preserve existing Hokuto Tensei2"
-          git push origin HEAD:main || true
+      - run: echo "Completed and disabled"
