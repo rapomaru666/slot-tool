@@ -1,0 +1,137 @@
+name: Build RAPOMAN machine master JSON
+
+on:
+  push:
+    paths:
+      - '.github/workflows/build-rapoman-machine-master.yml'
+      - 'SLOT-TOOL-MASTER-LIST-2026-2021.md'
+      - '*-index.html'
+      - 'app.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rapoman-machine-master
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build RAPOMAN-MACHINE-MASTER.json
+        run: |
+          python - <<'PY'
+          import json,re,html,glob,subprocess,datetime
+          from pathlib import Path
+
+          src=Path('SLOT-TOOL-MASTER-LIST-2026-2021.md').read_text(encoding='utf-8')
+          machines=[]
+
+          def clean_name(s):
+              s=html.unescape(s)
+              s=re.sub(r'<br\s*/?>',' ',s,flags=re.I)
+              s=re.sub(r'<[^>]+>','',s)
+              return re.sub(r'\s+',' ',s).strip(' \t\r\n/|-')
+
+          def norm(s):
+              return re.sub(r'[\s　・･‐‑‒–—―ー－:：/／\\()（）\[\]【】「」『』,.，．!！?？~〜～\'\"]+','',s).lower()
+
+          # 2021-2025: existing master LIST is the source of truth.
+          for year in range(2021,2026):
+              m=re.search(rf'^## {year}年[^\n]*\n(.*?)(?=^## |\Z)',src,re.M|re.S)
+              if not m: continue
+              body=m.group(1).strip()
+              # Current master stores the full list on slash-separated lines.
+              body=' '.join(line.strip() for line in body.splitlines() if line.strip() and not line.startswith('#'))
+              for name in [clean_name(x) for x in body.split(' / ')]:
+                  if not name or name.startswith('注記'): continue
+                  machines.append({'name':name,'year':year,'source':'existing-master-list'})
+
+          # 2026: reconstruct from actual repository pages first.
+          y2026=[]
+          for fn in glob.glob('*-index.html'):
+              if fn.startswith('tokyoghoul-'): # protected master is not modified; still may be added separately if dated 2026, which it is not.
+                  continue
+              try: text=Path(fn).read_text(encoding='utf-8',errors='ignore')
+              except: continue
+              if not re.search(r'2026(?:年|[/.-])',text):
+                  continue
+              candidates=[]
+              for pat in [r'<h1[^>]*>(.*?)</h1>',r'<h2[^>]*>(.*?)</h2>',r'<title[^>]*>(.*?)</title>']:
+                  mm=re.search(pat,text,re.I|re.S)
+                  if mm: candidates.append(clean_name(mm.group(1)))
+              name=next((x for x in candidates if x and 'RAPOMARU' not in x.upper() and '設定判別' not in x), None)
+              if not name and candidates: name=candidates[0]
+              if name:
+                  y2026.append({'name':name,'year':2026,'source':'repository-page','file':fn})
+
+          # 2026: recover pages recorded in Git history even if a page body has no explicit year.
+          try:
+              log=subprocess.check_output(['git','log','--all','--pretty=%s'],text=True,encoding='utf-8',errors='ignore')
+              for line in log.splitlines():
+                  if '2026' not in line: continue
+                  mm=re.search(r'(?:2026[^：:]*[：:]|2026年機種ページ作成中[：:])\s*(.+?)(?:\s*作成中ページ|$)',line)
+                  if mm:
+                      name=clean_name(mm.group(1))
+                      if name and 'ポータル' not in name and '機種' not in name:
+                          y2026.append({'name':name,'year':2026,'source':'git-history'})
+          except Exception:
+              pass
+
+          # 2026: include names declared by portal pending2026 without changing portal.
+          if Path('app.js').exists():
+              app=Path('app.js').read_text(encoding='utf-8',errors='ignore')
+              mm=re.search(r'const\s+pending2026\s*=\s*\[(.*?)\];',app,re.S)
+              if mm:
+                  for title in re.findall(r"\['[^']*','[^']*','([^']*)'\]",mm.group(1)):
+                      y2026.append({'name':clean_name(title),'year':2026,'source':'portal-pending'})
+
+          # De-duplicate 2026 by normalized title; prefer repository-page metadata.
+          ded={}
+          priority={'repository-page':3,'portal-pending':2,'git-history':1}
+          for row in y2026:
+              k=norm(row['name'])
+              if not k: continue
+              if k not in ded or priority.get(row['source'],0)>priority.get(ded[k]['source'],0):
+                  ded[k]=row
+          machines.extend(sorted(ded.values(),key=lambda x:x['name']))
+
+          # Remove exact duplicates inside a year.
+          final=[]; seen=set()
+          for row in machines:
+              k=(row['year'],norm(row['name']))
+              if k in seen: continue
+              seen.add(k); final.append(row)
+
+          final.sort(key=lambda x:(x['year'],x['name']))
+          counts={str(y):sum(1 for x in final if x['year']==y) for y in range(2021,2027)}
+          out={
+              'schemaVersion':1,
+              'name':'RAPOMAN machine master',
+              'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              'rules':{
+                  'portalModified':False,
+                  'tokyoGhoulProtected':True,
+                  'machineType':'pachislot',
+                  'fieldsExtensible':True
+              },
+              'counts':counts,
+              'total':len(final),
+              'machines':final
+          }
+          Path('RAPOMAN-MACHINE-MASTER.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps({'counts':counts,'total':len(final)},ensure_ascii=False))
+          PY
+      - name: Commit JSON
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add RAPOMAN-MACHINE-MASTER.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: build RAPOMAN machine master JSON"
+          git push
