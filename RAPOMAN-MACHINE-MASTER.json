@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "name": "RAPOMAN machine master",
-  "generatedAt": "2026-08-16T01:34:21.538637+00:00",
+  "generatedAt": "2026-08-16T01:34:43.402730+00:00",
   "rules": {
     "tokyoGhoulProtected": true,
     "machineType": "pachislot",
@@ -14,13 +14,13 @@
     "2023": 68,
     "2024": 78,
     "2025": 74,
-    "2026": 44
+    "2026": 42
   },
   "statusCounts": {
     "available": 352,
-    "pending": 67
+    "pending": 65
   },
-  "total": 419,
+  "total": 417,
   "machines": [
     {
       "name": "CCエンジェル",
@@ -2925,7 +2925,7 @@
     {
       "name": "Lすーぱぁびん娘",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "superbin-index.html",
       "toolStatus": "available",
       "toolUrl": "superbin-index.html"
@@ -2965,7 +2965,7 @@
     {
       "name": "Lパチスロ 喰霊‐零‐Re",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "toolStatus": "pending"
     },
     {
@@ -2979,7 +2979,7 @@
     {
       "name": "L南国育ちSPECIAL",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "nangoku-special-index.html",
       "toolStatus": "available",
       "toolUrl": "nangoku-special-index.html"
@@ -2988,12 +2988,6 @@
       "name": "L戦国乙女5",
       "year": 2026,
       "source": "git-history",
-      "toolStatus": "pending"
-    },
-    {
-      "name": "L戦国乙女5 業火を穿つ宿焔の双刃",
-      "year": 2026,
-      "source": "portal-pending",
       "toolStatus": "pending"
     },
     {
@@ -3047,7 +3041,7 @@
     {
       "name": "スマスロ とある魔術の禁書目録2",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "toaru-index.html",
       "toolStatus": "available",
       "toolUrl": "toaru-index.html"
@@ -3055,7 +3049,7 @@
     {
       "name": "スマスロ とんでもスキルで異世界放浪メシ",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "tondemo-skill-index.html",
       "toolStatus": "available",
       "toolUrl": "tondemo-skill-index.html"
@@ -3063,7 +3057,7 @@
     {
       "name": "スマスロ やじきた道中記参る！",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "yajikita-index.html",
       "toolStatus": "available",
       "toolUrl": "yajikita-index.html"
@@ -3087,7 +3081,7 @@
     {
       "name": "スマスロ ストリートファイター6",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "streetfighter6-index.html",
       "toolStatus": "available",
       "toolUrl": "streetfighter6-index.html"
@@ -3149,7 +3143,7 @@
     {
       "name": "スマスロケロット5BT",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "kerotto5bt-index.html",
       "toolStatus": "available",
       "toolUrl": "kerotto5bt-index.html"
@@ -3173,7 +3167,7 @@
     {
       "name": "スマート沖スロ ダークハイビ",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "darkhaibi-index.html",
       "toolStatus": "available",
       "toolUrl": "darkhaibi-index.html"
@@ -3189,7 +3183,7 @@
     {
       "name": "スロット ソードアート・オンラインII",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "surotto-soodoaato-onrain-index.html",
       "toolStatus": "available",
       "toolUrl": "surotto-soodoaato-onrain-index.html"
@@ -3197,7 +3191,7 @@
     {
       "name": "スロット ワールドダイスター",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "world-dai-star-index.html",
       "toolStatus": "available",
       "toolUrl": "world-dai-star-index.html"
@@ -3213,7 +3207,7 @@
     {
       "name": "ローティス",
       "year": 2026,
-      "source": "portal-pending",
+      "source": "git-history",
       "file": "rotis-index.html",
       "toolStatus": "available",
       "toolUrl": "rotis-index.html"
@@ -3233,12 +3227,6 @@
       "file": "shinuchi-yoshimune-index.html",
       "toolStatus": "available",
       "toolUrl": "shinuchi-yoshimune-index.html"
-    },
-    {
-      "name": "Ｌ ULTRAMAN 最終決戦",
-      "year": 2026,
-      "source": "portal-pending",
-      "toolStatus": "pending"
     }
   ]
 }
