@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "name": "RAPOMAN master corrections and user locks",
+  "purpose": "ユーザーが実機確認・指示・修正して確定した仕様を保護し、一括更新や再生成で勝手に変更しないためのマスター修正済みフラグ管理",
+  "rules": {
+    "masterCorrectedMeaning": "true の機種はユーザー確認済み仕様を含むため、通常の一括更新・自動再生成で上書き禁止",
+    "lockedSpecsAreImmutable": true,
+    "changeRequiresUserApproval": true,
+    "gameCountInputRule": "ゲーム数は数値入力",
+    "eventCountInputRule": "発生回数は±カウント",
+    "toggleRequired": true,
+    "tokyoGhoulIsProtectedReference": true,
+    "researchBeforeImplementation": "複数解析サイトを深く確認し、設定差・示唆・確定系・正しい分母を照合してから実装",
+    "doNotOverwriteUserVerifiedChanges": true
+  },
+  "machines": {
+    "mushokutensei-index.html": {
+      "name": "L 無職転生 ～異世界行ったら本気だす～",
+      "masterCorrected": true,
+      "userVerified": true,
+      "locked": true,
+      "lockedSpecs": [
+        "ゲーム数は数値入力",
+        "発生回数は±カウント",
+        "ON/OFFスイッチを付ける",
+        "スイッチ表記は『ゲーム数・回数を設定判別に使用』",
+        "通常時ゲーム数とAT中ゲーム数を分離する",
+        "ターニングポイント2はAT中ゲーム数を分母にする",
+        "ヒトガミの空間の突入回数・本前兆回数は±カウント",
+        "ステージ抽選回数・シーローン王国回数は±カウント",
+        "ヒロインチャンス回数・予見眼発動回数は±カウント",
+        "TP2突入回数は±カウント",
+        "喰種完成形UIを基準にする",
+        "複数サイト照合後に実装する",
+        "ユーザーが確認・修正した箇所を別更新のついでに変更しない"
+      ]
+    }
+  }
+}
