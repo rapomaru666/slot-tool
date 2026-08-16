@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-16",
+  "machines": [
+    {
+      "id": "tokyoghoul",
+      "name": "L 東京喰種",
+      "aliases": ["東京喰種", "東京グール", "トーキョーグール", "L東京喰種", "スマスロ東京喰種"],
+      "settingAssumption": 1,
+      "mode": "AT間",
+      "ceilingGames": 1200,
+      "sourceBasis": {
+        "loanCoins": 50,
+        "exchangeCoins": 50,
+        "type": "equal",
+        "baseGamesPer50Coins": 31,
+        "quitCondition": "AT終了後は即前兆を確認してヤメ",
+        "excluded": ["CZ間天井", "モード", "喰ポイント", "閉店時間"]
+      },
+      "values": {
+        "0": -815,
+        "100": -609,
+        "200": -347,
+        "300": -14,
+        "400": 408,
+        "500": 945,
+        "600": 1628,
+        "700": 2495,
+        "800": 3597,
+        "900": 4997,
+        "1000": 6775,
+        "1100": 9036,
+        "1150": 10386
+      },
+      "source": {
+        "name": "スロッターの道具箱",
+        "url": "https://slot-toolbox.com/tokyo-ghoul-tenjo/",
+        "checkedAt": "2026-08-16"
+      }
+    }
+  ]
+}
