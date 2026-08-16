@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "name": "RAPOMAN machine master",
   "generatedAt": "2026-08-16T01:54:37.282654+00:00",
   "rules": {
@@ -19,7 +19,8 @@
   "statusCounts": {
     "available": 352,
     "pending": 65,
-    "ghoulBase": 5
+    "ghoulBase": 350,
+    "ghoulCompleteShell": 345
   },
   "total": 417,
   "machines": [
@@ -30,7 +31,8 @@
       "file": "ccenjieru-index.html",
       "toolStatus": "available",
       "toolUrl": "ccenjieru-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "GⅠ優駿倶楽部3",
@@ -39,7 +41,8 @@
       "file": "giyuushunkurabu3-index.html",
       "toolStatus": "available",
       "toolUrl": "giyuushunkurabu3-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "HIT128",
@@ -48,7 +51,8 @@
       "file": "hit128-index.html",
       "toolStatus": "available",
       "toolUrl": "hit128-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Re:ゼロから始める異世界生活Apex Vacation",
@@ -57,7 +61,8 @@
       "file": "re-zerokarahajimeruisekaiseikatsuapex-vacation-index.html",
       "toolStatus": "available",
       "toolUrl": "re-zerokarahajimeruisekaiseikatsuapex-vacation-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "S Lucky海物語",
@@ -66,7 +71,8 @@
       "file": "s-luckyumimonogatari-index.html",
       "toolStatus": "available",
       "toolUrl": "s-luckyumimonogatari-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOTアルドノア・ゼロ",
@@ -75,7 +81,8 @@
       "file": "slotarudonoa-zero-index.html",
       "toolStatus": "available",
       "toolUrl": "slotarudonoa-zero-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOTタブー・タトゥー",
@@ -84,7 +91,8 @@
       "file": "slottabuu-tatouu-index.html",
       "toolStatus": "available",
       "toolUrl": "slottabuu-tatouu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOT劇場版魔法少女まどか☆マギカ 前後編",
@@ -93,7 +101,8 @@
       "file": "slotgekijoubanmahoushoujomadoka-magika-zenkouhen-index.html",
       "toolStatus": "available",
       "toolUrl": "slotgekijoubanmahoushoujomadoka-magika-zenkouhen-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Sデジタルトラッド",
@@ -102,7 +111,8 @@
       "file": "sdejitarutoraddo-index.html",
       "toolStatus": "available",
       "toolUrl": "sdejitarutoraddo-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SトリプルクラウンV-30",
@@ -111,7 +121,8 @@
       "file": "storipurukuraunv-30-index.html",
       "toolStatus": "available",
       "toolUrl": "storipurukuraunv-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "S牙狼ー黄金騎士ー",
@@ -120,7 +131,8 @@
       "file": "skibaookamiiougonkishii-index.html",
       "toolStatus": "available",
       "toolUrl": "skibaookamiiougonkishii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ぱちすろ沖ハナ",
@@ -129,7 +141,8 @@
       "file": "pachisurookihana-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurookihana-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "もっと！クレアの秘宝伝 女神と歌声と太陽の子供達",
@@ -138,7 +151,8 @@
       "file": "motto-kureanohihouden-megamitoutagoetotaiyounokodomotachi-index.html",
       "toolStatus": "available",
       "toolUrl": "motto-kureanohihouden-megamitoutagoetotaiyounokodomotachi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "シンデレラブレイド４",
@@ -147,7 +161,8 @@
       "file": "shindererabureido4-index.html",
       "toolStatus": "available",
       "toolUrl": "shindererabureido4-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スターパルサー",
@@ -156,7 +171,8 @@
       "file": "sutaaparusaa-index.html",
       "toolStatus": "available",
       "toolUrl": "sutaaparusaa-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スーパーハナハナ",
@@ -165,7 +181,8 @@
       "file": "suupaahanahana-index.html",
       "toolStatus": "available",
       "toolUrl": "suupaahanahana-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "チバリヨー30",
@@ -174,7 +191,8 @@
       "file": "chibariyoo30-index.html",
       "toolStatus": "available",
       "toolUrl": "chibariyoo30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "デジスロ",
@@ -183,7 +201,8 @@
       "file": "dejisuro-index.html",
       "toolStatus": "available",
       "toolUrl": "dejisuro-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ニューハナハナゴールド-30",
@@ -192,7 +211,8 @@
       "file": "nyuuhanahanagoorudo-30-index.html",
       "toolStatus": "available",
       "toolUrl": "nyuuhanahanagoorudo-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ニューパルサーDX3",
@@ -201,7 +221,8 @@
       "file": "nyuuparusaadx3-index.html",
       "toolStatus": "available",
       "toolUrl": "nyuuparusaadx3-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ニューパルサーSPⅢ",
@@ -210,7 +231,8 @@
       "file": "nyuuparusaaspiii-index.html",
       "toolStatus": "available",
       "toolUrl": "nyuuparusaaspiii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ノーゲーム・ノーライフTHE SLOT",
@@ -219,7 +241,8 @@
       "file": "noogeemu-nooraifuthe-slot-index.html",
       "toolStatus": "available",
       "toolUrl": "noogeemu-nooraifuthe-slot-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ハイサイシオサイ2",
@@ -228,7 +251,8 @@
       "file": "haisaishiosai2-index.html",
       "toolStatus": "available",
       "toolUrl": "haisaishiosai2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロANEMONE 交響詩篇エウレカセブンHI-EVOLUTION",
@@ -237,7 +261,8 @@
       "file": "pachisuroanemone-koukyoushiheneurekasebunhi-evolution-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroanemone-koukyoushiheneurekasebunhi-evolution-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロAngel Beats！",
@@ -246,7 +271,8 @@
       "file": "pachisuroangel-beats-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroangel-beats-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロGANTZ極 THE SURVIVAL GAME",
@@ -255,7 +281,8 @@
       "file": "pachisurogantzkyoku-the-survival-game-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurogantzkyoku-the-survival-game-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロKING黄門ちゃま",
@@ -264,7 +291,8 @@
       "file": "pachisurokingkoumonchama-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokingkoumonchama-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロWake Up,Girls！Seven Memories",
@@ -273,7 +301,8 @@
       "file": "pachisurowake-up-girls-seven-memories-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurowake-up-girls-seven-memories-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロうしおととら 雷槍一閃",
@@ -282,7 +311,8 @@
       "file": "pachisuroushiototora-kaminariyariissen-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroushiototora-kaminariyariissen-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロうまい棒",
@@ -291,7 +321,8 @@
       "file": "pachisuroumaibou-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroumaibou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロかまいたちの夜",
@@ -300,7 +331,8 @@
       "file": "pachisurokamaitachinoyoru-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokamaitachinoyoru-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロアイドルマスター ミリオンライブ！シアターフェスティバル",
@@ -309,7 +341,8 @@
       "file": "pachisuroaidorumasutaa-mirionraibu-shiataafesuteibaru-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroaidorumasutaa-mirionraibu-shiataafesuteibaru-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロガメラ",
@@ -318,7 +351,8 @@
       "file": "pachisurogamera-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurogamera-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロガールズ＆パンツァー劇場版",
@@ -327,7 +361,8 @@
       "file": "pachisurogaaruzu-pantsuaagekijouban-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurogaaruzu-pantsuaagekijouban-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロコードギアス反逆のルルーシュ3",
@@ -336,7 +371,8 @@
       "file": "pachisurokoodogiasuhangyakunoruruushu3-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokoodogiasuhangyakunoruruushu3-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロゴッドイーター ジ・アニメーション",
@@ -345,7 +381,8 @@
       "file": "pachisurogoddoiitaa-ji-animeeshon-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurogoddoiitaa-ji-animeeshon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロツインエンジェルPARTY",
@@ -354,7 +391,8 @@
       "file": "pachisurotsuin-enjieruparty-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurotsuin-enjieruparty-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロバイオハザード7 レジデントイービル",
@@ -363,7 +401,8 @@
       "file": "pachisurobaiohazaado7-rejidentoiibiru-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurobaiohazaado7-rejidentoiibiru-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロフレームアームズ・ガール",
@@ -372,7 +411,8 @@
       "file": "pachisurofureemuaamuzu-gaaru-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurofureemuaamuzu-gaaru-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロマクロスデルタ",
@@ -381,7 +421,8 @@
       "file": "pachisuromakurosuderuta-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuromakurosuderuta-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロモンスターハンター：ワールド黄金狩猟",
@@ -390,7 +431,8 @@
       "file": "pachisuromonsutaahantaa-waarudoougonshuryou-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuromonsutaahantaa-waarudoougonshuryou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロラブ嬢II＋",
@@ -399,7 +441,8 @@
       "file": "pachisurorabujouii-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurorabujouii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロリング 運命の秒刻",
@@ -408,7 +451,8 @@
       "file": "pachisuroringu-unmeinobyoukoku-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroringu-unmeinobyoukoku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロロリクラ☆ほーるど！",
@@ -417,7 +461,8 @@
       "file": "pachisurororikura-hoorudo-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurororikura-hoorudo-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ北斗の拳 宿命",
@@ -426,7 +471,8 @@
       "file": "pachisurohokutonoken-shukumei-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurohokutonoken-shukumei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ戦国乙女 暁の関ヶ原-DARKNESS",
@@ -435,7 +481,8 @@
       "file": "pachisurosengokuotome-akatsukinokankehara-darkness-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurosengokuotome-akatsukinokankehara-darkness-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ戦姫絶唱シンフォギア 勇気の歌",
@@ -444,7 +491,8 @@
       "file": "pachisurosenhimezesshoushinfogia-yuukinouta-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurosenhimezesshoushinfogia-yuukinouta-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ東京レイヴンズ",
@@ -453,7 +501,8 @@
       "file": "pachisurotoukyoureivunzu-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurotoukyoureivunzu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ楽園追放",
@@ -462,7 +511,8 @@
       "file": "pachisurorakuentsuihou-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurorakuentsuihou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ百花繚乱サムライガールズ",
@@ -471,7 +521,8 @@
       "file": "pachisurohyakkaryouransamuraigaaruzu-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurohyakkaryouransamuraigaaruzu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ花の慶次 武威",
@@ -480,7 +531,8 @@
       "file": "pachisurohananokeiji-bui-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurohananokeiji-bui-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ鉄拳4デビルVer.",
@@ -489,7 +541,8 @@
       "file": "pachisurotekken4debiruver-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurotekken4debiruver-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ零",
@@ -498,7 +551,8 @@
       "file": "pachisurorei-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurorei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ青の祓魔師",
@@ -507,7 +561,8 @@
       "file": "pachisuroaonofutsumashi-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroaonofutsumashi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ頭文字D",
@@ -516,7 +571,8 @@
       "file": "pachisurokashiramojid-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokashiramojid-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ麻雀物語4",
@@ -525,7 +581,8 @@
       "file": "pachisuromaajanmonogatari4-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuromaajanmonogatari4-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ファンキージャグラー2",
@@ -534,7 +591,8 @@
       "file": "fankiijaguraa2-index.html",
       "toolStatus": "available",
       "toolUrl": "fankiijaguraa2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "マイジャグラーV",
@@ -543,7 +601,8 @@
       "file": "maijaguraav-index.html",
       "toolStatus": "available",
       "toolUrl": "maijaguraav-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "マジカルハロウィン～Trick or Treat！～",
@@ -552,7 +611,8 @@
       "file": "majikaruharouin-trick-or-treat-index.html",
       "toolStatus": "available",
       "toolUrl": "majikaruharouin-trick-or-treat-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ワンチャンス1000",
@@ -561,7 +621,8 @@
       "file": "wanchansu1000-index.html",
       "toolStatus": "available",
       "toolUrl": "wanchansu1000-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "主役は銭形３",
@@ -570,7 +631,8 @@
       "file": "shuyakuhazenigata3-index.html",
       "toolStatus": "available",
       "toolUrl": "shuyakuhazenigata3-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "南国育ち-30",
@@ -579,7 +641,8 @@
       "file": "nangokusodachi-30-index.html",
       "toolStatus": "available",
       "toolUrl": "nangokusodachi-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "戦国乙女3～天剣を継ぐもの～",
@@ -588,7 +651,8 @@
       "file": "sengokuotome3-tentsurugiwotsugumono-index.html",
       "toolStatus": "available",
       "toolUrl": "sengokuotome3-tentsurugiwotsugumono-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "政宗3",
@@ -597,7 +661,8 @@
       "file": "masamune3-index.html",
       "toolStatus": "available",
       "toolUrl": "masamune3-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "新ハナビ",
@@ -606,7 +671,8 @@
       "file": "shinhanabi-index.html",
       "toolStatus": "available",
       "toolUrl": "shinhanabi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "沖ドキ！DUO",
@@ -615,7 +681,8 @@
       "file": "okidoki-duo-index.html",
       "toolStatus": "available",
       "toolUrl": "okidoki-duo-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "泡盛",
@@ -624,7 +691,8 @@
       "file": "awamori-index.html",
       "toolStatus": "available",
       "toolUrl": "awamori-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "秘宝伝 解き放たれた女神",
@@ -633,7 +701,8 @@
       "file": "hihouden-tokihouttaretamegami-index.html",
       "toolStatus": "available",
       "toolUrl": "hihouden-tokihouttaretamegami-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "絶対衝撃III",
@@ -642,7 +711,8 @@
       "file": "zettaishougekiiii-index.html",
       "toolStatus": "available",
       "toolUrl": "zettaishougekiiii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "豪炎高校應援團 檄",
@@ -651,7 +721,8 @@
       "file": "gouhonookoukououendan-geki-index.html",
       "toolStatus": "available",
       "toolUrl": "gouhonookoukououendan-geki-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "鬼浜爆走紅蓮隊 狂闘旅情編",
@@ -660,7 +731,8 @@
       "file": "onihamabakusougurentai-kyoutouryojouhen-index.html",
       "toolStatus": "available",
       "toolUrl": "onihamabakusougurentai-kyoutouryojouhen-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "麻雀格闘倶楽部 真",
@@ -669,7 +741,8 @@
       "file": "maajankakutoukurabu-makoto-index.html",
       "toolStatus": "available",
       "toolUrl": "maajankakutoukurabu-makoto-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "BLACK LAGOON ZERO bullet MAX",
@@ -678,7 +751,8 @@
       "file": "black-lagoon-zero-bullet-max-index.html",
       "toolStatus": "available",
       "toolUrl": "black-lagoon-zero-bullet-max-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "CREA Newクレアの秘宝伝",
@@ -687,7 +761,8 @@
       "file": "crea-newkureanohihouden-index.html",
       "toolStatus": "available",
       "toolUrl": "crea-newkureanohihouden-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "HEY！エリートサラリーマン鏡",
@@ -696,7 +771,8 @@
       "file": "hey-eriitosarariimankagami-index.html",
       "toolStatus": "available",
       "toolUrl": "hey-eriitosarariimankagami-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "HYPER A-30 BLUE FALCON",
@@ -705,7 +781,8 @@
       "file": "hyper-a-30-blue-falcon-index.html",
       "toolStatus": "available",
       "toolUrl": "hyper-a-30-blue-falcon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lバキ強くなりたくば喰らえ!!!",
@@ -714,7 +791,8 @@
       "file": "lbakitsuyokunaritakubakurae-index.html",
       "toolStatus": "available",
       "toolUrl": "lbakitsuyokunaritakubakurae-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "S BIG 島唄30",
@@ -723,7 +801,8 @@
       "file": "s-big-shimauta30-index.html",
       "toolStatus": "available",
       "toolUrl": "s-big-shimauta30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "S2027",
@@ -732,7 +811,8 @@
       "file": "s2027-index.html",
       "toolStatus": "available",
       "toolUrl": "s2027-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOT STEINS;GATE",
@@ -741,7 +821,8 @@
       "file": "slot-steins-gate-index.html",
       "toolStatus": "available",
       "toolUrl": "slot-steins-gate-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOTえとたま",
@@ -750,7 +831,8 @@
       "file": "slotetotama-index.html",
       "toolStatus": "available",
       "toolUrl": "slotetotama-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOTとある科学の超電磁砲",
@@ -759,7 +841,8 @@
       "file": "slottoarukagakunochoudenjihou-index.html",
       "toolStatus": "available",
       "toolUrl": "slottoarukagakunochoudenjihou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOTマッピー",
@@ -768,7 +851,8 @@
       "file": "slotmappii-index.html",
       "toolStatus": "available",
       "toolUrl": "slotmappii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Sアバサー25/30",
@@ -777,7 +861,8 @@
       "file": "sabasaa25-30-index.html",
       "toolStatus": "available",
       "toolUrl": "sabasaa25-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Sキャッツ・アイ",
@@ -786,7 +871,8 @@
       "file": "skyattsu-ai-index.html",
       "toolStatus": "available",
       "toolUrl": "skyattsu-ai-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Sスーパー海物語 IN JAPAN 祭",
@@ -795,7 +881,8 @@
       "file": "ssuupaaumimonogatari-in-japan-matsuri-index.html",
       "toolStatus": "available",
       "toolUrl": "ssuupaaumimonogatari-in-japan-matsuri-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Sルパン三世",
@@ -804,7 +891,8 @@
       "file": "srupansansei-index.html",
       "toolStatus": "available",
       "toolUrl": "srupansansei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "S黄門ちゃま喝2",
@@ -813,7 +901,8 @@
       "file": "skoumonchamakatsu2-index.html",
       "toolStatus": "available",
       "toolUrl": "skoumonchamakatsu2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ぱちすろけものフレンズ",
@@ -822,7 +911,8 @@
       "file": "pachisurokemonofurenzu-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokemonofurenzu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ぱちスロ ウルトラマンタロウ 暴君SPEC",
@@ -831,7 +921,8 @@
       "file": "pachisuro-urutoramantarou-boukunspec-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-urutoramantarou-boukunspec-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ぱちスロ ギャグダー",
@@ -840,7 +931,8 @@
       "file": "pachisuro-gyagudaa-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-gyagudaa-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "もっと！チバリヨ-30",
@@ -849,7 +941,8 @@
       "file": "motto-chibariyo-30-index.html",
       "toolStatus": "available",
       "toolUrl": "motto-chibariyo-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "アカジン-30",
@@ -858,7 +951,8 @@
       "file": "akajin-30-index.html",
       "toolStatus": "available",
       "toolUrl": "akajin-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "シリウス",
@@ -867,7 +961,8 @@
       "file": "shiriusu-index.html",
       "toolStatus": "available",
       "toolUrl": "shiriusu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロリノヘブン",
@@ -876,7 +971,8 @@
       "file": "sumasurorinohebun-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurorinohebun-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スーパーハナハナ2-30",
@@ -885,7 +981,8 @@
       "file": "suupaahanahana2-30-index.html",
       "toolStatus": "available",
       "toolUrl": "suupaahanahana2-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スーパーリオエース",
@@ -894,7 +991,8 @@
       "file": "suupaarioeesu-index.html",
       "toolStatus": "available",
       "toolUrl": "suupaarioeesu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スーパーリノSP",
@@ -903,7 +1001,8 @@
       "file": "suupaarinosp-index.html",
       "toolStatus": "available",
       "toolUrl": "suupaarinosp-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ナナイロサンゴ",
@@ -912,7 +1011,8 @@
       "file": "nanairosango-index.html",
       "toolStatus": "available",
       "toolUrl": "nanairosango-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ニューゲッターマウス",
@@ -921,7 +1021,8 @@
       "file": "nyuugettaamausu-index.html",
       "toolStatus": "available",
       "toolUrl": "nyuugettaamausu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ハイスクールD×D2 ハーレム王に俺はある",
@@ -930,7 +1031,8 @@
       "file": "haisukuurudxd2-haaremuouniorehaaru-index.html",
       "toolStatus": "available",
       "toolUrl": "haisukuurudxd2-haaremuouniorehaaru-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ハッピージャグラーVⅢ",
@@ -939,7 +1041,8 @@
       "file": "happiijaguraaviii-index.html",
       "toolStatus": "available",
       "toolUrl": "happiijaguraaviii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ハナハナホウオウ～天翔～25&30",
@@ -948,7 +1051,8 @@
       "file": "hanahanahouou-tenshou-25-30-index.html",
       "toolStatus": "available",
       "toolUrl": "hanahanahouou-tenshou-25-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "バーサスリヴァイズ",
@@ -957,7 +1061,8 @@
       "file": "baasasurivaizu-index.html",
       "toolStatus": "available",
       "toolUrl": "baasasurivaizu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ FAIRY TAIL2",
@@ -966,7 +1071,8 @@
       "file": "pachisuro-fairy-tail2-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-fairy-tail2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ RYUKYU BEAT-30",
@@ -975,7 +1081,8 @@
       "file": "pachisuro-ryukyu-beat-30-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-ryukyu-beat-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ TIGER & BUNNY SP",
@@ -984,7 +1091,8 @@
       "file": "pachisuro-tiger-bunny-sp-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-tiger-bunny-sp-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ この素晴らしい世界に祝福を！",
@@ -993,7 +1101,8 @@
       "file": "pachisuro-konosubarashiisekainishukufukuwo-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-konosubarashiisekainishukufukuwo-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ アクエリオン ALL STARS",
@@ -1002,7 +1111,8 @@
       "file": "pachisuro-akuerion-all-stars-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-akuerion-all-stars-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ アラジンAクラシック",
@@ -1011,7 +1121,8 @@
       "file": "pachisuro-arajinakurashikku-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-arajinakurashikku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ ゼーガペイン2",
@@ -1020,7 +1131,8 @@
       "file": "pachisuro-zeegapein2-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-zeegapein2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ ダンまち外伝 ソード・オラトリア",
@@ -1029,7 +1141,8 @@
       "file": "pachisuro-danmachigaiden-soodo-oratoria-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-danmachigaiden-soodo-oratoria-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ ディスクアップ2",
@@ -1038,7 +1151,8 @@
       "file": "pachisuro-disukuappu2-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-disukuappu2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ ドリフターズ",
@@ -1047,7 +1161,8 @@
       "file": "pachisuro-dorifutaazu-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-dorifutaazu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ ピンクパンサーSP",
@@ -1056,7 +1171,8 @@
       "file": "pachisuro-pinkupansaasp-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-pinkupansaasp-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 幼女戦記",
@@ -1065,7 +1181,8 @@
       "file": "pachisuro-youjosenki-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-youjosenki-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 新鬼武者",
@@ -1074,7 +1191,8 @@
       "file": "pachisuro-shinonimusha-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-shinonimusha-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 月華 雅",
@@ -1083,7 +1201,8 @@
       "file": "pachisuro-gatsuhana-masa-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-gatsuhana-masa-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 蒼天の拳4",
@@ -1092,7 +1211,8 @@
       "file": "pachisuro-soutennokobushi4-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-soutennokobushi4-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 魔法少女育成計画",
@@ -1101,7 +1221,8 @@
       "file": "pachisuro-mahoushoujoikuseikeikaku-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-mahoushoujoikuseikeikaku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロBOOWY",
@@ -1110,7 +1231,8 @@
       "file": "pachisuroboowy-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroboowy-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロひぐらしのなく頃に祭2 カケラ遊び編",
@@ -1119,7 +1241,8 @@
       "file": "pachisurohigurashinonakugoronimatsuri2-kakeraasobihen-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurohigurashinonakugoronimatsuri2-kakeraasobihen-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロデビルメイクライ5",
@@ -1128,7 +1251,8 @@
       "file": "pachisurodebirumeikurai5-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurodebirumeikurai5-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロハードボイルド",
@@ -1137,7 +1261,8 @@
       "file": "pachisurohaadoboirudo-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurohaadoboirudo-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロバイオハザードRE:2",
@@ -1146,7 +1271,8 @@
       "file": "pachisurobaiohazaadore-2-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurobaiohazaadore-2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロペルソナ5",
@@ -1155,7 +1281,8 @@
       "file": "pachisuroperusona5-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroperusona5-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロボンバーガール",
@@ -1164,7 +1291,8 @@
       "file": "pachisurobonbaagaaru-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurobonbaagaaru-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロミクちゃんとイドムンのミラクルチャレンジ",
@@ -1173,7 +1301,8 @@
       "file": "pachisuromikuchantoidomunnomirakurucharenji-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuromikuchantoidomunnomirakurucharenji-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ春一番",
@@ -1182,7 +1311,8 @@
       "file": "pachisuroharuichiban-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroharuichiban-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ犬夜叉",
@@ -1191,7 +1321,8 @@
       "file": "pachisuroinuyasha-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroinuyasha-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ甲鉄城のカバネリ",
@@ -1200,7 +1331,8 @@
       "file": "pachisurokoutetsushironokabaneri-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokoutetsushironokabaneri-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ真俺の空",
@@ -1209,7 +1341,8 @@
       "file": "pachisuromakotoorenosora-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuromakotoorenosora-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ笑ゥせぇるすまん4",
@@ -1218,7 +1351,8 @@
       "file": "pachisurowaraiuseerusuman4-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurowaraiuseerusuman4-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ聖闘士星矢 冥王復活",
@@ -1227,7 +1361,8 @@
       "file": "pachisurohijiritoushihoshiya-meioufukkatsu-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurohijiritoushihoshiya-meioufukkatsu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ言い訳はさせないわよ by激壇蜜",
@@ -1236,7 +1371,8 @@
       "file": "pachisuroiiwakehasasenaiwayo-bygekidanmitsu-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroiiwakehasasenaiwayo-bygekidanmitsu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ這いよれ！ニャル子さん",
@@ -1245,7 +1381,8 @@
       "file": "pachisurohaiyore-nyarukosan-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurohaiyore-nyarukosan-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ鉄拳4アルティメットデビルVer.",
@@ -1254,7 +1391,8 @@
       "file": "pachisurotekken4aruteimettodebiruver-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurotekken4aruteimettodebiruver-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ鉄拳5",
@@ -1263,7 +1401,8 @@
       "file": "pachisurotekken5-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurotekken5-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ閃乱カグラ BURST UP",
@@ -1272,7 +1411,8 @@
       "file": "pachisurosenrankagura-burst-up-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurosenrankagura-burst-up-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ革命機ヴァルヴレイヴ",
@@ -1281,7 +1421,8 @@
       "file": "pachisurokakumeikivaruvureivu-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokakumeikivaruvureivu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "メルヘンクエスト",
@@ -1290,7 +1431,8 @@
       "file": "meruhenkuesuto-index.html",
       "toolStatus": "available",
       "toolUrl": "meruhenkuesuto-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ラストユートピア",
@@ -1299,7 +1441,8 @@
       "file": "rasutoyuutopia-index.html",
       "toolStatus": "available",
       "toolUrl": "rasutoyuutopia-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ヴィーナスゾーン",
@@ -1308,7 +1451,8 @@
       "file": "viinasuzoon-index.html",
       "toolStatus": "available",
       "toolUrl": "viinasuzoon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "十字架5",
@@ -1317,7 +1461,8 @@
       "file": "juujika5-index.html",
       "toolStatus": "available",
       "toolUrl": "juujika5-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "南国物語-30",
@@ -1326,7 +1471,8 @@
       "file": "nangokumonogatari-30-index.html",
       "toolStatus": "available",
       "toolUrl": "nangokumonogatari-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "押忍！番長ZERO",
@@ -1335,7 +1481,8 @@
       "file": "ounin-banchouzero-index.html",
       "toolStatus": "available",
       "toolUrl": "ounin-banchouzero-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "政宗 戦極",
@@ -1344,7 +1491,8 @@
       "file": "masamune-senkyoku-index.html",
       "toolStatus": "available",
       "toolUrl": "masamune-senkyoku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "新世紀エヴァンゲリオン～魂の共鳴～",
@@ -1353,7 +1501,8 @@
       "file": "shinseikievangerion-tamashiinokyoumei-index.html",
       "toolStatus": "available",
       "toolUrl": "shinseikievangerion-tamashiinokyoumei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "来雷エイサー30",
@@ -1362,7 +1511,8 @@
       "file": "raikaminarieisaa30-index.html",
       "toolStatus": "available",
       "toolUrl": "raikaminarieisaa30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "沖ドキ！GOLD",
@@ -1371,7 +1521,8 @@
       "file": "okidoki-gold-index.html",
       "toolStatus": "available",
       "toolUrl": "okidoki-gold-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "沖ワニマル-25&30",
@@ -1380,7 +1531,8 @@
       "file": "okiwanimaru-25-30-index.html",
       "toolStatus": "available",
       "toolUrl": "okiwanimaru-25-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "沖縄フェスティバル-30",
@@ -1389,7 +1541,8 @@
       "file": "okinawafesuteibaru-30-index.html",
       "toolStatus": "available",
       "toolUrl": "okinawafesuteibaru-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "花火絶景",
@@ -1398,7 +1551,8 @@
       "file": "hanabizekkei-index.html",
       "toolStatus": "available",
       "toolUrl": "hanabizekkei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "超ギラギラ爺サマー",
@@ -1407,7 +1561,8 @@
       "file": "chougiragirajiisamaa-index.html",
       "toolStatus": "available",
       "toolUrl": "chougiragirajiisamaa-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "鬼浜爆走紅連隊 激闘謳歌編",
@@ -1416,7 +1571,8 @@
       "file": "onihamabakusoukurenairentai-gekitououkahen-index.html",
       "toolStatus": "available",
       "toolUrl": "onihamabakusoukurenairentai-gekitououkahen-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L エヴァンゲリオン ～未来への創造～",
@@ -1425,7 +1581,8 @@
       "file": "l-evangerion-miraihenosouzou-index.html",
       "toolStatus": "available",
       "toolUrl": "l-evangerion-miraihenosouzou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L リングにかけろ 1 V",
@@ -1441,7 +1598,8 @@
       "file": "l009-re-cyborg-index.html",
       "toolStatus": "available",
       "toolUrl": "l009-re-cyborg-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lゴブリンスレイヤー",
@@ -1450,7 +1608,8 @@
       "file": "lgoburinsureiyaa-index.html",
       "toolStatus": "available",
       "toolUrl": "lgoburinsureiyaa-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lベルセルク無双",
@@ -1459,7 +1618,8 @@
       "file": "lberuserukumusou-index.html",
       "toolStatus": "available",
       "toolUrl": "lberuserukumusou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lラブ嬢3～Wご指名はいかがですか？～",
@@ -1468,7 +1628,8 @@
       "file": "lrabujou3-wgoshimeihaikagadesuka-index.html",
       "toolStatus": "available",
       "toolUrl": "lrabujou3-wgoshimeihaikagadesuka-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L主役は銭形4",
@@ -1477,7 +1638,8 @@
       "file": "lshuyakuhazenigata4-index.html",
       "toolStatus": "available",
       "toolUrl": "lshuyakuhazenigata4-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L大工の源さん 超夢源",
@@ -1486,7 +1648,8 @@
       "file": "ldaikunogensan-chouyumegen-index.html",
       "toolStatus": "available",
       "toolUrl": "ldaikunogensan-chouyumegen-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L戦国乙女4 戦乱に閃く炯眼の軍師",
@@ -1495,7 +1658,8 @@
       "file": "lsengokuotome4-senrannihiramekukeigannogunshi-index.html",
       "toolStatus": "available",
       "toolUrl": "lsengokuotome4-senrannihiramekukeigannogunshi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L花の慶次～佐渡攻めの章",
@@ -1504,7 +1668,8 @@
       "file": "lhananokeiji-sadosemenoshou-index.html",
       "toolStatus": "available",
       "toolUrl": "lhananokeiji-sadosemenoshou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "S OZ1-AA-30",
@@ -1513,7 +1678,8 @@
       "file": "s-oz1-aa-30-index.html",
       "toolStatus": "available",
       "toolUrl": "s-oz1-aa-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "S 織田信奈の野望 全国版",
@@ -1522,7 +1688,8 @@
       "file": "s-odashinnanoyabou-zenkokuban-index.html",
       "toolStatus": "available",
       "toolUrl": "s-odashinnanoyabou-zenkokuban-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOTメイドインアビス",
@@ -1531,7 +1698,8 @@
       "file": "slotmeidoin-abisu-index.html",
       "toolStatus": "available",
       "toolUrl": "slotmeidoin-abisu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Sスロドル",
@@ -1540,7 +1708,8 @@
       "file": "ssurodoru-index.html",
       "toolStatus": "available",
       "toolUrl": "ssurodoru-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SモモキュンソードDX",
@@ -1549,7 +1718,8 @@
       "file": "smomokyunsoododx-index.html",
       "toolStatus": "available",
       "toolUrl": "smomokyunsoododx-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "S大花満",
@@ -1558,7 +1728,8 @@
       "file": "soohanaman-index.html",
       "toolStatus": "available",
       "toolUrl": "soohanaman-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ぱちスロ にゃんこ大戦争 BIGBANG",
@@ -1567,7 +1738,8 @@
       "file": "pachisuro-nyankodaisensou-bigbang-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-nyankodaisensou-bigbang-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ぱちスロ 乃木坂46",
@@ -1576,7 +1748,8 @@
       "file": "pachisuro-nogizaka46-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-nogizaka46-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "もっとチバリヨ-25",
@@ -1585,7 +1758,8 @@
       "file": "mottochibariyo-25-index.html",
       "toolStatus": "available",
       "toolUrl": "mottochibariyo-25-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "アナザーゴッドハーデス-解き放たれし槍撃ver.",
@@ -1594,7 +1768,8 @@
       "file": "anazaagoddohaadesu-tokihouttareshiyarigekiver-index.html",
       "toolStatus": "available",
       "toolUrl": "anazaagoddohaadesu-tokihouttareshiyarigekiver-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ウルトラちゃぶ台返し",
@@ -1603,7 +1778,8 @@
       "file": "urutorachabudaikaeshi-index.html",
       "toolStatus": "available",
       "toolUrl": "urutorachabudaikaeshi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "キングハナハナ-30",
@@ -1612,7 +1788,8 @@
       "file": "kinguhanahana-30-index.html",
       "toolStatus": "available",
       "toolUrl": "kinguhanahana-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "クランキークレスト",
@@ -1621,7 +1798,8 @@
       "file": "crankycrest-index.html",
       "toolStatus": "available",
       "toolUrl": "crankycrest-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ゴーゴージャグラー3",
@@ -1630,7 +1808,8 @@
       "file": "googoojaguraa3-index.html",
       "toolStatus": "available",
       "toolUrl": "googoojaguraa3-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ジャベリン",
@@ -1639,7 +1818,8 @@
       "file": "jaberin-index.html",
       "toolStatus": "available",
       "toolUrl": "jaberin-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ バイオハザード:ヴェンデッタ",
@@ -1648,7 +1828,8 @@
       "file": "sumasuro-baiohazaado-vendetta-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-baiohazaado-vendetta-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ 戦国BASARA GIGA",
@@ -1657,7 +1838,8 @@
       "file": "sumasuro-sengokubasara-giga-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-sengokubasara-giga-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロとある魔術の禁書目録",
@@ -1666,7 +1848,8 @@
       "file": "sumasurotoarumajutsunokinshomokuroku-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurotoarumajutsunokinshomokuroku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロキン肉マン～7人の悪魔超人編～",
@@ -1675,7 +1858,8 @@
       "file": "sumasurokinnikuman-7ninnoakumachoujinhen-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurokinnikuman-7ninnoakumachoujinhen-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロバジリスク～甲賀忍法帖～絆2 天膳 BLACK EDITION",
@@ -1684,7 +1868,8 @@
       "file": "sumasurobajirisuku-koukaninpouchou-kizuna2-tenzen-black-edition-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurobajirisuku-koukaninpouchou-kizuna2-tenzen-black-edition-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロモンキーターンV",
@@ -1700,7 +1885,8 @@
       "file": "sumasurogekijouban-mahoushoujomadoka-magikaf-forute-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurogekijouban-mahoushoujomadoka-magikaf-forute-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ北斗の拳",
@@ -1709,7 +1895,8 @@
       "file": "sumasurohokutonoken-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurohokutonoken-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ転生したらスライムだった件",
@@ -1718,7 +1905,8 @@
       "file": "sumasurotenshoushitarasuraimudattaken-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurotenshoushitarasuraimudattaken-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スロット ソードアート・オンライン",
@@ -1727,7 +1915,8 @@
       "file": "surotto-soodoaato-onrain-index.html",
       "toolStatus": "available",
       "toolUrl": "surotto-soodoaato-onrain-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スーハナライジング-30",
@@ -1736,7 +1925,8 @@
       "file": "suuhanaraijingu-30-index.html",
       "toolStatus": "available",
       "toolUrl": "suuhanaraijingu-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スーパービンゴネオクラシック",
@@ -1745,7 +1935,8 @@
       "file": "suupaabingoneokurashikku-index.html",
       "toolStatus": "available",
       "toolUrl": "suupaabingoneokurashikku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スーパービンゴネオクラシック-30",
@@ -1754,7 +1945,8 @@
       "file": "suupaabingoneokurashikku-30-index.html",
       "toolStatus": "available",
       "toolUrl": "suupaabingoneokurashikku-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "デジスロ JAC IN バージョン",
@@ -1763,7 +1955,8 @@
       "file": "dejisuro-jac-in-baajon-index.html",
       "toolStatus": "available",
       "toolUrl": "dejisuro-jac-in-baajon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ドラゴンハナハナ～閃光～-30",
@@ -1772,7 +1965,8 @@
       "file": "doragonhanahana-senkou-30-index.html",
       "toolStatus": "available",
       "toolUrl": "doragonhanahana-senkou-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ニューシオサイ",
@@ -1781,7 +1975,8 @@
       "file": "newshiosai-index.html",
       "toolStatus": "available",
       "toolUrl": "newshiosai-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ からくりサーカス",
@@ -1790,7 +1985,8 @@
       "file": "pachisuro-karakurisaakasu-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-karakurisaakasu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ ケンガンアシュラ",
@@ -1799,7 +1995,8 @@
       "file": "pachisuro-kengan-ashura-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-kengan-ashura-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ モンスターハンターワールド：アイスボーン",
@@ -1808,7 +2005,8 @@
       "file": "pachisuro-monsutaahantaawaarudo-aisuboon-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-monsutaahantaawaarudo-aisuboon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 戦国†恋姫",
@@ -1817,7 +2015,8 @@
       "file": "pachisuro-sengoku-koihime-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-sengoku-koihime-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 戦国無双3M",
@@ -1826,7 +2025,8 @@
       "file": "pachisuro-sengokumusou3m-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-sengokumusou3m-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 探偵オペラ ミルキィホームズＲ 大収穫祭!!!!",
@@ -1835,7 +2035,8 @@
       "file": "pachisuro-tanteiopera-mirukiihoomuzur-daishuukakumatsuri-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-tanteiopera-mirukiihoomuzur-daishuukakumatsuri-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 緋弾のアリアII",
@@ -1844,7 +2045,8 @@
       "file": "pachisuro-hidannoariaii-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-hidannoariaii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ 蛇喰夢子という女",
@@ -1853,7 +2055,8 @@
       "file": "pachisuro-jabamiyumekotoiuonna-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-jabamiyumekotoiuonna-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロOVERLORD絶対支配者光臨II",
@@ -1862,7 +2065,8 @@
       "file": "pachisurooverlordzettaishihaishakourinii-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurooverlordzettaishihaishakourinii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロコードギアス反逆のルルーシュ3 C.C.&Kallen ver.",
@@ -1871,7 +2075,8 @@
       "file": "pachisurokoodogiasuhangyakunoruruushu3-c-c-kallen-ver-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokoodogiasuhangyakunoruruushu3-c-c-kallen-ver-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロファイヤードリフト",
@@ -1880,7 +2085,8 @@
       "file": "pachisurofaiyaadorifuto-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurofaiyaadorifuto-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO TYPE-ART",
@@ -1889,7 +2095,8 @@
       "file": "pachisurokoukyoushiheneurekasebun-hi-evolution-zero-type-art-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokoukyoushiheneurekasebun-hi-evolution-zero-type-art-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ傷物語-始マリノ刻",
@@ -1898,7 +2105,8 @@
       "file": "pachisurokizumonogo-shimarinokoku-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokizumonogo-shimarinokoku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ機動戦士ガンダムユニコーン",
@@ -1907,7 +2115,8 @@
       "file": "pachisurokidousenshigandamuyunikoon-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokidousenshigandamuyunikoon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ炎炎ノ消防隊",
@@ -1916,7 +2125,8 @@
       "file": "pachisurohonoohonoonoshouboutai-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurohonoohonoonoshouboutai-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ琉神－30 スイカバージョン",
@@ -1925,7 +2135,8 @@
       "file": "pachisuroryuukami-30-suikabaajon-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuroryuukami-30-suikabaajon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ盾の勇者の成り上がり",
@@ -1934,7 +2145,8 @@
       "file": "pachisurotatenoyuushanonariagari-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurotatenoyuushanonariagari-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ファミスタ回胴版!!",
@@ -1943,7 +2155,8 @@
       "file": "famisutakaidouhan-index.html",
       "toolStatus": "available",
       "toolUrl": "famisutakaidouhan-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "マジカルハロウィン8",
@@ -1952,7 +2165,8 @@
       "file": "magicalhalloween8-index.html",
       "toolStatus": "available",
       "toolUrl": "magicalhalloween8-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "回胴式遊技機 グランベルム",
@@ -1961,7 +2175,8 @@
       "file": "kaidoushikiyuugiki-guranberumu-index.html",
       "toolStatus": "available",
       "toolUrl": "kaidoushikiyuugiki-guranberumu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "戦国コレクション5",
@@ -1970,7 +2185,8 @@
       "file": "sengokukorekushon5-index.html",
       "toolStatus": "available",
       "toolUrl": "sengokukorekushon5-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "戦国コレクション５超極楽ＬＯＯＰ",
@@ -1979,7 +2195,8 @@
       "file": "sengokukorekushon5chougokurakuloop-index.html",
       "toolStatus": "available",
       "toolUrl": "sengokukorekushon5chougokurakuloop-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "燃えチバ-30",
@@ -1988,7 +2205,8 @@
       "file": "moechiba-30-index.html",
       "toolStatus": "available",
       "toolUrl": "moechiba-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "真天下布武",
@@ -1997,7 +2215,8 @@
       "file": "makototenkafubu-index.html",
       "toolStatus": "available",
       "toolUrl": "makototenkafubu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "課長 熊田工作",
@@ -2006,7 +2225,8 @@
       "file": "kachou-kumadakousaku-index.html",
       "toolStatus": "available",
       "toolUrl": "kachou-kumadakousaku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "防空少女ラブキューレ2〜極限の共鳴〜",
@@ -2015,7 +2235,8 @@
       "file": "boukuushoujorabukyuure2-kyokugennokyoumei-index.html",
       "toolStatus": "available",
       "toolUrl": "boukuushoujorabukyuure2-kyokugennokyoumei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "麻雀格闘倶楽部 覚醒",
@@ -2024,7 +2245,8 @@
       "file": "maajankakutoukurabu-kakusei-index.html",
       "toolStatus": "available",
       "toolUrl": "maajankakutoukurabu-kakusei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "A-SLOT+ この素晴らしい世界に祝福を！",
@@ -2033,7 +2255,8 @@
       "file": "a-slot-konosubarashiisekainishukufukuwo-index.html",
       "toolStatus": "available",
       "toolUrl": "a-slot-konosubarashiisekainishukufukuwo-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L D4DJ Pachi-Slot Mix",
@@ -2042,7 +2265,8 @@
       "file": "l-d4dj-pachi-slot-mix-index.html",
       "toolStatus": "available",
       "toolUrl": "l-d4dj-pachi-slot-mix-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L ToLOVEるダークネス",
@@ -2051,7 +2275,8 @@
       "file": "toloveru-darkness-index.html",
       "toolStatus": "available",
       "toolUrl": "toloveru-darkness-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L アカメが斬る！2",
@@ -2060,7 +2285,8 @@
       "file": "l-akamegakiru-2-index.html",
       "toolStatus": "available",
       "toolUrl": "l-akamegakiru-2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L ウルトラマンティガ",
@@ -2069,7 +2295,8 @@
       "file": "l-urutoramanteiga-index.html",
       "toolStatus": "available",
       "toolUrl": "l-urutoramanteiga-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L 仮面ライダー 7RIDERS",
@@ -2078,7 +2305,8 @@
       "file": "l-kamenraidaa-7riders-index.html",
       "toolStatus": "available",
       "toolUrl": "l-kamenraidaa-7riders-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L 新・必殺仕置人 回胴 CRASH SPEC",
@@ -2087,7 +2315,8 @@
       "file": "shikoten-index.html",
       "toolStatus": "available",
       "toolUrl": "shikoten-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L 無職転生 ～異世界行ったら本気だす～",
@@ -2096,7 +2325,8 @@
       "file": "mushokutensei-index.html",
       "toolStatus": "available",
       "toolUrl": "mushokutensei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L 真・一騎当千",
@@ -2112,7 +2342,8 @@
       "file": "luruhoshiyatsura-index.html",
       "toolStatus": "available",
       "toolUrl": "luruhoshiyatsura-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lストライクウィッチーズ2",
@@ -2121,7 +2352,8 @@
       "file": "lsutoraikuuitchiizu2-index.html",
       "toolStatus": "available",
       "toolUrl": "lsutoraikuuitchiizu2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lスーパービンゴネオ",
@@ -2130,7 +2362,8 @@
       "file": "superbingoneo-index.html",
       "toolStatus": "available",
       "toolUrl": "superbingoneo-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lダブルアタック2 withOZS-1000＆RAPHAEL",
@@ -2139,7 +2372,8 @@
       "file": "doubleattack2-index.html",
       "toolStatus": "available",
       "toolUrl": "doubleattack2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lダンベル何キロ持てる？",
@@ -2148,7 +2382,8 @@
       "file": "dumbbell-index.html",
       "toolStatus": "available",
       "toolUrl": "dumbbell-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lバンドリ！",
@@ -2157,7 +2392,8 @@
       "file": "bangdream-index.html",
       "toolStatus": "available",
       "toolUrl": "bangdream-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロ かぐや様は告らせたい",
@@ -2166,7 +2402,8 @@
       "file": "lpachisuro-kaguyasamahakokurasetai-index.html",
       "toolStatus": "available",
       "toolUrl": "lpachisuro-kaguyasamahakokurasetai-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロ マクロスフロンティア4",
@@ -2175,7 +2412,8 @@
       "file": "lpachisuro-makurosufuronteia4-index.html",
       "toolStatus": "available",
       "toolUrl": "lpachisuro-makurosufuronteia4-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロ 炎炎ノ消防隊",
@@ -2184,7 +2422,8 @@
       "file": "lpachisuro-honoohonoonoshouboutai-index.html",
       "toolStatus": "available",
       "toolUrl": "lpachisuro-honoohonoonoshouboutai-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロガールズ＆パンツァー 最終章",
@@ -2193,7 +2432,8 @@
       "file": "lpachisurogaaruzu-pantsuaa-saishuushou-index.html",
       "toolStatus": "available",
       "toolUrl": "lpachisurogaaruzu-pantsuaa-saishuushou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロ戦姫絶唱シンフォギア 正義の歌",
@@ -2202,7 +2442,8 @@
       "file": "lpachisurosenhimezesshoushinfogia-seiginouta-index.html",
       "toolStatus": "available",
       "toolUrl": "lpachisurosenhimezesshoushinfogia-seiginouta-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロ閃乱カグラ2 SHINOVI MASTER",
@@ -2211,7 +2452,8 @@
       "file": "lpachisurosenrankagura2-shinovi-master-index.html",
       "toolStatus": "available",
       "toolUrl": "lpachisurosenrankagura2-shinovi-master-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lルパン三世 大航海者の秘宝",
@@ -2227,7 +2469,8 @@
       "file": "onepunchman-index.html",
       "toolStatus": "available",
       "toolUrl": "onepunchman-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L不二子BT",
@@ -2243,7 +2486,8 @@
       "file": "nangoku-index.html",
       "toolStatus": "available",
       "toolUrl": "nangoku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L聖闘士星矢海皇覚醒CUSTOM EDITION",
@@ -2252,7 +2496,8 @@
       "file": "lhijiritoushihoshiyakaioukakuseicustom-edition-index.html",
       "toolStatus": "available",
       "toolUrl": "lhijiritoushihoshiyakaioukakuseicustom-edition-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "SLOT忍者じゃじゃ丸くん",
@@ -2261,7 +2506,8 @@
       "file": "slotninjajajamarukun-index.html",
       "toolStatus": "available",
       "toolUrl": "slotninjajajamarukun-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Sky Love",
@@ -2270,7 +2516,8 @@
       "file": "sky-love-index.html",
       "toolStatus": "available",
       "toolUrl": "sky-love-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Sバハマ30",
@@ -2279,7 +2526,8 @@
       "file": "sbahama30-index.html",
       "toolStatus": "available",
       "toolUrl": "sbahama30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "アオハル♪操 A-LIVE",
@@ -2295,7 +2543,8 @@
       "file": "ultramj-index.html",
       "toolStatus": "available",
       "toolUrl": "ultramj-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "キングクリエーター30",
@@ -2304,7 +2553,8 @@
       "file": "kingcreator30-index.html",
       "toolStatus": "available",
       "toolUrl": "kingcreator30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ジャグラーガールズSS",
@@ -2313,7 +2563,8 @@
       "file": "jugglergirls-index.html",
       "toolStatus": "available",
       "toolUrl": "jugglergirls-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ゲゲゲの鬼太郎 覚醒",
@@ -2322,7 +2573,8 @@
       "file": "sumasuro-gegegenokitarou-kakusei-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-gegegenokitarou-kakusei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ コードギアス 反逆のルルーシュ／復活のルルーシュ",
@@ -2331,7 +2583,8 @@
       "file": "sumasuro-koodogiasu-hangyakunoruruushu-fukkatsunoruruushu-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-koodogiasu-hangyakunoruruushu-fukkatsunoruruushu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ゴッドイーター リザレクション",
@@ -2340,7 +2593,8 @@
       "file": "sumasuro-goddoiitaa-rizarekushon-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-goddoiitaa-rizarekushon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ゴールデンカムイ",
@@ -2349,7 +2603,8 @@
       "file": "goldenkamuy-index.html",
       "toolStatus": "available",
       "toolUrl": "goldenkamuy-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ストライク・ザ・ブラッド",
@@ -2358,7 +2613,8 @@
       "file": "sumasuro-sutoraiku-za-buraddo-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-sutoraiku-za-buraddo-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ストリートファイターV 挑戦者の道",
@@ -2367,7 +2623,8 @@
       "file": "sumasuro-sutoriitofaitaav-chousenshanomichi-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-sutoriitofaitaav-chousenshanomichi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ トロピカーナ",
@@ -2383,7 +2640,8 @@
       "file": "sumasuro-baiohazaadovirejji-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-baiohazaadovirejji-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ モンスターハンターライズ",
@@ -2392,7 +2650,8 @@
       "file": "sumasuro-monsutaahantaaraizu-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-monsutaahantaaraizu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ 一方通行 とある魔術の禁書目録",
@@ -2408,7 +2667,8 @@
       "file": "okidoki-duo-encore-index.html",
       "toolStatus": "available",
       "toolUrl": "okidoki-duo-encore-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ 秘宝伝",
@@ -2438,7 +2698,8 @@
       "file": "sumasurokinguparusaa-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurokinguparusaa-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ交響詩篇エウレカセブン4 HI-EVOLUTION",
@@ -2447,7 +2708,8 @@
       "file": "sumasurokoukyoushiheneurekasebun4-hi-evolution-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurokoukyoushiheneurekasebun4-hi-evolution-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ痛いのは嫌なので防御力に極振りしたいと思います。",
@@ -2456,7 +2718,8 @@
       "file": "sumasuroitainohaiyananodebougyoryokunikyokufurishitaitoomoimasu-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuroitainohaiyananodebougyoryokunikyokufurishitaitoomoimasu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ真・北斗無双",
@@ -2465,7 +2728,8 @@
       "file": "hokutomusou-index.html",
       "toolStatus": "available",
       "toolUrl": "hokutomusou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ頭文字D 2nd",
@@ -2474,7 +2738,8 @@
       "file": "initiald2-index.html",
       "toolStatus": "available",
       "toolUrl": "initiald2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマート沖スロ ドラゴンハナハナ～閃光～",
@@ -2483,7 +2748,8 @@
       "file": "sumaatookisuro-doragonhanahana-senkou-index.html",
       "toolStatus": "available",
       "toolUrl": "sumaatookisuro-doragonhanahana-senkou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマート沖スロ 超華祭",
@@ -2492,7 +2758,8 @@
       "file": "sumaatookisuro-chouhanamatsuri-index.html",
       "toolStatus": "available",
       "toolUrl": "sumaatookisuro-chouhanamatsuri-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スロット Re:ゼロから始める異世界生活 season2",
@@ -2501,7 +2768,8 @@
       "file": "surotto-re-zerokarahajimeruisekaiseikatsu-season2-index.html",
       "toolStatus": "available",
       "toolUrl": "surotto-re-zerokarahajimeruisekaiseikatsu-season2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スロット ゾンビランドサガ",
@@ -2510,7 +2778,8 @@
       "file": "surotto-zonbirandosaga-index.html",
       "toolStatus": "available",
       "toolUrl": "surotto-zonbirandosaga-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "チバリヨ２",
@@ -2519,7 +2788,8 @@
       "file": "chibariyo2-2024-index.html",
       "toolStatus": "available",
       "toolUrl": "chibariyo2-2024-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "トリプルクラウンフォーユー",
@@ -2528,7 +2798,8 @@
       "file": "triplecrown4u-index.html",
       "toolStatus": "available",
       "toolUrl": "triplecrown4u-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ドラゴンハナハナ～閃光～",
@@ -2537,7 +2808,8 @@
       "file": "dragonhanahana-index.html",
       "toolStatus": "available",
       "toolUrl": "dragonhanahana-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ニューパルサーSP4 with 太鼓の達人",
@@ -2546,7 +2818,8 @@
       "file": "nyuuparusaasp4-with-taikonotatsujin-index.html",
       "toolStatus": "available",
       "toolUrl": "nyuuparusaasp4-with-taikonotatsujin-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ ガメラ2",
@@ -2555,7 +2828,8 @@
       "file": "pachisuro-gamera2-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-gamera2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ ダンジョンに出会いを求めるのは間違っているだろうか2",
@@ -2564,7 +2838,8 @@
       "file": "pachisuro-danjonnideaiwomotomerunohamachigatsuteirudarouka2-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisuro-danjonnideaiwomotomerunohamachigatsuteirudarouka2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロL黄門ちゃま天",
@@ -2573,7 +2848,8 @@
       "file": "pachisurolkoumonchamaten-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurolkoumonchamaten-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ武装神姫",
@@ -2582,7 +2858,8 @@
       "file": "pachisurobusoushinki-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurobusoushinki-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "パチスロ金のかぼちゃ",
@@ -2591,7 +2868,8 @@
       "file": "pachisurokinnokabocha-index.html",
       "toolStatus": "available",
       "toolUrl": "pachisurokinnokabocha-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ミスタージャグラー",
@@ -2600,7 +2878,8 @@
       "file": "mister-juggler-index.html",
       "toolStatus": "available",
       "toolUrl": "mister-juggler-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ワードオブライツII",
@@ -2609,7 +2888,8 @@
       "file": "waadooburaitsuii-index.html",
       "toolStatus": "available",
       "toolUrl": "waadooburaitsuii-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "今日から俺は!! パチスロ編",
@@ -2618,7 +2898,8 @@
       "file": "kyoukaraoreha-pachisurohen-index.html",
       "toolStatus": "available",
       "toolUrl": "kyoukaraoreha-pachisurohen-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "吉宗ＲＩＳＩＮＧ",
@@ -2627,7 +2908,8 @@
       "file": "yoshimunerising-index.html",
       "toolStatus": "available",
       "toolUrl": "yoshimunerising-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "忍魂参 ～奥義皆伝ノ章～",
@@ -2636,7 +2918,8 @@
       "file": "nintamashiisan-ougikaidennoshou-index.html",
       "toolStatus": "available",
       "toolUrl": "nintamashiisan-ougikaidennoshou-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "押忍！番長4",
@@ -2659,7 +2942,8 @@
       "file": "okishiisaa-30-index.html",
       "toolStatus": "available",
       "toolUrl": "okishiisaa-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "沖ドキ！BLACK",
@@ -2668,7 +2952,8 @@
       "file": "okidoki-black-index.html",
       "toolStatus": "available",
       "toolUrl": "okidoki-black-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "沖ドキ！ゴージャス（25φ）",
@@ -2677,7 +2962,8 @@
       "file": "okidoki-goojasu-25phi-index.html",
       "toolStatus": "available",
       "toolUrl": "okidoki-goojasu-25phi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "沖ドキ！ゴージャス（30φ）",
@@ -2686,7 +2972,8 @@
       "file": "okidoki-goojasu-30phi-index.html",
       "toolStatus": "available",
       "toolUrl": "okidoki-goojasu-30phi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "賞金首Angel",
@@ -2695,7 +2982,8 @@
       "file": "shokinkubi-angel-index.html",
       "toolStatus": "available",
       "toolUrl": "shokinkubi-angel-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Ｌ 犬夜叉2",
@@ -2704,7 +2992,8 @@
       "file": "l-inuyasha2-index.html",
       "toolStatus": "available",
       "toolUrl": "l-inuyasha2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "A-SLOT+ ディスクアップ ULTRAREMIX",
@@ -2720,7 +3009,8 @@
       "file": "toloveru-darkness-index.html",
       "toolStatus": "available",
       "toolUrl": "toloveru-darkness-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L ULTRAMAN",
@@ -2729,7 +3019,8 @@
       "file": "ultraman-index.html",
       "toolStatus": "available",
       "toolUrl": "ultraman-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L にゃんこ大戦争 超神速",
@@ -2773,7 +3064,8 @@
       "file": "revuestarlight-index.html",
       "toolStatus": "available",
       "toolUrl": "revuestarlight-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L 無職転生 ～異世界行ったら本気だす～",
@@ -2782,7 +3074,8 @@
       "file": "mushokutensei-index.html",
       "toolStatus": "available",
       "toolUrl": "mushokutensei-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L 絶対衝激IV",
@@ -2833,7 +3126,8 @@
       "file": "1000chan-a-index.html",
       "toolStatus": "available",
       "toolUrl": "1000chan-a-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "LBプレミアムうまい棒",
@@ -2856,7 +3150,8 @@
       "file": "lushiototorashirafukessenvh-index.html",
       "toolStatus": "available",
       "toolUrl": "lushiototorashirafukessenvh-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lゴジラ",
@@ -2956,7 +3251,8 @@
       "file": "sister-quest-index.html",
       "toolStatus": "available",
       "toolUrl": "sister-quest-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "てぃだどんどん",
@@ -2965,7 +3261,8 @@
       "file": "teidadondon-index.html",
       "toolStatus": "available",
       "toolUrl": "teidadondon-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "わたしの幸せな結婚",
@@ -2988,7 +3285,8 @@
       "file": "kureanohihouden-hajimarinotobiratotaiyounoishi-boonasutorigaaver-index.html",
       "toolStatus": "available",
       "toolUrl": "kureanohihouden-hajimarinotobiratotaiyounoishi-boonasutorigaaver-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スターハナハナ-30",
@@ -2997,7 +3295,8 @@
       "file": "sutaahanahana-30-index.html",
       "toolStatus": "available",
       "toolUrl": "sutaahanahana-30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ とある科学の超電磁砲2",
@@ -3013,7 +3312,8 @@
       "file": "sumasuro-youkosojitsuryokushijoushuginokyoushitsuhe-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-youkosojitsuryokushijoushuginokyoushitsuhe-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ アイドルマスター ミリオンライブ！ネクストプロローグ",
@@ -3022,7 +3322,8 @@
       "file": "sumasuro-aidorumasutaa-mirionraibu-nekusutopuroroogu-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-aidorumasutaa-mirionraibu-nekusutopuroroogu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ギルティクラウン2",
@@ -3031,7 +3332,8 @@
       "file": "sumasuro-giruteikuraun2-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-giruteikuraun2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ シャーマンキング",
@@ -3040,7 +3342,8 @@
       "file": "sumasuro-shaamankingu-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-shaamankingu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ デビル メイ クライ 5 スタイリッシュトライブ",
@@ -3049,7 +3352,8 @@
       "file": "sumasuro-debiru-mei-kurai-5-sutairisshutoraibu-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-debiru-mei-kurai-5-sutairisshutoraibu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ドルアーガの塔",
@@ -3065,7 +3369,8 @@
       "file": "sumasuro-baiohazaado5-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-baiohazaado5-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ バベル",
@@ -3081,7 +3386,8 @@
       "file": "sumasuro-magiarekoodomahoushoujomadoka-magikagaiden-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-magiarekoodomahoushoujomadoka-magikagaiden-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ 化物語",
@@ -3090,7 +3396,8 @@
       "file": "bakemonogatari-index.html",
       "toolStatus": "available",
       "toolUrl": "bakemonogatari-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ 新鬼武者3",
@@ -3113,7 +3420,8 @@
       "file": "okidoki-duo-encore-index.html",
       "toolStatus": "available",
       "toolUrl": "okidoki-duo-encore-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ 秘宝伝",
@@ -3129,7 +3437,8 @@
       "file": "sumasuro-midoridon-viva-jounetsunanbeihen-revival-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasuro-midoridon-viva-jounetsunanbeihen-revival-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロスーパーブラックジャック",
@@ -3138,7 +3447,8 @@
       "file": "sumasurosuupaaburakkujakku-index.html",
       "toolStatus": "available",
       "toolUrl": "sumasurosuupaaburakkujakku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロニューパルサーBT",
@@ -3161,7 +3471,8 @@
       "file": "sumaatookisuro-ameijinguraibu-index.html",
       "toolStatus": "available",
       "toolUrl": "sumaatookisuro-ameijinguraibu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマート沖スロ スターハナハナ",
@@ -3256,7 +3567,8 @@
       "file": "tobe-haaremueesu-index.html",
       "toolStatus": "available",
       "toolUrl": "tobe-haaremueesu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "花笠",
@@ -3265,7 +3577,8 @@
       "file": "karyuu-index.html",
       "toolStatus": "available",
       "toolUrl": "karyuu-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "銀河英雄伝説 Die Neue These",
@@ -3281,7 +3594,8 @@
       "file": "aslot-isekaiquartet-index.html",
       "toolStatus": "available",
       "toolUrl": "aslot-isekaiquartet-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L 邪神ちゃんドロップキック",
@@ -3299,7 +3613,8 @@
       "file": "galfy-index.html",
       "toolStatus": "available",
       "toolUrl": "galfy-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lすーぱぁびん娘",
@@ -3308,7 +3623,8 @@
       "file": "superbin-index.html",
       "toolStatus": "available",
       "toolUrl": "superbin-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lアクダマドライブ",
@@ -3317,7 +3633,8 @@
       "file": "akudama-index.html",
       "toolStatus": "available",
       "toolUrl": "akudama-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lタクトオーパス デスティニー",
@@ -3326,7 +3643,8 @@
       "file": "takt-opus-index.html",
       "toolStatus": "available",
       "toolUrl": "takt-opus-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロ うみねこのなく頃に2",
@@ -3335,7 +3653,8 @@
       "file": "umineko2-index.html",
       "toolStatus": "available",
       "toolUrl": "umineko2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロ からくりサーカス2",
@@ -3344,7 +3663,8 @@
       "file": "karakuri2-index.html",
       "toolStatus": "available",
       "toolUrl": "karakuri2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "Lパチスロ 喰霊‐零‐Re",
@@ -3360,7 +3680,8 @@
       "file": "enen2-index.html",
       "toolStatus": "available",
       "toolUrl": "enen2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L南国育ちSPECIAL",
@@ -3369,7 +3690,8 @@
       "file": "nangoku-special-index.html",
       "toolStatus": "available",
       "toolUrl": "nangoku-special-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L戦国乙女5",
@@ -3385,7 +3707,8 @@
       "file": "hanmabataki-index.html",
       "toolStatus": "available",
       "toolUrl": "hanmabataki-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "L虚構推理",
@@ -3394,7 +3717,8 @@
       "file": "kyokoshisuiri-index.html",
       "toolStatus": "available",
       "toolUrl": "kyokoshisuiri-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ULTRAMAN 最終決戦",
@@ -3403,7 +3727,8 @@
       "file": "ultraman-final-index.html",
       "toolStatus": "available",
       "toolUrl": "ultraman-final-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "アニマルスロットドッチ",
@@ -3412,7 +3737,8 @@
       "file": "animal-slot-docchi-index.html",
       "toolStatus": "available",
       "toolUrl": "animal-slot-docchi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ガンダムユニコーン 覚醒DRIVE",
@@ -3421,7 +3747,8 @@
       "file": "gundam-unicorn-drive-index.html",
       "toolStatus": "available",
       "toolUrl": "gundam-unicorn-drive-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ BIRDIE WING",
@@ -3430,7 +3757,8 @@
       "file": "birdiewing-index.html",
       "toolStatus": "available",
       "toolUrl": "birdiewing-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ とある魔術の禁書目録2",
@@ -3466,7 +3794,8 @@
       "file": "goblinslayer2-index.html",
       "toolStatus": "available",
       "toolUrl": "goblinslayer2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ サンダーV",
@@ -3475,7 +3804,8 @@
       "file": "thunderv-index.html",
       "toolStatus": "available",
       "toolUrl": "thunderv-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ストリートファイター6",
@@ -3493,7 +3823,8 @@
       "file": "hanabi-index.html",
       "toolStatus": "available",
       "toolUrl": "hanabi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ バイオハザードRE:3",
@@ -3502,7 +3833,8 @@
       "file": "bio-re3-index.html",
       "toolStatus": "available",
       "toolUrl": "bio-re3-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ビッグドリーム THE GOLDEN PUSHER",
@@ -3511,7 +3843,8 @@
       "file": "bigdream-golden-pusher-index.html",
       "toolStatus": "available",
       "toolUrl": "bigdream-golden-pusher-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ ミリオンゴッド‐神々の軌跡‐",
@@ -3527,7 +3860,8 @@
       "file": "yormungand-index.html",
       "toolStatus": "available",
       "toolUrl": "yormungand-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ 北斗の拳 転生の章2",
@@ -3536,7 +3870,8 @@
       "file": "hokutotensei2-index.html",
       "toolStatus": "available",
       "toolUrl": "hokutotensei2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ 攻殻機動隊",
@@ -3545,7 +3880,8 @@
       "file": "koukaku-index.html",
       "toolStatus": "available",
       "toolUrl": "koukaku-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロケロット5BT",
@@ -3554,7 +3890,8 @@
       "file": "kerotto5bt-index.html",
       "toolStatus": "available",
       "toolUrl": "kerotto5bt-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロスーパーリオエース2",
@@ -3563,7 +3900,8 @@
       "file": "superrioace2-index.html",
       "toolStatus": "available",
       "toolUrl": "superrioace2-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマスロ鉄拳6",
@@ -3572,7 +3910,8 @@
       "file": "tekken6-index.html",
       "toolStatus": "available",
       "toolUrl": "tekken6-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマート沖スロ ダークハイビ",
@@ -3581,7 +3920,8 @@
       "file": "darkhaibi-index.html",
       "toolStatus": "available",
       "toolUrl": "darkhaibi-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スマート沖スロ ニューキングハナハナV",
@@ -3590,7 +3930,8 @@
       "file": "newkinghanahana-v-index.html",
       "toolStatus": "available",
       "toolUrl": "newkinghanahana-v-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スロット ソードアート・オンラインII",
@@ -3599,7 +3940,8 @@
       "file": "surotto-soodoaato-onrain-index.html",
       "toolStatus": "available",
       "toolUrl": "surotto-soodoaato-onrain-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "スロット ワールドダイスター",
@@ -3617,7 +3959,8 @@
       "file": "newkinghanahana-v30-index.html",
       "toolStatus": "available",
       "toolUrl": "newkinghanahana-v30-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "ローティス",
@@ -3626,7 +3969,8 @@
       "file": "rotis-index.html",
       "toolStatus": "available",
       "toolUrl": "rotis-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "甲鉄城のカバネリ 海門決戦",
@@ -3635,7 +3979,8 @@
       "file": "kabaneri-unato-index.html",
       "toolStatus": "available",
       "toolUrl": "kabaneri-unato-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     },
     {
       "name": "真打 吉宗",
@@ -3644,7 +3989,8 @@
       "file": "shinuchi-yoshimune-index.html",
       "toolStatus": "available",
       "toolUrl": "shinuchi-yoshimune-index.html",
-      "ghoulBase": false
+      "ghoulBase": true,
+      "ghoulCompleteShell": true
     }
   ]
 }
