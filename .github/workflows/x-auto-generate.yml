@@ -32,7 +32,11 @@ jobs:
         run: python -m pip install --disable-pip-version-check beautifulsoup4
 
       - name: Generate tomorrow thread
-        run: python x-auto/scripts/generate_tomorrow_thread.py
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ -f x-auto/generate-target.txt ]; then
+            export TARGET_DATE="$(tr -d '[:space:]' < x-auto/generate-target.txt)"
+          fi
+          python x-auto/scripts/generate_tomorrow_thread.py
 
       - name: Save generated thread and audit
         run: |
