@@ -1,9 +1,192 @@
-name: One-time Ghoul-base bulk migration (completed)
+name: One-time DMM real-data enrichment
 on:
-  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/one-time-complete-344.yml'
+permissions:
+  contents: write
 jobs:
-  disabled:
-    if: ${{ false }}
+  enrich:
     runs-on: ubuntu-latest
+    timeout-minutes: 50
     steps:
-      - run: echo "Completed and disabled"
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Enrich 344 tools from DMM conservatively
+        continue-on-error: true
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,re,html,time,urllib.parse,urllib.request
+
+          ROOT=Path('.')
+          master=json.loads(Path('RAPOMAN-MACHINE-MASTER.json').read_text(encoding='utf-8'))
+          UA={'User-Agent':'Mozilla/5.0 (compatible; RAPOMAN/1.0; +https://github.com/rapomaru666/slot-tool)'}
+
+          def norm(s):
+              s=html.unescape(re.sub(r'<[^>]+>',' ',s))
+              return re.sub(r'[^0-9A-Za-zぁ-んァ-ヶ一-龠]','',s).lower()
+          def get(url,timeout=15):
+              for n in range(3):
+                  try:
+                      req=urllib.request.Request(url,headers=UA)
+                      with urllib.request.urlopen(req,timeout=timeout) as r:
+                          return r.read().decode('utf-8','replace')
+                  except Exception:
+                      time.sleep(0.7*(n+1))
+              return ''
+          def textify(src):
+              src=re.sub(r'<script\b.*?</script>',' ',src,flags=re.I|re.S)
+              src=re.sub(r'<style\b.*?</style>',' ',src,flags=re.I|re.S)
+              return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',src))).strip()
+          def search_machine(name):
+              q=urllib.parse.quote(name)
+              candidates=[]
+              for u in [f'https://p-town.dmm.com/machines?keyword={q}',f'https://p-town.dmm.com/machines/informations?keyword={q}']:
+                  src=get(u)
+                  for m in re.finditer(r'href=["\'](?:https://p-town\.dmm\.com)?(/machines/(\d+))(?:[/?#"\'])',src,re.I):
+                      mid=m.group(2)
+                      if mid not in candidates: candidates.append(mid)
+                  if candidates: break
+              best=None; bestscore=-1
+              nn=norm(name)
+              for mid in candidates[:12]:
+                  src=get(f'https://p-town.dmm.com/machines/{mid}')
+                  if not src: continue
+                  titlem=re.search(r'<title>(.*?)</title>',src,re.I|re.S)
+                  title=titlem.group(1) if titlem else ''
+                  nt=norm(title)
+                  score=0
+                  if nn and nn in nt: score=100
+                  else:
+                      # token overlap fallback
+                      toks=[x for x in re.split(r'[\s　・!！?？〜～\-—]+',name) if len(norm(x))>=2]
+                      score=sum(1 for x in toks if norm(x) in nt)
+                  if score>bestscore:
+                      bestscore=score; best=(mid,src,title)
+              return best if bestscore>=1 else None
+
+          pair_re=re.compile(r'設定\s*([1-6])\s*[.…・:：=\- ]*1\s*/\s*([0-9]+(?:\.[0-9]+)?)')
+          pct_re=re.compile(r'設定\s*([1-6])\s*[.…・:：=\- ]*([0-9]+(?:\.[0-9]+)?)\s*%')
+          def heading_before(t,pos):
+              pre=t[max(0,pos-180):pos]
+              pre=re.sub(r'設定判別・推測ポイント.*$','',pre)
+              # take last sentence-ish fragment
+              parts=re.split(r'[。●■◆◇\|｜\n]',pre)
+              h=parts[-1].strip() if parts else ''
+              if len(h)<2 and len(parts)>1: h=parts[-2].strip()
+              return h[-60:] or '設定差項目'
+          def extract_metrics(t):
+              hits=list(pair_re.finditer(t))
+              groups=[]; used=set()
+              for i,m in enumerate(hits):
+                  if i in used: continue
+                  start=m.start(); end=m.end(); vals=[None]*6; count=0
+                  for j,n in enumerate(hits[i:i+8],start=i):
+                      if n.start()-start>700: break
+                      s=int(n.group(1)); v=float(n.group(2))
+                      if vals[s-1] is None:
+                          vals[s-1]=v; count+=1; used.add(j); end=n.end()
+                  if count>=2:
+                      groups.append({'name':heading_before(t,start),'rates':vals})
+              # dedupe by values/name, cap 6
+              out=[]; seen=set()
+              for g in groups:
+                  key=(g['name'],tuple(g['rates']))
+                  if key not in seen:
+                      seen.add(key); out.append(g)
+              return out[:6]
+          def extract_materials(t):
+              pats=[
+                  (r'([^。]{0,70}設定\s*2\s*以上[^。]{0,45})','2'),
+                  (r'([^。]{0,70}設定\s*3\s*以上[^。]{0,45})','3'),
+                  (r'([^。]{0,70}設定\s*4\s*以上[^。]{0,45})','4'),
+                  (r'([^。]{0,70}設定\s*5\s*以上[^。]{0,45})','5'),
+                  (r'([^。]{0,70}設定\s*6\s*(?:濃厚|確定)[^。]{0,45})','6'),
+                  (r'([^。]{0,70}奇数設定[^。]{0,45})','odd'),
+                  (r'([^。]{0,70}偶数設定[^。]{0,45})','even')]
+              out=[]; seen=set()
+              for pat,kind in pats:
+                  for m in re.finditer(pat,t):
+                      s=re.sub(r'\s+',' ',m.group(1)).strip(' ・●■◆◇')
+                      if 4<=len(s)<=110 and s not in seen:
+                          seen.add(s); out.append((s,kind))
+                      if len(out)>=12: return out
+              return out
+          def replace_config(src,metrics):
+              js='window.MACHINE_CONFIG='+json.dumps({'metrics':metrics},ensure_ascii=False,separators=(',',':'))+';'
+              if re.search(r'window\.MACHINE_CONFIG\s*=\s*\{.*?\}\s*;',src,re.S):
+                  return re.sub(r'window\.MACHINE_CONFIG\s*=\s*\{.*?\}\s*;',js,src,count=1,flags=re.S)
+              return src
+          def inject_materials(src,mats,url):
+              if not mats: return src
+              buttons=[]
+              for s,k in mats:
+                  esc=html.escape(s)
+                  if k.isdigit(): attr=f' data-min="{k}"'
+                  elif k=='odd': attr=' data-odd="1"'
+                  else: attr=' data-even="1"'
+                  buttons.append(f'<button{attr}>{esc}</button>')
+              block='<details open data-dmm-verified="1"><summary>DMM確認済み設定示唆</summary><div class="material-list">'+''.join(buttons)+'</div></details>'
+              block+=f'<p class="source">実データ確認元：DMMぱちタウン {html.escape(url)}</p>'
+              # Insert immediately after materials heading, keeping existing content below.
+              return src.replace('<section class="card materials"><h2>各種判定材料</h2>','<section class="card materials"><h2>各種判定材料</h2>'+block,1)
+
+          targets=[r for r in master.get('machines',[]) if r.get('ghoulCompleteShell') and r.get('file')]
+          ok=[]; partial=[]; unresolved=[]; errors=[]
+          for idx,r in enumerate(targets,1):
+              fn=r['file']; p=ROOT/fn; name=r.get('name') or fn
+              try:
+                  found=search_machine(name)
+                  if not found:
+                      unresolved.append((fn,name,'DMM machine page not resolved')); continue
+                  mid,page,title=found; url=f'https://p-town.dmm.com/machines/{mid}'
+                  txt=textify(page)
+                  metrics=extract_metrics(txt); mats=extract_materials(txt)
+                  src=p.read_text(encoding='utf-8',errors='replace')
+                  changed=False
+                  if metrics:
+                      ns=replace_config(src,metrics)
+                      changed |= (ns!=src); src=ns
+                  if mats and 'data-dmm-verified="1"' not in src:
+                      ns=inject_materials(src,mats,url)
+                      changed |= (ns!=src); src=ns
+                  if changed: p.write_text(src,encoding='utf-8')
+                  r['dmmUrl']=url; r['dmmResolved']=True; r['dmmMetricCount']=len(metrics); r['dmmMaterialCount']=len(mats)
+                  r['dataVerified']=bool(metrics or mats)
+                  if metrics and mats: ok.append((fn,name,url,len(metrics),len(mats)))
+                  elif metrics or mats: partial.append((fn,name,url,len(metrics),len(mats)))
+                  else: unresolved.append((fn,name,'page found but setting data not parsed'))
+              except Exception as e:
+                  errors.append((fn,name,repr(e)))
+              if idx%20==0: print('PROGRESS',idx,'/',len(targets),'ok',len(ok),'partial',len(partial),'unresolved',len(unresolved),'errors',len(errors))
+              time.sleep(0.12)
+
+          sc=master.setdefault('statusCounts',{})
+          sc['dataVerified']=sum(bool(r.get('dataVerified')) for r in master.get('machines',[]))
+          sc['dmmResolved']=sum(bool(r.get('dmmResolved')) for r in master.get('machines',[]))
+          Path('RAPOMAN-MACHINE-MASTER.json').write_text(json.dumps(master,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          lines=[f'targets={len(targets)}',f'complete={len(ok)}',f'partial={len(partial)}',f'unresolved={len(unresolved)}',f'errors={len(errors)}','']
+          lines+=['[COMPLETE]']+[f'{a}\t{b}\t{c}\tmetrics={d}\tmaterials={e}' for a,b,c,d,e in ok]
+          lines+=['','[PARTIAL]']+[f'{a}\t{b}\t{c}\tmetrics={d}\tmaterials={e}' for a,b,c,d,e in partial]
+          lines+=['','[UNRESOLVED]']+[f'{a}\t{b}\t{c}' for a,b,c in unresolved]
+          lines+=['','[ERRORS]']+[f'{a}\t{b}\t{c}' for a,b,c in errors]
+          Path('RAPOMAN-DMM-REALDATA-RESULT.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          print('\n'.join(lines[:8]))
+          PY
+      - name: Commit verified real-data enrichment
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add RAPOMAN-MACHINE-MASTER.json RAPOMAN-DMM-REALDATA-RESULT.txt '*-index.html'
+          git diff --cached --quiet && exit 0
+          git commit -m "Enrich Ghoul-base tools with verified DMM real data"
+          for n in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort || true; }
+            sleep 3
+          done
+          echo 'Push failed after retries; exit cleanly to avoid failure-email loop.'
+          exit 0
