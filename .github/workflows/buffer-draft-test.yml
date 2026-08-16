@@ -1,0 +1,24 @@
+name: Buffer Draft Connection Test
+
+on:
+  push:
+    paths:
+      - 'x-auto/buffer-test-trigger.txt'
+  workflow_dispatch:
+
+jobs:
+  buffer-draft-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Create Buffer draft only
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python x-auto/scripts/buffer_draft_test.py
