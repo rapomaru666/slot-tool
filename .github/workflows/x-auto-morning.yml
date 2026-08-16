@@ -1,0 +1,43 @@
+name: Morning Rainbow Result Report
+
+on:
+  schedule:
+    # 08:00 JST = 23:00 UTC on the previous UTC date
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: x-auto-morning-report
+  cancel-in-progress: false
+
+jobs:
+  morning-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Publish previous day's rainbow results
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python x-auto/scripts/morning_rainbow_report.py
+
+      - name: Save morning publication history
+        run: |
+          if [ -z "$(git status --porcelain -- x-auto/morning-published.json)" ]; then
+            echo "No morning publication change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add x-auto/morning-published.json
+          git commit -m "Record morning rainbow result report"
+          git push
