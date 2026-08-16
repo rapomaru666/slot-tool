@@ -1,11 +1,14 @@
 import json
 import os
 import urllib.request
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 API_URL = "https://api.buffer.com"
 TOKEN = os.environ["BUFFER_API_KEY"]
 TARGET_NAME = "rapomaru777"
-THREAD_PATH = "x-auto/thread-2026-08-17.json"
+JST = timezone(timedelta(hours=9))
+PUBLISHED_PATH = Path("x-auto/published.json")
 
 
 def graphql(query: str):
@@ -25,11 +28,31 @@ def graphql(query: str):
     return data["data"]
 
 
-with open(THREAD_PATH, encoding="utf-8") as f:
+now_jst = datetime.now(JST)
+target_date = (now_jst.date() + timedelta(days=1)).isoformat()
+thread_path = Path(f"x-auto/thread-{target_date}.json")
+
+if not thread_path.exists():
+    print(json.dumps({"ok": True, "skipped": True, "reason": "thread_file_not_found", "target_date": target_date}, ensure_ascii=False))
+    raise SystemExit(0)
+
+published = []
+if PUBLISHED_PATH.exists():
+    with PUBLISHED_PATH.open(encoding="utf-8") as f:
+        published = json.load(f)
+
+if any(item.get("target_date") == target_date and item.get("status") == "sent" for item in published):
+    print(json.dumps({"ok": True, "skipped": True, "reason": "already_published", "target_date": target_date}, ensure_ascii=False))
+    raise SystemExit(0)
+
+with thread_path.open(encoding="utf-8") as f:
     thread_data = json.load(f)
 
 root = thread_data["root"]
 posts = [root] + thread_data.get("replies", [])
+for index, text in enumerate(posts, start=1):
+    if len(text) > 280:
+        raise RuntimeError(f"Post {index} exceeds 280 characters: {len(text)}")
 
 orgs = graphql("""
 query GetOrganizations {
@@ -87,4 +110,18 @@ mutation = f'''mutation PublishThreadNow {{
 result = graphql(mutation)["createPost"]
 if result.get("message"):
     raise RuntimeError(result["message"])
-print(json.dumps({"ok": True, "channel": channel, "result": result}, ensure_ascii=False))
+
+post = result.get("post", {})
+if post.get("status") != "sent":
+    raise RuntimeError(f"Buffer did not confirm sent status: {json.dumps(result, ensure_ascii=False)}")
+
+published.append({
+    "target_date": target_date,
+    "status": "sent",
+    "sent_at": post.get("sentAt"),
+    "external_link": post.get("externalLink"),
+    "buffer_post_id": post.get("id"),
+})
+PUBLISHED_PATH.write_text(json.dumps(published, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+print(json.dumps({"ok": True, "target_date": target_date, "channel": channel, "result": result}, ensure_ascii=False))
