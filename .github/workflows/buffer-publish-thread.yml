@@ -1,10 +1,20 @@
 name: Buffer X Publish Thread
 
 on:
+  schedule:
+    # 20:00 JST = 11:00 UTC
+    - cron: '0 11 * * *'
   push:
     paths:
       - 'x-auto/thread-now-trigger.txt'
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buffer-x-daily-publish
+  cancel-in-progress: false
 
 jobs:
   buffer-publish-thread:
@@ -18,7 +28,19 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Publish X thread now via Buffer
+      - name: Publish tomorrow's X thread via Buffer
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: python x-auto/scripts/buffer_publish_thread.py
+
+      - name: Save publish history
+        run: |
+          if git diff --quiet -- x-auto/published.json; then
+            echo "No publish history change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add x-auto/published.json
+          git commit -m "Record X publish history"
+          git push
