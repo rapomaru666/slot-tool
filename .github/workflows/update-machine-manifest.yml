@@ -1,49 +1,11 @@
 name: Update portal machine manifest
-
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - '*-index.html'
-
 permissions:
   contents: write
-
-concurrency:
-  group: slot-tool-main-writers
-  cancel-in-progress: false
-
 jobs:
   update-manifest:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Build machines.json
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python - <<'PY'
-          import json, os, subprocess
-          repo=os.environ['GITHUB_REPOSITORY']
-          data=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/git/trees/main?recursive=1']))
-          tools=[]
-          for x in data.get('tree',[]):
-              p=x.get('path','')
-              if not p.endswith('-index.html') or p.startswith('backup/') or p == 'index.html':
-                  continue
-              if 'tokyoghoul' in p.lower():
-                  continue
-              tools.append({'file':p})
-          tools.sort(key=lambda x:x['file'])
-          with open('machines.json','w',encoding='utf-8') as f:
-              json.dump({'version':1,'source':'github-tree','tools':tools},f,ensure_ascii=False,separators=(',',':'))
-              f.write('\n')
-          PY
-      - name: Commit manifest
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add machines.json
-          git diff --cached --quiet && exit 0
-          git commit -m "chore: sync portal machine manifest"
-          git push
+      - run: echo "Disabled. RAPOMAN portal now uses the master JSON and controlled direct updates."
