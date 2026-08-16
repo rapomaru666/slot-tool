@@ -3,6 +3,8 @@ name: Buffer Draft Connection Test
 on:
   push:
     paths:
+      - '.github/workflows/buffer-draft-test.yml'
+      - 'x-auto/scripts/buffer_draft_test.py'
       - 'x-auto/buffer-test-trigger.txt'
   workflow_dispatch:
 
