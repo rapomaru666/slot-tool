@@ -1,0 +1,2119 @@
+{
+  "schemaVersion": 1,
+  "name": "RAPOMAN machine master",
+  "generatedAt": "2026-08-16T01:30:42.360179+00:00",
+  "rules": {
+    "portalModified": false,
+    "tokyoGhoulProtected": true,
+    "machineType": "pachislot",
+    "fieldsExtensible": true
+  },
+  "counts": {
+    "2021": 72,
+    "2022": 83,
+    "2023": 68,
+    "2024": 78,
+    "2025": 74,
+    "2026": 44
+  },
+  "total": 419,
+  "machines": [
+    {
+      "name": "CCエンジェル",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "GⅠ優駿倶楽部3",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "HIT128",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Re:ゼロから始める異世界生活Apex Vacation",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "S Lucky海物語",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOTアルドノア・ゼロ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOTタブー・タトゥー",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOT劇場版魔法少女まどか☆マギカ 前後編",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sデジタルトラッド",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SトリプルクラウンV-30",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "S牙狼ー黄金騎士ー",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ぱちすろ沖ハナ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "もっと！クレアの秘宝伝 女神と歌声と太陽の子供達",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "シンデレラブレイド４",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スターパルサー",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スーパーハナハナ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "チバリヨー30",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "デジスロ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ニューハナハナゴールド-30",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ニューパルサーDX3",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ニューパルサーSPⅢ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ノーゲーム・ノーライフTHE SLOT",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ハイサイシオサイ2",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロANEMONE 交響詩篇エウレカセブンHI-EVOLUTION",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロAngel Beats！",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロGANTZ極 THE SURVIVAL GAME",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロKING黄門ちゃま",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロWake Up,Girls！Seven Memories",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロうしおととら 雷槍一閃",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロうまい棒",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロかまいたちの夜",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロアイドルマスター ミリオンライブ！シアターフェスティバル",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロガメラ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロガールズ＆パンツァー劇場版",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロコードギアス反逆のルルーシュ3",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロゴッドイーター ジ・アニメーション",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロツインエンジェルPARTY",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロバイオハザード7 レジデントイービル",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロフレームアームズ・ガール",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロマクロスデルタ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロモンスターハンター：ワールド黄金狩猟",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロラブ嬢II＋",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロリング 運命の秒刻",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロロリクラ☆ほーるど！",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ北斗の拳 宿命",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ戦国乙女 暁の関ヶ原-DARKNESS",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ戦姫絶唱シンフォギア 勇気の歌",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ東京レイヴンズ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ楽園追放",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ百花繚乱サムライガールズ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ花の慶次 武威",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ鉄拳4デビルVer.",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ零",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ青の祓魔師",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ頭文字D",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ麻雀物語4",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ファンキージャグラー2",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "マイジャグラーV",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "マジカルハロウィン～Trick or Treat！～",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ワンチャンス1000",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "主役は銭形３",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "南国育ち-30",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "戦国乙女3～天剣を継ぐもの～",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "政宗3",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "新ハナビ",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "沖ドキ！DUO",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "泡盛",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "秘宝伝 解き放たれた女神",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "絶対衝撃III",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "豪炎高校應援團 檄",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "鬼浜爆走紅蓮隊 狂闘旅情編",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "麻雀格闘倶楽部 真",
+      "year": 2021,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "BLACK LAGOON ZERO bullet MAX",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "CREA Newクレアの秘宝伝",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "HEY！エリートサラリーマン鏡",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "HYPER A-30 BLUE FALCON",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lバキ強くなりたくば喰らえ!!!",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "S BIG 島唄30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "S2027",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOT STEINS;GATE",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOTえとたま",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOTとある科学の超電磁砲",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOTマッピー",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sアバサー25/30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sキャッツ・アイ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sスーパー海物語 IN JAPAN 祭",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sルパン三世",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "S黄門ちゃま喝2",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ぱちすろけものフレンズ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ぱちスロ ウルトラマンタロウ 暴君SPEC",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ぱちスロ ギャグダー",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "もっと！チバリヨ-30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "アカジン-30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "シリウス",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロリノヘブン",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スーパーハナハナ2-30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スーパーリオエース",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スーパーリノSP",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ナナイロサンゴ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ニューゲッターマウス",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ハイスクールD×D2 ハーレム王に俺はある",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ハッピージャグラーVⅢ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ハナハナホウオウ～天翔～25&30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "バーサスリヴァイズ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ FAIRY TAIL2",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ RYUKYU BEAT-30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ TIGER & BUNNY SP",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ この素晴らしい世界に祝福を！",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ アクエリオン ALL STARS",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ アラジンAクラシック",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ ゼーガペイン2",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ ダンまち外伝 ソード・オラトリア",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ ディスクアップ2",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ ドリフターズ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ ピンクパンサーSP",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 幼女戦記",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 新鬼武者",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 月華 雅",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 蒼天の拳4",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 魔法少女育成計画",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロBOOWY",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロひぐらしのなく頃に祭2 カケラ遊び編",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロデビルメイクライ5",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロハードボイルド",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロバイオハザードRE:2",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロペルソナ5",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロボンバーガール",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロミクちゃんとイドムンのミラクルチャレンジ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ春一番",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ犬夜叉",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ甲鉄城のカバネリ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ真俺の空",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ笑ゥせぇるすまん4",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ聖闘士星矢 冥王復活",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ言い訳はさせないわよ by激壇蜜",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ這いよれ！ニャル子さん",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ鉄拳4アルティメットデビルVer.",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ鉄拳5",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ閃乱カグラ BURST UP",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ革命機ヴァルヴレイヴ",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "メルヘンクエスト",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ラストユートピア",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ヴィーナスゾーン",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "十字架5",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "南国物語-30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "押忍！番長ZERO",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "政宗 戦極",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "新世紀エヴァンゲリオン～魂の共鳴～",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "来雷エイサー30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "沖ドキ！GOLD",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "沖ワニマル-25&30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "沖縄フェスティバル-30",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "花火絶景",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "超ギラギラ爺サマー",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "鬼浜爆走紅連隊 激闘謳歌編",
+      "year": 2022,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L エヴァンゲリオン ～未来への創造～",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L リングにかけろ 1 V",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L009 RE:CYBORG",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lゴブリンスレイヤー",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lベルセルク無双",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lラブ嬢3～Wご指名はいかがですか？～",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L主役は銭形4",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L大工の源さん 超夢源",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L戦国乙女4 戦乱に閃く炯眼の軍師",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L花の慶次～佐渡攻めの章",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "S OZ1-AA-30",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "S 織田信奈の野望 全国版",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOTメイドインアビス",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sスロドル",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SモモキュンソードDX",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "S大花満",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ぱちスロ にゃんこ大戦争 BIGBANG",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ぱちスロ 乃木坂46",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "もっとチバリヨ-25",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "アナザーゴッドハーデス-解き放たれし槍撃ver.",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ウルトラちゃぶ台返し",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "キングハナハナ-30",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "クランキークレスト",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ゴーゴージャグラー3",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ジャベリン",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ バイオハザード:ヴェンデッタ",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 戦国BASARA GIGA",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロとある魔術の禁書目録",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロキン肉マン～7人の悪魔超人編～",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロバジリスク～甲賀忍法帖～絆2 天膳 BLACK EDITION",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロモンキーターンV",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ劇場版 魔法少女まどか☆マギカf-フォルテ",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ北斗の拳",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ転生したらスライムだった件",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スロット ソードアート・オンライン",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スーハナライジング-30",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スーパービンゴネオクラシック",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スーパービンゴネオクラシック-30",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "デジスロ JAC IN バージョン",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ドラゴンハナハナ～閃光～-30",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ニューシオサイ",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ からくりサーカス",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ ケンガンアシュラ",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ モンスターハンターワールド：アイスボーン",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 戦国†恋姫",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 戦国無双3M",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 探偵オペラ ミルキィホームズＲ 大収穫祭!!!!",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 緋弾のアリアII",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ 蛇喰夢子という女",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロOVERLORD絶対支配者光臨II",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロコードギアス反逆のルルーシュ3 C.C.&Kallen ver.",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロファイヤードリフト",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO TYPE-ART",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ傷物語-始マリノ刻",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ機動戦士ガンダムユニコーン",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ炎炎ノ消防隊",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ琉神－30 スイカバージョン",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ盾の勇者の成り上がり",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ファミスタ回胴版!!",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "マジカルハロウィン8",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "回胴式遊技機 グランベルム",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "戦国コレクション5",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "戦国コレクション５超極楽ＬＯＯＰ",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "燃えチバ-30",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "真天下布武",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "課長 熊田工作",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "防空少女ラブキューレ2〜極限の共鳴〜",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "麻雀格闘倶楽部 覚醒",
+      "year": 2023,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "A-SLOT+ この素晴らしい世界に祝福を！",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L D4DJ Pachi-Slot Mix",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L ToLOVEるダークネス",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L アカメが斬る！2",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L ウルトラマンティガ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 仮面ライダー 7RIDERS",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 新・必殺仕置人 回胴 CRASH SPEC",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 無職転生 ～異世界行ったら本気だす～",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 真・一騎当千",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lうる星やつら",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lストライクウィッチーズ2",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lスーパービンゴネオ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lダブルアタック2 withOZS-1000＆RAPHAEL",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lダンベル何キロ持てる？",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lバンドリ！",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ かぐや様は告らせたい",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ マクロスフロンティア4",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ 炎炎ノ消防隊",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロガールズ＆パンツァー 最終章",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ戦姫絶唱シンフォギア 正義の歌",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ閃乱カグラ2 SHINOVI MASTER",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lルパン三世 大航海者の秘宝",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lワンパンマン",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L不二子BT",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L南国育ち",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L聖闘士星矢海皇覚醒CUSTOM EDITION",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOT忍者じゃじゃ丸くん",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sky Love",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sバハマ30",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "アオハル♪操 A-LIVE",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ウルトラミラクルジャグラー",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "キングクリエーター30",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ジャグラーガールズSS",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ ゲゲゲの鬼太郎 覚醒",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ コードギアス 反逆のルルーシュ／復活のルルーシュ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ ゴッドイーター リザレクション",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ ゴールデンカムイ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ ストライク・ザ・ブラッド",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ ストリートファイターV 挑戦者の道",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ トロピカーナ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ バイオハザードヴィレッジ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ モンスターハンターライズ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 一方通行 とある魔術の禁書目録",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 沖ドキ！DUO アンコール",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 秘宝伝",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 聖戦士ダンバイン",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 鬼武者3",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロキングパルサー",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ交響詩篇エウレカセブン4 HI-EVOLUTION",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ痛いのは嫌なので防御力に極振りしたいと思います。",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ真・北斗無双",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ頭文字D 2nd",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマート沖スロ ドラゴンハナハナ～閃光～",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマート沖スロ 超華祭",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スロット Re:ゼロから始める異世界生活 season2",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スロット ゾンビランドサガ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "チバリヨ２",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "トリプルクラウンフォーユー",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ドラゴンハナハナ～閃光～",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ニューパルサーSP4 with 太鼓の達人",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ ガメラ2",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ ダンジョンに出会いを求めるのは間違っているだろうか2",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロL黄門ちゃま天",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ武装神姫",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロ金のかぼちゃ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ミスタージャグラー",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ワードオブライツII",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "今日から俺は!! パチスロ編",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "吉宗ＲＩＳＩＮＧ",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "忍魂参 ～奥義皆伝ノ章～",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "押忍！番長4",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "桃太郎電鉄 ～パチスロも定番！～",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "沖シーサー -30",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "沖ドキ！BLACK",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "沖ドキ！ゴージャス（25φ）",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "沖ドキ！ゴージャス（30φ）",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "賞金首Angel",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Ｌ 犬夜叉2",
+      "year": 2024,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "A-SLOT+ ディスクアップ ULTRAREMIX",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L ToLOVEるダークネス TRANCE ver.8.7",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L ULTRAMAN",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L にゃんこ大戦争 超神速",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L アズールレーン THE ANIMATION",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L サラリーマン金太郎",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L ダーリン・イン・ザ・フランキス",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 仮面ライダー電王",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 少女☆歌劇 レヴュースタァライト -The SLOT",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 無職転生 ～異世界行ったら本気だす～",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 絶対衝激IV",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 絶対衝激～PLATONIC HEART～",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L 荒野のコトブキ飛行隊",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "LBジャックポット",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "LBトリプルクラウン",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "LBパチスロ ヱヴァンゲリヲン ～約束の扉～",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "LBパチスロ1000ちゃんA",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "LBプレミアムうまい棒",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lいざ！番長",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lうしおととら白面決戦VH",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lゴジラ",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ ありふれた職業で世界最強",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ シン・エヴァンゲリオン",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ 機動戦士ガンダムSEED",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Lパチスロ 革命機ヴァルヴレイヴ2",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L不二子BT",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L主役は銭形5",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L咲-Saki-頂上決戦",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L島娘",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L転生したら剣でした",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "L麻雀物語",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SHAKE BONUS TRIGGER",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "SLOT ドルアーガの塔",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "Sister Quest",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "てぃだどんどん",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "わたしの幸せな結婚",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "アレックス ブライト",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "クレアの秘宝伝 ～はじまりの扉と太陽の石～ ボーナストリガーver.",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スターハナハナ-30",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ とある科学の超電磁砲2",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ ようこそ実力至上主義の教室へ",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ アイドルマスター ミリオンライブ！ネクストプロローグ",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ ギルティクラウン2",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ シャーマンキング",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ デビル メイ クライ 5 スタイリッシュトライブ",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ ドルアーガの塔",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ バイオハザード5",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ バベル",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ マギアレコード魔法少女まどか☆マギカ外伝",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 化物語",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 新鬼武者3",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 東京リベンジャーズ",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 沖ドキ！DUO アンコール",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 秘宝伝",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロ 緑ドン VIVA!情熱南米編 REVIVAL",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロスーパーブラックジャック",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロニューパルサーBT",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマスロネオプラネット",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマート沖スロ アメイジングライブ",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "スマート沖スロ スターハナハナ",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "チバリヨ2プラス",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ネオアイムジャグラーEX",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "ハイビリターン-30",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "バーニングエクスプレス",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "パチスロなめ猫",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "プリズムナナ",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "マジカルハロウィン ボーナストリガー",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "マタドールIII",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "七つの魔剣が支配する",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "吉宗",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "回胴黙示録カイジ 狂宴",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "翔べ！ハーレムエース",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "花笠",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "銀河英雄伝説 Die Neue These",
+      "year": 2025,
+      "source": "existing-master-list"
+    },
+    {
+      "name": "A-SLOT+ 異世界かるてっと BT",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "LBスロットGALFY",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "Lすーぱぁびん娘",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "Lアクダマドライブ",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "Lタクトオーパス デスティニー",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "Lパチスロ うみねこのなく頃に2",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "Lパチスロ からくりサーカス2",
+      "year": 2026,
+      "source": "repository-page",
+      "file": "karakuri2-index.html"
+    },
+    {
+      "name": "Lパチスロ 喰霊‐零‐Re",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "Lパチスロ 炎炎ノ消防隊2",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "L南国育ちSPECIAL",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "L戦国乙女5",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "L戦国乙女5 業火を穿つ宿焔の双刃",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "L範馬刃牙",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "L虚構推理",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "ULTRAMAN 最終決戦",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "アニマルスロットドッチ",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "ガンダムユニコーン 覚醒DRIVE",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ BIRDIE WING",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ とある魔術の禁書目録2",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "スマスロ とんでもスキルで異世界放浪メシ",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "スマスロ やじきた道中記参る！",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "スマスロ ゴブリンスレイヤーII",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ サンダーV",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ ストリートファイター6",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "スマスロ ハナビ",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ バイオハザードRE:3",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ ビッグドリーム THE GOLDEN PUSHER",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ ミリオンゴッド‐神々の軌跡‐",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ ヨルムンガンド",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ 北斗の拳 転生の章2",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ 攻殻機動隊",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロケロット5BT",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "スマスロスーパーリオエース2",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマスロ鉄拳6",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スマート沖スロ ダークハイビ",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "スマート沖スロ ニューキングハナハナV",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "スロット ソードアート・オンラインII",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "スロット ワールドダイスター",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "ニューキングハナハナV-30",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "ローティス",
+      "year": 2026,
+      "source": "portal-pending"
+    },
+    {
+      "name": "甲鉄城のカバネリ 海門決戦",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "真打 吉宗",
+      "year": 2026,
+      "source": "git-history"
+    },
+    {
+      "name": "設定予測",
+      "year": 2026,
+      "source": "repository-page",
+      "file": "jashin-index.html"
+    },
+    {
+      "name": "Ｌ ULTRAMAN 最終決戦",
+      "year": 2026,
+      "source": "portal-pending"
+    }
+  ]
+}
