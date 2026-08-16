@@ -40,7 +40,7 @@ jobs:
 
       - name: Save generated thread and audit
         run: |
-          if git diff --quiet -- x-auto/thread-*.json x-auto/audit/; then
+          if [ -z "$(git status --porcelain -- x-auto/thread-*.json x-auto/audit/)" ]; then
             echo "No generated file change"
             exit 0
           fi
