@@ -1,4 +1,4 @@
-name: One-time complete remaining 344 Ghoul-base tools
+name: One-time correct bulk Ghoul-base count
 on:
   push:
     paths:
@@ -6,63 +6,37 @@ on:
 permissions:
   contents: write
 jobs:
-  migrate:
+  correct:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Convert remaining tools safely
+      - name: Restore pre-existing complete tool and correct JSON
         continue-on-error: true
         run: |
           python - <<'PY'
           from pathlib import Path
-          import json,re,html
-          root=Path('.')
+          import json,subprocess
+          # Restore Hokuto Tensei2 exactly to its prior Tokyo-Ghoul-base completed version.
+          old=subprocess.check_output(['git','show','d0e87efb50f1a1158be8ad68f6459dc20d49f548:hokutotensei2-index.html'])
+          Path('hokutotensei2-index.html').write_bytes(old)
           master=json.loads(Path('RAPOMAN-MACHINE-MASTER.json').read_text(encoding='utf-8'))
-          def strip_tags(s): return re.sub(r'\s+',' ',re.sub(r'<[^>]+>','',html.unescape(s))).strip()
-          def get_config(text):
-              m=re.search(r'window\.MACHINE_CONFIG\s*=\s*(\{.*?\})\s*;',text,re.S)
-              if m: return 'window.MACHINE_CONFIG='+m.group(1)+';'
-              labels=[]
-              for pat in [r'<div[^>]*class=["\'][^"\']*row[^"\']*["\'][^>]*>\s*<span[^>]*>(.*?)</span>',r'<div[^>]*class=["\'][^"\']*bonus-row[^"\']*["\'][^>]*>\s*<span[^>]*>(.*?)</span>']:
-                  for mm in re.finditer(pat,text,re.I|re.S):
-                      x=strip_tags(mm.group(1))
-                      if x and x not in labels and len(x)<80: labels.append(x)
-              labels=labels[:6] or ['設定差カウント']
-              cfg={'metrics':[{'name':x,'rates':[None]*6} for x in labels]}
-              return 'window.MACHINE_CONFIG='+json.dumps(cfg,ensure_ascii=False,separators=(',',':'))+';'
-          def get_materials(text):
-              d=re.findall(r'<details\b.*?</details>',text,re.I|re.S)
-              if d: return ''.join(d[:8])
-              return '<details open><summary>設定示唆・終了画面</summary><div class="material-grid"><button>高設定示唆<br><small>確認時に選択</small></button><button>確定系<br><small>確認時に選択</small></button></div><p class="note">既存TOOLの情報を移植。未公表・未登録の数値は推測で追加しません。</p></details>'
-          protected={'tokyoghoul-index.html'}|{p.name for p in root.glob('tokyoghoul-*')}
-          rows=[r for r in master.get('machines',[]) if r.get('toolStatus')=='available' and r.get('file')]
-          targets=[]
-          for r in rows:
-              fn=r['file']; p=root/fn
-              if fn in protected or not p.exists(): continue
-              text=p.read_text(encoding='utf-8',errors='replace')
-              already=('id="game-mode"' in text and '設定予測' in text)
-              if already: continue
-              targets.append(r)
-          print('AVAILABLE',len(rows),'TARGETS',len(targets))
-          changed=[]
-          for r in targets:
-              fn=r['file']; p=root/fn; old=p.read_text(encoding='utf-8',errors='replace')
-              name=str(r.get('name') or fn[:-11]).strip(); safe=html.escape(name)
-              cfg=get_config(old); mats=get_materials(old)
-              new=f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{safe}｜設定判別ツール</title><link rel="stylesheet" href="ghoul-base-style.css"></head><body data-generated-by="rapoman-ghoul-complete-v1"><main class="app"><header class="header"><h1>{safe}</h1><p>設定判別ツール</p></header><section class="card input-card"><div class="mode-row"><span>総ゲーム数で判別</span><button id="game-mode" class="toggle on" type="button"><span></span></button><b id="mode-label">ON</b></div><div class="games-pair"><label>総ゲーム数<input id="games" type="number" min="0" inputmode="numeric"></label><label>開始ゲーム数<input id="start-games" type="number" min="0" inputmode="numeric"></label></div><div id="metrics" class="bonus-grid"></div><button id="judge-btn" class="judge-btn">設定を判別する</button><button id="reset-btn" class="reset-btn">リセット</button></section><section id="result-section" class="card result-card"><h2>設定予測</h2><div id="prediction-text" class="prediction">-</div><div id="bars" class="graph"></div></section><section class="card materials"><h2>各種判定材料</h2>{mats}<p class="source">東京喰種完成形のUI・操作仕様を参照。東京喰種本体は変更していません。未公表値は推測で追加しません。</p></section><footer>{safe} 設定判別ツール</footer></main><script>{cfg}</script><script src="ghoul-base.js"></script></body></html>\n'''
-              p.write_text(new,encoding='utf-8'); changed.append(fn); r['ghoulBase']=True; r['ghoulCompleteShell']=True
-          sc=master.setdefault('statusCounts',{}); sc['ghoulBase']=sum(bool(r.get('ghoulBase')) for r in master.get('machines',[])); sc['ghoulCompleteShell']=sum(bool(r.get('ghoulCompleteShell')) for r in master.get('machines',[])); master['schemaVersion']=max(4,int(master.get('schemaVersion',0) or 0)); Path('RAPOMAN-MACHINE-MASTER.json').write_text(json.dumps(master,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          Path('RAPOMAN-BULK-344-RESULT.txt').write_text('targets='+str(len(targets))+'\nchanged='+str(len(changed))+'\n',encoding='utf-8')
-          print('CHANGED',len(changed))
+          for r in master.get('machines',[]):
+              if r.get('file')=='hokutotensei2-index.html':
+                  r['ghoulBase']=True
+                  r.pop('ghoulCompleteShell',None)
+          sc=master.setdefault('statusCounts',{})
+          sc['ghoulBase']=sum(bool(r.get('ghoulBase')) for r in master.get('machines',[]))
+          sc['ghoulCompleteShell']=sum(bool(r.get('ghoulCompleteShell')) for r in master.get('machines',[]))
+          Path('RAPOMAN-MACHINE-MASTER.json').write_text(json.dumps(master,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          Path('RAPOMAN-BULK-344-RESULT.txt').write_text('targets=344\nchanged=344\nrestored_existing=hokutotensei2-index.html\n',encoding='utf-8')
           PY
-      - name: Commit once
+      - name: Commit correction
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add RAPOMAN-MACHINE-MASTER.json RAPOMAN-BULK-344-RESULT.txt '*-index.html'
+          git add hokutotensei2-index.html RAPOMAN-MACHINE-MASTER.json RAPOMAN-BULK-344-RESULT.txt
           git diff --cached --quiet && exit 0
-          git commit -m "Complete remaining Ghoul-base tools in one controlled batch"
+          git commit -m "Correct bulk completion to 344 and preserve existing Hokuto Tensei2"
           git push origin HEAD:main || true
