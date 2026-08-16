@@ -1,15 +1,13 @@
-name: Buffer Draft Connection Test
+name: Buffer X Publish Now
 
 on:
   push:
     paths:
-      - '.github/workflows/buffer-draft-test.yml'
-      - 'x-auto/scripts/buffer_draft_test.py'
-      - 'x-auto/buffer-test-trigger.txt'
+      - 'x-auto/publish-now-trigger.txt'
   workflow_dispatch:
 
 jobs:
-  buffer-draft-test:
+  buffer-publish-now:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,7 +18,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Create Buffer draft only
+      - name: Publish to X now via Buffer
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-        run: python x-auto/scripts/buffer_draft_test.py
+        run: python x-auto/scripts/buffer_publish_now.py
