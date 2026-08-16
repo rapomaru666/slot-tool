@@ -1,0 +1,357 @@
+targets=344
+complete=0
+partial=0
+unresolved=344
+errors=0
+
+[COMPLETE]
+
+[PARTIAL]
+
+[UNRESOLVED]
+ccenjieru-index.html	CCエンジェル	DMM machine page not resolved
+giyuushunkurabu3-index.html	GⅠ優駿倶楽部3	DMM machine page not resolved
+hit128-index.html	HIT128	DMM machine page not resolved
+re-zerokarahajimeruisekaiseikatsuapex-vacation-index.html	Re:ゼロから始める異世界生活Apex Vacation	DMM machine page not resolved
+s-luckyumimonogatari-index.html	S Lucky海物語	DMM machine page not resolved
+slotarudonoa-zero-index.html	SLOTアルドノア・ゼロ	DMM machine page not resolved
+slottabuu-tatouu-index.html	SLOTタブー・タトゥー	DMM machine page not resolved
+slotgekijoubanmahoushoujomadoka-magika-zenkouhen-index.html	SLOT劇場版魔法少女まどか☆マギカ 前後編	DMM machine page not resolved
+sdejitarutoraddo-index.html	Sデジタルトラッド	DMM machine page not resolved
+storipurukuraunv-30-index.html	SトリプルクラウンV-30	DMM machine page not resolved
+skibaookamiiougonkishii-index.html	S牙狼ー黄金騎士ー	DMM machine page not resolved
+pachisurookihana-index.html	ぱちすろ沖ハナ	DMM machine page not resolved
+motto-kureanohihouden-megamitoutagoetotaiyounokodomotachi-index.html	もっと！クレアの秘宝伝 女神と歌声と太陽の子供達	DMM machine page not resolved
+shindererabureido4-index.html	シンデレラブレイド４	DMM machine page not resolved
+sutaaparusaa-index.html	スターパルサー	DMM machine page not resolved
+suupaahanahana-index.html	スーパーハナハナ	DMM machine page not resolved
+chibariyoo30-index.html	チバリヨー30	DMM machine page not resolved
+dejisuro-index.html	デジスロ	DMM machine page not resolved
+nyuuhanahanagoorudo-30-index.html	ニューハナハナゴールド-30	DMM machine page not resolved
+nyuuparusaadx3-index.html	ニューパルサーDX3	DMM machine page not resolved
+nyuuparusaaspiii-index.html	ニューパルサーSPⅢ	DMM machine page not resolved
+noogeemu-nooraifuthe-slot-index.html	ノーゲーム・ノーライフTHE SLOT	DMM machine page not resolved
+haisaishiosai2-index.html	ハイサイシオサイ2	DMM machine page not resolved
+pachisuroanemone-koukyoushiheneurekasebunhi-evolution-index.html	パチスロANEMONE 交響詩篇エウレカセブンHI-EVOLUTION	DMM machine page not resolved
+pachisuroangel-beats-index.html	パチスロAngel Beats！	DMM machine page not resolved
+pachisurogantzkyoku-the-survival-game-index.html	パチスロGANTZ極 THE SURVIVAL GAME	DMM machine page not resolved
+pachisurokingkoumonchama-index.html	パチスロKING黄門ちゃま	DMM machine page not resolved
+pachisurowake-up-girls-seven-memories-index.html	パチスロWake Up,Girls！Seven Memories	DMM machine page not resolved
+pachisuroushiototora-kaminariyariissen-index.html	パチスロうしおととら 雷槍一閃	DMM machine page not resolved
+pachisuroumaibou-index.html	パチスロうまい棒	DMM machine page not resolved
+pachisurokamaitachinoyoru-index.html	パチスロかまいたちの夜	DMM machine page not resolved
+pachisuroaidorumasutaa-mirionraibu-shiataafesuteibaru-index.html	パチスロアイドルマスター ミリオンライブ！シアターフェスティバル	DMM machine page not resolved
+pachisurogamera-index.html	パチスロガメラ	DMM machine page not resolved
+pachisurogaaruzu-pantsuaagekijouban-index.html	パチスロガールズ＆パンツァー劇場版	DMM machine page not resolved
+pachisurokoodogiasuhangyakunoruruushu3-index.html	パチスロコードギアス反逆のルルーシュ3	DMM machine page not resolved
+pachisurogoddoiitaa-ji-animeeshon-index.html	パチスロゴッドイーター ジ・アニメーション	DMM machine page not resolved
+pachisurotsuin-enjieruparty-index.html	パチスロツインエンジェルPARTY	DMM machine page not resolved
+pachisurobaiohazaado7-rejidentoiibiru-index.html	パチスロバイオハザード7 レジデントイービル	DMM machine page not resolved
+pachisurofureemuaamuzu-gaaru-index.html	パチスロフレームアームズ・ガール	DMM machine page not resolved
+pachisuromakurosuderuta-index.html	パチスロマクロスデルタ	DMM machine page not resolved
+pachisuromonsutaahantaa-waarudoougonshuryou-index.html	パチスロモンスターハンター：ワールド黄金狩猟	DMM machine page not resolved
+pachisurorabujouii-index.html	パチスロラブ嬢II＋	DMM machine page not resolved
+pachisuroringu-unmeinobyoukoku-index.html	パチスロリング 運命の秒刻	DMM machine page not resolved
+pachisurororikura-hoorudo-index.html	パチスロロリクラ☆ほーるど！	DMM machine page not resolved
+pachisurohokutonoken-shukumei-index.html	パチスロ北斗の拳 宿命	DMM machine page not resolved
+pachisurosengokuotome-akatsukinokankehara-darkness-index.html	パチスロ戦国乙女 暁の関ヶ原-DARKNESS	DMM machine page not resolved
+pachisurosenhimezesshoushinfogia-yuukinouta-index.html	パチスロ戦姫絶唱シンフォギア 勇気の歌	DMM machine page not resolved
+pachisurotoukyoureivunzu-index.html	パチスロ東京レイヴンズ	DMM machine page not resolved
+pachisurorakuentsuihou-index.html	パチスロ楽園追放	DMM machine page not resolved
+pachisurohyakkaryouransamuraigaaruzu-index.html	パチスロ百花繚乱サムライガールズ	DMM machine page not resolved
+pachisurohananokeiji-bui-index.html	パチスロ花の慶次 武威	DMM machine page not resolved
+pachisurotekken4debiruver-index.html	パチスロ鉄拳4デビルVer.	DMM machine page not resolved
+pachisurorei-index.html	パチスロ零	DMM machine page not resolved
+pachisuroaonofutsumashi-index.html	パチスロ青の祓魔師	DMM machine page not resolved
+pachisurokashiramojid-index.html	パチスロ頭文字D	DMM machine page not resolved
+pachisuromaajanmonogatari4-index.html	パチスロ麻雀物語4	DMM machine page not resolved
+fankiijaguraa2-index.html	ファンキージャグラー2	DMM machine page not resolved
+maijaguraav-index.html	マイジャグラーV	DMM machine page not resolved
+majikaruharouin-trick-or-treat-index.html	マジカルハロウィン～Trick or Treat！～	DMM machine page not resolved
+wanchansu1000-index.html	ワンチャンス1000	DMM machine page not resolved
+shuyakuhazenigata3-index.html	主役は銭形３	DMM machine page not resolved
+nangokusodachi-30-index.html	南国育ち-30	DMM machine page not resolved
+sengokuotome3-tentsurugiwotsugumono-index.html	戦国乙女3～天剣を継ぐもの～	DMM machine page not resolved
+masamune3-index.html	政宗3	DMM machine page not resolved
+shinhanabi-index.html	新ハナビ	DMM machine page not resolved
+okidoki-duo-index.html	沖ドキ！DUO	DMM machine page not resolved
+awamori-index.html	泡盛	DMM machine page not resolved
+hihouden-tokihouttaretamegami-index.html	秘宝伝 解き放たれた女神	DMM machine page not resolved
+zettaishougekiiii-index.html	絶対衝撃III	DMM machine page not resolved
+gouhonookoukououendan-geki-index.html	豪炎高校應援團 檄	DMM machine page not resolved
+onihamabakusougurentai-kyoutouryojouhen-index.html	鬼浜爆走紅蓮隊 狂闘旅情編	DMM machine page not resolved
+maajankakutoukurabu-makoto-index.html	麻雀格闘倶楽部 真	DMM machine page not resolved
+black-lagoon-zero-bullet-max-index.html	BLACK LAGOON ZERO bullet MAX	DMM machine page not resolved
+crea-newkureanohihouden-index.html	CREA Newクレアの秘宝伝	DMM machine page not resolved
+hey-eriitosarariimankagami-index.html	HEY！エリートサラリーマン鏡	DMM machine page not resolved
+hyper-a-30-blue-falcon-index.html	HYPER A-30 BLUE FALCON	DMM machine page not resolved
+lbakitsuyokunaritakubakurae-index.html	Lバキ強くなりたくば喰らえ!!!	DMM machine page not resolved
+s-big-shimauta30-index.html	S BIG 島唄30	DMM machine page not resolved
+s2027-index.html	S2027	DMM machine page not resolved
+slot-steins-gate-index.html	SLOT STEINS;GATE	DMM machine page not resolved
+slotetotama-index.html	SLOTえとたま	DMM machine page not resolved
+slottoarukagakunochoudenjihou-index.html	SLOTとある科学の超電磁砲	DMM machine page not resolved
+slotmappii-index.html	SLOTマッピー	DMM machine page not resolved
+sabasaa25-30-index.html	Sアバサー25/30	DMM machine page not resolved
+skyattsu-ai-index.html	Sキャッツ・アイ	DMM machine page not resolved
+ssuupaaumimonogatari-in-japan-matsuri-index.html	Sスーパー海物語 IN JAPAN 祭	DMM machine page not resolved
+srupansansei-index.html	Sルパン三世	DMM machine page not resolved
+skoumonchamakatsu2-index.html	S黄門ちゃま喝2	DMM machine page not resolved
+pachisurokemonofurenzu-index.html	ぱちすろけものフレンズ	DMM machine page not resolved
+pachisuro-urutoramantarou-boukunspec-index.html	ぱちスロ ウルトラマンタロウ 暴君SPEC	DMM machine page not resolved
+pachisuro-gyagudaa-index.html	ぱちスロ ギャグダー	DMM machine page not resolved
+motto-chibariyo-30-index.html	もっと！チバリヨ-30	DMM machine page not resolved
+akajin-30-index.html	アカジン-30	DMM machine page not resolved
+shiriusu-index.html	シリウス	DMM machine page not resolved
+sumasurorinohebun-index.html	スマスロリノヘブン	DMM machine page not resolved
+suupaahanahana2-30-index.html	スーパーハナハナ2-30	DMM machine page not resolved
+suupaarioeesu-index.html	スーパーリオエース	DMM machine page not resolved
+suupaarinosp-index.html	スーパーリノSP	DMM machine page not resolved
+nanairosango-index.html	ナナイロサンゴ	DMM machine page not resolved
+nyuugettaamausu-index.html	ニューゲッターマウス	DMM machine page not resolved
+haisukuurudxd2-haaremuouniorehaaru-index.html	ハイスクールD×D2 ハーレム王に俺はある	DMM machine page not resolved
+happiijaguraaviii-index.html	ハッピージャグラーVⅢ	DMM machine page not resolved
+hanahanahouou-tenshou-25-30-index.html	ハナハナホウオウ～天翔～25&30	DMM machine page not resolved
+baasasurivaizu-index.html	バーサスリヴァイズ	DMM machine page not resolved
+pachisuro-fairy-tail2-index.html	パチスロ FAIRY TAIL2	DMM machine page not resolved
+pachisuro-ryukyu-beat-30-index.html	パチスロ RYUKYU BEAT-30	DMM machine page not resolved
+pachisuro-tiger-bunny-sp-index.html	パチスロ TIGER & BUNNY SP	DMM machine page not resolved
+pachisuro-konosubarashiisekainishukufukuwo-index.html	パチスロ この素晴らしい世界に祝福を！	DMM machine page not resolved
+pachisuro-akuerion-all-stars-index.html	パチスロ アクエリオン ALL STARS	DMM machine page not resolved
+pachisuro-arajinakurashikku-index.html	パチスロ アラジンAクラシック	DMM machine page not resolved
+pachisuro-zeegapein2-index.html	パチスロ ゼーガペイン2	DMM machine page not resolved
+pachisuro-danmachigaiden-soodo-oratoria-index.html	パチスロ ダンまち外伝 ソード・オラトリア	DMM machine page not resolved
+pachisuro-disukuappu2-index.html	パチスロ ディスクアップ2	DMM machine page not resolved
+pachisuro-dorifutaazu-index.html	パチスロ ドリフターズ	DMM machine page not resolved
+pachisuro-pinkupansaasp-index.html	パチスロ ピンクパンサーSP	DMM machine page not resolved
+pachisuro-youjosenki-index.html	パチスロ 幼女戦記	DMM machine page not resolved
+pachisuro-shinonimusha-index.html	パチスロ 新鬼武者	DMM machine page not resolved
+pachisuro-gatsuhana-masa-index.html	パチスロ 月華 雅	DMM machine page not resolved
+pachisuro-soutennokobushi4-index.html	パチスロ 蒼天の拳4	DMM machine page not resolved
+pachisuro-mahoushoujoikuseikeikaku-index.html	パチスロ 魔法少女育成計画	DMM machine page not resolved
+pachisuroboowy-index.html	パチスロBOOWY	DMM machine page not resolved
+pachisurohigurashinonakugoronimatsuri2-kakeraasobihen-index.html	パチスロひぐらしのなく頃に祭2 カケラ遊び編	DMM machine page not resolved
+pachisurodebirumeikurai5-index.html	パチスロデビルメイクライ5	DMM machine page not resolved
+pachisurohaadoboirudo-index.html	パチスロハードボイルド	DMM machine page not resolved
+pachisurobaiohazaadore-2-index.html	パチスロバイオハザードRE:2	DMM machine page not resolved
+pachisuroperusona5-index.html	パチスロペルソナ5	DMM machine page not resolved
+pachisurobonbaagaaru-index.html	パチスロボンバーガール	DMM machine page not resolved
+pachisuromikuchantoidomunnomirakurucharenji-index.html	パチスロミクちゃんとイドムンのミラクルチャレンジ	DMM machine page not resolved
+pachisuroharuichiban-index.html	パチスロ春一番	DMM machine page not resolved
+pachisuroinuyasha-index.html	パチスロ犬夜叉	DMM machine page not resolved
+pachisurokoutetsushironokabaneri-index.html	パチスロ甲鉄城のカバネリ	DMM machine page not resolved
+pachisuromakotoorenosora-index.html	パチスロ真俺の空	DMM machine page not resolved
+pachisurowaraiuseerusuman4-index.html	パチスロ笑ゥせぇるすまん4	DMM machine page not resolved
+pachisurohijiritoushihoshiya-meioufukkatsu-index.html	パチスロ聖闘士星矢 冥王復活	DMM machine page not resolved
+pachisuroiiwakehasasenaiwayo-bygekidanmitsu-index.html	パチスロ言い訳はさせないわよ by激壇蜜	DMM machine page not resolved
+pachisurohaiyore-nyarukosan-index.html	パチスロ這いよれ！ニャル子さん	DMM machine page not resolved
+pachisurotekken4aruteimettodebiruver-index.html	パチスロ鉄拳4アルティメットデビルVer.	DMM machine page not resolved
+pachisurotekken5-index.html	パチスロ鉄拳5	DMM machine page not resolved
+pachisurosenrankagura-burst-up-index.html	パチスロ閃乱カグラ BURST UP	DMM machine page not resolved
+pachisurokakumeikivaruvureivu-index.html	パチスロ革命機ヴァルヴレイヴ	DMM machine page not resolved
+meruhenkuesuto-index.html	メルヘンクエスト	DMM machine page not resolved
+rasutoyuutopia-index.html	ラストユートピア	DMM machine page not resolved
+viinasuzoon-index.html	ヴィーナスゾーン	DMM machine page not resolved
+juujika5-index.html	十字架5	DMM machine page not resolved
+nangokumonogatari-30-index.html	南国物語-30	DMM machine page not resolved
+ounin-banchouzero-index.html	押忍！番長ZERO	DMM machine page not resolved
+masamune-senkyoku-index.html	政宗 戦極	DMM machine page not resolved
+shinseikievangerion-tamashiinokyoumei-index.html	新世紀エヴァンゲリオン～魂の共鳴～	DMM machine page not resolved
+raikaminarieisaa30-index.html	来雷エイサー30	DMM machine page not resolved
+okidoki-gold-index.html	沖ドキ！GOLD	DMM machine page not resolved
+okiwanimaru-25-30-index.html	沖ワニマル-25&30	DMM machine page not resolved
+okinawafesuteibaru-30-index.html	沖縄フェスティバル-30	DMM machine page not resolved
+hanabizekkei-index.html	花火絶景	DMM machine page not resolved
+chougiragirajiisamaa-index.html	超ギラギラ爺サマー	DMM machine page not resolved
+onihamabakusoukurenairentai-gekitououkahen-index.html	鬼浜爆走紅連隊 激闘謳歌編	DMM machine page not resolved
+l-evangerion-miraihenosouzou-index.html	L エヴァンゲリオン ～未来への創造～	DMM machine page not resolved
+l009-re-cyborg-index.html	L009 RE:CYBORG	DMM machine page not resolved
+lgoburinsureiyaa-index.html	Lゴブリンスレイヤー	DMM machine page not resolved
+lberuserukumusou-index.html	Lベルセルク無双	DMM machine page not resolved
+lrabujou3-wgoshimeihaikagadesuka-index.html	Lラブ嬢3～Wご指名はいかがですか？～	DMM machine page not resolved
+lshuyakuhazenigata4-index.html	L主役は銭形4	DMM machine page not resolved
+ldaikunogensan-chouyumegen-index.html	L大工の源さん 超夢源	DMM machine page not resolved
+lsengokuotome4-senrannihiramekukeigannogunshi-index.html	L戦国乙女4 戦乱に閃く炯眼の軍師	DMM machine page not resolved
+lhananokeiji-sadosemenoshou-index.html	L花の慶次～佐渡攻めの章	DMM machine page not resolved
+s-oz1-aa-30-index.html	S OZ1-AA-30	DMM machine page not resolved
+s-odashinnanoyabou-zenkokuban-index.html	S 織田信奈の野望 全国版	DMM machine page not resolved
+slotmeidoin-abisu-index.html	SLOTメイドインアビス	DMM machine page not resolved
+ssurodoru-index.html	Sスロドル	DMM machine page not resolved
+smomokyunsoododx-index.html	SモモキュンソードDX	DMM machine page not resolved
+soohanaman-index.html	S大花満	DMM machine page not resolved
+pachisuro-nyankodaisensou-bigbang-index.html	ぱちスロ にゃんこ大戦争 BIGBANG	DMM machine page not resolved
+pachisuro-nogizaka46-index.html	ぱちスロ 乃木坂46	DMM machine page not resolved
+mottochibariyo-25-index.html	もっとチバリヨ-25	DMM machine page not resolved
+anazaagoddohaadesu-tokihouttareshiyarigekiver-index.html	アナザーゴッドハーデス-解き放たれし槍撃ver.	DMM machine page not resolved
+urutorachabudaikaeshi-index.html	ウルトラちゃぶ台返し	DMM machine page not resolved
+kinguhanahana-30-index.html	キングハナハナ-30	DMM machine page not resolved
+crankycrest-index.html	クランキークレスト	DMM machine page not resolved
+googoojaguraa3-index.html	ゴーゴージャグラー3	DMM machine page not resolved
+jaberin-index.html	ジャベリン	DMM machine page not resolved
+sumasuro-baiohazaado-vendetta-index.html	スマスロ バイオハザード:ヴェンデッタ	DMM machine page not resolved
+sumasuro-sengokubasara-giga-index.html	スマスロ 戦国BASARA GIGA	DMM machine page not resolved
+sumasurotoarumajutsunokinshomokuroku-index.html	スマスロとある魔術の禁書目録	DMM machine page not resolved
+sumasurokinnikuman-7ninnoakumachoujinhen-index.html	スマスロキン肉マン～7人の悪魔超人編～	DMM machine page not resolved
+sumasurobajirisuku-koukaninpouchou-kizuna2-tenzen-black-edition-index.html	スマスロバジリスク～甲賀忍法帖～絆2 天膳 BLACK EDITION	DMM machine page not resolved
+sumasurogekijouban-mahoushoujomadoka-magikaf-forute-index.html	スマスロ劇場版 魔法少女まどか☆マギカf-フォルテ	DMM machine page not resolved
+sumasurohokutonoken-index.html	スマスロ北斗の拳	DMM machine page not resolved
+sumasurotenshoushitarasuraimudattaken-index.html	スマスロ転生したらスライムだった件	DMM machine page not resolved
+surotto-soodoaato-onrain-index.html	スロット ソードアート・オンライン	DMM machine page not resolved
+suuhanaraijingu-30-index.html	スーハナライジング-30	DMM machine page not resolved
+suupaabingoneokurashikku-index.html	スーパービンゴネオクラシック	DMM machine page not resolved
+suupaabingoneokurashikku-30-index.html	スーパービンゴネオクラシック-30	DMM machine page not resolved
+dejisuro-jac-in-baajon-index.html	デジスロ JAC IN バージョン	DMM machine page not resolved
+doragonhanahana-senkou-30-index.html	ドラゴンハナハナ～閃光～-30	DMM machine page not resolved
+newshiosai-index.html	ニューシオサイ	DMM machine page not resolved
+pachisuro-karakurisaakasu-index.html	パチスロ からくりサーカス	DMM machine page not resolved
+pachisuro-kengan-ashura-index.html	パチスロ ケンガンアシュラ	DMM machine page not resolved
+pachisuro-monsutaahantaawaarudo-aisuboon-index.html	パチスロ モンスターハンターワールド：アイスボーン	DMM machine page not resolved
+pachisuro-sengoku-koihime-index.html	パチスロ 戦国†恋姫	DMM machine page not resolved
+pachisuro-sengokumusou3m-index.html	パチスロ 戦国無双3M	DMM machine page not resolved
+pachisuro-tanteiopera-mirukiihoomuzur-daishuukakumatsuri-index.html	パチスロ 探偵オペラ ミルキィホームズＲ 大収穫祭!!!!	DMM machine page not resolved
+pachisuro-hidannoariaii-index.html	パチスロ 緋弾のアリアII	DMM machine page not resolved
+pachisuro-jabamiyumekotoiuonna-index.html	パチスロ 蛇喰夢子という女	DMM machine page not resolved
+pachisurooverlordzettaishihaishakourinii-index.html	パチスロOVERLORD絶対支配者光臨II	DMM machine page not resolved
+pachisurokoodogiasuhangyakunoruruushu3-c-c-kallen-ver-index.html	パチスロコードギアス反逆のルルーシュ3 C.C.&Kallen ver.	DMM machine page not resolved
+pachisurofaiyaadorifuto-index.html	パチスロファイヤードリフト	DMM machine page not resolved
+pachisurokoukyoushiheneurekasebun-hi-evolution-zero-type-art-index.html	パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO TYPE-ART	DMM machine page not resolved
+pachisurokizumonogo-shimarinokoku-index.html	パチスロ傷物語-始マリノ刻	DMM machine page not resolved
+pachisurokidousenshigandamuyunikoon-index.html	パチスロ機動戦士ガンダムユニコーン	DMM machine page not resolved
+pachisurohonoohonoonoshouboutai-index.html	パチスロ炎炎ノ消防隊	DMM machine page not resolved
+pachisuroryuukami-30-suikabaajon-index.html	パチスロ琉神－30 スイカバージョン	DMM machine page not resolved
+pachisurotatenoyuushanonariagari-index.html	パチスロ盾の勇者の成り上がり	DMM machine page not resolved
+famisutakaidouhan-index.html	ファミスタ回胴版!!	DMM machine page not resolved
+magicalhalloween8-index.html	マジカルハロウィン8	DMM machine page not resolved
+kaidoushikiyuugiki-guranberumu-index.html	回胴式遊技機 グランベルム	DMM machine page not resolved
+sengokukorekushon5-index.html	戦国コレクション5	DMM machine page not resolved
+sengokukorekushon5chougokurakuloop-index.html	戦国コレクション５超極楽ＬＯＯＰ	DMM machine page not resolved
+moechiba-30-index.html	燃えチバ-30	DMM machine page not resolved
+makototenkafubu-index.html	真天下布武	DMM machine page not resolved
+kachou-kumadakousaku-index.html	課長 熊田工作	DMM machine page not resolved
+boukuushoujorabukyuure2-kyokugennokyoumei-index.html	防空少女ラブキューレ2〜極限の共鳴〜	DMM machine page not resolved
+maajankakutoukurabu-kakusei-index.html	麻雀格闘倶楽部 覚醒	DMM machine page not resolved
+a-slot-konosubarashiisekainishukufukuwo-index.html	A-SLOT+ この素晴らしい世界に祝福を！	DMM machine page not resolved
+l-d4dj-pachi-slot-mix-index.html	L D4DJ Pachi-Slot Mix	DMM machine page not resolved
+toloveru-darkness-index.html	L ToLOVEるダークネス	DMM machine page not resolved
+l-akamegakiru-2-index.html	L アカメが斬る！2	DMM machine page not resolved
+l-urutoramanteiga-index.html	L ウルトラマンティガ	DMM machine page not resolved
+l-kamenraidaa-7riders-index.html	L 仮面ライダー 7RIDERS	DMM machine page not resolved
+shikoten-index.html	L 新・必殺仕置人 回胴 CRASH SPEC	DMM machine page not resolved
+mushokutensei-index.html	L 無職転生 ～異世界行ったら本気だす～	DMM machine page not resolved
+luruhoshiyatsura-index.html	Lうる星やつら	DMM machine page not resolved
+lsutoraikuuitchiizu2-index.html	Lストライクウィッチーズ2	DMM machine page not resolved
+superbingoneo-index.html	Lスーパービンゴネオ	DMM machine page not resolved
+doubleattack2-index.html	Lダブルアタック2 withOZS-1000＆RAPHAEL	DMM machine page not resolved
+dumbbell-index.html	Lダンベル何キロ持てる？	DMM machine page not resolved
+bangdream-index.html	Lバンドリ！	DMM machine page not resolved
+lpachisuro-kaguyasamahakokurasetai-index.html	Lパチスロ かぐや様は告らせたい	DMM machine page not resolved
+lpachisuro-makurosufuronteia4-index.html	Lパチスロ マクロスフロンティア4	DMM machine page not resolved
+lpachisuro-honoohonoonoshouboutai-index.html	Lパチスロ 炎炎ノ消防隊	DMM machine page not resolved
+lpachisurogaaruzu-pantsuaa-saishuushou-index.html	Lパチスロガールズ＆パンツァー 最終章	DMM machine page not resolved
+lpachisurosenhimezesshoushinfogia-seiginouta-index.html	Lパチスロ戦姫絶唱シンフォギア 正義の歌	DMM machine page not resolved
+lpachisurosenrankagura2-shinovi-master-index.html	Lパチスロ閃乱カグラ2 SHINOVI MASTER	DMM machine page not resolved
+onepunchman-index.html	Lワンパンマン	DMM machine page not resolved
+nangoku-index.html	L南国育ち	DMM machine page not resolved
+lhijiritoushihoshiyakaioukakuseicustom-edition-index.html	L聖闘士星矢海皇覚醒CUSTOM EDITION	DMM machine page not resolved
+slotninjajajamarukun-index.html	SLOT忍者じゃじゃ丸くん	DMM machine page not resolved
+sky-love-index.html	Sky Love	DMM machine page not resolved
+sbahama30-index.html	Sバハマ30	DMM machine page not resolved
+ultramj-index.html	ウルトラミラクルジャグラー	DMM machine page not resolved
+kingcreator30-index.html	キングクリエーター30	DMM machine page not resolved
+jugglergirls-index.html	ジャグラーガールズSS	DMM machine page not resolved
+sumasuro-gegegenokitarou-kakusei-index.html	スマスロ ゲゲゲの鬼太郎 覚醒	DMM machine page not resolved
+sumasuro-koodogiasu-hangyakunoruruushu-fukkatsunoruruushu-index.html	スマスロ コードギアス 反逆のルルーシュ／復活のルルーシュ	DMM machine page not resolved
+sumasuro-goddoiitaa-rizarekushon-index.html	スマスロ ゴッドイーター リザレクション	DMM machine page not resolved
+goldenkamuy-index.html	スマスロ ゴールデンカムイ	DMM machine page not resolved
+sumasuro-sutoraiku-za-buraddo-index.html	スマスロ ストライク・ザ・ブラッド	DMM machine page not resolved
+sumasuro-sutoriitofaitaav-chousenshanomichi-index.html	スマスロ ストリートファイターV 挑戦者の道	DMM machine page not resolved
+sumasuro-baiohazaadovirejji-index.html	スマスロ バイオハザードヴィレッジ	DMM machine page not resolved
+sumasuro-monsutaahantaaraizu-index.html	スマスロ モンスターハンターライズ	DMM machine page not resolved
+okidoki-duo-encore-index.html	スマスロ 沖ドキ！DUO アンコール	DMM machine page not resolved
+sumasurokinguparusaa-index.html	スマスロキングパルサー	DMM machine page not resolved
+sumasurokoukyoushiheneurekasebun4-hi-evolution-index.html	スマスロ交響詩篇エウレカセブン4 HI-EVOLUTION	DMM machine page not resolved
+sumasuroitainohaiyananodebougyoryokunikyokufurishitaitoomoimasu-index.html	スマスロ痛いのは嫌なので防御力に極振りしたいと思います。	DMM machine page not resolved
+hokutomusou-index.html	スマスロ真・北斗無双	DMM machine page not resolved
+initiald2-index.html	スマスロ頭文字D 2nd	DMM machine page not resolved
+sumaatookisuro-doragonhanahana-senkou-index.html	スマート沖スロ ドラゴンハナハナ～閃光～	DMM machine page not resolved
+sumaatookisuro-chouhanamatsuri-index.html	スマート沖スロ 超華祭	DMM machine page not resolved
+surotto-re-zerokarahajimeruisekaiseikatsu-season2-index.html	スロット Re:ゼロから始める異世界生活 season2	DMM machine page not resolved
+surotto-zonbirandosaga-index.html	スロット ゾンビランドサガ	DMM machine page not resolved
+chibariyo2-2024-index.html	チバリヨ２	DMM machine page not resolved
+triplecrown4u-index.html	トリプルクラウンフォーユー	DMM machine page not resolved
+dragonhanahana-index.html	ドラゴンハナハナ～閃光～	DMM machine page not resolved
+nyuuparusaasp4-with-taikonotatsujin-index.html	ニューパルサーSP4 with 太鼓の達人	DMM machine page not resolved
+pachisuro-gamera2-index.html	パチスロ ガメラ2	DMM machine page not resolved
+pachisuro-danjonnideaiwomotomerunohamachigatsuteirudarouka2-index.html	パチスロ ダンジョンに出会いを求めるのは間違っているだろうか2	DMM machine page not resolved
+pachisurolkoumonchamaten-index.html	パチスロL黄門ちゃま天	DMM machine page not resolved
+pachisurobusoushinki-index.html	パチスロ武装神姫	DMM machine page not resolved
+pachisurokinnokabocha-index.html	パチスロ金のかぼちゃ	DMM machine page not resolved
+mister-juggler-index.html	ミスタージャグラー	DMM machine page not resolved
+waadooburaitsuii-index.html	ワードオブライツII	DMM machine page not resolved
+kyoukaraoreha-pachisurohen-index.html	今日から俺は!! パチスロ編	DMM machine page not resolved
+yoshimunerising-index.html	吉宗ＲＩＳＩＮＧ	DMM machine page not resolved
+nintamashiisan-ougikaidennoshou-index.html	忍魂参 ～奥義皆伝ノ章～	DMM machine page not resolved
+okishiisaa-30-index.html	沖シーサー -30	DMM machine page not resolved
+okidoki-black-index.html	沖ドキ！BLACK	DMM machine page not resolved
+okidoki-goojasu-25phi-index.html	沖ドキ！ゴージャス（25φ）	DMM machine page not resolved
+okidoki-goojasu-30phi-index.html	沖ドキ！ゴージャス（30φ）	DMM machine page not resolved
+shokinkubi-angel-index.html	賞金首Angel	DMM machine page not resolved
+l-inuyasha2-index.html	Ｌ 犬夜叉2	DMM machine page not resolved
+toloveru-darkness-index.html	L ToLOVEるダークネス TRANCE ver.8.7	DMM machine page not resolved
+ultraman-index.html	L ULTRAMAN	DMM machine page not resolved
+revuestarlight-index.html	L 少女☆歌劇 レヴュースタァライト -The SLOT	DMM machine page not resolved
+mushokutensei-index.html	L 無職転生 ～異世界行ったら本気だす～	DMM machine page not resolved
+1000chan-a-index.html	LBパチスロ1000ちゃんA	DMM machine page not resolved
+lushiototorashirafukessenvh-index.html	Lうしおととら白面決戦VH	DMM machine page not resolved
+sister-quest-index.html	Sister Quest	DMM machine page not resolved
+teidadondon-index.html	てぃだどんどん	DMM machine page not resolved
+kureanohihouden-hajimarinotobiratotaiyounoishi-boonasutorigaaver-index.html	クレアの秘宝伝 ～はじまりの扉と太陽の石～ ボーナストリガーver.	DMM machine page not resolved
+sutaahanahana-30-index.html	スターハナハナ-30	DMM machine page not resolved
+sumasuro-youkosojitsuryokushijoushuginokyoushitsuhe-index.html	スマスロ ようこそ実力至上主義の教室へ	DMM machine page not resolved
+sumasuro-aidorumasutaa-mirionraibu-nekusutopuroroogu-index.html	スマスロ アイドルマスター ミリオンライブ！ネクストプロローグ	DMM machine page not resolved
+sumasuro-giruteikuraun2-index.html	スマスロ ギルティクラウン2	DMM machine page not resolved
+sumasuro-shaamankingu-index.html	スマスロ シャーマンキング	DMM machine page not resolved
+sumasuro-debiru-mei-kurai-5-sutairisshutoraibu-index.html	スマスロ デビル メイ クライ 5 スタイリッシュトライブ	DMM machine page not resolved
+sumasuro-baiohazaado5-index.html	スマスロ バイオハザード5	DMM machine page not resolved
+sumasuro-magiarekoodomahoushoujomadoka-magikagaiden-index.html	スマスロ マギアレコード魔法少女まどか☆マギカ外伝	DMM machine page not resolved
+bakemonogatari-index.html	スマスロ 化物語	DMM machine page not resolved
+okidoki-duo-encore-index.html	スマスロ 沖ドキ！DUO アンコール	DMM machine page not resolved
+sumasuro-midoridon-viva-jounetsunanbeihen-revival-index.html	スマスロ 緑ドン VIVA!情熱南米編 REVIVAL	DMM machine page not resolved
+sumasurosuupaaburakkujakku-index.html	スマスロスーパーブラックジャック	DMM machine page not resolved
+sumaatookisuro-ameijinguraibu-index.html	スマート沖スロ アメイジングライブ	DMM machine page not resolved
+tobe-haaremueesu-index.html	翔べ！ハーレムエース	DMM machine page not resolved
+karyuu-index.html	花笠	DMM machine page not resolved
+aslot-isekaiquartet-index.html	A-SLOT+ 異世界かるてっと BT	DMM machine page not resolved
+galfy-index.html	LBスロットGALFY	DMM machine page not resolved
+superbin-index.html	Lすーぱぁびん娘	DMM machine page not resolved
+akudama-index.html	Lアクダマドライブ	DMM machine page not resolved
+takt-opus-index.html	Lタクトオーパス デスティニー	DMM machine page not resolved
+umineko2-index.html	Lパチスロ うみねこのなく頃に2	DMM machine page not resolved
+karakuri2-index.html	Lパチスロ からくりサーカス2	DMM machine page not resolved
+enen2-index.html	Lパチスロ 炎炎ノ消防隊2	DMM machine page not resolved
+nangoku-special-index.html	L南国育ちSPECIAL	DMM machine page not resolved
+hanmabataki-index.html	L範馬刃牙	DMM machine page not resolved
+kyokoshisuiri-index.html	L虚構推理	DMM machine page not resolved
+ultraman-final-index.html	ULTRAMAN 最終決戦	DMM machine page not resolved
+animal-slot-docchi-index.html	アニマルスロットドッチ	DMM machine page not resolved
+gundam-unicorn-drive-index.html	ガンダムユニコーン 覚醒DRIVE	DMM machine page not resolved
+birdiewing-index.html	スマスロ BIRDIE WING	DMM machine page not resolved
+goblinslayer2-index.html	スマスロ ゴブリンスレイヤーII	DMM machine page not resolved
+thunderv-index.html	スマスロ サンダーV	DMM machine page not resolved
+hanabi-index.html	スマスロ ハナビ	DMM machine page not resolved
+bio-re3-index.html	スマスロ バイオハザードRE:3	DMM machine page not resolved
+bigdream-golden-pusher-index.html	スマスロ ビッグドリーム THE GOLDEN PUSHER	DMM machine page not resolved
+yormungand-index.html	スマスロ ヨルムンガンド	DMM machine page not resolved
+koukaku-index.html	スマスロ 攻殻機動隊	DMM machine page not resolved
+kerotto5bt-index.html	スマスロケロット5BT	DMM machine page not resolved
+superrioace2-index.html	スマスロスーパーリオエース2	DMM machine page not resolved
+tekken6-index.html	スマスロ鉄拳6	DMM machine page not resolved
+darkhaibi-index.html	スマート沖スロ ダークハイビ	DMM machine page not resolved
+newkinghanahana-v-index.html	スマート沖スロ ニューキングハナハナV	DMM machine page not resolved
+surotto-soodoaato-onrain-index.html	スロット ソードアート・オンラインII	DMM machine page not resolved
+newkinghanahana-v30-index.html	ニューキングハナハナV-30	DMM machine page not resolved
+rotis-index.html	ローティス	DMM machine page not resolved
+kabaneri-unato-index.html	甲鉄城のカバネリ 海門決戦	DMM machine page not resolved
+shinuchi-yoshimune-index.html	真打 吉宗	DMM machine page not resolved
+
+[ERRORS]

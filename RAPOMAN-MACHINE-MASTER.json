@@ -20,7 +20,9 @@
     "available": 352,
     "pending": 65,
     "ghoulBase": 350,
-    "ghoulCompleteShell": 344
+    "ghoulCompleteShell": 344,
+    "dataVerified": 0,
+    "dmmResolved": 0
   },
   "total": 417,
   "machines": [
