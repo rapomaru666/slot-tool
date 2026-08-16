@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "name": "RAPOMAN machine master",
-  "generatedAt": "2026-08-16T01:54:20.728646+00:00",
+  "generatedAt": "2026-08-16T01:54:37.282654+00:00",
   "rules": {
     "tokyoGhoulProtected": true,
     "machineType": "pachislot",
