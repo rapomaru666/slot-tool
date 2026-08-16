@@ -10,16 +10,20 @@ function existingNameKeys(){return new Set([...container.querySelectorAll('.tool
 function addMasterTool(row){
   const name=String(row.name||'').trim(); if(!name)return;
   const keys=existingNameKeys(); if(keys.has(keyName(name)))return;
-  const isMonkey=name==='スマスロモンキーターンV';
+  const normalized=keyName(name);
+  const isMonkey=normalized===keyName('スマスロモンキーターンV');
+  const isIsekai=normalized.includes(keyName('異世界かるてっと'));
   const monkeyFile='monkeyturn5-index.html';
-  const available=isMonkey||(row.toolStatus==='available' && row.file);
-  const file=isMonkey?monkeyFile:row.file;
+  const isekaiFile='isekaiquartet-index.html';
+  const forcedAvailable=isMonkey||isIsekai;
+  const available=forcedAvailable||(row.toolStatus==='available' && row.file);
+  const file=isMonkey?monkeyFile:(isIsekai?isekaiFile:row.file);
   const ghoulBase=!!row.ghoulBase;
   const a=document.createElement('a');
   a.className='tool'; a.dataset.machine=name; a.dataset.status=available?'available':'pending'; a.dataset.ghoulBase=ghoulBase?'1':'0';
   a.href=available?BASE+file:'#';
   const year=row.year||'';
-  const statusTag=available?(ghoulBase?'喰種ベース':'設定判別'):'作成中';
+  const statusTag=isIsekai?'再監査版':(available?(ghoulBase?'喰種ベース':'設定判別'):'作成中');
   a.innerHTML='<span class="new">'+esc(year)+'</span><div class="machine">'+esc(labelName(name))+'<br><b>777</b></div><h3>'+esc(name)+'</h3><p>'+(available?'設定判別ツール':'作成中....')+'</p><div class="tags"><i>'+esc(year)+'年</i><i>'+statusTag+'</i></div><button>'+(available?'使う　›':'作成中')+'</button>';
   container.appendChild(a);
 }
