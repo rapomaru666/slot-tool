@@ -1,0 +1,57 @@
+{
+  "2026-08-17": {
+    "reported_at_jst": "2026-08-18T08:51:07.074604+09:00",
+    "halls": [
+      "マルハン青梅新町",
+      "マルハン千葉ニュータウン",
+      "エクス・アリーナ東京"
+    ],
+    "posts": [
+      {
+        "hall": "マルハン青梅新町",
+        "text": "🌈答え合わせ 8/17\n🌈 マルハン青梅新町\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
+        "chars": 58,
+        "buffer": {
+          "post": {
+            "id": "6a839e49a6afcff0dbbf4322",
+            "status": "sent",
+            "sentAt": "2026-08-17T23:50:33.765Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2089500158966792674"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "マルハン千葉ニュータウン",
+        "text": "🌈答え合わせ 8/17\n🌈 マルハン千葉ニュータウン\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
+        "chars": 62,
+        "buffer": {
+          "post": {
+            "id": "6a839e5433ec6735e90ec571",
+            "status": "sent",
+            "sentAt": "2026-08-17T23:50:45.024Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2089500206182101081"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "エクス・アリーナ東京",
+        "text": "🌈答え合わせ 8/17\n🌈 エクス・アリーナ東京\n平均差枚+2,960枚\n#スロット #パチスロ",
+        "chars": 48,
+        "buffer": {
+          "post": {
+            "id": "6a839e5f521d59579154c0c1",
+            "status": "sent",
+            "sentAt": "2026-08-17T23:50:56.266Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2089500253472886858"
+          }
+        },
+        "source": "https://hall-navi.com/?ymd=2026-08-17"
+      }
+    ],
+    "sources": [
+      "https://hall-navi.com/?ymd=2026-08-17"
+    ]
+  }
+}
