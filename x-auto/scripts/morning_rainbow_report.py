@@ -11,6 +11,7 @@ START_DATE = datetime(2026, 8, 18, tzinfo=JST).date()
 API_URL = "https://api.buffer.com"
 TARGET_NAME = "rapomaru777"
 PUBLISHED_PATH = Path("x-auto/morning-published.json")
+MAX_CHARS = 280
 
 
 def graphql(query: str):
@@ -48,20 +49,34 @@ def find_result_text(html, hall):
     return " / ".join(nums) if nums else "公開結果ページ掲載を確認"
 
 
-def publish(text):
+def fit_280(text):
+    if len(text) <= MAX_CHARS:
+        return text
+    suffix="…\n#スロット"
+    text=text[:MAX_CHARS-len(suffix)]+suffix
+    if len(text) > MAX_CHARS:
+        raise RuntimeError(f"Morning post exceeds {MAX_CHARS} characters")
+    return text
+
+
+def get_channel():
     orgs=graphql('query GetOrganizations { account { organizations { id name } } }')["account"]["organizations"]
-    channel=None
     for org in orgs:
         channels=graphql(f'''query GetChannels {{ channels(input: {{ organizationId: "{org['id']}" }}) {{ id name displayName service }} }}''')["channels"]
         for c in channels:
             if c.get("service")=="twitter" and TARGET_NAME.lower() in {str(c.get("name","")).lower(),str(c.get("displayName","")).lower()}:
-                channel=c; break
-        if channel: break
-    if not channel: raise RuntimeError("X channel not found")
+                return c
+    raise RuntimeError("X channel not found")
+
+
+def publish(text, channel):
+    text=fit_280(text)
+    if len(text) > MAX_CHARS:
+        raise RuntimeError(f"Refusing to publish {len(text)} characters")
     escaped=json.dumps(text,ensure_ascii=False)
     result=graphql(f'''mutation PublishNow {{ createPost(input: {{ text: {escaped}, channelId: "{channel['id']}", schedulingType: automatic, mode: shareNow, saveToDraft: false }}) {{ ... on PostActionSuccess {{ post {{ id status sentAt externalLink }} }} ... on MutationError {{ message }} }} }}''')["createPost"]
     if result.get("message"): raise RuntimeError(result["message"])
-    return result
+    return result, text
 
 
 def main():
@@ -79,7 +94,6 @@ def main():
     if target.isoformat() in history:
         print("Morning report already published"); return
 
-    # Hall-navi result/history pages are searched with the exact target date.
     urls=[f"https://hall-navi.com/osusume_list?ymd={target.isoformat()}", f"https://hall-navi.com/?ymd={target.isoformat()}"]
     pages=[]
     for url in urls:
@@ -88,22 +102,25 @@ def main():
             except Exception:
                 if attempt==2: pass
                 else: time.sleep(5)
-    lines=[f"🌈らぽまる太郎 答え合わせ {target.month}/{target.day}"]
-    sources=[]
-    for hall in halls:
-        found=None
+
+    channel=get_channel()
+    posts=[]
+    all_sources=[]
+    for index,hall in enumerate(halls, start=1):
+        found=None; source=None
         for url,html in pages:
             found=find_result_text(html,hall)
-            if found: sources.append(url); break
+            if found:
+                source=url; break
         if not found: found="8時時点で数値結果を確認できず（掲載確認継続）"
-        lines.append(f"🌈{hall}\n{found}")
-    lines.append("#スロット #パチスロ")
-    text="\n".join(lines)
-    if len(text)>280:
-        text=text[:267]+"…\n#スロット"
-    result=publish(text)
-    history[target.isoformat()]={"reported_at_jst":datetime.now(JST).isoformat(),"halls":halls,"buffer":result,"sources":sorted(set(sources)),"text":text}
+        text=f"🌈答え合わせ {target.month}/{target.day}\n🌈{index}位 {hall}\n{found}\n#スロット #パチスロ"
+        result,posted_text=publish(text,channel)
+        posts.append({"rank":index,"hall":hall,"text":posted_text,"chars":len(posted_text),"buffer":result,"source":source})
+        if source: all_sources.append(source)
+        if index < len(halls): time.sleep(10)
+
+    history[target.isoformat()]={"reported_at_jst":datetime.now(JST).isoformat(),"halls":halls,"posts":posts,"sources":sorted(set(all_sources))}
     PUBLISHED_PATH.write_text(json.dumps(history,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({"ok":True,"target":target.isoformat(),"halls":halls,"result":result},ensure_ascii=False))
+    print(json.dumps({"ok":True,"target":target.isoformat(),"post_count":len(posts),"posts":[{"rank":p["rank"],"hall":p["hall"],"chars":p["chars"]} for p in posts]},ensure_ascii=False))
 
 if __name__=="__main__": main()
