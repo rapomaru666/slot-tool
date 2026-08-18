@@ -4,6 +4,9 @@ on:
   schedule:
     # 08:00 JST = 23:00 UTC on the previous UTC date
     - cron: '0 23 * * *'
+  push:
+    paths:
+      - 'x-auto/morning-now-trigger.txt'
   workflow_dispatch:
 
 permissions:
