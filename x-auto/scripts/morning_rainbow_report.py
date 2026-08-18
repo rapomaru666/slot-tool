@@ -54,16 +54,28 @@ def fetch(url):
 def rainbow_halls(thread):
     halls = []
     active = False
-    for line in thread.get("root", "").splitlines():
-        if line.strip() == "🌈":
+    for raw_line in thread.get("root", "").splitlines():
+        line = raw_line.strip()
+        if line == "🌈":
             active = True
             continue
-        if line.strip() == "🏆":
+        if line == "🏆":
             active = False
             continue
         if active and "｜" in line:
             halls.append(line.split("｜", 1)[0].strip())
-    return halls
+            continue
+
+        # Current scored format: "🌈1位 店名 20.0点"
+        scored = re.match(
+            r"^🌈\s*(?:\d+位\s+)?(.+?)\s+\d+(?:\.\d+)?点\s*$",
+            line,
+        )
+        if scored:
+            halls.append(scored.group(1).strip())
+
+    # Preserve source order and prevent duplicate posts.
+    return list(dict.fromkeys(halls))
 
 
 def find_result_text(html, hall):
