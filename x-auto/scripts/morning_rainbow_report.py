@@ -203,7 +203,7 @@ def main():
             found = "8時時点で数値結果を確認できず（掲載確認継続）"
 
         text = (
-            f"🌈答え合わせ {target.month}/{target.day}\n"
+            f"🌈Result {target.month}/{target.day}\n"
             f"🌈 {hall}\n"
             f"{found}\n"
             "#スロット #パチスロ"
