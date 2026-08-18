@@ -13,29 +13,21 @@
   </header>
 
   <section class="card input-card">
-    <div class="mode-row"><span>総ゲーム数で判別</span><button id="game-mode" class="toggle on" type="button" aria-pressed="true"><span></span></button><b id="mode-label">ON</b></div>
+    <div class="mode-row">
+      <span>総ゲーム数で判別</span>
+      <button id="game-mode" class="toggle on" type="button" aria-pressed="true"><span></span></button>
+      <b id="mode-label">ON</b>
+    </div>
     <div class="games-pair">
       <label>総ゲーム数<input id="games" type="number" min="0" inputmode="numeric" placeholder="0"></label>
       <label>開始ゲーム数<input id="start-games" type="number" min="0" inputmode="numeric" placeholder="0" disabled></label>
     </div>
 
     <div class="bonus-grid">
-      <div class="bonus-row important">
-        <span>AT初当り</span>
-        <div class="counter"><button class="counter-btn minus" data-target="at">−</button><span id="at-value">0</span><button class="counter-btn plus" data-target="at">＋</button></div>
-      </div>
-      <div class="bonus-row important">
-        <span>CZ初当り</span>
-        <div class="counter"><button class="counter-btn minus" data-target="cz">−</button><span id="cz-value">0</span><button class="counter-btn plus" data-target="cz">＋</button></div>
-      </div>
-      <div class="bonus-row">
-        <span>低確・強チェリー回数</span>
-        <div class="counter"><button class="counter-btn minus" data-target="strongCherry">−</button><span id="strongCherry-value">0</span><button class="counter-btn plus" data-target="strongCherry">＋</button></div>
-      </div>
-      <div class="bonus-row">
-        <span>↳ CZ/AT当選</span>
-        <div class="counter"><button class="counter-btn minus" data-target="strongCherryHit">−</button><span id="strongCherryHit-value">0</span><button class="counter-btn plus" data-target="strongCherryHit">＋</button></div>
-      </div>
+      <div class="bonus-row important"><span>AT初当り</span><div class="counter"><button class="counter-btn minus" data-target="at">−</button><span id="at-value">0</span><button class="counter-btn plus" data-target="at">＋</button></div></div>
+      <div class="bonus-row important"><span>CZ初当り</span><div class="counter"><button class="counter-btn minus" data-target="cz">−</button><span id="cz-value">0</span><button class="counter-btn plus" data-target="cz">＋</button></div></div>
+      <div class="bonus-row"><span>低確・強チェリー回数</span><div class="counter"><button class="counter-btn minus" data-target="strongCherry">−</button><span id="strongCherry-value">0</span><button class="counter-btn plus" data-target="strongCherry">＋</button></div></div>
+      <div class="bonus-row"><span>↳ CZ/AT当選</span><div class="counter"><button class="counter-btn minus" data-target="strongCherryHit">−</button><span id="strongCherryHit-value">0</span><button class="counter-btn plus" data-target="strongCherryHit">＋</button></div></div>
     </div>
 
     <button id="judge-btn" class="judge-btn">設定を判別する</button>
@@ -81,12 +73,13 @@
       <p class="note">設定示唆ではない復活・運命盤報酬示唆ボイスは判別計算から除外。</p>
     </details>
 
-    <details class="material">
+    <details class="material" open>
       <summary>AT開始ステージ</summary>
-      <div class="material-grid">
-        <button class="signal" data-soft="偶数設定示唆">勝ステージ<br><small>偶数設定示唆</small></button>
-        <button class="signal" data-soft="奇数設定示唆">鳴海ステージ<br><small>奇数設定示唆</small></button>
+      <div class="bonus-grid">
+        <div class="bonus-row"><span>勝ステージ<br><small>偶数設定示唆</small></span><div class="counter"><button class="counter-btn minus" data-target="stageMasaru">−</button><span id="stageMasaru-value">0</span><button class="counter-btn plus" data-target="stageMasaru">＋</button></div></div>
+        <div class="bonus-row"><span>鳴海ステージ<br><small>奇数設定示唆</small></span><div class="counter"><button class="counter-btn minus" data-target="stageNarumi">−</button><span id="stageNarumi-value">0</span><button class="counter-btn plus" data-target="stageNarumi">＋</button></div></div>
       </div>
+      <p class="note">AT初当りごとに回数を記録。現時点で設定別の選択率が未公表のため、回数は判別結果の参考表示に使い、勝手な確率補正は行いません。</p>
     </details>
 
     <details class="material">
