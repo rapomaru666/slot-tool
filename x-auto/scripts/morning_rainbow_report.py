@@ -110,6 +110,8 @@ def fit_280(text):
 
 
 def validate_post(text):
+    if "答え合わせ" in text or "🌈Result" not in text:
+        raise RuntimeError("Morning label must be 🌈Result; 答え合わせ is forbidden")
     if len(text) > MAX_CHARS:
         raise RuntimeError(f"Refusing to publish {len(text)} characters")
     for pattern in RANKING_PATTERNS:
