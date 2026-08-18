@@ -13,10 +13,10 @@
   </header>
 
   <section class="card input-card">
-    <div class="games-single">
-      <label>総ゲーム数
-        <input id="games" type="number" min="0" inputmode="numeric" placeholder="0">
-      </label>
+    <div class="mode-row"><span>総ゲーム数で判別</span><button id="game-mode" class="toggle on" type="button" aria-pressed="true"><span></span></button><b id="mode-label">ON</b></div>
+    <div class="games-pair">
+      <label>総ゲーム数<input id="games" type="number" min="0" inputmode="numeric" placeholder="0"></label>
+      <label>開始ゲーム数<input id="start-games" type="number" min="0" inputmode="numeric" placeholder="0" disabled></label>
     </div>
 
     <div class="bonus-grid">
