@@ -53,5 +53,43 @@
     "sources": [
       "https://hall-navi.com/?ymd=2026-08-17"
     ]
+  },
+  "2026-08-18": {
+    "reported_at_jst": "2026-08-19T08:30:54.633565+09:00",
+    "halls": [
+      "YASUDA5",
+      "パラッツォ馬橋中根長津店"
+    ],
+    "posts": [
+      {
+        "hall": "YASUDA5",
+        "text": "🌈答え合わせ 8/18\n🌈 YASUDA5\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
+        "chars": 57,
+        "buffer": {
+          "post": {
+            "id": "6a84eb1857fccd2c75f3d340",
+            "status": "sent",
+            "sentAt": "2026-08-18T23:30:32.453Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2089857508332498984"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "パラッツォ馬橋中根長津店",
+        "text": "🌈答え合わせ 8/18\n🌈 パラッツォ馬橋中根長津店\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
+        "chars": 62,
+        "buffer": {
+          "post": {
+            "id": "6a84eb2357fccd2c75f3d440",
+            "status": "sent",
+            "sentAt": "2026-08-18T23:30:43.784Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2089857555879117000"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
