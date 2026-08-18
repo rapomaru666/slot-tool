@@ -6,11 +6,30 @@ document.addEventListener("DOMContentLoaded",()=>{
     strongCherry:[0.098,0.102,0.125,0.137,0.148,0.164]
   };
   const $=id=>document.getElementById(id);
+  let totalMode=true;
 
   function setCounter(id,value){
     state[id]=Math.max(0,Number(value)||0);
     const el=$(`${id}-value`);
     if(el)el.textContent=state[id];
+  }
+
+  function updateModeUI(){
+    const toggle=$("game-mode");
+    const label=$("mode-label");
+    const start=$("start-games");
+    if(toggle){
+      toggle.classList.toggle("on",totalMode);
+      toggle.setAttribute("aria-pressed",String(totalMode));
+    }
+    if(label)label.textContent=totalMode?"ON":"OFF";
+    if(start)start.disabled=totalMode;
+  }
+
+  function targetGames(){
+    const total=Number($("games")?.value||0);
+    const start=Number($("start-games")?.value||0);
+    return totalMode?total:Math.max(0,total-start);
   }
 
   document.querySelectorAll(".counter-btn").forEach(btn=>{
@@ -19,6 +38,11 @@ document.addEventListener("DOMContentLoaded",()=>{
       if(!Object.prototype.hasOwnProperty.call(state,id))return;
       setCounter(id,state[id]+(btn.classList.contains("plus")?1:-1));
     });
+  });
+
+  $("game-mode")?.addEventListener("click",()=>{
+    totalMode=!totalMode;
+    updateModeUI();
   });
 
   document.querySelectorAll("button.signal").forEach(btn=>{
@@ -107,7 +131,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       pred.textContent="設定予測：入力した示唆条件が矛盾しています";
     }else{
       const top=p.indexOf(max)+1;
-      pred.textContent=`設定予測：設定${top}が最有力　（${games}G）`;
+      pred.textContent=`設定予測：設定${top}が最有力　（判別対象 ${games}G）`;
     }
     const signals=softSignals();
     const summary=$("signal-summary");
@@ -119,10 +143,21 @@ document.addEventListener("DOMContentLoaded",()=>{
   }
 
   $("judge-btn")?.addEventListener("click",()=>{
-    const games=Number($("games")?.value||0);
-    if(games<=0){
+    const total=Number($("games")?.value||0);
+    const start=Number($("start-games")?.value||0);
+    const games=targetGames();
+    if(total<=0){
       alert("総ゲーム数を入力してください。");
       $("games")?.focus();
+      return;
+    }
+    if(!totalMode&&start>=total){
+      alert("開始ゲーム数は総ゲーム数より小さい値を入力してください。");
+      $("start-games")?.focus();
+      return;
+    }
+    if(games<=0){
+      alert("判別対象ゲーム数が0Gです。");
       return;
     }
     if(state.strongCherryHit>state.strongCherry){
@@ -137,6 +172,9 @@ document.addEventListener("DOMContentLoaded",()=>{
   $("reset-btn")?.addEventListener("click",()=>{
     Object.keys(state).forEach(id=>setCounter(id,0));
     if($("games"))$("games").value="";
+    if($("start-games"))$("start-games").value="";
+    totalMode=true;
+    updateModeUI();
     document.querySelectorAll("button.signal.selected").forEach(btn=>btn.classList.remove("selected"));
     for(let s=1;s<=6;s++){
       const pct=$(`setting-percent-${s}`);
@@ -148,4 +186,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     if($("signal-summary"))$("signal-summary").textContent="";
     $("result-section")?.classList.remove("visible");
   });
+
+  updateModeUI();
 });
