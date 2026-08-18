@@ -1,1 +1,145 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lパチスロ からくりサーカス2｜設定判別ツール</title><link rel="stylesheet" href="ghoul-base-style.css"></head><body data-generated-by="rapoman-ghoul-complete-v1"><main class="app"><header class="header"><h1>Lパチスロ からくりサーカス2</h1><p>設定判別ツール</p></header><section class="card input-card"><div class="mode-row"><span>総ゲーム数で判別</span><button id="game-mode" class="toggle on" type="button"><span></span></button><b id="mode-label">ON</b></div><div class="games-pair"><label>総ゲーム数<input id="games" type="number" min="0" inputmode="numeric"></label><label>開始ゲーム数<input id="start-games" type="number" min="0" inputmode="numeric"></label></div><div id="metrics" class="bonus-grid"></div><button id="judge-btn" class="judge-btn">設定を判別する</button><button id="reset-btn" class="reset-btn">リセット</button></section><section id="result-section" class="card result-card"><h2>設定予測</h2><div id="prediction-text" class="prediction">-</div><div id="bars" class="graph"></div></section><section class="card materials"><h2>各種判定材料</h2><details class="material"><summary>AT終了画面・タッチボイス</summary><p class="note">公開された終了画面やAT終了時ボイスの設定示唆を補助材料として確認します。</p></details><details class="material"><summary>CZ終了画面</summary><p class="note">2026年7月時点で公開されたCZ終了画面の示唆を確認します。</p></details><details class="material"><summary>運命の一劇・枚数表示</summary><p class="note">上位CZや特定枚数表示など、公開された設定示唆のみを補助材料にします。</p></details><p class="source">東京喰種完成形のUI・操作仕様を参照。東京喰種本体は変更していません。未公表値は推測で追加しません。</p></section><footer>Lパチスロ からくりサーカス2 設定判別ツール</footer></main><script>window.MACHINE_CONFIG={"metrics":[{"name":"AT初当り","rates":[null,null,null,null,null,null]},{"name":"CZ初当り","rates":[null,null,null,null,null,null]},{"name":"設定${i+1}","rates":[null,null,null,null,null,null]}]};</script><script src="ghoul-base.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lパチスロ からくりサーカス2 設定判別ツール</title>
+  <link rel="stylesheet" href="ghoul-base-style.css">
+</head>
+<body>
+<main class="app">
+  <header class="header">
+    <h1>Lパチスロ からくりサーカス2</h1>
+  </header>
+
+  <section class="card input-card">
+    <div class="games-row">
+      <label>総ゲーム数
+        <input id="games" type="number" min="0" inputmode="numeric" placeholder="0">
+      </label>
+    </div>
+
+    <div class="bonus-grid">
+      <div class="bonus-row important">
+        <span>AT初当り</span>
+        <div class="counter"><button class="counter-btn minus" data-target="at">−</button><span id="at-value">0</span><button class="counter-btn plus" data-target="at">＋</button></div>
+      </div>
+      <div class="bonus-row important">
+        <span>CZ初当り</span>
+        <div class="counter"><button class="counter-btn minus" data-target="cz">−</button><span id="cz-value">0</span><button class="counter-btn plus" data-target="cz">＋</button></div>
+      </div>
+      <div class="bonus-row">
+        <span>低確・強チェリー回数</span>
+        <div class="counter"><button class="counter-btn minus" data-target="strongCherry">−</button><span id="strongCherry-value">0</span><button class="counter-btn plus" data-target="strongCherry">＋</button></div>
+      </div>
+      <div class="bonus-row">
+        <span>↳ CZ/AT当選</span>
+        <div class="counter"><button class="counter-btn minus" data-target="strongCherryHit">−</button><span id="strongCherryHit-value">0</span><button class="counter-btn plus" data-target="strongCherryHit">＋</button></div>
+      </div>
+    </div>
+
+    <button id="judge-btn" class="judge-btn">設定を判別する</button>
+    <button id="reset-btn" class="reset-btn">リセット</button>
+  </section>
+
+  <section id="result-section" class="card result-card">
+    <h2>設定予測</h2>
+    <div id="prediction-text" class="prediction">-</div>
+    <div class="graph">
+      <div class="graph-row"><span>設定1</span><div class="bar-bg"><div id="setting-bar-1" class="bar"></div></div><span id="setting-percent-1">0%</span></div>
+      <div class="graph-row"><span>設定2</span><div class="bar-bg"><div id="setting-bar-2" class="bar"></div></div><span id="setting-percent-2">0%</span></div>
+      <div class="graph-row"><span>設定3</span><div class="bar-bg"><div id="setting-bar-3" class="bar"></div></div><span id="setting-percent-3">0%</span></div>
+      <div class="graph-row"><span>設定4</span><div class="bar-bg"><div id="setting-bar-4" class="bar"></div></div><span id="setting-percent-4">0%</span></div>
+      <div class="graph-row"><span>設定5</span><div class="bar-bg"><div id="setting-bar-5" class="bar"></div></div><span id="setting-percent-5">0%</span></div>
+      <div class="graph-row"><span>設定6</span><div class="bar-bg"><div id="setting-bar-6" class="bar"></div></div><span id="setting-percent-6">0%</span></div>
+    </div>
+    <p id="signal-summary" class="note"></p>
+  </section>
+
+  <section class="card materials">
+    <h2>各種判定材料</h2>
+
+    <details open class="material">
+      <summary>AT終了画面</summary>
+      <div class="material-list">
+        <button class="signal" data-soft="奇数＋高設定示唆">最古の四人<br><small>奇数＋高設定示唆</small></button>
+        <button class="signal" data-soft="偶数＋高設定示唆">ルシール＆アンジェリーナ人形<br><small>偶数＋高設定示唆</small></button>
+        <button class="signal" data-min="2">歯車<br><small>設定2以上濃厚</small></button>
+        <button class="signal" data-min="4">鳴海＆勝<br><small>設定4以上濃厚</small></button>
+        <button class="signal" data-only="6">しろがね（笑顔）<br><small>設定6濃厚</small></button>
+      </div>
+    </details>
+
+    <details class="material">
+      <summary>AT終了画面 タッチボイス</summary>
+      <div class="material-list">
+        <button class="signal" data-exclude="2">ルシール「人生は…そういうものだよ…」<br><small>設定2否定</small></button>
+        <button class="signal" data-exclude="3">リーゼロッテ「何を恐れることがある！」<br><small>設定3否定</small></button>
+        <button class="signal" data-exclude="4">鳴海「俺を…しろがねと呼びな！」<br><small>設定4否定</small></button>
+        <button class="signal" data-exclude="5">勝「ぼくはぼくさ！」<br><small>設定5否定</small></button>
+      </div>
+      <p class="note">設定示唆ではない復活・運命盤報酬示唆ボイスは判別計算から除外。</p>
+    </details>
+
+    <details class="material">
+      <summary>AT開始ステージ</summary>
+      <div class="material-grid">
+        <button class="signal" data-soft="偶数設定示唆">勝ステージ<br><small>偶数設定示唆</small></button>
+        <button class="signal" data-soft="奇数設定示唆">鳴海ステージ<br><small>奇数設定示唆</small></button>
+      </div>
+    </details>
+
+    <details class="material">
+      <summary>踊れ！オリンピア 連打上乗せ</summary>
+      <div class="material-grid">
+        <button class="signal" data-min="2">＋20<br><small>設定2以上濃厚</small></button>
+        <button class="signal" data-min="4">＋4<br><small>設定4以上濃厚</small></button>
+        <button class="signal" data-only="6">＋6<br><small>設定6濃厚</small></button>
+      </div>
+    </details>
+
+    <details class="material">
+      <summary>激情ジャッジ キャラシナリオ</summary>
+      <div class="material-list">
+        <button class="signal" data-soft="偶数設定示唆">シナリオ1<br><small>偶数設定示唆</small></button>
+        <button class="signal" data-soft="奇数＋高設定示唆">シナリオ2<br><small>奇数＋高設定示唆</small></button>
+        <button class="signal" data-soft="偶数＋高設定示唆">シナリオ3<br><small>偶数＋高設定示唆</small></button>
+        <button class="signal" data-soft="奇数設定示唆">シナリオ4<br><small>奇数設定示唆</small></button>
+      </div>
+    </details>
+
+    <details class="material">
+      <summary>エンディング中 上部パネル</summary>
+      <div class="material-grid">
+        <button class="signal" data-soft="奇数設定示唆">青<br><small>奇数設定示唆</small></button>
+        <button class="signal" data-soft="偶数設定示唆">黄<br><small>偶数設定示唆</small></button>
+        <button class="signal" data-soft="高設定示唆">緑<br><small>高設定示唆</small></button>
+        <button class="signal" data-soft="設定2以上期待度UP">赤<br><small>設定2以上期待度UP</small></button>
+        <button class="signal" data-min="4">紫<br><small>設定4以上濃厚</small></button>
+        <button class="signal" data-only="6">虹<br><small>設定6濃厚</small></button>
+      </div>
+    </details>
+
+    <details class="material">
+      <summary>特定の獲得枚数表示</summary>
+      <div class="material-grid">
+        <button class="signal" data-min="2">222 OVER<br><small>設定2以上濃厚</small></button>
+        <button class="signal" data-only="2,4,6">246 OVER<br><small>設定2・4・6濃厚</small></button>
+        <button class="signal" data-min="4">456 OVER<br><small>設定4以上濃厚</small></button>
+        <button class="signal" data-only="6">666 OVER<br><small>設定6濃厚</small></button>
+      </div>
+    </details>
+
+    <details class="material">
+      <summary>朝一・リセット</summary>
+      <p class="note">設定変更時はCZ天井（液晶ゲーム数）が1200Gから500Gへ短縮。設定判別の確率計算には使用しません。</p>
+    </details>
+
+    <p class="source">公開済みの数値・設定示唆のみ反映。出現率未公表の示唆は勝手な数値化をせず、濃厚・否定条件のみ候補設定へ反映します。</p>
+  </section>
+
+  <footer>Lパチスロ からくりサーカス2 設定判別ツール</footer>
+</main>
+<script src="karakuri2-app.js"></script>
+</body>
+</html>
