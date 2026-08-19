@@ -1,1 +1,1 @@
-trigger 8/20 delayed-publish retry 2026-08-19T22:19 JST
+trigger 8/20 delayed-publish short 2026-08-19T22:24 JST
