@@ -1,118 +1,14 @@
 {
   "2026-08-17": {
     "reported_at_jst": "2026-08-18T08:51:07.074604+09:00",
-    "halls": [
-      "マルハン青梅新町",
-      "マルハン千葉ニュータウン",
-      "エクス・アリーナ東京"
-    ],
-    "posts": [
-      {
-        "hall": "マルハン青梅新町",
-        "text": "🌈答え合わせ 8/17\n🌈 マルハン青梅新町\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
-        "chars": 58,
-        "buffer": {
-          "post": {
-            "id": "6a839e49a6afcff0dbbf4322",
-            "status": "sent",
-            "sentAt": "2026-08-17T23:50:33.765Z",
-            "externalLink": "https://twitter.com/rapomaru777/status/2089500158966792674"
-          }
-        },
-        "source": null
-      },
-      {
-        "hall": "マルハン千葉ニュータウン",
-        "text": "🌈答え合わせ 8/17\n🌈 マルハン千葉ニュータウン\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
-        "chars": 62,
-        "buffer": {
-          "post": {
-            "id": "6a839e5433ec6735e90ec571",
-            "status": "sent",
-            "sentAt": "2026-08-17T23:50:45.024Z",
-            "externalLink": "https://twitter.com/rapomaru777/status/2089500206182101081"
-          }
-        },
-        "source": null
-      },
-      {
-        "hall": "エクス・アリーナ東京",
-        "text": "🌈答え合わせ 8/17\n🌈 エクス・アリーナ東京\n平均差枚+2,960枚\n#スロット #パチスロ",
-        "chars": 48,
-        "buffer": {
-          "post": {
-            "id": "6a839e5f521d59579154c0c1",
-            "status": "sent",
-            "sentAt": "2026-08-17T23:50:56.266Z",
-            "externalLink": "https://twitter.com/rapomaru777/status/2089500253472886858"
-          }
-        },
-        "source": "https://hall-navi.com/?ymd=2026-08-17"
-      }
-    ],
-    "sources": [
-      "https://hall-navi.com/?ymd=2026-08-17"
-    ]
+    "halls": ["マルハン青梅新町", "マルハン千葉ニュータウン", "エクス・アリーナ東京"],
+    "posts": [],
+    "sources": ["https://hall-navi.com/?ymd=2026-08-17"]
   },
   "2026-08-18": {
     "reported_at_jst": "2026-08-19T08:30:54.633565+09:00",
-    "halls": [
-      "YASUDA5",
-      "パラッツォ馬橋中根長津店"
-    ],
-    "posts": [
-      {
-        "hall": "YASUDA5",
-        "text": "🌈答え合わせ 8/18\n🌈 YASUDA5\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
-        "chars": 57,
-        "buffer": {
-          "post": {
-            "id": "6a84eb1857fccd2c75f3d340",
-            "status": "sent",
-            "sentAt": "2026-08-18T23:30:32.453Z",
-            "externalLink": "https://twitter.com/rapomaru777/status/2089857508332498984"
-          }
-        },
-        "source": null
-      },
-      {
-        "hall": "パラッツォ馬橋中根長津店",
-        "text": "🌈答え合わせ 8/18\n🌈 パラッツォ馬橋中根長津店\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
-        "chars": 62,
-        "buffer": {
-          "post": {
-            "id": "6a84eb2357fccd2c75f3d440",
-            "status": "sent",
-            "sentAt": "2026-08-18T23:30:43.784Z",
-            "externalLink": "https://twitter.com/rapomaru777/status/2089857555879117000"
-          }
-        },
-        "source": null
-      }
-    ],
-    "sources": []
-  },
-  "2026-08-19": {
-    "reported_at_jst": "2026-08-20T08:43:10.421949+09:00",
-    "halls": [
-      "コンサートホール志村"
-    ],
-    "posts": [
-      {
-        "hall": "コンサートホール志村",
-        "text": "🌈Result 8/19\n🌈 コンサートホール志村\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
-        "chars": 61,
-        "buffer": {
-          "post": {
-            "id": "6a863f836d2f57ba06c34ce0",
-            "status": "sent",
-            "sentAt": "2026-08-19T23:42:59.653Z",
-            "externalLink": "https://twitter.com/rapomaru777/status/2090223030119108961"
-          }
-        },
-        "source": null
-      }
-    ],
+    "halls": ["YASUDA5", "パラッツォ馬橋中根長津店"],
+    "posts": [],
     "sources": []
   }
 }
