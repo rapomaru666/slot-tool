@@ -73,6 +73,14 @@ def rainbow_halls(thread):
         )
         if scored:
             halls.append(scored.group(1).strip())
+            continue
+
+        # Current public format: "🌈店名" or "🌈店名｜根拠"
+        plain = re.match(r"^🌈\s*(.+?)(?:｜.*)?$", line)
+        if plain:
+            hall = plain.group(1).strip()
+            if hall and hall != "Result":
+                halls.append(hall)
 
     # Preserve source order and prevent duplicate posts.
     return list(dict.fromkeys(halls))
