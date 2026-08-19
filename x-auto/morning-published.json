@@ -91,5 +91,28 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-19": {
+    "reported_at_jst": "2026-08-20T08:43:10.421949+09:00",
+    "halls": [
+      "コンサートホール志村"
+    ],
+    "posts": [
+      {
+        "hall": "コンサートホール志村",
+        "text": "🌈Result 8/19\n🌈 コンサートホール志村\n8時時点で数値結果を確認できず（掲載確認継続）\n#スロット #パチスロ",
+        "chars": 61,
+        "buffer": {
+          "post": {
+            "id": "6a863f836d2f57ba06c34ce0",
+            "status": "sent",
+            "sentAt": "2026-08-19T23:42:59.653Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2090223030119108961"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
