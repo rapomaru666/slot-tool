@@ -42,5 +42,45 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-20": {
+    "reported_at_jst": "2026-08-21T08:55:21.694307+09:00",
+    "halls": [
+      "エクス・アリーナ東京",
+      "アイランド足利店"
+    ],
+    "posts": [
+      {
+        "hall": "エクス・アリーナ東京",
+        "text": "🌈Result 8/20\n🌈 エクス・アリーナ東京\n平均差枚+2,960枚\n#スロット #パチスロ",
+        "chars": 49,
+        "buffer": {
+          "post": {
+            "id": "6a8793d3215134e1d70e3d6f",
+            "status": "sent",
+            "sentAt": "2026-08-20T23:54:59.524Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2090588437275394328"
+          }
+        },
+        "source": "https://hall-navi.com/?ymd=2026-08-20"
+      },
+      {
+        "hall": "アイランド足利店",
+        "text": "🌈Result 8/20\n🌈 アイランド足利店\n現時点では公開データから実績数値を確認できず。\n📣当日の状況・差枚など分かる有志の方、情報提供お願いします🙇\nリプで教えていただけると助かります！\n#スロット #パチスロ",
+        "chars": 109,
+        "buffer": {
+          "post": {
+            "id": "6a8793de5b4a6e681b1c7fa5",
+            "status": "sent",
+            "sentAt": "2026-08-20T23:55:10.857Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2090588484973039824"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": [
+      "https://hall-navi.com/?ymd=2026-08-20"
+    ]
   }
 }
