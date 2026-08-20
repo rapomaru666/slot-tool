@@ -1,1 +1,1 @@
-trigger 8/20 delayed-publish short 2026-08-19T22:24 JST
+trigger 8/21 scheduled-publish 2026-08-20T19:58 JST
