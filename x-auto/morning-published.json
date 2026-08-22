@@ -120,5 +120,30 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-22": {
+    "reported_at_jst": "2026-08-23T08:40:54.599290+09:00",
+    "halls": [
+      "マルハン新宿東宝ビル店"
+    ],
+    "posts": [
+      {
+        "hall": "マルハン新宿東宝ビル店",
+        "text": "🌈Result 8/22\n🌈 マルハン新宿東宝ビル店\n平均G6,128G\n#スロット #パチスロ",
+        "chars": 48,
+        "buffer": {
+          "post": {
+            "id": "6a8a337bc5db1e9cdcec645a",
+            "status": "sent",
+            "sentAt": "2026-08-22T23:40:43.745Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2091309623546380591"
+          }
+        },
+        "source": "https://hall-navi.com/?ymd=2026-08-22"
+      }
+    ],
+    "sources": [
+      "https://hall-navi.com/?ymd=2026-08-22"
+    ]
   }
 }
