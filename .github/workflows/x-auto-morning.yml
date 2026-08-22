@@ -2,8 +2,8 @@ name: Morning Rainbow Result Report
 
 on:
   schedule:
-    # 08:00 JST = 23:00 UTC on the previous UTC date
-    - cron: '0 23 * * *'
+    # Start at 07:45 JST to avoid top-of-hour cron congestion, then wait until 08:00 JST.
+    - cron: '45 22 * * *'
   push:
     paths:
       - 'x-auto/morning-now-trigger.txt'
@@ -27,6 +27,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Wait until 08:00 JST for scheduled runs
+        if: github.event_name == 'schedule'
+        run: |
+          now=$(date -u +%s)
+          target=$(date -u -d "$(date -u +%F) 23:00:00 UTC" +%s)
+          if [ "$now" -lt "$target" ]; then
+            sleep $((target - now))
+          fi
 
       - name: Publish previous day's rainbow results
         env:
