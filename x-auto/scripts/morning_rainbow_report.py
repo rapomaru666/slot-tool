@@ -20,6 +20,13 @@ RANKING_PATTERNS = [
     r"🌈[①②③④⑤⑥⑦⑧⑨⑩]",
 ]
 
+HEADING_PATTERNS = [
+    r"^\d{1,2}/\d{1,2}\([^)]*\)\s*関東の注目ホール$",
+    r"関東の注目ホール$",
+    r"^本日の注目ホール$",
+    r"^明日の注目ホール$",
+]
+
 
 def graphql(query: str):
     token = os.environ["BUFFER_API_KEY"]
@@ -42,6 +49,18 @@ def fetch(url):
         return res.read().decode("utf-8", errors="replace")
 
 
+def is_heading(text):
+    text = text.strip()
+    return any(re.search(pattern, text) for pattern in HEADING_PATTERNS)
+
+
+def add_hall(halls, hall):
+    hall = hall.strip()
+    if not hall or hall == "Result" or is_heading(hall):
+        return
+    halls.append(hall)
+
+
 def rainbow_halls(thread):
     halls = []
     active = False
@@ -54,17 +73,15 @@ def rainbow_halls(thread):
             active = False
             continue
         if active and "｜" in line:
-            halls.append(line.split("｜", 1)[0].strip())
+            add_hall(halls, line.split("｜", 1)[0])
             continue
         scored = re.match(r"^🌈\s*(?:\d+位\s+)?(.+?)\s+\d+(?:\.\d+)?点\s*$", line)
         if scored:
-            halls.append(scored.group(1).strip())
+            add_hall(halls, scored.group(1))
             continue
         plain = re.match(r"^🌈\s*(.+?)(?:｜.*)?$", line)
         if plain:
-            hall = plain.group(1).strip()
-            if hall and hall != "Result":
-                halls.append(hall)
+            add_hall(halls, plain.group(1))
     return list(dict.fromkeys(halls))
 
 
