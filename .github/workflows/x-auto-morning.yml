@@ -2,8 +2,12 @@ name: Morning Rainbow Result Report
 
 on:
   schedule:
-    # Start at 07:45 JST to avoid top-of-hour cron congestion, then wait until 08:00 JST.
-    - cron: '45 22 * * *'
+    # Redundant off-minute starts to absorb GitHub Actions cron delays.
+    # 06:53 / 07:23 / 07:53 / 08:05 JST
+    - cron: '53 21 * * *'
+    - cron: '23 22 * * *'
+    - cron: '53 22 * * *'
+    - cron: '5 23 * * *'
   push:
     paths:
       - 'x-auto/morning-now-trigger.txt'
