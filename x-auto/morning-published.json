@@ -145,5 +145,30 @@
     "sources": [
       "https://hall-navi.com/?ymd=2026-08-22"
     ]
+  },
+  "2026-08-23": {
+    "reported_at_jst": "2026-08-24T08:00:26.989479+09:00",
+    "halls": [
+      "エスパス日拓新宿歌舞伎町店"
+    ],
+    "posts": [
+      {
+        "hall": "エスパス日拓新宿歌舞伎町店",
+        "text": "🌈Result 8/23\n🌈 エスパス日拓新宿歌舞伎町店\n平均差枚+4,427枚 / 平均G5,775G\n#スロット #パチスロ",
+        "chars": 64,
+        "buffer": {
+          "post": {
+            "id": "6a8b7b7fa3b8277a83a12169",
+            "status": "sent",
+            "sentAt": "2026-08-23T23:00:16.110Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2091661829139267781"
+          }
+        },
+        "source": "https://hall-navi.com/?ymd=2026-08-23"
+      }
+    ],
+    "sources": [
+      "https://hall-navi.com/?ymd=2026-08-23"
+    ]
   }
 }
