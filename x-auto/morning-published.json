@@ -170,5 +170,28 @@
     "sources": [
       "https://hall-navi.com/?ymd=2026-08-23"
     ]
+  },
+  "2026-08-24": {
+    "reported_at_jst": "2026-08-25T08:00:26.611007+09:00",
+    "halls": [
+      "エスパス日拓新大久保駅前店"
+    ],
+    "posts": [
+      {
+        "hall": "エスパス日拓新大久保駅前店",
+        "text": "🌈Result 8/24\n🌈 エスパス日拓新大久保駅前店\n現時点では公開データから実績数値を確認できず。\n📣当日の状況・差枚など分かる有志の方、情報提供お願いします🙇\nリプで教えていただけると助かります！\n#スロット #パチスロ",
+        "chars": 114,
+        "buffer": {
+          "post": {
+            "id": "6a8cccff7fa16d24f52100d2",
+            "status": "sent",
+            "sentAt": "2026-08-24T23:00:15.807Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2092024215889207407"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
