@@ -1,1 +1,1 @@
-trigger 8/25 catchup-publish 2026-08-25T08:03 JST
+trigger 8/25 catchup-publish retry 2026-08-25T08:25 JST
