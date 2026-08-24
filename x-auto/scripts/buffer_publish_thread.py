@@ -29,7 +29,13 @@ def graphql(query: str):
 
 
 now_jst = datetime.now(JST)
-target_date = (now_jst.date() + timedelta(days=1)).isoformat()
+# Scheduled 20:00 run prepares/publishes tomorrow's thread.
+# A manual catch-up push via thread-now-trigger.txt publishes today's thread.
+event_name = os.environ.get("GITHUB_EVENT_NAME", "")
+if event_name == "push":
+    target_date = now_jst.date().isoformat()
+else:
+    target_date = (now_jst.date() + timedelta(days=1)).isoformat()
 thread_path = Path(f"x-auto/thread-{target_date}.json")
 
 if not thread_path.exists():
