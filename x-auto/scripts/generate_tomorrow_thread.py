@@ -17,6 +17,8 @@ TROPHY_MIN = 14.0
 MAX_RAINBOW = 3
 MAX_TROPHY = 2
 MIN_POST_COUNT = 1
+MIN_POST_CHARS = 200
+MAX_POST_CHARS = 250
 PREFECTURES = ("東京都", "神奈川県", "埼玉県", "千葉県", "茨城県", "栃木県", "群馬県")
 AUDIT_DIR = Path("x-auto/audit")
 
@@ -133,48 +135,79 @@ def build_thread(target, candidates: list[dict]) -> dict | None:
                 break
 
     weekday = "月火水木金土日"[target.weekday()]
-    header = [f"🎰{target.month}/{target.day}({weekday}) 関東近郊", "らぽまる太郎狙い目"]
-    tail = ["#スロット #パチスロ"]
+    header = [f"🎰{target.month}/{target.day}({weekday}) 関東注目", "らぽまる太郎狙い目"]
+    tail = ["公開スケジュール・過去傾向を総合評価。取材重複・旧イベ日・過去レポートを重視。", "#スロット #パチスロ"]
 
-    def render_root():
+    def mark_for(c):
+        if c["score"] >= RAINBOW_MIN:
+            return "🌈"
+        if c["score"] >= TROPHY_MIN:
+            return "🏆"
+        return "🎯"
+
+    def render_root(items, detail_limit=26):
         lines = header[:]
-        if rainbow:
-            lines.append("🌈")
-            lines.extend(f"{c['hall']}｜{short_detail(c['details'])}" for c in rainbow)
-        if trophy:
-            lines.append("🏆")
-            lines.extend(f"{c['hall']}｜{short_detail(c['details'])}" for c in trophy)
-        if fallback:
-            lines.append("🎯本日の候補")
-            lines.extend(f"{c['hall']}｜{short_detail(c['details'])}" for c in fallback)
-        return "\n".join(lines + tail)
+        for c in items:
+            lines.append(
+                f"{mark_for(c)}{c['hall']}｜{short_detail(c['details'], detail_limit)} {c['score']:.1f}"
+            )
+        lines.extend(tail)
+        return "\n".join(lines)
 
-    root = render_root()
-    while len(root) > 280 and len(selected) > MIN_POST_COUNT:
-        last = selected.pop()
-        if last in fallback:
-            fallback.remove(last)
-        elif last in trophy:
-            trophy.remove(last)
-        elif last in rainbow:
-            rainbow.remove(last)
-        root = render_root()
+    root = render_root(selected)
 
-    if len(root) > 280:
-        # 最低1店舗は絶対に残し、説明を削って280文字以内に収める。
+    # 250文字を超える場合は低評価側から減らし、それでも長い場合は説明を短くする。
+    while len(root) > MAX_POST_CHARS and len(selected) > MIN_POST_COUNT:
+        selected.pop()
+        root = render_root(selected)
+
+    if len(root) > MAX_POST_CHARS:
+        root = render_root(selected, detail_limit=12)
+
+    if len(root) > MAX_POST_CHARS:
         c = selected[0]
-        mark = "🌈" if c["score"] >= RAINBOW_MIN else ("🏆" if c["score"] >= TROPHY_MIN else "🎯本日の候補")
-        root = "\n".join(header + [mark, c["hall"], "#スロット #パチスロ"])
+        root = "\n".join(
+            header
+            + [f"{mark_for(c)}{c['hall']}｜公開評価{c['score']:.1f}点"]
+            + tail
+        )
 
-    replies = []
-    for index, c in enumerate(selected[:3], start=1):
-        mark = "🌈" if c["score"] >= RAINBOW_MIN else ("🏆" if c["score"] >= TROPHY_MIN else "🎯")
-        detail = compact(c["details"])
-        reply = f"{mark}{index} {c['hall']}\n公開評価{c['score']:.1f}点。{detail}\n※公開スケジュール・過去傾向を基に自動抽出。"
-        if len(reply) > 280:
-            reply = reply[:279] + "…"
-        replies.append(reply)
-    return {"root": root, "replies": replies}
+    # 200文字未満なら上位候補の根拠を追加。意味のある公開情報だけで埋める。
+    if len(root) < MIN_POST_CHARS:
+        notes = []
+        for c in selected[:3]:
+            notes.append(
+                f"{c['hall']}は公開評価{c['score']:.1f}点、{short_detail(c['details'], 44)}を確認。"
+            )
+        notes.extend([
+            "当日の取材強度だけでなく、過去の営業傾向と重複要素も合わせて見る。",
+            "数値は公開情報を基にした事前評価で、当日の状況は入場前にも確認したい。",
+        ])
+
+        lines = root.split("\n")
+        hashtags = lines.pop() if lines and lines[-1].startswith("#") else "#スロット #パチスロ"
+        base = "\n".join(lines)
+        for note in notes:
+            candidate = base + "\n" + note + "\n" + hashtags
+            if len(candidate) <= MAX_POST_CHARS:
+                base = base + "\n" + note
+                root = base + "\n" + hashtags
+            elif len(root) < MIN_POST_CHARS:
+                room = MAX_POST_CHARS - len(base) - len(hashtags) - 2
+                if room > 12:
+                    clipped = note[:room]
+                    base = base + "\n" + clipped
+                    root = base + "\n" + hashtags
+            if len(root) >= MIN_POST_CHARS:
+                break
+
+    if not MIN_POST_CHARS <= len(root) <= MAX_POST_CHARS:
+        raise RuntimeError(
+            f"generated root must be {MIN_POST_CHARS}-{MAX_POST_CHARS} characters: {len(root)}"
+        )
+
+    # 自動生成は本文1本に絞る。手動確定threadでは200〜250文字のリプ追加可。
+    return {"root": root, "replies": []}
 
 
 def main():
@@ -195,6 +228,7 @@ def main():
         "source_url": url,
         "thresholds": {"rainbow_min": RAINBOW_MIN, "trophy_min": TROPHY_MIN},
         "minimum_post_count": MIN_POST_COUNT,
+        "post_chars": {"min": MIN_POST_CHARS, "max": MAX_POST_CHARS},
         "candidate_count": len(candidates),
         "candidates": candidates[:30],
     }
@@ -206,8 +240,10 @@ def main():
         raise RuntimeError(f"No candidates found for {target.isoformat()}; do not silently skip. Investigation required.")
 
     for i, post in enumerate([thread["root"]] + thread.get("replies", []), start=1):
-        if len(post) > 280:
-            raise RuntimeError(f"generated post {i} exceeds 280 characters: {len(post)}")
+        if not MIN_POST_CHARS <= len(post) <= MAX_POST_CHARS:
+            raise RuntimeError(
+                f"generated post {i} must be {MIN_POST_CHARS}-{MAX_POST_CHARS} characters: {len(post)}"
+            )
 
     thread_path.write_text(json.dumps(thread, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"ok": True, "target_date": target.isoformat(), "thread_path": str(thread_path), "candidate_count": len(candidates)}, ensure_ascii=False))
