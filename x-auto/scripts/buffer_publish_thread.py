@@ -9,6 +9,8 @@ TOKEN = os.environ["BUFFER_API_KEY"]
 TARGET_NAME = "rapomaru777"
 JST = timezone(timedelta(hours=9))
 PUBLISHED_PATH = Path("x-auto/published.json")
+MIN_POST_CHARS = 200
+MAX_POST_CHARS = 250
 
 
 def graphql(query: str):
@@ -57,8 +59,10 @@ with thread_path.open(encoding="utf-8") as f:
 root = thread_data["root"]
 posts = [root] + thread_data.get("replies", [])
 for index, text in enumerate(posts, start=1):
-    if len(text) > 280:
-        raise RuntimeError(f"Post {index} exceeds 280 characters: {len(text)}")
+    if not MIN_POST_CHARS <= len(text) <= MAX_POST_CHARS:
+        raise RuntimeError(
+            f"Post {index} must be {MIN_POST_CHARS}-{MAX_POST_CHARS} characters: {len(text)}"
+        )
 
 orgs = graphql("""
 query GetOrganizations {
