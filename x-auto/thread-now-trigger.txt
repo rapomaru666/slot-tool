@@ -1,1 +1,1 @@
-retry 8/26 publish 2026-08-25T20:07 JST
+retry 8/27 publish after 200-250 weighted-length fix
