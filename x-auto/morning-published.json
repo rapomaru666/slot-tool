@@ -239,5 +239,28 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-27": {
+    "reported_at_jst": "2026-08-28T08:50:49.676693+09:00",
+    "halls": [
+      "FACE1180 Zama|Girl S; 8/10 SAO2 9,650G"
+    ],
+    "posts": [
+      {
+        "hall": "FACE1180 Zama|Girl S; 8/10 SAO2 9,650G",
+        "text": "🌈Result 8/27\n🌈 FACE1180 Zama|Girl S; 8/10 SAO2 9,650G\n現時点では公開データから実績数値を確認できず。\n📣当日の状況・差枚など分かる有志の方、情報提供お願いします🙇\nリプで教えていただけると助かります！\n#スロット #パチスロ",
+        "chars": 139,
+        "buffer": {
+          "post": {
+            "id": "6a90cd4eaec1e6b643fb848b",
+            "status": "sent",
+            "sentAt": "2026-08-27T23:50:38.855Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2093124059072483798"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
