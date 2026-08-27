@@ -216,5 +216,28 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-26": {
+    "reported_at_jst": "2026-08-27T09:21:29.521543+09:00",
+    "halls": [
+      "マルハンメガシティ柏 | SlotPachi Orange"
+    ],
+    "posts": [
+      {
+        "hall": "マルハンメガシティ柏 | SlotPachi Orange",
+        "text": "🌈Result 8/26\n🌈 マルハンメガシティ柏 | SlotPachi Orange\n現時点では公開データから実績数値を確認できず。\n📣当日の状況・差枚など分かる有志の方、情報提供お願いします🙇\nリプで教えていただけると助かります！\n#スロット #パチスロ",
+        "chars": 130,
+        "buffer": {
+          "post": {
+            "id": "6a8f82fe84124e636adbae87",
+            "status": "sent",
+            "sentAt": "2026-08-27T00:21:18.832Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2092769388482932863"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
