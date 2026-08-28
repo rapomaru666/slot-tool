@@ -262,5 +262,28 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-28": {
+    "reported_at_jst": "2026-08-29T08:00:25.772648+09:00",
+    "halls": [
+      "SLOTスマートガーデン武蔵浦和331"
+    ],
+    "posts": [
+      {
+        "hall": "SLOTスマートガーデン武蔵浦和331",
+        "text": "🌈Result 8/28\n🌈 SLOTスマートガーデン武蔵浦和331\n現時点では公開データから実績数値を確認できず。\n📣当日の状況・差枚など分かる有志の方、情報提供お願いします🙇\nリプで教えていただけると助かります！\n#スロット #パチスロ",
+        "chars": 120,
+        "buffer": {
+          "post": {
+            "id": "6a9212feaad1969d9e01de8a",
+            "status": "sent",
+            "sentAt": "2026-08-28T23:00:14.929Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2093473763710869558"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
