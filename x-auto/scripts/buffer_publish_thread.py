@@ -9,8 +9,29 @@ TOKEN = os.environ["BUFFER_API_KEY"]
 TARGET_NAME = "rapomaru777"
 JST = timezone(timedelta(hours=9))
 PUBLISHED_PATH = Path("x-auto/published.json")
-MIN_POST_CHARS = 200
-MAX_POST_CHARS = 250
+MAX_X_WEIGHTED_CHARS = 280
+ROOT_TARGET_MIN = 250
+ROOT_TARGET_MAX = 279
+
+
+def x_weighted_length(text: str) -> int:
+    """Approximate twitter-text weighted length for non-URL posts.
+    Latin/basic punctuation count as 1; CJK/emoji count as 2.
+    Our generated posts contain no URLs, so fixed URL length handling is unnecessary here.
+    """
+    total = 0
+    for ch in text:
+        cp = ord(ch)
+        if (
+            0 <= cp <= 4351
+            or 8192 <= cp <= 8205
+            or 8208 <= cp <= 8223
+            or 8242 <= cp <= 8247
+        ):
+            total += 1
+        else:
+            total += 2
+    return total
 
 
 def graphql(query: str):
@@ -59,12 +80,19 @@ with thread_path.open(encoding="utf-8") as f:
     thread_data = json.load(f)
 
 root = thread_data["root"]
-posts = [root] + thread_data.get("replies", [])
-for index, text in enumerate(posts, start=1):
-    if not MIN_POST_CHARS <= len(text) <= MAX_POST_CHARS:
-        raise RuntimeError(
-            f"Post {index} must be {MIN_POST_CHARS}-{MAX_POST_CHARS} characters: {len(text)}"
-        )
+replies = thread_data.get("replies", [])
+posts = [root] + replies
+
+root_weight = x_weighted_length(root)
+if root_weight > MAX_X_WEIGHTED_CHARS:
+    raise RuntimeError(f"Root exceeds X limit: weighted={root_weight}")
+if not ROOT_TARGET_MIN <= root_weight <= ROOT_TARGET_MAX:
+    print(f"Warning: root weighted length {root_weight} is outside target {ROOT_TARGET_MIN}-{ROOT_TARGET_MAX}")
+
+for index, text in enumerate(replies, start=1):
+    weighted = x_weighted_length(text)
+    if weighted > MAX_X_WEIGHTED_CHARS:
+        raise RuntimeError(f"Reply {index} exceeds X limit: weighted={weighted}")
 
 orgs = graphql("""
 query GetOrganizations {
@@ -136,4 +164,4 @@ published.append({
 })
 PUBLISHED_PATH.write_text(json.dumps(published, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-print(json.dumps({"ok": True, "target_date": target_date, "channel": channel, "result": result}, ensure_ascii=False))
+print(json.dumps({"ok": True, "target_date": target_date, "channel": channel, "result": result, "root_weighted": root_weight, "reply_weighted": [x_weighted_length(t) for t in replies]}, ensure_ascii=False))
