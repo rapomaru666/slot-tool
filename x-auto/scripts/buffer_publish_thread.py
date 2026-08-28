@@ -1,5 +1,6 @@
 import json
 import os
+import time
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -15,10 +16,6 @@ ROOT_TARGET_MAX = 279
 
 
 def x_weighted_length(text: str) -> int:
-    """Approximate twitter-text weighted length for non-URL posts.
-    Latin/basic punctuation count as 1; CJK/emoji count as 2.
-    Our generated posts contain no URLs, so fixed URL length handling is unnecessary here.
-    """
     total = 0
     for ch in text:
         cp = ord(ch)
@@ -59,8 +56,15 @@ if event_name == "push":
         target_date = override_path.read_text(encoding="utf-8").strip()
     else:
         target_date = now_jst.date().isoformat()
+
+    publish_at = now_jst.replace(hour=20, minute=0, second=0, microsecond=0)
+    if now_jst < publish_at:
+        wait_seconds = (publish_at - now_jst).total_seconds()
+        print(json.dumps({"waiting_until_jst": publish_at.isoformat(), "seconds": int(wait_seconds)}, ensure_ascii=False))
+        time.sleep(wait_seconds)
 else:
     target_date = (now_jst.date() + timedelta(days=1)).isoformat()
+
 thread_path = Path(f"x-auto/thread-{target_date}.json")
 
 if not thread_path.exists():
