@@ -285,5 +285,58 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-29": {
+    "reported_at_jst": "2026-08-30T08:00:48.524195+09:00",
+    "halls": [
+      "エクス・アリーナ柏",
+      "楽園相模原",
+      "アイランド秋葉原"
+    ],
+    "posts": [
+      {
+        "hall": "エクス・アリーナ柏",
+        "text": "🌈Result 8/29\n🌈 エクス・アリーナ柏\n現時点では公開データから実績数値を確認できず。\n📣当日の状況・差枚など分かる有志の方、情報提供お願いします🙇\nリプで教えていただけると助かります！\n#スロット #パチスロ",
+        "chars": 110,
+        "buffer": {
+          "post": {
+            "id": "6a93647e73b542df4de4570b",
+            "status": "sent",
+            "sentAt": "2026-08-29T23:00:14.794Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2093836150880272731"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "楽園相模原",
+        "text": "🌈Result 8/29\n🌈 楽園相模原\n現時点では公開データから実績数値を確認できず。\n📣当日の状況・差枚など分かる有志の方、情報提供お願いします🙇\nリプで教えていただけると助かります！\n#スロット #パチスロ",
+        "chars": 106,
+        "buffer": {
+          "post": {
+            "id": "6a93648961f7ab587cd0beae",
+            "status": "sent",
+            "sentAt": "2026-08-29T23:00:26.184Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2093836198586298691"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "アイランド秋葉原",
+        "text": "🌈Result 8/29\n🌈 アイランド秋葉原\n現時点では公開データから実績数値を確認できず。\n📣当日の状況・差枚など分かる有志の方、情報提供お願いします🙇\nリプで教えていただけると助かります！\n#スロット #パチスロ",
+        "chars": 109,
+        "buffer": {
+          "post": {
+            "id": "6a936495ba5ed8519807fda4",
+            "status": "sent",
+            "sentAt": "2026-08-29T23:00:37.882Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2093836247693234194"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
