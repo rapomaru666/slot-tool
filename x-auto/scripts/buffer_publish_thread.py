@@ -1,6 +1,5 @@
 import json
 import os
-import time
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -53,15 +52,9 @@ event_name = os.environ.get("GITHUB_EVENT_NAME", "")
 if event_name == "push":
     override_path = Path("x-auto/publish-target.txt")
     if override_path.exists() and override_path.read_text(encoding="utf-8").strip():
-        target_date = override_path.read_text(encoding="utf-8").strip()
+        target_date = override_path.read_text(encoding="utf-8").strip().splitlines()[0].strip()
     else:
         target_date = now_jst.date().isoformat()
-
-    publish_at = now_jst.replace(hour=20, minute=0, second=0, microsecond=0)
-    if now_jst < publish_at:
-        wait_seconds = (publish_at - now_jst).total_seconds()
-        print(json.dumps({"waiting_until_jst": publish_at.isoformat(), "seconds": int(wait_seconds)}, ensure_ascii=False))
-        time.sleep(wait_seconds)
 else:
     target_date = (now_jst.date() + timedelta(days=1)).isoformat()
 
