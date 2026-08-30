@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   group: buffer-x-daily-publish
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   buffer-publish-thread:
