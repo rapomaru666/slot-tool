@@ -1,0 +1,62 @@
+{
+  "publication_key": "morning:2026-08-30",
+  "target_date": "2026-08-30",
+  "status": "sent",
+  "entries": {
+    "4a2ab4072d83af0e": {
+      "publication_key": "morning:2026-08-30:4a2ab4072d83af0e",
+      "target_date": "2026-08-30",
+      "hall": {
+        "hall_id": "4a2ab4072d83af0e",
+        "name": "D’station八王子北野",
+        "category": "rainbow"
+      },
+      "status": "sent",
+      "content_sha256": "b40c41070f5aa9104d8a273e2ed9b85abc4ee02544cf1e53158503b6477b692e",
+      "text": "🌈Result 8/30\n🌈 D’station八王子北野\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6a94b60701a2c3894b0e990e",
+      "external_link": "https://twitter.com/rapomaru777/status/2094198576477773877",
+      "x_post_id": "2094198576477773877",
+      "sent_at": "2026-08-30T23:00:23.763Z",
+      "verified_at": "2026-08-31T08:00:24.715539+09:00",
+      "source": null
+    },
+    "5295c850244222f7": {
+      "publication_key": "morning:2026-08-30:5295c850244222f7",
+      "target_date": "2026-08-30",
+      "hall": {
+        "hall_id": "5295c850244222f7",
+        "name": "新！ガーデン北戸田駅前",
+        "category": "rainbow"
+      },
+      "status": "sent",
+      "content_sha256": "ac2b02fdea99d1548df33db7fc7a32d4a9b86e0f25641cfd79599534252b4e02",
+      "text": "🌈Result 8/30\n🌈 新！ガーデン北戸田駅前\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6a94b60e01a2c3894b0e9ae2",
+      "external_link": "https://twitter.com/rapomaru777/status/2094198604575457686",
+      "x_post_id": "2094198604575457686",
+      "sent_at": "2026-08-30T23:00:30.460Z",
+      "verified_at": "2026-08-31T08:00:31.362433+09:00",
+      "source": null
+    },
+    "4bf8c4b18adae9a0": {
+      "publication_key": "morning:2026-08-30:4bf8c4b18adae9a0",
+      "target_date": "2026-08-30",
+      "hall": {
+        "hall_id": "4bf8c4b18adae9a0",
+        "name": "ピーアーク相模大野",
+        "category": "rainbow"
+      },
+      "status": "sent",
+      "content_sha256": "e3e182aeca20cb7ddfd24bc797539ecbb823eda77ec22f03eba1faf3468d086f",
+      "text": "🌈Result 8/30\n🌈 ピーアーク相模大野\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6a94b614d58664eabd7f010d",
+      "external_link": "https://twitter.com/rapomaru777/status/2094198634812154345",
+      "x_post_id": "2094198634812154345",
+      "sent_at": "2026-08-30T23:00:37.688Z",
+      "verified_at": "2026-08-31T08:00:37.877588+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-08-31T08:00:42.877958+09:00"
+}

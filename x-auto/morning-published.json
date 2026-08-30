@@ -338,5 +338,61 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-30": {
+    "reported_at_jst": "2026-08-31T08:00:42.878360+09:00",
+    "halls": [
+      "D’station八王子北野",
+      "新！ガーデン北戸田駅前",
+      "ピーアーク相模大野"
+    ],
+    "posts": [
+      {
+        "hall": "D’station八王子北野",
+        "text": "🌈Result 8/30\n🌈 D’station八王子北野\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 115,
+        "weighted_chars": 201,
+        "buffer": {
+          "post": {
+            "id": "6a94b60701a2c3894b0e990e",
+            "status": "sent",
+            "sentAt": "2026-08-30T23:00:23.763Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2094198576477773877"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "新！ガーデン北戸田駅前",
+        "text": "🌈Result 8/30\n🌈 新！ガーデン北戸田駅前\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 112,
+        "weighted_chars": 204,
+        "buffer": {
+          "post": {
+            "id": "6a94b60e01a2c3894b0e9ae2",
+            "status": "sent",
+            "sentAt": "2026-08-30T23:00:30.460Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2094198604575457686"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "ピーアーク相模大野",
+        "text": "🌈Result 8/30\n🌈 ピーアーク相模大野\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 110,
+        "weighted_chars": 200,
+        "buffer": {
+          "post": {
+            "id": "6a94b614d58664eabd7f010d",
+            "status": "sent",
+            "sentAt": "2026-08-30T23:00:37.688Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2094198634812154345"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
