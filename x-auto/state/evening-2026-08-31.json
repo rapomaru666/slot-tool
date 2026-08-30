@@ -1,0 +1,49 @@
+{
+  "publication_key": "evening:2026-08-31",
+  "target_date": "2026-08-31",
+  "status": "sent",
+  "content_sha256": "007155ded93e353d19dbad9fa9ad5966b624ac614329ca2107aa320f176be3b5",
+  "selected_halls": [
+    {
+      "name": "PIA川崎銀柳",
+      "category": "rainbow",
+      "score": 92,
+      "reason": "8/31スロパチガール来店S。6/15 SAO2 4/4プラス平均+4,340枚、7/11東京喰種4/4プラス平均+4,680枚を公式結果で確認。",
+      "hall_id": "f0f8b24b6306f5f1"
+    },
+    {
+      "name": "フェイス1100瑞穂",
+      "category": "rainbow",
+      "score": 88,
+      "reason": "8/31スロパチガール来店S＋すろぱちガールP＋旧イベ1のつく日。ガールSは過去1年60回開催。",
+      "hall_id": "3e74d5c5cc6775f6"
+    },
+    {
+      "name": "マルハン茂原",
+      "category": "rainbow",
+      "score": 86,
+      "reason": "8/31スロパチステーション来店取材(紫)＋1のつく日。2025/8/1スロパチ取材は集計30台総差枚+79,800枚・平均+2,660枚。",
+      "hall_id": "54da21a9680fd53e"
+    },
+    {
+      "name": "マルハンメガシティ柏",
+      "category": "trophy",
+      "score": 79,
+      "reason": "8/31スロパチステーション来店取材(黒)。直近スロパチ開催日は8/21平均+162枚、8/26平均+132枚。",
+      "hall_id": "e5e18632fd6e9351"
+    },
+    {
+      "name": "アミューズ千葉",
+      "category": "trophy",
+      "score": 77,
+      "reason": "8/31は1のつく日＋PFちゅんげー調査隊＋天草極上ホール応援団。8/21の1のつく日は全体平均+133枚。",
+      "hall_id": "b3af3c9eed418d7e"
+    }
+  ],
+  "expected_thread_count": 4,
+  "buffer_post_id": "6a940d37d076c0e58359609d",
+  "external_link": "https://twitter.com/rapomaru777/status/2094017322809758133",
+  "x_root_post_id": "2094017322809758133",
+  "sent_at": "2026-08-30T11:00:10.221Z",
+  "verified_at": "2026-08-30T20:00:13.529666+09:00"
+}

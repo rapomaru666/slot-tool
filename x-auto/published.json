@@ -75,5 +75,13 @@
     "sent_at": "2026-08-30T02:51:54.144Z",
     "external_link": "https://twitter.com/rapomaru777/status/2093894446064497057",
     "buffer_post_id": "6a939ac9f7f5d8f78d0f3335"
+  },
+  {
+    "target_date": "2026-08-31",
+    "status": "sent",
+    "sent_at": "2026-08-30T11:00:10.221Z",
+    "external_link": "https://twitter.com/rapomaru777/status/2094017322809758133",
+    "buffer_post_id": "6a940d37d076c0e58359609d",
+    "content_sha256": "007155ded93e353d19dbad9fa9ad5966b624ac614329ca2107aa320f176be3b5"
   }
 ]
