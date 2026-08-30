@@ -1,1 +1,1 @@
-prepare 8/29 thread; publish at 20:00 JST 2026-08-28
+publish 2026-08-30 retry after root length fix
