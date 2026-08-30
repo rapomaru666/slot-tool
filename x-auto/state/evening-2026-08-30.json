@@ -1,0 +1,40 @@
+{
+  "publication_key": "evening:2026-08-30",
+  "target_date": "2026-08-30",
+  "status": "sent",
+  "content_sha256": "6c4b7e948e6bcff5c181fe9a8cda84db4307bb9084cfa0cd29718b39974c3e23",
+  "selected_halls": [
+    {
+      "hall_id": "4a2ab4072d83af0e",
+      "name": "D’station八王子北野",
+      "category": "rainbow"
+    },
+    {
+      "hall_id": "5295c850244222f7",
+      "name": "新！ガーデン北戸田駅前",
+      "category": "rainbow"
+    },
+    {
+      "hall_id": "4bf8c4b18adae9a0",
+      "name": "ピーアーク相模大野",
+      "category": "rainbow"
+    },
+    {
+      "hall_id": "e5e50c51687d1ab0",
+      "name": "ピーアーク相模原",
+      "category": "trophy"
+    },
+    {
+      "hall_id": "d881202e20291746",
+      "name": "D’station新小岩",
+      "category": "trophy"
+    }
+  ],
+  "expected_thread_count": 4,
+  "buffer_post_id": "6a939ac9f7f5d8f78d0f3335",
+  "external_link": "https://twitter.com/rapomaru777/status/2093894446064497057",
+  "x_root_post_id": "2093894446064497057",
+  "sent_at": "2026-08-30T02:51:54.144Z",
+  "verified_at": "2026-08-30T13:02:14.410447+09:00",
+  "migrated_from": "x-auto/published.json"
+}

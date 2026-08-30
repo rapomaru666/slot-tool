@@ -2,12 +2,10 @@ name: Morning Rainbow Result Report
 
 on:
   schedule:
-    # Redundant off-minute starts to absorb GitHub Actions cron delays.
-    # 06:53 / 07:23 / 07:53 / 08:05 JST
-    - cron: '53 21 * * *'
-    - cron: '23 22 * * *'
+    # 07:53 starts early and waits; 08:07/08:17 are idempotent backups.
     - cron: '53 22 * * *'
-    - cron: '5 23 * * *'
+    - cron: '7 23 * * *'
+    - cron: '17 23 * * *'
   push:
     paths:
       - 'x-auto/morning-now-trigger.txt'
@@ -23,15 +21,8 @@ concurrency:
 jobs:
   morning-report:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
       - name: Wait until 08:00 JST for scheduled runs
         if: github.event_name == 'schedule'
         run: |
@@ -41,19 +32,38 @@ jobs:
             sleep $((target - now))
           fi
 
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r x-auto/requirements.txt
+
+      - name: Run X automation tests
+        run: python -m unittest -v tests/test_x_auto.py
+
       - name: Publish previous day's rainbow results
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: python x-auto/scripts/morning_rainbow_report.py
 
       - name: Save morning publication history
+        if: always()
         run: |
-          if [ -z "$(git status --porcelain -- x-auto/morning-published.json)" ]; then
+          if [ -z "$(git status --porcelain -- x-auto/morning-published.json x-auto/state/)" ]; then
             echo "No morning publication change"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add x-auto/morning-published.json
+          git add x-auto/morning-published.json x-auto/state/
           git commit -m "Record morning rainbow result report"
+          git pull --rebase origin main
           git push

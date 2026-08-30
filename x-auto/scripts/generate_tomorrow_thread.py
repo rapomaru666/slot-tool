@@ -6,6 +6,15 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from common.publication_state import hall_id
+from common.x_text import (
+    TARGET_MAX_WEIGHT,
+    TARGET_MIN_WEIGHT,
+    append_verified_fillers,
+    validate_x_text,
+    x_weighted_length,
+)
+
 try:
     from bs4 import BeautifulSoup
 except ImportError as exc:
@@ -17,8 +26,6 @@ TROPHY_MIN = 14.0
 MAX_RAINBOW = 3
 MAX_TROPHY = 2
 MIN_POST_COUNT = 1
-MIN_POST_CHARS = 200
-MAX_POST_CHARS = 250
 PREFECTURES = ("東京都", "神奈川県", "埼玉県", "千葉県", "茨城県", "栃木県", "群馬県")
 AUDIT_DIR = Path("x-auto/audit")
 
@@ -156,15 +163,17 @@ def build_thread(target, candidates: list[dict]) -> dict | None:
 
     root = render_root(selected)
 
-    # 250文字を超える場合は低評価側から減らし、それでも長い場合は説明を短くする。
-    while len(root) > MAX_POST_CHARS and len(selected) > MIN_POST_COUNT:
+    # 生成・送信の双方で同じX weighted countを使う。
+    while x_weighted_length(root) > TARGET_MAX_WEIGHT and len(selected) > MIN_POST_COUNT:
         selected.pop()
         root = render_root(selected)
 
-    if len(root) > MAX_POST_CHARS:
-        root = render_root(selected, detail_limit=12)
+    for detail_limit in (18, 12, 8):
+        if x_weighted_length(root) <= TARGET_MAX_WEIGHT:
+            break
+        root = render_root(selected, detail_limit=detail_limit)
 
-    if len(root) > MAX_POST_CHARS:
+    if x_weighted_length(root) > TARGET_MAX_WEIGHT:
         c = selected[0]
         root = "\n".join(
             header
@@ -172,8 +181,8 @@ def build_thread(target, candidates: list[dict]) -> dict | None:
             + tail
         )
 
-    # 200文字未満なら上位候補の根拠を追加。意味のある公開情報だけで埋める。
-    if len(root) < MIN_POST_CHARS:
+    # 200 weighted未満なら確認済み情報だけを追加する。
+    if x_weighted_length(root) < TARGET_MIN_WEIGHT:
         notes = []
         for c in selected[:3]:
             notes.append(
@@ -189,25 +198,52 @@ def build_thread(target, candidates: list[dict]) -> dict | None:
         base = "\n".join(lines)
         for note in notes:
             candidate = base + "\n" + note + "\n" + hashtags
-            if len(candidate) <= MAX_POST_CHARS:
+            if x_weighted_length(candidate) <= TARGET_MAX_WEIGHT:
                 base = base + "\n" + note
                 root = base + "\n" + hashtags
-            elif len(root) < MIN_POST_CHARS:
-                room = MAX_POST_CHARS - len(base) - len(hashtags) - 2
-                if room > 12:
-                    clipped = note[:room]
-                    base = base + "\n" + clipped
-                    root = base + "\n" + hashtags
-            if len(root) >= MIN_POST_CHARS:
+            if x_weighted_length(root) >= TARGET_MIN_WEIGHT:
                 break
 
-    if not MIN_POST_CHARS <= len(root) <= MAX_POST_CHARS:
-        raise RuntimeError(
-            f"generated root must be {MIN_POST_CHARS}-{MAX_POST_CHARS} characters: {len(root)}"
-        )
+    root = append_verified_fillers(
+        root,
+        [
+            "公開日程を確認。",
+            "取材重複を重視。",
+            "旧イベ日も考慮。",
+            "過去傾向も確認。",
+            "当日状況は要確認。",
+        ],
+    )
+    validate_x_text(
+        root,
+        min_weight=TARGET_MIN_WEIGHT,
+        max_weight=TARGET_MAX_WEIGHT,
+        label="generated root",
+    )
 
-    # 自動生成は本文1本に絞る。手動確定threadでは200〜250文字のリプ追加可。
-    return {"root": root, "replies": []}
+    selected_halls = [
+        {
+            "hall_id": hall_id(c["hall"]),
+            "name": c["hall"],
+            "category": (
+                "rainbow"
+                if c["score"] >= RAINBOW_MIN
+                else ("trophy" if c["score"] >= TROPHY_MIN else "fallback")
+            ),
+            "score": c["score"],
+            "details": c["details"],
+            "source": c["source"],
+        }
+        for c in selected
+    ]
+
+    # 自動生成は本文1本に絞る。店舗情報は表示文ではなく構造化データで引き継ぐ。
+    return {
+        "target_date": target.isoformat(),
+        "selected_halls": selected_halls,
+        "root": root,
+        "replies": [],
+    }
 
 
 def main():
@@ -228,7 +264,7 @@ def main():
         "source_url": url,
         "thresholds": {"rainbow_min": RAINBOW_MIN, "trophy_min": TROPHY_MIN},
         "minimum_post_count": MIN_POST_COUNT,
-        "post_chars": {"min": MIN_POST_CHARS, "max": MAX_POST_CHARS},
+        "post_weighted_chars": {"min": TARGET_MIN_WEIGHT, "max": TARGET_MAX_WEIGHT},
         "candidate_count": len(candidates),
         "candidates": candidates[:30],
     }
@@ -240,13 +276,21 @@ def main():
         raise RuntimeError(f"No candidates found for {target.isoformat()}; do not silently skip. Investigation required.")
 
     for i, post in enumerate([thread["root"]] + thread.get("replies", []), start=1):
-        if not MIN_POST_CHARS <= len(post) <= MAX_POST_CHARS:
-            raise RuntimeError(
-                f"generated post {i} must be {MIN_POST_CHARS}-{MAX_POST_CHARS} characters: {len(post)}"
-            )
+        validate_x_text(
+            post,
+            min_weight=TARGET_MIN_WEIGHT,
+            max_weight=TARGET_MAX_WEIGHT,
+            label=f"generated post {i}",
+        )
 
     thread_path.write_text(json.dumps(thread, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"ok": True, "target_date": target.isoformat(), "thread_path": str(thread_path), "candidate_count": len(candidates)}, ensure_ascii=False))
+    print(json.dumps({
+        "ok": True,
+        "target_date": target.isoformat(),
+        "thread_path": str(thread_path),
+        "candidate_count": len(candidates),
+        "root_weighted": x_weighted_length(thread["root"]),
+    }, ensure_ascii=False))
 
 
 if __name__ == "__main__":
