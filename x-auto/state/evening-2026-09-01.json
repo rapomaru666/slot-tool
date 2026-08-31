@@ -1,0 +1,42 @@
+{
+  "publication_key": "evening:2026-09-01",
+  "target_date": "2026-09-01",
+  "status": "sent",
+  "content_sha256": "b1b9fb2a1d2dff45cbebf83f472344666c3c6bb57a75eefc900dedbf7ee4152c",
+  "selected_halls": [
+    {
+      "name": "エスパス日拓新宿歌舞伎町店",
+      "category": "rainbow",
+      "score": 19.0,
+      "reason": "毎月1日の特定日。2025/8/1総差枚+89,556枚、2025/8/11+107,755枚。",
+      "hall_id": "682c545ab5a84829"
+    },
+    {
+      "name": "やすだ柏店",
+      "category": "trophy",
+      "score": 16.0,
+      "reason": "9/1アツ姫来店予定。過去8/1の高稼働実績も確認。",
+      "hall_id": "b1add4b5c9731606"
+    },
+    {
+      "name": "スーパーライブガーデン行田店",
+      "category": "trophy",
+      "score": 15.0,
+      "reason": "9/1アツ姫来店・THE LIVE LINK開催予定を確認。",
+      "hall_id": "978fc21cecb60a48"
+    },
+    {
+      "name": "ビックマーチ東習志野店",
+      "category": "trophy",
+      "score": 13.0,
+      "reason": "9/1ヒカルの一致団結掲載を確認。",
+      "hall_id": "e744c71a3dceee51"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6a956fbc81c7dfad08e4e316",
+  "external_link": "https://twitter.com/rapomaru777/status/2094397979259981869",
+  "x_root_post_id": "2094397979259981869",
+  "sent_at": "2026-08-31T12:12:45.345Z",
+  "verified_at": "2026-08-31T21:12:46.041400+09:00"
+}
