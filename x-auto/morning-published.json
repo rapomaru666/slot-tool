@@ -394,5 +394,61 @@
       }
     ],
     "sources": []
+  },
+  "2026-08-31": {
+    "reported_at_jst": "2026-09-01T08:00:45.383020+09:00",
+    "halls": [
+      "PIA川崎銀柳",
+      "フェイス1100瑞穂",
+      "マルハン茂原"
+    ],
+    "posts": [
+      {
+        "hall": "PIA川崎銀柳",
+        "text": "🌈Result 8/31\n🌈 PIA川崎銀柳\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 127,
+        "weighted_chars": 230,
+        "buffer": {
+          "post": {
+            "id": "6a960786c3ff10bad2e91768",
+            "status": "sent",
+            "sentAt": "2026-08-31T23:00:24.080Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2094560965211615716"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "フェイス1100瑞穂",
+        "text": "🌈Result 8/31\n🌈 フェイス1100瑞穂\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 130,
+        "weighted_chars": 235,
+        "buffer": {
+          "post": {
+            "id": "6a96078feef9adc610aeb537",
+            "status": "sent",
+            "sentAt": "2026-08-31T23:00:31.719Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2094560997675499653"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "マルハン茂原",
+        "text": "🌈Result 8/31\n🌈 マルハン茂原\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 126,
+        "weighted_chars": 231,
+        "buffer": {
+          "post": {
+            "id": "6a960796cde36d983115cc82",
+            "status": "sent",
+            "sentAt": "2026-08-31T23:00:39.691Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2094561030974116252"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }

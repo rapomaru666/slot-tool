@@ -1,0 +1,68 @@
+{
+  "publication_key": "morning:2026-08-31",
+  "target_date": "2026-08-31",
+  "status": "sent",
+  "entries": {
+    "f0f8b24b6306f5f1": {
+      "publication_key": "morning:2026-08-31:f0f8b24b6306f5f1",
+      "target_date": "2026-08-31",
+      "hall": {
+        "name": "PIA川崎銀柳",
+        "category": "rainbow",
+        "score": 92,
+        "reason": "8/31スロパチガール来店S。6/15 SAO2 4/4プラス平均+4,340枚、7/11東京喰種4/4プラス平均+4,680枚を公式結果で確認。",
+        "hall_id": "f0f8b24b6306f5f1"
+      },
+      "status": "sent",
+      "content_sha256": "01c63b2a3fa6fb80dcc91a8588915136cc1e19a5276d5356ef76e4ca331f64bc",
+      "text": "🌈Result 8/31\n🌈 PIA川崎銀柳\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6a960786c3ff10bad2e91768",
+      "external_link": "https://twitter.com/rapomaru777/status/2094560965211615716",
+      "x_post_id": "2094560965211615716",
+      "sent_at": "2026-08-31T23:00:24.080Z",
+      "verified_at": "2026-09-01T08:00:25.004682+09:00",
+      "source": null
+    },
+    "3e74d5c5cc6775f6": {
+      "publication_key": "morning:2026-08-31:3e74d5c5cc6775f6",
+      "target_date": "2026-08-31",
+      "hall": {
+        "name": "フェイス1100瑞穂",
+        "category": "rainbow",
+        "score": 88,
+        "reason": "8/31スロパチガール来店S＋すろぱちガールP＋旧イベ1のつく日。ガールSは過去1年60回開催。",
+        "hall_id": "3e74d5c5cc6775f6"
+      },
+      "status": "sent",
+      "content_sha256": "11c70c357c8600e01ae5009a9ae4e6e5b60287379f99e2d66b84d3f0cbfd02aa",
+      "text": "🌈Result 8/31\n🌈 フェイス1100瑞穂\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6a96078feef9adc610aeb537",
+      "external_link": "https://twitter.com/rapomaru777/status/2094560997675499653",
+      "x_post_id": "2094560997675499653",
+      "sent_at": "2026-08-31T23:00:31.719Z",
+      "verified_at": "2026-09-01T08:00:32.786504+09:00",
+      "source": null
+    },
+    "54da21a9680fd53e": {
+      "publication_key": "morning:2026-08-31:54da21a9680fd53e",
+      "target_date": "2026-08-31",
+      "hall": {
+        "name": "マルハン茂原",
+        "category": "rainbow",
+        "score": 86,
+        "reason": "8/31スロパチステーション来店取材(紫)＋1のつく日。2025/8/1スロパチ取材は集計30台総差枚+79,800枚・平均+2,660枚。",
+        "hall_id": "54da21a9680fd53e"
+      },
+      "status": "sent",
+      "content_sha256": "385f4cfbb0406292cfd396427d3b1a6b3112df77adb59ce18349fb0812c7c9f6",
+      "text": "🌈Result 8/31\n🌈 マルハン茂原\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6a960796cde36d983115cc82",
+      "external_link": "https://twitter.com/rapomaru777/status/2094561030974116252",
+      "x_post_id": "2094561030974116252",
+      "sent_at": "2026-08-31T23:00:39.691Z",
+      "verified_at": "2026-09-01T08:00:40.381876+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-01T08:00:45.382445+09:00"
+}
