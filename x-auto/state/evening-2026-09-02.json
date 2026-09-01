@@ -1,0 +1,49 @@
+{
+  "publication_key": "evening:2026-09-02",
+  "target_date": "2026-09-02",
+  "status": "sent",
+  "content_sha256": "fb71c1feaa70f9921b64445121315c763f9c607669daec708eb36486c347046f",
+  "selected_halls": [
+    {
+      "name": "スロットタワージャルダン",
+      "category": "rainbow",
+      "score": 19.0,
+      "reason": "2011/9/2オープンの周年日。2のつく日も旧イベント日として掲載。直近8/22にも来店実績を確認。",
+      "hall_id": "fdf329bee7424237"
+    },
+    {
+      "name": "PIA金沢八景店",
+      "category": "rainbow",
+      "score": 17.5,
+      "reason": "9/2パーフェクトクイーン開催予定。同店では掲載上29回目、8/22にも同取材履歴あり。",
+      "hall_id": "838979ed86eb7e76"
+    },
+    {
+      "name": "新！ガーデン北与野",
+      "category": "trophy",
+      "score": 16.0,
+      "reason": "9/2スロパチステーション るいべえ来店予定を店舗公式で確認。",
+      "hall_id": "39b96092c3b84641"
+    },
+    {
+      "name": "パラッツォ船橋店",
+      "category": "trophy",
+      "score": 15.0,
+      "reason": "2のつく日。2025/9/2は平均G5,039・152/381台プラス。",
+      "hall_id": "208e7c8d7fd89e27"
+    },
+    {
+      "name": "スーパーライブガーデン行田店",
+      "category": "trophy",
+      "score": 14.0,
+      "reason": "9/2トロフィーコレクター開催予定を取材媒体で確認。",
+      "hall_id": "978fc21cecb60a48"
+    }
+  ],
+  "expected_thread_count": 3,
+  "buffer_post_id": "6a96b0398955451bba9ab08e",
+  "external_link": "https://twitter.com/rapomaru777/status/2094742108158427139",
+  "x_root_post_id": "2094742108158427139",
+  "sent_at": "2026-09-01T11:00:12.342Z",
+  "verified_at": "2026-09-01T20:00:14.040393+09:00"
+}
