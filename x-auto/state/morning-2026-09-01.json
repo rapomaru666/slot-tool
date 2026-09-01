@@ -1,0 +1,28 @@
+{
+  "publication_key": "morning:2026-09-01",
+  "target_date": "2026-09-01",
+  "status": "sent",
+  "entries": {
+    "682c545ab5a84829": {
+      "publication_key": "morning:2026-09-01:682c545ab5a84829",
+      "target_date": "2026-09-01",
+      "hall": {
+        "name": "エスパス日拓新宿歌舞伎町店",
+        "category": "rainbow",
+        "score": 19.0,
+        "reason": "毎月1日の特定日。2025/8/1総差枚+89,556枚、2025/8/11+107,755枚。",
+        "hall_id": "682c545ab5a84829"
+      },
+      "status": "sent",
+      "content_sha256": "a2186a48e0271664219122e57314671fa95e1ba74562055391419a09d6157cd4",
+      "text": "🌈Result 9/1\n🌈 エスパス日拓新宿歌舞伎町店\n平均差枚+4,256枚 / 平均G6,987G\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n未確認の内容は断定していません。\n要確認。\n#スロット #パチスロ",
+      "buffer_post_id": "6a97590a12353bde6223fa1d",
+      "external_link": "https://twitter.com/rapomaru777/status/2094923363726537033",
+      "x_post_id": "2094923363726537033",
+      "sent_at": "2026-09-01T23:00:26.526Z",
+      "verified_at": "2026-09-02T08:00:27.405214+09:00",
+      "source": "https://hall-navi.com/?ymd=2026-09-01"
+    }
+  },
+  "verified_at": "2026-09-02T08:00:32.405593+09:00"
+}
