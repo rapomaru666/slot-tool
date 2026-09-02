@@ -1,0 +1,48 @@
+{
+  "publication_key": "morning:2026-09-02",
+  "target_date": "2026-09-02",
+  "status": "sent",
+  "entries": {
+    "fdf329bee7424237": {
+      "publication_key": "morning:2026-09-02:fdf329bee7424237",
+      "target_date": "2026-09-02",
+      "hall": {
+        "name": "スロットタワージャルダン",
+        "category": "rainbow",
+        "score": 19.0,
+        "reason": "2011/9/2オープンの周年日。2のつく日も旧イベント日として掲載。直近8/22にも来店実績を確認。",
+        "hall_id": "fdf329bee7424237"
+      },
+      "status": "sent",
+      "content_sha256": "4c9b5565cc8bdec1ed783c22c6b046a1008c36b62fd21ef2af3cd97e4379d1ca",
+      "text": "🌈Result 9/2\n🌈 スロットタワージャルダン\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6a98aa893436328cb0431d44",
+      "external_link": "https://twitter.com/rapomaru777/status/2095285763323666551",
+      "x_post_id": "2095285763323666551",
+      "sent_at": "2026-09-02T23:00:29.331Z",
+      "verified_at": "2026-09-03T08:00:29.905415+09:00",
+      "source": null
+    },
+    "838979ed86eb7e76": {
+      "publication_key": "morning:2026-09-02:838979ed86eb7e76",
+      "target_date": "2026-09-02",
+      "hall": {
+        "name": "PIA金沢八景店",
+        "category": "rainbow",
+        "score": 17.5,
+        "reason": "9/2パーフェクトクイーン開催予定。同店では掲載上29回目、8/22にも同取材履歴あり。",
+        "hall_id": "838979ed86eb7e76"
+      },
+      "status": "sent",
+      "content_sha256": "acef0408b1e008a81f1d6c5fae5d2caddb6677b74df66e16e67093eb7288b2af",
+      "text": "🌈Result 9/2\n🌈 PIA金沢八景店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6a98aa933436328cb0431fe0",
+      "external_link": "https://twitter.com/rapomaru777/status/2095285791236747689",
+      "x_post_id": "2095285791236747689",
+      "sent_at": "2026-09-02T23:00:35.962Z",
+      "verified_at": "2026-09-03T08:00:36.858194+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-03T08:00:41.858752+09:00"
+}

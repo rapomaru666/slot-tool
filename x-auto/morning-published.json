@@ -476,5 +476,45 @@
     "sources": [
       "https://hall-navi.com/?ymd=2026-09-01"
     ]
+  },
+  "2026-09-02": {
+    "reported_at_jst": "2026-09-03T08:00:41.859284+09:00",
+    "halls": [
+      "スロットタワージャルダン",
+      "PIA金沢八景店"
+    ],
+    "posts": [
+      {
+        "hall": "スロットタワージャルダン",
+        "text": "🌈Result 9/2\n🌈 スロットタワージャルダン\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 112,
+        "weighted_chars": 205,
+        "buffer": {
+          "post": {
+            "id": "6a98aa893436328cb0431d44",
+            "status": "sent",
+            "sentAt": "2026-09-02T23:00:29.331Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2095285763323666551"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "PIA金沢八景店",
+        "text": "🌈Result 9/2\n🌈 PIA金沢八景店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 127,
+        "weighted_chars": 231,
+        "buffer": {
+          "post": {
+            "id": "6a98aa933436328cb0431fe0",
+            "status": "sent",
+            "sentAt": "2026-09-02T23:00:35.962Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2095285791236747689"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
