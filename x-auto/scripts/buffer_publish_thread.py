@@ -102,6 +102,38 @@ def structured_halls(thread_data: dict) -> list[dict]:
     return halls
 
 
+def hall_marker(hall: dict) -> str:
+    return {
+        "rainbow": "🌈",
+        "trophy": "🏆",
+        "fallback": "🎯",
+    }.get(str(hall.get("category", "")).strip(), "🎯")
+
+
+def build_required_hall_post(target_date: str, hall: dict) -> str:
+    target = datetime.strptime(target_date, "%Y-%m-%d").date()
+    name = str(hall.get("name", "")).strip()
+    reason = normalize_text(str(hall.get("reason", "")).strip())
+    marker = hall_marker(hall)
+    body = f"{marker}{name}\n{target.month}/{target.day}の対象店舗。"
+    if reason:
+        body += f"\n選定材料：{reason}"
+    body += "\n公開情報で確認できた内容だけを掲載。\n#スロット #パチスロ"
+    return fit_post(body, f"required hall {name}")
+
+
+def ensure_selected_hall_coverage(target_date: str, posts: list[str], halls: list[dict]) -> list[str]:
+    """Treat selected_halls as the source of truth and never silently drop a target hall."""
+    result = list(posts)
+    combined = "\n".join(result)
+    for hall in halls:
+        name = str(hall.get("name", "")).strip()
+        if name and name not in combined:
+            result.append(build_required_hall_post(target_date, hall))
+            combined = "\n".join(result)
+    return result
+
+
 def validate_evening_payload(target_date: str, posts: list[str], halls: list[dict]) -> None:
     target = datetime.strptime(target_date, "%Y-%m-%d").date()
     combined = "\n".join(posts)
@@ -198,6 +230,7 @@ def main() -> None:
         return
 
     posts = [fit_post(text, f"post {index}") for index, text in enumerate(original_posts, 1)]
+    posts = ensure_selected_hall_coverage(target_date, posts, halls)
     validate_evening_payload(target_date, posts, halls)
     expected_hash = content_sha256(posts)
     receipt = read_json(evening_receipt_path(target_date))
