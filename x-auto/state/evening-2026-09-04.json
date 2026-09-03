@@ -1,0 +1,49 @@
+{
+  "publication_key": "evening:2026-09-04",
+  "target_date": "2026-09-04",
+  "status": "sent",
+  "content_sha256": "05fbd1b706f1dc63925691d6cdf96131602b9676001ab6f8a7b3371621852752",
+  "selected_halls": [
+    {
+      "name": "みとや錦糸町北口店",
+      "category": "rainbow",
+      "score": 20.0,
+      "reason": "9/4で33周年＋旧イベント4のつく日。2025/9/4周年は総差枚+251,870枚・平均+872枚・平均7,354G・勝率172/289。周年日と旧イベント日が重なり、前年同日の全体実績も非常に強い。",
+      "hall_id": "1d5978d6bfe5dfea"
+    },
+    {
+      "name": "ジャパンニューアルファ倉見店",
+      "category": "rainbow",
+      "score": 19.0,
+      "reason": "9/4で44周年＋DMM周年・リニューアル取材予定。2025/9/4周年は平均6,392G・勝率54/130。2024年9/4取材でもジャグラー系を中心に複数の並び好結果を確認。",
+      "hall_id": "9d8d61d0e1b16b96"
+    },
+    {
+      "name": "ピーアーク相模大野",
+      "category": "trophy",
+      "score": 16.0,
+      "reason": "9/4はDMM番組収録、まりも、橘アンジュ、伊藤真一、タカハシカゴ来店、サキドリ来店取材を確認。複数企画が同日に重なる。",
+      "hall_id": "4bf8c4b18adae9a0"
+    },
+    {
+      "name": "楽園柏",
+      "category": "trophy",
+      "score": 15.0,
+      "reason": "9/4はSPリサーチの四暗刻来店取材が初開催予定。",
+      "hall_id": "48a7d8e03c3f1dcc"
+    },
+    {
+      "name": "マルハンメガシティ市原店",
+      "category": "trophy",
+      "score": 14.5,
+      "reason": "9/4はでちゃう編集部めっこ来店予定を確認。",
+      "hall_id": "5ecc07f87042a71d"
+    }
+  ],
+  "expected_thread_count": 6,
+  "buffer_post_id": "6a9953428f5a4f258c3519aa",
+  "external_link": "https://twitter.com/rapomaru777/status/2095466915938349276",
+  "x_root_post_id": "2095466915938349276",
+  "sent_at": "2026-09-03T11:00:20.484Z",
+  "verified_at": "2026-09-03T20:00:21.411590+09:00"
+}
