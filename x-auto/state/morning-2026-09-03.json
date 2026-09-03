@@ -1,0 +1,27 @@
+{
+  "publication_key": "morning:2026-09-03",
+  "target_date": "2026-09-03",
+  "status": "in_progress",
+  "entries": {
+    "9711ce1a2f6b59d9": {
+      "publication_key": "morning:2026-09-03:9711ce1a2f6b59d9",
+      "target_date": "2026-09-03",
+      "hall": {
+        "name": "メガフェイス1180座間",
+        "category": "rainbow",
+        "score": 19.0,
+        "reason": "9/3スロパチステーション来店取材(赤)＋すろぱちガール来店P。2025/3/3は20スロ全554台総差枚+112,480枚・平均+200枚。2026/8/10ガールPSでも高稼働・好結果を確認。",
+        "hall_id": "9711ce1a2f6b59d9"
+      },
+      "status": "sent",
+      "content_sha256": "89434434a77d83127abbd807677294d2b6af58acbe4e6e58aa77041c70df2c50",
+      "text": "🌈Result 9/3\n🌈 メガフェイス1180座間\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6a99fc183134b0c21aba77ca",
+      "external_link": "https://twitter.com/rapomaru777/status/2095648200925311208",
+      "x_post_id": "2095648200925311208",
+      "sent_at": "2026-09-03T23:00:41.164Z",
+      "verified_at": "2026-09-04T08:00:42.132154+09:00",
+      "source": null
+    }
+  }
+}
