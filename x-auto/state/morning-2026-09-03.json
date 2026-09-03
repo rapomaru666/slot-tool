@@ -1,7 +1,7 @@
 {
   "publication_key": "morning:2026-09-03",
   "target_date": "2026-09-03",
-  "status": "in_progress",
+  "status": "sent",
   "entries": {
     "9711ce1a2f6b59d9": {
       "publication_key": "morning:2026-09-03:9711ce1a2f6b59d9",
@@ -22,6 +22,47 @@
       "sent_at": "2026-09-03T23:00:41.164Z",
       "verified_at": "2026-09-04T08:00:42.132154+09:00",
       "source": null
+    },
+    "4bf8c4b18adae9a0": {
+      "publication_key": "morning:2026-09-03:4bf8c4b18adae9a0",
+      "target_date": "2026-09-03",
+      "hall": {
+        "name": "ピーアーク相模大野",
+        "category": "rainbow",
+        "score": 18.5,
+        "reason": "9/3スロパチガール来店S。2025/3/3スロパチ取材は集計87台総差枚+225,500枚・平均+2,590枚。2026/8/13ガールPSでも強い数値を確認。",
+        "hall_id": "4bf8c4b18adae9a0"
+      },
+      "status": "sent",
+      "content_sha256": "147a974dd463348a8c0e052b642a0858d2e71a95e44ad77cd8550041d6f21442",
+      "text": "🌈Result 9/3\n🌈 ピーアーク相模大野\n平均差枚+3,036枚\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n未確認の内容は断定していません。\n要確認。\n公開情報確認。\n#スロット #パチスロ",
+      "buffer_post_id": "6a99fcfa30d93c98c2ce1a26",
+      "external_link": "https://twitter.com/rapomaru777/status/2095649147558809863",
+      "x_post_id": "2095649147558809863",
+      "sent_at": "2026-09-03T23:04:26.856Z",
+      "verified_at": "2026-09-04T08:04:27.678555+09:00",
+      "source": "https://hall-navi.com/?ymd=2026-09-03"
+    },
+    "fd720e8399789327": {
+      "publication_key": "morning:2026-09-03:fd720e8399789327",
+      "target_date": "2026-09-03",
+      "hall": {
+        "name": "エクス・アリーナ柏",
+        "category": "rainbow",
+        "score": 18.0,
+        "reason": "9/3スロパチガール来店S。2025/9/3同取材は集計40台総差枚+61,300枚・平均+1,530枚。2026/3/3スロパチ取材は集計42台平均+3,150枚。",
+        "hall_id": "fd720e8399789327"
+      },
+      "status": "sent",
+      "content_sha256": "b8ecde3748409f1618b81f78148e8066f8e40cf5ab771e1829bd4f94932abb83",
+      "text": "🌈Result 9/3\n🌈 エクス・アリーナ柏\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6a99fd007ebbef6081205259",
+      "external_link": "https://twitter.com/rapomaru777/status/2095649174746169665",
+      "x_post_id": "2095649174746169665",
+      "sent_at": "2026-09-03T23:04:33.628Z",
+      "verified_at": "2026-09-04T08:04:34.032348+09:00",
+      "source": null
     }
-  }
+  },
+  "verified_at": "2026-09-04T08:04:39.032885+09:00"
 }

@@ -516,5 +516,63 @@
       }
     ],
     "sources": []
+  },
+  "2026-09-03": {
+    "reported_at_jst": "2026-09-04T08:04:39.033421+09:00",
+    "halls": [
+      "メガフェイス1180座間",
+      "ピーアーク相模大野",
+      "エクス・アリーナ柏"
+    ],
+    "posts": [
+      {
+        "hall": "メガフェイス1180座間",
+        "text": "🌈Result 9/3\n🌈 メガフェイス1180座間\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 112,
+        "weighted_chars": 201,
+        "buffer": {
+          "post": {
+            "id": "6a99fc183134b0c21aba77ca",
+            "status": "sent",
+            "sentAt": "2026-09-03T23:00:41.164Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2095648200925311208"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "ピーアーク相模大野",
+        "text": "🌈Result 9/3\n🌈 ピーアーク相模大野\n平均差枚+3,036枚\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n未確認の内容は断定していません。\n要確認。\n公開情報確認。\n#スロット #パチスロ",
+        "chars": 114,
+        "weighted_chars": 200,
+        "buffer": {
+          "post": {
+            "id": "6a99fcfa30d93c98c2ce1a26",
+            "status": "sent",
+            "sentAt": "2026-09-03T23:04:26.856Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2095649147558809863"
+          }
+        },
+        "source": "https://hall-navi.com/?ymd=2026-09-03"
+      },
+      {
+        "hall": "エクス・アリーナ柏",
+        "text": "🌈Result 9/3\n🌈 エクス・アリーナ柏\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 128,
+        "weighted_chars": 236,
+        "buffer": {
+          "post": {
+            "id": "6a99fd007ebbef6081205259",
+            "status": "sent",
+            "sentAt": "2026-09-03T23:04:33.628Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2095649174746169665"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": [
+      "https://hall-navi.com/?ymd=2026-09-03"
+    ]
   }
 }
