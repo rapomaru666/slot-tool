@@ -1,0 +1,48 @@
+{
+  "publication_key": "morning:2026-09-04",
+  "target_date": "2026-09-04",
+  "status": "sent",
+  "entries": {
+    "1d5978d6bfe5dfea": {
+      "publication_key": "morning:2026-09-04:1d5978d6bfe5dfea",
+      "target_date": "2026-09-04",
+      "hall": {
+        "name": "みとや錦糸町北口店",
+        "category": "rainbow",
+        "score": 20.0,
+        "reason": "9/4で33周年＋旧イベント4のつく日。2025/9/4周年は総差枚+251,870枚・平均+872枚・平均7,354G・勝率172/289。周年日と旧イベント日が重なり、前年同日の全体実績も非常に強い。",
+        "hall_id": "1d5978d6bfe5dfea"
+      },
+      "status": "sent",
+      "content_sha256": "13b99705fc04ab5f38cdb57112c3057427c67c049d2e724f97a8808bbe6b1f7c",
+      "text": "🌈Result 9/4\n🌈 みとや錦糸町北口店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6a9b4d8ab6e1228b36b280a4",
+      "external_link": "https://twitter.com/rapomaru777/status/2096010527658979833",
+      "x_post_id": "2096010527658979833",
+      "sent_at": "2026-09-04T23:00:26.599Z",
+      "verified_at": "2026-09-05T08:00:27.360837+09:00",
+      "source": null
+    },
+    "9d8d61d0e1b16b96": {
+      "publication_key": "morning:2026-09-04:9d8d61d0e1b16b96",
+      "target_date": "2026-09-04",
+      "hall": {
+        "name": "ジャパンニューアルファ倉見店",
+        "category": "rainbow",
+        "score": 19.0,
+        "reason": "9/4で44周年＋DMM周年・リニューアル取材予定。2025/9/4周年は平均6,392G・勝率54/130。2024年9/4取材でもジャグラー系を中心に複数の並び好結果を確認。",
+        "hall_id": "9d8d61d0e1b16b96"
+      },
+      "status": "sent",
+      "content_sha256": "8146295557c12f6795f0abcd9b7fcd7bb6b1538221d5c820d09e7cd2f3c94de9",
+      "text": "🌈Result 9/4\n🌈 ジャパンニューアルファ倉見店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6a9b4d90a1aa1c9d388cd1c1",
+      "external_link": "https://twitter.com/rapomaru777/status/2096010554317881644",
+      "x_post_id": "2096010554317881644",
+      "sent_at": "2026-09-04T23:00:32.967Z",
+      "verified_at": "2026-09-05T08:00:33.857356+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-05T08:00:38.857880+09:00"
+}

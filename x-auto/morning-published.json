@@ -574,5 +574,45 @@
     "sources": [
       "https://hall-navi.com/?ymd=2026-09-03"
     ]
+  },
+  "2026-09-04": {
+    "reported_at_jst": "2026-09-05T08:00:38.858387+09:00",
+    "halls": [
+      "みとや錦糸町北口店",
+      "ジャパンニューアルファ倉見店"
+    ],
+    "posts": [
+      {
+        "hall": "みとや錦糸町北口店",
+        "text": "🌈Result 9/4\n🌈 みとや錦糸町北口店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 128,
+        "weighted_chars": 236,
+        "buffer": {
+          "post": {
+            "id": "6a9b4d8ab6e1228b36b280a4",
+            "status": "sent",
+            "sentAt": "2026-09-04T23:00:26.599Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2096010527658979833"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "ジャパンニューアルファ倉見店",
+        "text": "🌈Result 9/4\n🌈 ジャパンニューアルファ倉見店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 114,
+        "weighted_chars": 209,
+        "buffer": {
+          "post": {
+            "id": "6a9b4d90a1aa1c9d388cd1c1",
+            "status": "sent",
+            "sentAt": "2026-09-04T23:00:32.967Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2096010554317881644"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
