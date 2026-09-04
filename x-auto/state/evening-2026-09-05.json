@@ -1,0 +1,49 @@
+{
+  "publication_key": "evening:2026-09-05",
+  "target_date": "2026-09-05",
+  "status": "sent",
+  "content_sha256": "f4f5294015b0e10ed5bdfab91a794b7e11765e351edc12a2d1033ed6f383b0e1",
+  "selected_halls": [
+    {
+      "name": "エスパス日拓渋谷駅前新館",
+      "category": "rainbow",
+      "score": 20.0,
+      "reason": "毎月5日が月イチ特定日。2025/9/5は総差枚+77,767枚・平均+185枚、2024/9/5は総差枚+135,704枚・平均+335枚。5のつく日は過去集計でもプラス率が高い。",
+      "hall_id": "7c1ed6f1fa071eb8"
+    },
+    {
+      "name": "ハイパージアス立川",
+      "category": "rainbow",
+      "score": 19.0,
+      "reason": "9/5は5のつく日＋スロパチステーション来店取材(青)＋HYPER撃アッチー。ホールナビ集計で5のつく日は分岐8/9、平均+136枚・平均5,718G。",
+      "hall_id": "13dcf30977a0ee91"
+    },
+    {
+      "name": "エクス・アリーナ柏",
+      "category": "trophy",
+      "score": 17.0,
+      "reason": "9/5は5のつく日＋スロパチステーション来店取材。直近でも同媒体の来店取材実績が多く、5/9取材時は20スロ全400台総差枚+91,550枚・平均+230枚。",
+      "hall_id": "fd720e8399789327"
+    },
+    {
+      "name": "マルハンメガシティ東大和",
+      "category": "trophy",
+      "score": 16.5,
+      "reason": "9/5は5のつく日＋マスターズ(青)＋番組収録。複数企画が同日に重なる。",
+      "hall_id": "cc1e38c6d7203202"
+    },
+    {
+      "name": "Dステーション浜野",
+      "category": "trophy",
+      "score": 15.5,
+      "reason": "9/5はスロパチガール来店S予定を複数情報で確認。",
+      "hall_id": "1589ab71efa4a737"
+    }
+  ],
+  "expected_thread_count": 6,
+  "buffer_post_id": "6a9aa4c55dff2d122069d8be",
+  "external_link": "https://twitter.com/rapomaru777/status/2095829314210062469",
+  "x_root_post_id": "2095829314210062469",
+  "sent_at": "2026-09-04T11:00:23.260Z",
+  "verified_at": "2026-09-04T20:00:24.286262+09:00"
+}
