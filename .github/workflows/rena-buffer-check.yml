@@ -6,16 +6,26 @@ on:
       - 'x-auto/rena/check-trigger.txt'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   check-buffer-channels:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
       - name: List Buffer X channels
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
           python - <<'PY'
           import json, os, urllib.request
+          from pathlib import Path
           token = os.environ['BUFFER_API_KEY']
           def gql(q):
               req = urllib.request.Request('https://api.buffer.com', data=json.dumps({'query': q}).encode(), headers={'Content-Type':'application/json','Authorization':f'Bearer {token}'}, method='POST')
@@ -31,5 +41,19 @@ jobs:
               for c in gql(q)['channels']:
                   if c.get('service')=='twitter':
                       found.append({'organization':o['name'],'id':c['id'],'name':c.get('name'),'displayName':c.get('displayName'),'service':c.get('service')})
+          Path('x-auto/rena/buffer-channels.json').write_text(json.dumps(found, ensure_ascii=False, indent=2)+"\n", encoding='utf-8')
           print(json.dumps(found, ensure_ascii=False, indent=2))
           PY
+
+      - name: Save channel list
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add x-auto/rena/buffer-channels.json
+          if git diff --cached --quiet; then
+            echo "No channel change"
+            exit 0
+          fi
+          git commit -m "Save Buffer X channel list"
+          git pull --rebase origin main
+          git push
