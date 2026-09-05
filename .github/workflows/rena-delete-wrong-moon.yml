@@ -1,0 +1,27 @@
+name: Rena Delete Wrong Moon Post
+
+on:
+  push:
+    paths:
+      - 'x-auto/rena/delete-wrong-moon-trigger.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Verify Rena account guard
+        run: python -m unittest -v tests/test_rena_channel_guard.py
+
+      - name: Delete mistaken standalone Rena post
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python x-auto/rena/delete_wrong_moon_post.py
