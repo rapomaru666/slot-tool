@@ -90,3 +90,41 @@ def publish_post(text: str, image_url: str | None = None):
     if result.get("message"):
         raise RuntimeError(result["message"])
     return {"channel": channel, "result": result}
+
+
+def quote_post(tweet_id: str, comment: str):
+    channel = get_rena_channel()
+    tweet_id = str(tweet_id).strip()
+    comment = str(comment).strip()
+    if not tweet_id.isdigit():
+        raise RuntimeError("Quote target tweet ID must be numeric")
+    if not comment:
+        raise RuntimeError("Quote comment is empty")
+
+    escaped_comment = json.dumps(comment, ensure_ascii=False)
+    mutation = f'''mutation QuoteRenaPost {{
+      createPost(input: {{
+        text: {escaped_comment}
+        channelId: "{TARGET_CHANNEL_ID}"
+        schedulingType: automatic
+        mode: shareNow
+        saveToDraft: false
+        metadata: {{
+          twitter: {{
+            retweet: {{
+              id: "{tweet_id}"
+              comment: {escaped_comment}
+            }}
+          }}
+        }}
+      }}) {{
+        ... on PostActionSuccess {{
+          post {{ id text status sentAt sharedNow externalLink }}
+        }}
+        ... on MutationError {{ message }}
+      }}
+    }}'''
+    result = graphql(mutation)["createPost"]
+    if result.get("message"):
+        raise RuntimeError(result["message"])
+    return {"channel": channel, "result": result}
