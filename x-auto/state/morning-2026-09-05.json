@@ -1,0 +1,48 @@
+{
+  "publication_key": "morning:2026-09-05",
+  "target_date": "2026-09-05",
+  "status": "sent",
+  "entries": {
+    "7c1ed6f1fa071eb8": {
+      "publication_key": "morning:2026-09-05:7c1ed6f1fa071eb8",
+      "target_date": "2026-09-05",
+      "hall": {
+        "name": "エスパス日拓渋谷駅前新館",
+        "category": "rainbow",
+        "score": 20.0,
+        "reason": "毎月5日が月イチ特定日。2025/9/5は総差枚+77,767枚・平均+185枚、2024/9/5は総差枚+135,704枚・平均+335枚。5のつく日は過去集計でもプラス率が高い。",
+        "hall_id": "7c1ed6f1fa071eb8"
+      },
+      "status": "sent",
+      "content_sha256": "74f7f20f7179bd48f9731fd3d1799eb5b22864e1b3fc5e9e8a70068cc95fae1e",
+      "text": "🌈Result 9/5\n🌈 エスパス日拓渋谷駅前新館\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6a9c9f07e6524401a65eff10",
+      "external_link": "https://twitter.com/rapomaru777/status/2096372908742295715",
+      "x_post_id": "2096372908742295715",
+      "sent_at": "2026-09-05T23:00:24.991Z",
+      "verified_at": "2026-09-06T08:00:25.921779+09:00",
+      "source": null
+    },
+    "13dcf30977a0ee91": {
+      "publication_key": "morning:2026-09-05:13dcf30977a0ee91",
+      "target_date": "2026-09-05",
+      "hall": {
+        "name": "ハイパージアス立川",
+        "category": "rainbow",
+        "score": 19.0,
+        "reason": "9/5は5のつく日＋スロパチステーション来店取材(青)＋HYPER撃アッチー。ホールナビ集計で5のつく日は分岐8/9、平均+136枚・平均5,718G。",
+        "hall_id": "13dcf30977a0ee91"
+      },
+      "status": "sent",
+      "content_sha256": "0f34cbd4f8cf6d5c69815f502f0032ef00eda78eb4cccfea2d463a488f188b58",
+      "text": "🌈Result 9/5\n🌈 ハイパージアス立川\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6a9c9f0fe6524401a65f008b",
+      "external_link": "https://twitter.com/rapomaru777/status/2096372936772866402",
+      "x_post_id": "2096372936772866402",
+      "sent_at": "2026-09-05T23:00:31.677Z",
+      "verified_at": "2026-09-06T08:00:32.505692+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-06T08:00:37.506238+09:00"
+}

@@ -614,5 +614,45 @@
       }
     ],
     "sources": []
+  },
+  "2026-09-05": {
+    "reported_at_jst": "2026-09-06T08:00:37.506693+09:00",
+    "halls": [
+      "エスパス日拓渋谷駅前新館",
+      "ハイパージアス立川"
+    ],
+    "posts": [
+      {
+        "hall": "エスパス日拓渋谷駅前新館",
+        "text": "🌈Result 9/5\n🌈 エスパス日拓渋谷駅前新館\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 112,
+        "weighted_chars": 205,
+        "buffer": {
+          "post": {
+            "id": "6a9c9f07e6524401a65eff10",
+            "status": "sent",
+            "sentAt": "2026-09-05T23:00:24.991Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2096372908742295715"
+          }
+        },
+        "source": null
+      },
+      {
+        "hall": "ハイパージアス立川",
+        "text": "🌈Result 9/5\n🌈 ハイパージアス立川\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 128,
+        "weighted_chars": 236,
+        "buffer": {
+          "post": {
+            "id": "6a9c9f0fe6524401a65f008b",
+            "status": "sent",
+            "sentAt": "2026-09-05T23:00:31.677Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2096372936772866402"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
