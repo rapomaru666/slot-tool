@@ -1,0 +1,24 @@
+name: Rena X Account Guard Check
+
+on:
+  push:
+    paths:
+      - 'x-auto/rena/**'
+      - 'tests/test_rena_channel_guard.py'
+      - '.github/workflows/rena-*.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  guard-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Verify Rena account isolation
+        run: python -m unittest -v tests/test_rena_channel_guard.py
