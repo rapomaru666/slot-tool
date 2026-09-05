@@ -1,0 +1,47 @@
+name: Rena Buzz Quote Publish
+
+on:
+  push:
+    paths:
+      - 'x-auto/rena/buzz-trigger.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rena-buzz-quote-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify Rena account guard
+        run: python -m unittest -v tests/test_rena_channel_guard.py
+
+      - name: Syntax check
+        run: python -m py_compile x-auto/rena/buzz_publish.py
+
+      - name: Publish guarded buzz quote
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python x-auto/rena/buzz_publish.py
+
+      - name: Save buzz state
+        run: |
+          if git diff --quiet -- x-auto/rena/buzz-state.json; then
+            echo "No buzz state change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add x-auto/rena/buzz-state.json
+          git commit -m "Record Rena buzz quote state"
+          git pull --rebase origin main
+          git push origin HEAD:main
