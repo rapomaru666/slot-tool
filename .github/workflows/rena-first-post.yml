@@ -1,0 +1,21 @@
+name: Rena First X Post
+
+on:
+  push:
+    paths:
+      - 'x-auto/rena/first-post-trigger.txt'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Publish Rena first X post
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python x-auto/rena/publish_first_post.py
