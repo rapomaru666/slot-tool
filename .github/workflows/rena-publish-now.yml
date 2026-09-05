@@ -1,0 +1,31 @@
+name: Rena X Publish Now
+
+on:
+  push:
+    paths:
+      - 'x-auto/rena/post-now-trigger.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rena-x-publish-now
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Verify Rena account guard
+        run: python -m unittest -v tests/test_rena_channel_guard.py
+
+      - name: Publish only to Rena X
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python x-auto/rena/publish_now.py
