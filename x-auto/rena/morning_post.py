@@ -1,7 +1,6 @@
 import argparse
 import hashlib
 import json
-import os
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -15,6 +14,7 @@ STATE_PATH = Path(__file__).with_name("morning-state.json")
 # 09:50 JST に起動し、日ごとに 0〜20 分待って投稿する。
 MAX_DELAY_MINUTES = 20
 SKIP_DIVISOR = 8  # 約8日に1回。連続休みは禁止。
+MIN_PUBLISHED_BEFORE_SKIP = 5  # 開始直後は休まない。
 
 MORNING_TEXTS = [
     "おはよう〜☺️\n今日もよろしくね！",
@@ -69,8 +69,18 @@ def raw_skip(day) -> bool:
     return stable_int(f"rena-morning-skip|{day.isoformat()}") % SKIP_DIVISOR == 0
 
 
-def should_skip(day) -> bool:
-    # 「たまに休む」。ただし2日連続では休まない。
+def published_count(state: dict) -> int:
+    return sum(
+        1
+        for item in state.get("days", {}).values()
+        if isinstance(item, dict) and item.get("status") == "published"
+    )
+
+
+def should_skip(day, state: dict) -> bool:
+    # 最初の5回は必ず投稿。その後「たまに休む」。ただし2日連続では休まない。
+    if published_count(state) < MIN_PUBLISHED_BEFORE_SKIP:
+        return False
     return raw_skip(day) and not raw_skip(day - timedelta(days=1))
 
 
@@ -121,7 +131,7 @@ def main() -> None:
         print(json.dumps({"ok": True, "action": "already_done", "state": existing}, ensure_ascii=False, indent=2))
         return
 
-    skip = should_skip(day)
+    skip = should_skip(day, state)
     delay = delay_minutes(day)
     text = choose_text(day, state)
     planned_time = f"{9 + ((50 + delay) // 60):02d}:{(50 + delay) % 60:02d}"
