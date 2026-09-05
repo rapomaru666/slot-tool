@@ -1,0 +1,35 @@
+name: Rena Buffer Channel Check
+
+on:
+  push:
+    paths:
+      - 'x-auto/rena/check-trigger.txt'
+  workflow_dispatch:
+
+jobs:
+  check-buffer-channels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List Buffer X channels
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request
+          token = os.environ['BUFFER_API_KEY']
+          def gql(q):
+              req = urllib.request.Request('https://api.buffer.com', data=json.dumps({'query': q}).encode(), headers={'Content-Type':'application/json','Authorization':f'Bearer {token}'}, method='POST')
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  d=json.loads(r.read().decode())
+              if d.get('errors'):
+                  raise SystemExit(json.dumps(d['errors'], ensure_ascii=False))
+              return d['data']
+          orgs=gql('query { account { organizations { id name } } }')['account']['organizations']
+          found=[]
+          for o in orgs:
+              q=f'''query {{ channels(input: {{ organizationId: "{o['id']}" }}) {{ id name displayName service }} }}'''
+              for c in gql(q)['channels']:
+                  if c.get('service')=='twitter':
+                      found.append({'organization':o['name'],'id':c['id'],'name':c.get('name'),'displayName':c.get('displayName'),'service':c.get('service')})
+          print(json.dumps(found, ensure_ascii=False, indent=2))
+          PY
