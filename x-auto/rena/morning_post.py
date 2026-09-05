@@ -10,6 +10,7 @@ from buffer_client import publish_post
 
 JST = ZoneInfo("Asia/Tokyo")
 STATE_PATH = Path(__file__).with_name("morning-state.json")
+CONTEXT_PATH = Path(__file__).with_name("morning-context.json")
 
 # 09:50 JST に起動し、日ごとに 0〜20 分待って投稿する。
 MAX_DELAY_MINUTES = 20
@@ -54,7 +55,6 @@ def load_state() -> dict:
 
 
 def save_state(state: dict) -> None:
-    # 状態は直近60日だけ保持。
     days = state.setdefault("days", {})
     keys = sorted(days.keys())
     for old_key in keys[:-60]:
@@ -63,6 +63,23 @@ def save_state(state: dict) -> None:
         json.dumps(state, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+
+
+def load_context(day_key: str) -> dict | None:
+    if not CONTEXT_PATH.exists():
+        return None
+    try:
+        data = json.loads(CONTEXT_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+    if not isinstance(data, dict):
+        return None
+    if data.get("date_jst") != day_key or not data.get("enabled"):
+        return None
+    text = str(data.get("text") or "").strip()
+    if not text:
+        return None
+    return data
 
 
 def raw_skip(day) -> bool:
@@ -78,7 +95,6 @@ def published_count(state: dict) -> int:
 
 
 def should_skip(day, state: dict) -> bool:
-    # 最初の5回は必ず投稿。その後「たまに休む」。ただし2日連続では休まない。
     if published_count(state) < MIN_PUBLISHED_BEFORE_SKIP:
         return False
     return raw_skip(day) and not raw_skip(day - timedelta(days=1))
@@ -90,8 +106,6 @@ def delay_minutes(day) -> int:
 
 def choose_text(day, state: dict) -> str:
     start = stable_int(f"rena-morning-text|{day.isoformat()}") % len(MORNING_TEXTS)
-
-    # 直近7件と同じ文面を避ける。
     recent = []
     for key in sorted(state.get("days", {}).keys(), reverse=True):
         item = state["days"].get(key) or {}
@@ -99,7 +113,6 @@ def choose_text(day, state: dict) -> str:
             recent.append(item["text"])
         if len(recent) >= 7:
             break
-
     for offset in range(len(MORNING_TEXTS)):
         candidate = MORNING_TEXTS[(start + offset) % len(MORNING_TEXTS)]
         if candidate not in recent:
@@ -133,15 +146,23 @@ def main() -> None:
 
     skip = should_skip(day, state)
     delay = delay_minutes(day)
-    text = choose_text(day, state)
-    planned_time = f"{9 + ((50 + delay) // 60):02d}:{(50 + delay) % 60:02d}"
+    context = load_context(day_key)
+    if context:
+        text = str(context["text"]).strip()
+        text_source = "major_topic"
+    else:
+        text = choose_text(day, state)
+        text_source = "normal"
 
+    planned_time = f"{9 + ((50 + delay) // 60):02d}:{(50 + delay) % 60:02d}"
     plan = {
         "date_jst": day_key,
         "planned_time_jst": planned_time,
         "delay_minutes": delay,
         "skip": skip,
         "text": text,
+        "text_source": text_source,
+        "context_category": context.get("category") if context else None,
         "target": "renatotaikun",
     }
 
@@ -169,24 +190,16 @@ def main() -> None:
         "status": "published",
         "planned_time_jst": planned_time,
         "text": text,
+        "text_source": text_source,
+        "context_category": context.get("category") if context else None,
+        "context_source_url": context.get("source_url") if context else None,
         "buffer_post_id": post.get("id"),
         "sent_at": post.get("sentAt"),
         "external_link": post.get("externalLink"),
     }
     save_state(state)
 
-    print(
-        json.dumps(
-            {
-                "ok": True,
-                "action": "published",
-                "channel": payload.get("channel"),
-                "post": post,
-            },
-            ensure_ascii=False,
-            indent=2,
-        )
-    )
+    print(json.dumps({"ok": True, "action": "published", "channel": payload.get("channel"), "post": post}, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
