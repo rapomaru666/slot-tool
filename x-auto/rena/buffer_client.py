@@ -128,3 +128,20 @@ def quote_post(tweet_id: str, comment: str):
     if result.get("message"):
         raise RuntimeError(result["message"])
     return {"channel": channel, "result": result}
+
+
+def delete_post(post_id: str):
+    channel = get_rena_channel()
+    post_id = str(post_id).strip()
+    if not post_id:
+        raise RuntimeError("Buffer post ID is empty")
+    mutation = f'''mutation DeleteRenaPost {{
+      deletePost(input: {{ id: "{post_id}" }}) {{
+        ... on DeletePostSuccess {{ id }}
+        ... on MutationError {{ message }}
+      }}
+    }}'''
+    result = graphql(mutation)["deletePost"]
+    if result.get("message"):
+        raise RuntimeError(result["message"])
+    return {"channel": channel, "result": result}
