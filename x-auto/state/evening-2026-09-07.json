@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-07",
+  "target_date": "2026-09-07",
+  "status": "sent",
+  "content_sha256": "4eb445703a0d97c60c63f5c21144fcd475319cb16dee7adda9a31a7258982617",
+  "selected_halls": [
+    {
+      "hall_id": "bc8ee0052149feef",
+      "name": "グランキコーナ相模原店",
+      "category": "rainbow",
+      "score": 17.9,
+      "details": "確信リサーチ取材 ・ 連日リザルト ・ 新台入替(P-WORLD引用) ※『??:??|スマスロ リコリス・リコイル / L青春ブタ野郎はバニーガール先輩の夢を見ない ...他12機種』",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 1,
+  "buffer_post_id": "6a9d47b5af83b6dedf8ecd61",
+  "external_link": "https://twitter.com/rapomaru777/status/2096554035809546439",
+  "x_root_post_id": "2096554035809546439",
+  "sent_at": "2026-09-06T11:00:09.087Z",
+  "verified_at": "2026-09-06T20:00:10.048387+09:00"
+}
