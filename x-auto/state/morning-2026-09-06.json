@@ -1,0 +1,29 @@
+{
+  "publication_key": "morning:2026-09-06",
+  "target_date": "2026-09-06",
+  "status": "sent",
+  "entries": {
+    "cd1d8d6d190c07a6": {
+      "publication_key": "morning:2026-09-06:cd1d8d6d190c07a6",
+      "target_date": "2026-09-06",
+      "hall": {
+        "hall_id": "cd1d8d6d190c07a6",
+        "name": "マルハン新宿東宝ビル店",
+        "category": "rainbow",
+        "score": 17.7,
+        "details": "ナビ子AI予想【差枚プラス】★5 (6のつく日) 分岐16/18(88.9%) 平均 +196 枚 平均6,207G 2026/08/26( 水 ) 291 / 664台 平均 5,957G 平均 +211 枚 2026/08/16( 日 ) 280 / 664台 平均 6,275G 平均 -113 枚 2026/08/06( 木 ) 318 / 664台 平均 6,128G 平均 +543 枚 S ナビ子AI予想【機種仕掛け】★5+ (6のつく日) [西武新宿駅]",
+        "source": "hall-navi"
+      },
+      "status": "sent",
+      "content_sha256": "b476315fdbda05a92d830e8679c6aa768d052c7abbc9916cfbe6b6fd17de0bf3",
+      "text": "🌈Result 9/6\n🌈 マルハン新宿東宝ビル店\n平均差枚+5,436枚 / 平均G5,743G\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n未確認の内容は断定していません。\n要確認。\n#スロット #パチスロ",
+      "buffer_post_id": "6a9df0875c2ba4d1541ff717",
+      "external_link": "https://twitter.com/rapomaru777/status/2096735292908609699",
+      "x_post_id": "2096735292908609699",
+      "sent_at": "2026-09-06T23:00:24.095Z",
+      "verified_at": "2026-09-07T08:00:25.049517+09:00",
+      "source": "https://hall-navi.com/?ymd=2026-09-06"
+    }
+  },
+  "verified_at": "2026-09-07T08:00:30.050022+09:00"
+}

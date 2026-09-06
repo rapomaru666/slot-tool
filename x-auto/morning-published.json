@@ -654,5 +654,31 @@
       }
     ],
     "sources": []
+  },
+  "2026-09-06": {
+    "reported_at_jst": "2026-09-07T08:00:30.050538+09:00",
+    "halls": [
+      "マルハン新宿東宝ビル店"
+    ],
+    "posts": [
+      {
+        "hall": "マルハン新宿東宝ビル店",
+        "text": "🌈Result 9/6\n🌈 マルハン新宿東宝ビル店\n平均差枚+5,436枚 / 平均G5,743G\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n未確認の内容は断定していません。\n要確認。\n#スロット #パチスロ",
+        "chars": 120,
+        "weighted_chars": 203,
+        "buffer": {
+          "post": {
+            "id": "6a9df0875c2ba4d1541ff717",
+            "status": "sent",
+            "sentAt": "2026-09-06T23:00:24.095Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2096735292908609699"
+          }
+        },
+        "source": "https://hall-navi.com/?ymd=2026-09-06"
+      }
+    ],
+    "sources": [
+      "https://hall-navi.com/?ymd=2026-09-06"
+    ]
   }
 }
