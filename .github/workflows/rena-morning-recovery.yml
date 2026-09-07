@@ -1,0 +1,47 @@
+name: Rena Morning X Post Recovery
+
+on:
+  push:
+    paths:
+      - 'x-auto/rena/morning-recovery-trigger.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rena-morning-x-post
+  cancel-in-progress: false
+
+jobs:
+  recovery:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify Rena account guard
+        run: python -m unittest -v tests/test_rena_channel_guard.py
+
+      - name: Syntax check
+        run: python -m py_compile x-auto/rena/morning_post.py
+
+      - name: Recover missed morning post
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python x-auto/rena/morning_post.py
+
+      - name: Save morning state
+        run: |
+          if git diff --quiet -- x-auto/rena/morning-state.json; then
+            echo "No morning state change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add x-auto/rena/morning-state.json
+          git commit -m "Record Rena morning recovery state"
+          git pull --rebase origin main
+          git push origin HEAD:main
