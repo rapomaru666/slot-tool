@@ -1,0 +1,29 @@
+{
+  "publication_key": "morning:2026-09-07",
+  "target_date": "2026-09-07",
+  "status": "sent",
+  "entries": {
+    "bc8ee0052149feef": {
+      "publication_key": "morning:2026-09-07:bc8ee0052149feef",
+      "target_date": "2026-09-07",
+      "hall": {
+        "hall_id": "bc8ee0052149feef",
+        "name": "グランキコーナ相模原店",
+        "category": "rainbow",
+        "score": 17.9,
+        "details": "確信リサーチ取材 ・ 連日リザルト ・ 新台入替(P-WORLD引用) ※『??:??|スマスロ リコリス・リコイル / L青春ブタ野郎はバニーガール先輩の夢を見ない ...他12機種』",
+        "source": "hall-navi"
+      },
+      "status": "sent",
+      "content_sha256": "880e73c10966559e9fb3dc45c26966519bcc0176b672ae948bf3e5e24445b2b5",
+      "text": "🌈Result 9/7\n🌈 グランキコーナ相模原店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6a9f4206555f6e1cb7728e39",
+      "external_link": "https://twitter.com/rapomaru777/status/2097097681470468604",
+      "x_post_id": "2097097681470468604",
+      "sent_at": "2026-09-07T23:00:24.275Z",
+      "verified_at": "2026-09-08T08:00:25.077628+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-08T08:00:30.078053+09:00"
+}

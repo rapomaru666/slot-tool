@@ -680,5 +680,29 @@
     "sources": [
       "https://hall-navi.com/?ymd=2026-09-06"
     ]
+  },
+  "2026-09-07": {
+    "reported_at_jst": "2026-09-08T08:00:30.078491+09:00",
+    "halls": [
+      "グランキコーナ相模原店"
+    ],
+    "posts": [
+      {
+        "hall": "グランキコーナ相模原店",
+        "text": "🌈Result 9/7\n🌈 グランキコーナ相模原店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 111,
+        "weighted_chars": 203,
+        "buffer": {
+          "post": {
+            "id": "6a9f4206555f6e1cb7728e39",
+            "status": "sent",
+            "sentAt": "2026-09-07T23:00:24.275Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2097097681470468604"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
