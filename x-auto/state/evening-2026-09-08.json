@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-08",
+  "target_date": "2026-09-08",
+  "status": "sent",
+  "content_sha256": "6d1114662b406921f943eac341567937551650af09a47f650a459c785c2e7283",
+  "selected_halls": [
+    {
+      "hall_id": "04138e2cd3c7c38f",
+      "name": "パラッツォ鳩ヶ谷店",
+      "category": "rainbow",
+      "score": 17.7,
+      "details": "ナビ子AI予想【機種仕掛け】★5 (8のつく日) ・ 新台入替(P-WORLD引用) ※『10:00|e アサルトリリィ / e魔女と野獣 ...他2機種』",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 1,
+  "buffer_post_id": "6a9e9937e9970892c4b29af8",
+  "external_link": "https://twitter.com/rapomaru777/status/2096916417622818998",
+  "x_root_post_id": "2096916417622818998",
+  "sent_at": "2026-09-07T11:00:07.599Z",
+  "verified_at": "2026-09-07T20:00:10.558062+09:00"
+}
