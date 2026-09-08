@@ -50,6 +50,9 @@ jobs:
       - name: Run X automation tests
         run: python -m unittest -v tests/test_x_auto.py
 
+      - name: Enforce public evening post rules
+        run: python x-auto/scripts/enforce_evening_public_rules.py
+
       - name: Publish tomorrow's X thread via Buffer
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
