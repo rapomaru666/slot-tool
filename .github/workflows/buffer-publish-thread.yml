@@ -2,10 +2,8 @@ name: Buffer X Publish Thread
 
 on:
   schedule:
-    # 19:53 starts early and waits; 20:07/20:17 are idempotent backups.
+    # Start early and wait until exactly 20:00 JST. History is persisted in the same run.
     - cron: '53 10 * * *'
-    - cron: '7 11 * * *'
-    - cron: '17 11 * * *'
   push:
     paths:
       - 'x-auto/thread-now-trigger.txt'
