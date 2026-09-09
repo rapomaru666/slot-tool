@@ -61,13 +61,13 @@ jobs:
       - name: Save publish history
         if: always()
         run: |
-          if [ -z "$(git status --porcelain -- x-auto/published.json x-auto/state/)" ]; then
-            echo "No publish history change"
+          if [ -z "$(git status --porcelain -- x-auto/published.json x-auto/state/ x-auto/thread-*.json)" ]; then
+            echo "No publish/history enforcement change"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add x-auto/published.json x-auto/state/
-          git commit -m "Record X publish history"
+          git add x-auto/published.json x-auto/state/ x-auto/thread-*.json
+          git commit -m "Record X publish history and enforced public thread"
           git pull --rebase origin main
           git push
