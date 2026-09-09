@@ -56,23 +56,56 @@ def fetch(url: str) -> str:
         return response.read().decode("utf-8", errors="replace")
 
 
-def find_result_text(html: str, hall: str) -> str | None:
+def find_result_text(html: str, hall: str, target_date: str) -> str | None:
     text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html)).strip()
     position = text.find(hall)
     if position < 0:
         return None
+
+    target = datetime.strptime(target_date, "%Y-%m-%d").date()
+    date_tokens = {
+        target_date,
+        target.strftime("%Y/%m/%d"),
+        f"{target.month}/{target.day}",
+        f"{target.month}月{target.day}日",
+    }
+    context = text[max(0, position - 350) : position + 1000]
+    if not any(token in context for token in date_tokens):
+        return None
+
     chunk = text[position : position + 900]
-    numbers = []
-    for pattern, label in [
-        (r"平均[^+\-\d]{0,12}([+\-]?\d[\d,]*)\s*枚", "平均差枚"),
-        (r"勝率[^\d]{0,8}(\d+(?:\.\d+)?)%", "勝率"),
-        (r"平均[^\d]{0,12}(\d[\d,]*)\s*G", "平均G"),
-    ]:
-        match = re.search(pattern, chunk)
-        if match:
-            unit = "%" if label == "勝率" else ("G" if label == "平均G" else "枚")
-            numbers.append(f"{label}{match.group(1)}{unit}")
-    return " / ".join(numbers) if numbers else None
+    values: dict[str, str] = {}
+
+    avg_diff = re.search(r"平均[^+\-\d]{0,12}([+\-]?\d[\d,]*)\s*枚", chunk)
+    if avg_diff:
+        raw = avg_diff.group(1)
+        try:
+            value = int(raw.replace(",", ""))
+        except ValueError:
+            return None
+        # 店舗全体平均として通常あり得ない極端値は、機種別・一部台の数値を誤取得した可能性が高い。
+        if abs(value) > 1500:
+            return None
+        values["平均差枚"] = f"{raw}枚"
+
+    win_rate = re.search(r"勝率[^\d]{0,8}(\d+(?:\.\d+)?)%", chunk)
+    if win_rate:
+        value = float(win_rate.group(1))
+        if not 0 <= value <= 100:
+            return None
+        values["勝率"] = f"{win_rate.group(1)}%"
+
+    avg_games = re.search(r"平均[^\d]{0,12}(\d[\d,]*)\s*G", chunk)
+    if avg_games:
+        raw = avg_games.group(1)
+        value = int(raw.replace(",", ""))
+        if not 0 <= value <= 10000:
+            return None
+        values["平均G"] = f"{raw}G"
+
+    if not values:
+        return None
+    return " / ".join(f"{label}{value}" for label, value in values.items())
 
 
 def validate_content(text: str) -> None:
@@ -247,7 +280,7 @@ def main() -> None:
         found = None
         source = None
         for url, page in pages:
-            found = find_result_text(page, hall_name)
+            found = find_result_text(page, hall_name, target_date)
             if found:
                 source = url
                 break
