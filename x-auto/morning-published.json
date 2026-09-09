@@ -728,5 +728,31 @@
       }
     ],
     "sources": []
+  },
+  "2026-09-09": {
+    "reported_at_jst": "2026-09-10T08:00:34.090461+09:00",
+    "halls": [
+      "エスパス日拓新宿歌舞伎町店"
+    ],
+    "posts": [
+      {
+        "hall": "エスパス日拓新宿歌舞伎町店",
+        "text": "🌈Result 9/9\n🌈 エスパス日拓新宿歌舞伎町店\n平均差枚+5,436枚 / 平均G6,987G\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n未確認の内容は断定していません。\n要確認。\n#スロット #パチスロ",
+        "chars": 122,
+        "weighted_chars": 207,
+        "buffer": {
+          "post": {
+            "id": "6aa1e50acdb1cb4e9bd7204a",
+            "status": "sent",
+            "sentAt": "2026-09-09T23:00:27.906Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2097822472435274187"
+          }
+        },
+        "source": "https://hall-navi.com/?ymd=2026-09-09"
+      }
+    ],
+    "sources": [
+      "https://hall-navi.com/?ymd=2026-09-09"
+    ]
   }
 }
