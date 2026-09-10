@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-11",
+  "target_date": "2026-09-11",
+  "status": "sent",
+  "content_sha256": "977adf7bb5715ecacecb5c7a250a9b4d6f38b2def77dd899eb5f75101e04cccf",
+  "selected_halls": [
+    {
+      "hall_id": "be5bf54d0ccf29b1",
+      "name": "マルハンメガシティ横浜町田",
+      "category": "rainbow",
+      "score": 17.5,
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (1のつく日)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aa28db759396866022c4221",
+  "external_link": "https://twitter.com/rapomaru777/status/2098003582494671244",
+  "x_root_post_id": "2098003582494671244",
+  "sent_at": "2026-09-10T11:00:08.113Z",
+  "verified_at": "2026-09-10T20:00:08.722346+09:00"
+}
