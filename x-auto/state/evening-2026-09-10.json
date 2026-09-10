@@ -1,0 +1,25 @@
+{
+  "publication_key": "evening:2026-09-10",
+  "target_date": "2026-09-10",
+  "status": "sent",
+  "content_sha256": "c167241659abe62f8637c7a4ba0448a04a6337f7c817411498e4c840809af341",
+  "selected_halls": [
+    {
+      "hall_id": "56a104a346d5dc00",
+      "name": "PIA八王子",
+      "category": "rainbow",
+      "score": 16.1,
+      "details": "ナビ子AI予想【機種仕掛け】★5 B 極上取材(まぐろくん) C ナビ子AI独自予想 N +4.0 [八王子駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": null,
+  "external_link": "https://twitter.com/rapomaru777/status/2097641191000948996",
+  "x_root_post_id": "2097641191000948996",
+  "x_reply_post_ids": ["2097641192213139526"],
+  "sent_at": "2026-09-09T11:00:06.880Z",
+  "verified_at": "2026-09-11T08:00:00+09:00",
+  "recovery_source": "public_x",
+  "recovery_note": "Original Buffer/GitHub state write was missing. Root and reply IDs were recovered from public X/Yahoo realtime search; sent_at derived from the X snowflake timestamp. Buffer ID was not fabricated."
+}
