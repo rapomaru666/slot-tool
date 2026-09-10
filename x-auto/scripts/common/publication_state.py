@@ -63,11 +63,10 @@ def is_verified_sent_receipt(receipt: dict | None, expected_hash: str | None = N
         return False
     if expected_hash and receipt.get("content_sha256") != expected_hash:
         return False
-    return bool(
-        receipt.get("buffer_post_id")
-        and receipt.get("sent_at")
-        and extract_x_post_id(receipt.get("external_link"))
-    )
+    has_verified_x = bool(receipt.get("sent_at") and extract_x_post_id(receipt.get("external_link")))
+    if receipt.get("recovery_source") == "public_x":
+        return has_verified_x
+    return bool(receipt.get("buffer_post_id") and has_verified_x)
 
 
 def make_evening_receipt(
