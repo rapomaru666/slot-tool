@@ -754,5 +754,29 @@
     "sources": [
       "https://hall-navi.com/?ymd=2026-09-09"
     ]
+  },
+  "2026-09-10": {
+    "reported_at_jst": "2026-09-11T08:08:31.152577+09:00",
+    "halls": [
+      "PIA八王子"
+    ],
+    "posts": [
+      {
+        "hall": "PIA八王子",
+        "text": "🌈Result 9/10\n🌈 PIA八王子\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 126,
+        "weighted_chars": 228,
+        "buffer": {
+          "post": {
+            "id": "6aa33868816445bddc42a57d",
+            "status": "sent",
+            "sentAt": "2026-09-10T23:08:25.374Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2098186862896599197"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }

@@ -1,0 +1,29 @@
+{
+  "publication_key": "morning:2026-09-10",
+  "target_date": "2026-09-10",
+  "status": "sent",
+  "entries": {
+    "56a104a346d5dc00": {
+      "publication_key": "morning:2026-09-10:56a104a346d5dc00",
+      "target_date": "2026-09-10",
+      "hall": {
+        "hall_id": "56a104a346d5dc00",
+        "name": "PIA八王子",
+        "category": "rainbow",
+        "score": 16.1,
+        "details": "ナビ子AI予想【機種仕掛け】★5 B 極上取材(まぐろくん) C ナビ子AI独自予想 N +4.0 [八王子駅]",
+        "source": "hall-navi"
+      },
+      "status": "sent",
+      "content_sha256": "1278a41c92f7c2d5b1e999e9e5622f68909581d41141a9cf1b227e3d982c2709",
+      "text": "🌈Result 9/10\n🌈 PIA八王子\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6aa33868816445bddc42a57d",
+      "external_link": "https://twitter.com/rapomaru777/status/2098186862896599197",
+      "x_post_id": "2098186862896599197",
+      "sent_at": "2026-09-10T23:08:25.374Z",
+      "verified_at": "2026-09-11T08:08:26.151792+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-11T08:08:31.152162+09:00"
+}
