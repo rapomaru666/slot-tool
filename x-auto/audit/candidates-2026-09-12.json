@@ -1,0 +1,129 @@
+{
+  "target_date": "2026-09-12",
+  "generated_at_jst": "2026-09-11T18:43:29.918657+09:00",
+  "source_url": "https://hall-navi.com/osusume_list?kbn=sche_yosou&ken=all&ymd=2026-09-12",
+  "thresholds": {
+    "rainbow_min": 16.0,
+    "trophy_min": 14.0
+  },
+  "minimum_post_count": 1,
+  "post_weighted_chars": {
+    "min": 200,
+    "max": 250
+  },
+  "candidate_count": 16,
+  "candidates": [
+    {
+      "hall": "新！ガーデン北戸田駅前",
+      "score": 17.2,
+      "rank": "S",
+      "details": "ファントム A エラスロ B アトランティスロ C 裏割/切リサーチ取材 ・ 旧イベ過去状況評価 +2.5 ・ 旧イベ(2のつく日) ・ 旧イベ(毎週 土曜日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パラッツォ鳩ヶ谷店",
+      "score": 16.8,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (2のつく日) C 調査団・廻 来店取材 ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "メガフェイス1180座間",
+      "score": 16.7,
+      "rank": "S",
+      "details": "スロパチガール来店S S ナビ子AI予想【機種仕掛け】★5 ・ 大感謝 ・ 抽選打ち切り1180名 ・ 新台導入後初週末！",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ビックディッパー新橋1号店",
+      "score": 16.5,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (2のつく日) A LINO来店 B LINO×天草ヤスヲのガチちゅんげー!! B リアルアイ予想 [新橋駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "キコーナ海老名店",
+      "score": 16.3,
+      "rank": "A",
+      "details": "ULTIMATE3×3STAR取材",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "PIA八王子",
+      "score": 16.1,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) C ナビ子AI独自予想 N +4.5 ・ SS・蓮くん取材 [八王子駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ水戸赤塚",
+      "score": 15.9,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (毎週 土曜日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ2000蒲田7",
+      "score": 15.5,
+      "rank": "S",
+      "details": "ナビ子AI予想【差枚プラス】★5 (毎週 土曜日) 分岐21/26(80.8%) 平均 +134 枚 平均5,772G 2026/09/05( 土 ) 284 / 715台 平均 5,462G 平均 -96 枚 2026/08/29( 土 ) 271 / 715台 平均 5,069G 平均 -32 枚 2026/08/22( 土 ) 240 / 715台 平均 5,427G 平均 -360 枚 S ナビ子AI予想【機種仕掛け】★5+ (毎週 土曜日) [蒲田駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パラッツォ船橋店",
+      "score": 15.4,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (2のつく日) B クロロS/P調査隊チームＺＺ B アナスロ予測(赤強) C クロロ調査隊 チーム真P C 2のつく日 ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "エクス・アリーナ柏",
+      "score": 15.2,
+      "rank": "S",
+      "details": "スロパチステーション来店取材(青)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "新！ガーデン北与野店",
+      "score": 15.0,
+      "rank": "S",
+      "details": "スロパチステーション来店取材(紫) C 厳選ホール ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ベガスベガス国分寺恋ヶ窪店",
+      "score": 14.9,
+      "rank": "S",
+      "details": "ワロス来店実践",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パラッツォ三郷中央店",
+      "score": 14.8,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) ・ 特定日 ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "スーパーD'ステーション 錦糸町店",
+      "score": 14.6,
+      "rank": "S",
+      "details": "スロパチステーション来店取材(青) [錦糸町駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハン小山千駄塚店",
+      "score": 14.6,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) ・ クロロS級スロッター伝説レポート ※『【青】』",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "楽園相模原店",
+      "score": 14.5,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日)",
+      "source": "hall-navi"
+    }
+  ]
+}
