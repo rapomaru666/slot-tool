@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-12",
+  "target_date": "2026-09-12",
+  "status": "sent",
+  "content_sha256": "419faf2803c90d7076a349b6c9bf1a510f891ee57482d3567fcead36e9b4e85c",
+  "selected_halls": [
+    {
+      "hall_id": "5295c850244222f7",
+      "name": "新！ガーデン北戸田駅前",
+      "category": "rainbow",
+      "score": 17.2,
+      "details": "ファントム A エラスロ B アトランティスロ C 裏割/切リサーチ取材 ・ 旧イベ過去状況評価 +2.5 ・ 旧イベ(2のつく日) ・ 旧イベ(毎週 土曜日)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aa3df385a67efa86a9761fa",
+  "external_link": "https://twitter.com/rapomaru777/status/2098365982989279245",
+  "x_root_post_id": "2098365982989279245",
+  "sent_at": "2026-09-11T11:00:11.151Z",
+  "verified_at": "2026-09-11T20:00:12.055827+09:00"
+}
