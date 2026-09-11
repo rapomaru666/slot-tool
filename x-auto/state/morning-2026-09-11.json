@@ -1,0 +1,29 @@
+{
+  "publication_key": "morning:2026-09-11",
+  "target_date": "2026-09-11",
+  "status": "sent",
+  "entries": {
+    "be5bf54d0ccf29b1": {
+      "publication_key": "morning:2026-09-11:be5bf54d0ccf29b1",
+      "target_date": "2026-09-11",
+      "hall": {
+        "hall_id": "be5bf54d0ccf29b1",
+        "name": "マルハンメガシティ横浜町田",
+        "category": "rainbow",
+        "score": 17.5,
+        "details": "ナビ子AI予想【機種仕掛け】★5+ (1のつく日)",
+        "source": "hall-navi"
+      },
+      "status": "sent",
+      "content_sha256": "1bbc609d01fc8ed3e7d699340998cd9c965a31b4c69e707b386df8f12a04e222",
+      "text": "🌈Result 9/11\n🌈 マルハンメガシティ横浜町田\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6aa488092ac3c81fe8884b0d",
+      "external_link": "https://twitter.com/rapomaru777/status/2098547238716719605",
+      "x_post_id": "2098547238716719605",
+      "sent_at": "2026-09-11T23:00:25.648Z",
+      "verified_at": "2026-09-12T08:00:26.506587+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-12T08:00:31.507033+09:00"
+}
