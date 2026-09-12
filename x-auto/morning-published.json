@@ -802,5 +802,29 @@
       }
     ],
     "sources": []
+  },
+  "2026-09-12": {
+    "reported_at_jst": "2026-09-13T08:00:30.372261+09:00",
+    "halls": [
+      "新！ガーデン北戸田駅前"
+    ],
+    "posts": [
+      {
+        "hall": "新！ガーデン北戸田駅前",
+        "text": "🌈Result 9/12\n🌈 新！ガーデン北戸田駅前\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 112,
+        "weighted_chars": 204,
+        "buffer": {
+          "post": {
+            "id": "6aa5d988e58a7c35836feeae",
+            "status": "sent",
+            "sentAt": "2026-09-12T23:00:25.015Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2098909623965131181"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }

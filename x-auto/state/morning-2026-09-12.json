@@ -1,0 +1,29 @@
+{
+  "publication_key": "morning:2026-09-12",
+  "target_date": "2026-09-12",
+  "status": "sent",
+  "entries": {
+    "5295c850244222f7": {
+      "publication_key": "morning:2026-09-12:5295c850244222f7",
+      "target_date": "2026-09-12",
+      "hall": {
+        "hall_id": "5295c850244222f7",
+        "name": "新！ガーデン北戸田駅前",
+        "category": "rainbow",
+        "score": 17.2,
+        "details": "ファントム A エラスロ B アトランティスロ C 裏割/切リサーチ取材 ・ 旧イベ過去状況評価 +2.5 ・ 旧イベ(2のつく日) ・ 旧イベ(毎週 土曜日)",
+        "source": "hall-navi"
+      },
+      "status": "sent",
+      "content_sha256": "e9d5d8a2bcb2d4d6837ba8baed98033ed4869207692888a59f8855940648be4a",
+      "text": "🌈Result 9/12\n🌈 新！ガーデン北戸田駅前\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6aa5d988e58a7c35836feeae",
+      "external_link": "https://twitter.com/rapomaru777/status/2098909623965131181",
+      "x_post_id": "2098909623965131181",
+      "sent_at": "2026-09-12T23:00:25.015Z",
+      "verified_at": "2026-09-13T08:00:25.371199+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-13T08:00:30.371716+09:00"
+}
