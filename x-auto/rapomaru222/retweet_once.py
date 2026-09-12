@@ -25,14 +25,22 @@ def graphql(query: str):
 def get_channel():
     orgs = graphql("query { account { organizations { id name } } }")["account"]["organizations"]
     matches = []
+    twitter_channels = []
     for org in orgs:
         q = f'''query {{ channels(input: {{ organizationId: "{org['id']}" }}) {{ id name displayName service }} }}'''
         for channel in graphql(q)["channels"]:
-            names = {str(channel.get("name", "")).lstrip("@").lower(), str(channel.get("displayName", "")).lstrip("@").lower()}
-            if channel.get("service") == "twitter" and TARGET_HANDLE in names:
+            if channel.get("service") != "twitter":
+                continue
+            twitter_channels.append(channel)
+            names = {
+                str(channel.get("name", "")).lstrip("@").lower(),
+                str(channel.get("displayName", "")).lstrip("@").lower(),
+            }
+            if TARGET_HANDLE in names:
                 matches.append(channel)
+    print("BUFFER_X_CHANNELS=" + json.dumps(twitter_channels, ensure_ascii=False))
     if len(matches) != 1:
-        raise RuntimeError(f"Expected one @{TARGET_HANDLE} Buffer channel, found {len(matches)}: {matches}")
+        raise RuntimeError(f"Expected one @{TARGET_HANDLE} Buffer channel, found {len(matches)}")
     return matches[0]
 
 
