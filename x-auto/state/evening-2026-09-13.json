@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-13",
+  "target_date": "2026-09-13",
+  "status": "sent",
+  "content_sha256": "96e787749614ed793f3591d7c6bd13af6cd670922bf5af50f43ea09662973a21",
+  "selected_halls": [
+    {
+      "hall_id": "6e94190e92503d21",
+      "name": "キコーナ海老名店",
+      "category": "rainbow",
+      "score": 17.5,
+      "details": "ナビ子AI予想【機種仕掛け】★5 (3のつく日) C ナビ子AI独自予想 N +4.0 ・ 旧イベ(3のつく日)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aa530b5c637430b6b53f438",
+  "external_link": "https://twitter.com/rapomaru777/status/2098728356292296850",
+  "x_root_post_id": "2098728356292296850",
+  "sent_at": "2026-09-12T11:00:07.808Z",
+  "verified_at": "2026-09-12T20:00:08.676748+09:00"
+}
