@@ -3,7 +3,7 @@ name: Shorten URL
 on:
   push:
     paths:
-      - 'x-auto/rapomaru222/shorten-trigger.txt'
+      - 'x-auto/rapomaru222/shorten-trigger*.txt'
 
 permissions:
   contents: read
@@ -21,7 +21,8 @@ jobs:
           from pathlib import Path
           from urllib.parse import quote
           from urllib.request import Request, urlopen
-          long_url = Path('x-auto/rapomaru222/shorten-trigger.txt').read_text(encoding='utf-8').strip()
+          candidates = sorted(Path('x-auto/rapomaru222').glob('shorten-trigger*.txt'), key=lambda p: p.stat().st_mtime, reverse=True)
+          long_url = candidates[0].read_text(encoding='utf-8').strip()
           services = [
               'https://is.gd/create.php?format=simple&url=' + quote(long_url, safe=''),
               'https://tinyurl.com/api-create.php?url=' + quote(long_url, safe=''),
