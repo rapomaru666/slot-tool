@@ -1,0 +1,25 @@
+name: Rapomaru222 Retweet Test
+
+on:
+  push:
+    paths:
+      - 'x-auto/rapomaru222/retweet-trigger.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  retweet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Retweet one animal post to rapomaru222
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python x-auto/rapomaru222/retweet_once.py
