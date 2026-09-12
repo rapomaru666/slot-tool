@@ -59,6 +59,17 @@
       "status": "skipped",
       "reason": "occasional_rest_day",
       "planned_time_jst": "10:08"
+    },
+    "2026-09-12": {
+      "status": "published",
+      "planned_time_jst": "10:08",
+      "text": "おはよ〜！\n今日も一日よろしく🙌",
+      "text_source": "normal",
+      "context_category": null,
+      "context_source_url": null,
+      "buffer_post_id": "6aa4a7e0aa296f331c7fd2ef",
+      "sent_at": "2026-09-12T01:16:17.394Z",
+      "external_link": "https://twitter.com/renatotaikun/status/2098581429588316435"
     }
   }
 }
