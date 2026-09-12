@@ -1,10 +1,12 @@
 import json
 import os
+import re
 import urllib.request
+from pathlib import Path
 
 API_URL = "https://api.buffer.com"
 TARGET_HANDLE = "rapomaru222"
-SOURCE_TWEET_ID = "2049382736163639501"
+TRIGGER_FILE = Path("x-auto/rapomaru222/retweet-trigger.txt")
 
 
 def graphql(query: str):
@@ -20,6 +22,14 @@ def graphql(query: str):
     if data.get("errors"):
         raise RuntimeError(json.dumps(data["errors"], ensure_ascii=False))
     return data["data"]
+
+
+def source_tweet_id():
+    text = TRIGGER_FILE.read_text(encoding="utf-8").strip()
+    match = re.search(r"(?:status/)?(\d{10,25})", text)
+    if not match:
+        raise RuntimeError(f"No X status ID found in {TRIGGER_FILE}: {text!r}")
+    return match.group(1)
 
 
 def get_channel():
@@ -45,8 +55,9 @@ def get_channel():
 
 
 def main():
+    source_id = source_tweet_id()
     channel = get_channel()
-    tweet_id = json.dumps(SOURCE_TWEET_ID)
+    tweet_id = json.dumps(source_id)
     mutation = f'''mutation RetweetRapomaru222 {{
       createPost(input: {{
         text: ""
@@ -63,7 +74,7 @@ def main():
     result = graphql(mutation)["createPost"]
     if result.get("message"):
         raise RuntimeError(result["message"])
-    print(json.dumps({"ok": True, "channel": channel, "source_tweet_id": SOURCE_TWEET_ID, "result": result}, ensure_ascii=False, indent=2))
+    print(json.dumps({"ok": True, "channel": channel, "source_tweet_id": source_id, "result": result}, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
