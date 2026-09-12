@@ -1,0 +1,28 @@
+name: Shorten URL
+
+on:
+  push:
+    paths:
+      - 'x-auto/rapomaru222/shorten-trigger.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  shorten:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Create short URL
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from urllib.parse import quote
+          from urllib.request import urlopen
+          long_url = Path('x-auto/rapomaru222/shorten-trigger.txt').read_text(encoding='utf-8').strip()
+          api = 'https://is.gd/create.php?format=simple&url=' + quote(long_url, safe='')
+          short_url = urlopen(api, timeout=20).read().decode('utf-8').strip()
+          print('SHORT_URL=' + short_url)
+          PY
