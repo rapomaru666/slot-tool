@@ -20,9 +20,22 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           from urllib.parse import quote
-          from urllib.request import urlopen
+          from urllib.request import Request, urlopen
           long_url = Path('x-auto/rapomaru222/shorten-trigger.txt').read_text(encoding='utf-8').strip()
-          api = 'https://is.gd/create.php?format=simple&url=' + quote(long_url, safe='')
-          short_url = urlopen(api, timeout=20).read().decode('utf-8').strip()
-          print('SHORT_URL=' + short_url)
+          services = [
+              'https://is.gd/create.php?format=simple&url=' + quote(long_url, safe=''),
+              'https://tinyurl.com/api-create.php?url=' + quote(long_url, safe=''),
+          ]
+          last = None
+          for api in services:
+              try:
+                  req = Request(api, headers={'User-Agent':'Mozilla/5.0'})
+                  short_url = urlopen(req, timeout=20).read().decode('utf-8').strip()
+                  if short_url.startswith('http'):
+                      print('SHORT_URL=' + short_url)
+                      break
+              except Exception as e:
+                  last = repr(e)
+          else:
+              raise RuntimeError(last or 'shortener failed')
           PY
