@@ -1,0 +1,29 @@
+{
+  "publication_key": "morning:2026-09-13",
+  "target_date": "2026-09-13",
+  "status": "sent",
+  "entries": {
+    "6e94190e92503d21": {
+      "publication_key": "morning:2026-09-13:6e94190e92503d21",
+      "target_date": "2026-09-13",
+      "hall": {
+        "hall_id": "6e94190e92503d21",
+        "name": "キコーナ海老名店",
+        "category": "rainbow",
+        "score": 17.5,
+        "details": "ナビ子AI予想【機種仕掛け】★5 (3のつく日) C ナビ子AI独自予想 N +4.0 ・ 旧イベ(3のつく日)",
+        "source": "hall-navi"
+      },
+      "status": "sent",
+      "content_sha256": "d23ae2558e3e9613b50f953505a21792ca99aef9bd6e4fddd0478720c39747d3",
+      "text": "🌈Result 9/13\n🌈 キコーナ海老名店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+      "buffer_post_id": "6aa72ace1f8cf810a11f8f05",
+      "external_link": "https://twitter.com/rapomaru777/status/2099271769211187394",
+      "x_post_id": "2099271769211187394",
+      "sent_at": "2026-09-13T22:59:27.167Z",
+      "verified_at": "2026-09-14T07:59:27.983267+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-14T07:59:32.983730+09:00"
+}

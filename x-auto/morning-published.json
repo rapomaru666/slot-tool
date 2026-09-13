@@ -826,5 +826,29 @@
       }
     ],
     "sources": []
+  },
+  "2026-09-13": {
+    "reported_at_jst": "2026-09-14T07:59:32.984161+09:00",
+    "halls": [
+      "キコーナ海老名店"
+    ],
+    "posts": [
+      {
+        "hall": "キコーナ海老名店",
+        "text": "🌈Result 9/13\n🌈 キコーナ海老名店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n確認できた数値だけを掲載しています。\n#スロット #パチスロ",
+        "chars": 128,
+        "weighted_chars": 235,
+        "buffer": {
+          "post": {
+            "id": "6aa72ace1f8cf810a11f8f05",
+            "status": "sent",
+            "sentAt": "2026-09-13T22:59:27.167Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2099271769211187394"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
