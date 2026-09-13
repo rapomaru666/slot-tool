@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-14",
+  "target_date": "2026-09-14",
+  "status": "sent",
+  "content_sha256": "2790958d94b9b53da6ec03690d875782afaa878b548bf42ed00aac5bcea9c99e",
+  "selected_halls": [
+    {
+      "hall_id": "04138e2cd3c7c38f",
+      "name": "パラッツォ鳩ヶ谷店",
+      "category": "rainbow",
+      "score": 17.0,
+      "details": "ビンゴ8 来店取材(スロ)・ビンゴ8 来店取材(パチ)予定。過去に同取材実績あり。",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aa68238bcabda92e1ac48f5",
+  "external_link": "https://twitter.com/rapomaru777/status/2099090752387055827",
+  "x_root_post_id": "2099090752387055827",
+  "sent_at": "2026-09-13T11:00:09.607Z",
+  "verified_at": "2026-09-13T20:00:11.514800+09:00"
+}
