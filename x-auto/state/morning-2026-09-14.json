@@ -1,0 +1,29 @@
+{
+  "publication_key": "morning:2026-09-14",
+  "target_date": "2026-09-14",
+  "status": "sent",
+  "entries": {
+    "04138e2cd3c7c38f": {
+      "publication_key": "morning:2026-09-14:04138e2cd3c7c38f",
+      "target_date": "2026-09-14",
+      "hall": {
+        "hall_id": "04138e2cd3c7c38f",
+        "name": "パラッツォ鳩ヶ谷店",
+        "category": "rainbow",
+        "score": 17.0,
+        "details": "ビンゴ8 来店取材(スロ)・ビンゴ8 来店取材(パチ)予定。過去に同取材実績あり。",
+        "source": "hall-navi"
+      },
+      "status": "sent",
+      "content_sha256": "2803b0929d3fb2b230b4dab6c7f1472115871fce52226c7d7dc52dd21edcaee5",
+      "text": "🌈Result 9/14\n🌈 パラッツォ鳩ヶ谷店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+      "buffer_post_id": "6aa87d7b4041488d44fabc66",
+      "external_link": "https://twitter.com/rapomaru777/status/2099635418647994369",
+      "x_post_id": "2099635418647994369",
+      "sent_at": "2026-09-14T23:04:27.952Z",
+      "verified_at": "2026-09-15T08:04:28.763113+09:00",
+      "source": null
+    }
+  },
+  "verified_at": "2026-09-15T08:04:33.763455+09:00"
+}

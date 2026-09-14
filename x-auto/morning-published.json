@@ -850,5 +850,29 @@
       }
     ],
     "sources": []
+  },
+  "2026-09-14": {
+    "reported_at_jst": "2026-09-15T08:04:33.763862+09:00",
+    "halls": [
+      "パラッツォ鳩ヶ谷店"
+    ],
+    "posts": [
+      {
+        "hall": "パラッツォ鳩ヶ谷店",
+        "text": "🌈Result 9/14\n🌈 パラッツォ鳩ヶ谷店\n現時点では公開データから実績数値を確認できず。\n当日の状況や差枚をご存じの方は、リプで情報提供をお願いします。\n公開ページを複数確認した結果です。\n#スロット #パチスロ",
+        "chars": 110,
+        "weighted_chars": 200,
+        "buffer": {
+          "post": {
+            "id": "6aa87d7b4041488d44fabc66",
+            "status": "sent",
+            "sentAt": "2026-09-14T23:04:27.952Z",
+            "externalLink": "https://twitter.com/rapomaru777/status/2099635418647994369"
+          }
+        },
+        "source": null
+      }
+    ],
+    "sources": []
   }
 }
