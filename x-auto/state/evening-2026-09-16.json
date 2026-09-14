@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-16",
+  "target_date": "2026-09-16",
+  "status": "sent",
+  "content_sha256": "5a1de1a19c9c42cf610252f5cee99ebeb8c816a1eeb9599cfe46a888fb9c3da5",
+  "selected_halls": [
+    {
+      "hall_id": "04950fcd539383d9",
+      "name": "楽園大宮店",
+      "category": "rainbow",
+      "score": 17.1,
+      "details": "旧イベ過去状況評価 +7.5 ・ PJS調査隊 ・ 旧イベ(6のつく日)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aa822dc4551be6d81a981ba",
+  "external_link": "https://twitter.com/rapomaru777/status/2099538116646187258",
+  "x_root_post_id": "2099538116646187258",
+  "sent_at": "2026-09-14T16:37:49.665Z",
+  "verified_at": "2026-09-15T01:37:50.185844+09:00"
+}
