@@ -81,6 +81,11 @@
       "buffer_post_id": "6aa5f96deba7bc5677894bcb",
       "sent_at": "2026-09-13T01:16:29.821Z",
       "external_link": "https://twitter.com/renatotaikun/status/2098943869664538887"
+    },
+    "2026-09-14": {
+      "status": "skipped",
+      "reason": "occasional_rest_day",
+      "planned_time_jst": "10:00"
     }
   }
 }
