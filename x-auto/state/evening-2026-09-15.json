@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-15",
+  "target_date": "2026-09-15",
+  "status": "sent",
+  "content_sha256": "de1820006602b9587f66df245128c322c939fe0b21db363a4d033c216a60aaab",
+  "selected_halls": [
+    {
+      "hall_id": "pia-kawaguchi",
+      "name": "PIA川口",
+      "category": "rainbow",
+      "score": 18.0,
+      "details": "スロパチステーション来店取材(黒)予定。公開履歴で同取材は開催9回。9/15は超ちゅんげー玉調査隊来店の開催予定も確認。",
+      "source": "public-web"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aa7d4ad6595d1bcced294e8",
+  "external_link": "https://twitter.com/rapomaru777/status/2099454164598165882",
+  "x_root_post_id": "2099454164598165882",
+  "sent_at": "2026-09-14T11:04:13.809Z",
+  "verified_at": "2026-09-14T20:04:14.494524+09:00"
+}
