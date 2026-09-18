@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-19",
+  "target_date": "2026-09-19",
+  "status": "sent",
+  "content_sha256": "a7f276d9681029c96c851e3889f460ad36a2d189cbfd15e7a939f67df0f36750",
+  "selected_halls": [
+    {
+      "hall_id": "111b51e4f5be019c",
+      "name": "レイトギャップ平和島店",
+      "category": "rainbow",
+      "score": 17.6,
+      "details": "周年日 ★×4 S 割/切リサーチ S ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) S 脳汁噴射 A 全力厳選ホール A エラスロ C 全力セレクション ・ とがる！ ・ 旧イベ(毎月 第3土曜日) [平和島駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aad4d226f370e335be71360",
+  "external_link": "https://twitter.com/rapomaru777/status/2100957896951390262",
+  "x_root_post_id": "2100957896951390262",
+  "sent_at": "2026-09-18T14:39:31.602Z",
+  "verified_at": "2026-09-18T23:39:32.182092+09:00"
+}
