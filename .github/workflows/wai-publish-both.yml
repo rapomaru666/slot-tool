@@ -31,7 +31,7 @@ jobs:
 
       - name: Publish same post to X and Threads via Buffer
         env:
-          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_WAI_API_KEY }}
           WAI_X_NAME: wai_wai_69
           WAI_THREADS_NAME: wai_wai_69
         run: python x-auto/scripts/wai_publish_both.py
