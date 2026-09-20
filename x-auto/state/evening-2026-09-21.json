@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-21",
+  "target_date": "2026-09-21",
+  "status": "sent",
+  "content_sha256": "407911eb57136d8a4cf107e2bb7042defc867bd989ac816a1741eaf5bb712ed7",
+  "selected_halls": [
+    {
+      "hall_id": "682c545ab5a84829",
+      "name": "エスパス日拓新宿歌舞伎町店",
+      "category": "rainbow",
+      "score": 17.0,
+      "details": "ナビ子AI予想【差枚プラス】★3 (1のつく日) 分岐17/22(77.3%) 平均 +117 枚 平均5,442G 2026/09/11( 金 ) 322 / 749台 平均 5,099G 平均 +84 枚 2026/09/01( 火 ) 306 / 749台 平均 4,882G 平均 -42 枚 2026/08/31( 月 ) 354 / 749台 平均 5,338G 平均 +264 枚 S ナビ子AI予想【機種仕掛け】★5+ (1のつく日)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aafebf5549cbb1779889a47",
+  "external_link": "https://twitter.com/rapomaru777/status/2101678186446672105",
+  "x_root_post_id": "2101678186446672105",
+  "sent_at": "2026-09-20T14:21:41.993Z",
+  "verified_at": "2026-09-20T23:21:42.592951+09:00"
+}
