@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-23",
+  "target_date": "2026-09-23",
+  "status": "sent",
+  "content_sha256": "d9e645d6a00efc439830988694da627de7d5bf7450106dcae13c6cbe37ceaf56",
+  "selected_halls": [
+    {
+      "hall_id": "ebab90b121aa5a55",
+      "name": "エクス・アリーナ東京",
+      "category": "rainbow",
+      "score": 17.6,
+      "details": "旧イベ過去状況評価 +8.0 A 真骨超 A スロパチステーション来店取材(黒) ・ 鉄カバ探検隊SP(銀) ・ 旧イベ(毎月 23日) [八広駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ab15d6dc77c4909c8fbdad4",
+  "external_link": "https://twitter.com/rapomaru777/status/2102074902819881212",
+  "x_root_post_id": "2102074902819881212",
+  "sent_at": "2026-09-21T16:38:06.691Z",
+  "verified_at": "2026-09-22T01:38:07.140535+09:00"
+}
