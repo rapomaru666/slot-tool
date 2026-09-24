@@ -10,15 +10,21 @@
 <body>
   <main class="app">
     <header class="top">
-      <h1>アイムジャグラー<br><span>スランプグラフ📈</span></h1>
+      <h1>アイムジャグラー<br><span id="estimatedSetting" class="setting-badge">推定設定 —</span><br><span>スランプグラフ📈</span></h1>
       <p>42G / 50枚　BIG +252枚　REG +96枚</p>
     </header>
 
     <section class="graph-card">
       <div class="graph-head">
-        <div>
-          <div class="eyebrow">推定差枚グラフ</div>
-          <div id="currentDiff" class="current">0枚</div>
+        <div class="graph-head-info">
+          <div>
+            <div class="eyebrow">推定差枚グラフ</div>
+            <div id="currentDiff" class="current">0枚</div>
+          </div>
+          <div class="bonus-probs">
+            <div><span>BIG確率</span><strong id="bigProb">—</strong></div>
+            <div><span>REG確率</span><strong id="regProb">—</strong></div>
+          </div>
         </div>
         <button id="resetBtn" type="button" class="reset">全消去</button>
       </div>
@@ -46,7 +52,7 @@
       <div id="rows" class="rows"></div>
     </section>
 
-    <p class="note">※ 推定グラフです。通常時は42Gで50枚消費するものとして直線計算します。</p>
+    <p class="note">※ 推定グラフです。通常時は42Gで50枚消費するものとして直線計算します。推定設定はBIG・REG実績を設定別ボーナス確率と比較した参考値です。</p>
   </main>
   <script src="im-juggler-slump-app.js"></script>
 </body>
