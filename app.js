@@ -9,6 +9,7 @@ function existingNameKeys(){return new Set([...container.querySelectorAll('.tool
 
 function addMasterTool(row){
   const name=String(row.name||'').trim(); if(!name)return;
+  if(name.includes('ジャグラー'))return;
   const keys=existingNameKeys(); if(keys.has(keyName(name)))return;
   const normalized=keyName(name);
   const isMonkey=normalized===keyName('スマスロモンキーターンV');
