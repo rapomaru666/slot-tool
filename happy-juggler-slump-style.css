@@ -1,0 +1,124 @@
+:root{
+  color-scheme:dark;
+  --bg:#0b0d12;
+  --card:#151821;
+  --card2:#10131a;
+  --line:#2a2f3b;
+  --text:#f5f7fb;
+  --muted:#8d95a5;
+  --accent:#52e38b;
+  --danger:#ff6376;
+  --blue:#52a9ff;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#090b10 0%,#0f1219 38%,#0b0d12 100%);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif;
+}
+button,input,select{font:inherit}
+.app{width:min(100%,760px);margin:0 auto;padding:16px 12px 48px}
+.top{text-align:center;padding:5px 0 12px}
+.top h1{font-size:25px;line-height:1.15;margin:4px 0 8px;letter-spacing:.02em}
+.top h1 span{font-size:20px}
+.setting-badge{
+  display:inline-block;
+  margin:7px 0 5px;
+  padding:5px 12px;
+  border-radius:999px;
+  background:#20283a;
+  border:1px solid #35415a;
+  color:#ffd766;
+  font-size:16px!important;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+.top p{margin:0;color:var(--muted);font-size:13px;font-weight:700}
+.graph-card,.input-card{
+  background:rgba(21,24,33,.96);
+  border:1px solid #262b36;
+  border-radius:18px;
+  box-shadow:0 10px 28px rgba(0,0,0,.26);
+}
+.graph-card{padding:14px 12px 12px;margin-bottom:14px}
+.graph-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.graph-head-info{display:flex;align-items:flex-end;gap:20px;min-width:0}
+.bonus-probs{display:flex;gap:12px;padding-bottom:2px}
+.bonus-probs div{text-align:left}
+.bonus-probs span{display:block;color:var(--muted);font-size:10px;font-weight:800;white-space:nowrap}
+.bonus-probs strong{display:block;font-size:14px;margin-top:2px;white-space:nowrap;color:#f1f4f9}
+.eyebrow{font-size:12px;color:var(--muted);font-weight:800}
+.current{font-size:27px;font-weight:900;letter-spacing:-.03em;margin-top:2px}
+.current.plus{color:var(--accent)}
+.current.minus{color:var(--danger)}
+.reset{
+  border:1px solid #373d4a;
+  background:#1e222d;
+  color:#dce1ea;
+  border-radius:10px;
+  padding:8px 12px;
+  font-size:12px;
+  font-weight:800;
+}
+.canvas-wrap{
+  position:relative;
+  width:100%;
+  height:280px;
+  border-radius:12px;
+  overflow:hidden;
+  background:#0d1016;
+  border:1px solid #242a35;
+}
+canvas{display:block;width:100%;height:100%}
+.empty{
+  position:absolute;inset:0;
+  display:grid;place-items:center;
+  color:#697284;font-size:13px;font-weight:800;
+  pointer-events:none;
+}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-top:10px}
+.stats div{text-align:center;background:#0f1218;border:1px solid #222733;border-radius:10px;padding:7px 2px}
+.stats span{display:block;color:var(--muted);font-size:10px;font-weight:800;margin-bottom:2px}
+.stats strong{display:block;font-size:12px;white-space:nowrap}
+.input-card{padding:12px 10px 14px}
+.input-title{display:flex;align-items:end;justify-content:space-between;padding:2px 4px 10px}
+.input-title h2{font-size:17px;margin:0}
+.input-title span{font-size:11px;color:var(--muted);font-weight:800}
+.row-head,.history-row{
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr) 116px;
+  gap:8px;
+  align-items:center;
+}
+.row-head{padding:0 5px 6px;color:var(--muted);font-size:10px;font-weight:800}
+.row-head span:nth-child(2),.row-head span:nth-child(3){text-align:center}
+.history-row{padding:6px 5px;border-top:1px solid #242833}
+.history-row:first-child{border-top:0}
+.row-no{text-align:center;color:#727b8c;font-size:12px;font-weight:900}
+.game-input,.bonus-select{
+  width:100%;
+  height:43px;
+  border:1px solid #353b48;
+  background:#0d1016;
+  color:#fff;
+  border-radius:9px;
+  outline:none;
+  font-weight:900;
+}
+.game-input{padding:0 10px;text-align:right;font-size:16px}
+.game-input::placeholder{color:#545c6b}
+.game-input:focus,.bonus-select:focus{border-color:var(--blue);box-shadow:0 0 0 2px rgba(82,169,255,.14)}
+.bonus-select{padding:0 8px;font-size:14px;text-align:center}
+.note{color:#70798a;font-size:11px;line-height:1.55;margin:11px 5px 0}
+@media(max-width:420px){
+  .app{padding-left:8px;padding-right:8px}
+  .canvas-wrap{height:250px}
+  .stats{gap:3px}
+  .stats strong{font-size:11px}
+  .graph-head-info{gap:12px}
+  .bonus-probs{gap:8px}
+  .bonus-probs strong{font-size:12px}
+  .row-head,.history-row{grid-template-columns:36px minmax(0,1fr) 108px;gap:6px}
+}
