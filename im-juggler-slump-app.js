@@ -31,6 +31,7 @@
         <div class="row-no">${i}</div>
         <input class="game-input" type="number" min="0" step="1" inputmode="numeric" placeholder="G数" aria-label="${i}回目 ゲーム数">
         <select class="bonus-select" aria-label="${i}回目 ボーナス種類">
+          <option value="">なし</option>
           <option value="BIG">BIG</option>
           <option value="REG">REG</option>
         </select>
@@ -63,13 +64,15 @@
       min = Math.min(min, diff);
       max = Math.max(max, diff);
 
-      diff += PAYOUT[type];
-      points.push({ x: totalGames, y: diff });
-      if (type === "BIG") big++;
-      else reg++;
+      if (type === "BIG" || type === "REG") {
+        diff += PAYOUT[type];
+        points.push({ x: totalGames, y: diff });
+        if (type === "BIG") big++;
+        else reg++;
 
-      min = Math.min(min, diff);
-      max = Math.max(max, diff);
+        min = Math.min(min, diff);
+        max = Math.max(max, diff);
+      }
     }
 
     return { points, totalGames, diff, big, reg, max, min };
@@ -201,7 +204,7 @@
 
   $("resetBtn").addEventListener("click", () => {
     rowsEl.querySelectorAll(".game-input").forEach(el => el.value = "");
-    rowsEl.querySelectorAll(".bonus-select").forEach(el => el.value = "BIG");
+    rowsEl.querySelectorAll(".bonus-select").forEach(el => el.value = "");
     update();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
