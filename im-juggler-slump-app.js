@@ -6,6 +6,14 @@
   const GAMES_PER_50 = 42;
   const COST_PER_GAME = COINS_PER_BASE / GAMES_PER_50;
   const PAYOUT = { BIG: 252, REG: 96 };
+  const SETTING_RATES = [
+    { setting: 1, big: 273.1, reg: 439.8 },
+    { setting: 2, big: 269.7, reg: 399.6 },
+    { setting: 3, big: 269.7, reg: 331.0 },
+    { setting: 4, big: 259.0, reg: 315.1 },
+    { setting: 5, big: 259.0, reg: 255.0 },
+    { setting: 6, big: 255.0, reg: 255.0 }
+  ];
 
   const rowsEl = document.getElementById("rows");
   const canvas = document.getElementById("slumpChart");
@@ -19,8 +27,35 @@
   const currentDiffEl = $("currentDiff");
   const maxPlusEl = $("maxPlus");
   const maxMinusEl = $("maxMinus");
+  const bigProbEl = $("bigProb");
+  const regProbEl = $("regProb");
+  const estimatedSettingEl = $("estimatedSetting");
 
   const fmt = n => Math.round(n).toLocaleString("ja-JP");
+
+  function formatProb(totalGames, count) {
+    if (!totalGames || !count) return "—";
+    return "1/" + (totalGames / count).toFixed(1);
+  }
+
+  function estimateSetting(totalGames, big, reg) {
+    if (!totalGames) return null;
+    const none = Math.max(0, totalGames - big - reg);
+    let best = null;
+
+    for (const row of SETTING_RATES) {
+      const pBig = 1 / row.big;
+      const pReg = 1 / row.reg;
+      const pNone = Math.max(1e-12, 1 - pBig - pReg);
+      const score =
+        big * Math.log(pBig) +
+        reg * Math.log(pReg) +
+        none * Math.log(pNone);
+
+      if (!best || score > best.score) best = { setting: row.setting, score };
+    }
+    return best ? best.setting : null;
+  }
 
   function makeRows() {
     const frag = document.createDocumentFragment();
@@ -194,6 +229,10 @@
     currentDiffEl.classList.toggle("minus", data.diff < 0);
     maxPlusEl.textContent = (data.max > 0 ? "+" : "") + fmt(data.max) + "枚";
     maxMinusEl.textContent = fmt(data.min) + "枚";
+    bigProbEl.textContent = formatProb(data.totalGames, data.big);
+    regProbEl.textContent = formatProb(data.totalGames, data.reg);
+    const setting = estimateSetting(data.totalGames, data.big, data.reg);
+    estimatedSettingEl.textContent = setting ? "推定設定 " + setting : "推定設定 —";
     draw(data);
   }
 
