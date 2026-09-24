@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#111318">
+  <title>アイムジャグラー スランプグラフ</title>
+  <link rel="stylesheet" href="im-juggler-slump-style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>アイムジャグラー<br><span>スランプグラフ📈</span></h1>
+      <p>42G / 50枚　BIG +252枚　REG +96枚</p>
+    </header>
+
+    <section class="graph-card">
+      <div class="graph-head">
+        <div>
+          <div class="eyebrow">推定差枚グラフ</div>
+          <div id="currentDiff" class="current">0枚</div>
+        </div>
+        <button id="resetBtn" type="button" class="reset">全消去</button>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="slumpChart" aria-label="スランプグラフ"></canvas>
+        <div id="emptyState" class="empty">下にゲーム数とボーナスを入力</div>
+      </div>
+      <div class="stats">
+        <div><span>総G</span><strong id="totalGames">0G</strong></div>
+        <div><span>BIG</span><strong id="bigCount">0</strong></div>
+        <div><span>REG</span><strong id="regCount">0</strong></div>
+        <div><span>最大+</span><strong id="maxPlus">0枚</strong></div>
+        <div><span>最大−</span><strong id="maxMinus">0枚</strong></div>
+      </div>
+    </section>
+
+    <section class="input-card">
+      <div class="input-title">
+        <h2>ボーナス履歴</h2>
+        <span>最大100件</span>
+      </div>
+      <div class="row-head">
+        <span>No.</span><span>ゲーム数</span><span>種類</span>
+      </div>
+      <div id="rows" class="rows"></div>
+    </section>
+
+    <p class="note">※ 推定グラフです。通常時は42Gで50枚消費するものとして直線計算します。</p>
+  </main>
+  <script src="im-juggler-slump-app.js"></script>
+</body>
+</html>
