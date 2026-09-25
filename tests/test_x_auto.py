@@ -1,17 +1,24 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 import tempfile
 import unittest
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from unittest.mock import patch
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "x-auto" / "scripts"))
 
-from buffer_publish_thread import fit_post, structured_halls, validate_evening_payload
+from buffer_publish_thread import (
+    determine_target_date as determine_publish_target_date,
+    fit_post,
+    structured_halls,
+    validate_evening_payload,
+)
 from common.buffer_client import BufferClient
 from common.publication_state import (
     atomic_write_json,
@@ -27,6 +34,9 @@ from common.x_text import (
     x_weighted_length,
 )
 from generate_tomorrow_thread import build_thread
+from enforce_evening_public_rules import (
+    determine_target_date as determine_enforcement_target_date,
+)
 from morning_rainbow_report import fit_result_post
 
 
@@ -129,6 +139,40 @@ class StructuredDataTests(unittest.TestCase):
             "12345",
         )
         self.assertIsNone(extract_x_post_id("https://example.com/status/12345"))
+
+
+class TargetDateTests(unittest.TestCase):
+    def test_delayed_schedule_does_not_jump_ahead_after_midnight_jst(self):
+        now_utc = datetime(2026, 9, 24, 15, 30, tzinfo=timezone.utc)
+        now_jst = now_utc.astimezone(timezone(timedelta(hours=9)))
+
+        with patch.dict(os.environ, {"GITHUB_EVENT_NAME": "schedule"}, clear=True):
+            self.assertEqual(
+                determine_enforcement_target_date(now_jst, now_utc),
+                "2026-09-25",
+            )
+            self.assertEqual(
+                determine_publish_target_date(now_jst, now_utc),
+                "2026-09-25",
+            )
+
+    def test_explicit_target_date_still_wins_for_safe_manual_recovery(self):
+        now_utc = datetime(2026, 9, 24, 15, 30, tzinfo=timezone.utc)
+        now_jst = now_utc.astimezone(timezone(timedelta(hours=9)))
+        env = {
+            "GITHUB_EVENT_NAME": "workflow_dispatch",
+            "TARGET_DATE": "2026-09-24",
+        }
+
+        with patch.dict(os.environ, env, clear=True):
+            self.assertEqual(
+                determine_enforcement_target_date(now_jst, now_utc),
+                "2026-09-24",
+            )
+            self.assertEqual(
+                determine_publish_target_date(now_jst, now_utc),
+                "2026-09-24",
+            )
 
 
 class FakeBufferClient(BufferClient):

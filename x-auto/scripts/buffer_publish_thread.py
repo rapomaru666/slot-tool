@@ -42,14 +42,22 @@ EXPANSION_LINES = [
 FORBIDDEN_PATTERNS = ("確定", "必ず", "間違いない")
 
 
-def determine_target_date(now_jst: datetime) -> str:
-    if os.environ.get("GITHUB_EVENT_NAME") == "push":
+def determine_target_date(now_jst: datetime, now_utc: datetime | None = None) -> str:
+    now_utc = now_utc or now_jst.astimezone(timezone.utc)
+    event_name = os.environ.get("GITHUB_EVENT_NAME")
+    if event_name == "push":
         override = Path("x-auto/publish-target.txt")
         if override.exists() and override.read_text(encoding="utf-8").strip():
             return override.read_text(encoding="utf-8").strip().splitlines()[0].strip()
         return now_jst.date().isoformat()
     override = os.environ.get("TARGET_DATE", "").strip()
-    return override or (now_jst.date() + timedelta(days=1)).isoformat()
+    if override:
+        return override
+    if event_name == "schedule":
+        # Keep the target tied to the UTC schedule day even when GitHub starts
+        # the run after midnight JST.
+        return (now_utc.date() + timedelta(days=1)).isoformat()
+    return (now_jst.date() + timedelta(days=1)).isoformat()
 
 
 def fit_post(text: str, label: str) -> str:
@@ -194,7 +202,8 @@ def write_job_summary(result: dict) -> None:
 
 
 def main() -> None:
-    target_date = determine_target_date(datetime.now(JST))
+    now_utc = datetime.now(timezone.utc)
+    target_date = determine_target_date(now_utc.astimezone(JST), now_utc)
     thread_path = Path(f"x-auto/thread-{target_date}.json")
     if not thread_path.exists():
         raise RuntimeError(f"Required thread file is missing: {thread_path}")

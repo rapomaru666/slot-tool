@@ -9,15 +9,27 @@ from pathlib import Path
 JST = timezone(timedelta(hours=9))
 
 
-def determine_target_date() -> str:
-    now_jst = datetime.now(JST)
-    if os.environ.get("GITHUB_EVENT_NAME") == "push":
+def determine_target_date(
+    now_jst: datetime | None = None,
+    now_utc: datetime | None = None,
+) -> str:
+    now_utc = now_utc or datetime.now(timezone.utc)
+    now_jst = now_jst or now_utc.astimezone(JST)
+    event_name = os.environ.get("GITHUB_EVENT_NAME")
+    if event_name == "push":
         override = Path("x-auto/publish-target.txt")
         if override.exists() and override.read_text(encoding="utf-8").strip():
             return override.read_text(encoding="utf-8").strip().splitlines()[0].strip()
         return now_jst.date().isoformat()
     override = os.environ.get("TARGET_DATE", "").strip()
-    return override or (now_jst.date() + timedelta(days=1)).isoformat()
+    if override:
+        return override
+    if event_name == "schedule":
+        # The workflow is scheduled before UTC midnight. GitHub can start a
+        # scheduled run hours late, after midnight in Japan. Anchor the target
+        # to the UTC schedule day so a delayed run does not jump ahead a day.
+        return (now_utc.date() + timedelta(days=1)).isoformat()
+    return (now_jst.date() + timedelta(days=1)).isoformat()
 
 
 def sanitize_public_text(text: str) -> str:
