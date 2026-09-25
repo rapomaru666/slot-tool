@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-26",
+  "target_date": "2026-09-26",
+  "status": "sent",
+  "content_sha256": "b8db88bd20bfb39b043a20baa4200baf7afb59cadf134c299b5ff3eb3f2e7806",
+  "selected_halls": [
+    {
+      "hall_id": "f54eb4b235ab6324",
+      "name": "ジャムフレンドクラブ朝霞",
+      "category": "rainbow",
+      "score": 17.4,
+      "details": "いそまる来店実践 S ナビ子AI予想【差枚プラス】★5 (6のつく日) 分岐18/18(100%) 平均 +682 枚 平均6,559G 2026/09/16( 水 ) 148 / 274台 平均 6,188G 平均 +782 枚 2026/09/06( 日 ) 146 / 274台 平均 6,088G 平均 +642 枚 2026/08/26( 水 ) 137 / 274台 平均 6,870G 平均 +710 枚 S ナビ子AI予想【機種仕掛け】★5+ (6のつく日) C サンダー・ファイヤー・パワー・ジャム",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ab694a30e2bb07d6340f039",
+  "external_link": "https://twitter.com/rapomaru777/status/2103508573745553806",
+  "x_root_post_id": "2103508573745553806",
+  "sent_at": "2026-09-25T15:35:00.321Z",
+  "verified_at": "2026-09-26T00:35:00.930615+09:00"
+}
