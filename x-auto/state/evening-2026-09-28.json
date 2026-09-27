@@ -1,0 +1,30 @@
+{
+  "publication_key": "evening:2026-09-28",
+  "target_date": "2026-09-28",
+  "status": "sent",
+  "content_sha256": "f726ef4ab48eaa7ffccd0af8b4140ba80b5ffcae860d79971cd9605b75f1b77b",
+  "selected_halls": [
+    {
+      "hall_id": "d53064a6f897a076",
+      "name": "アイランド秋葉原",
+      "category": "rainbow",
+      "score": 17.4,
+      "details": "ナビ子AI予想【差枚プラス】★5 (8のつく日) 分岐16/18(88.9%) 平均 +254 枚 平均6,666G 2026/09/18( 金 ) 171 / 395台 平均 6,704G 平均 +283 枚 2026/09/08( 火 ) 159 / 395台 平均 6,329G 平均 -24 枚 2026/08/28( 金 ) 176 / 395台 平均 6,551G 平均 +444 枚 A 感激 C 新台入替(P-WORLD引用) ※『10:00|e 魔法少女まどか☆マギカ3 時間遡行~始まりの願い~ / スマスロ マギアレコード 魔法少女まどか☆マギカ外伝 ...他2機種』 [秋葉原駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall_id": "04950fcd539383d9",
+      "name": "楽園大宮店",
+      "category": "rainbow",
+      "score": 16.7,
+      "details": "スロパチステーション来店取材(紫)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 3,
+  "buffer_post_id": "6ab9343570ec211d1d1ce557",
+  "external_link": "https://twitter.com/rapomaru777/status/2104229666647155083",
+  "x_root_post_id": "2104229666647155083",
+  "sent_at": "2026-09-27T15:20:22.500Z",
+  "verified_at": "2026-09-28T00:20:22.788570+09:00"
+}
