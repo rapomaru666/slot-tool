@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-09-30",
+  "target_date": "2026-09-30",
+  "status": "sent",
+  "content_sha256": "c176698b549670c743cb03d62391b0dda9898011c73d4739fdbec136463bab9a",
+  "selected_halls": [
+    {
+      "hall_id": "ebab90b121aa5a55",
+      "name": "エクス・アリーナ東京",
+      "category": "rainbow",
+      "score": 16.4,
+      "details": "ナビ子AI予想【差枚プラス】★5 (0のつく日) 分岐14/18(77.8%) 平均 +176 枚 平均6,083G 2026/09/20( 日 ) 226 / 511台 平均 6,396G 平均 +89 枚 2026/09/10( 木 ) 200 / 511台 平均 5,070G 平均 -5 枚 2026/08/30( 日 ) 222 / 511台 平均 6,253G 平均 -136 枚 S ナビ子AI予想【機種仕掛け】★5+ (0のつく日) [八広駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6abbe9c52c9e085adf6b3ed6",
+  "external_link": "https://twitter.com/rapomaru777/status/2104974374964998610",
+  "x_root_post_id": "2104974374964998610",
+  "sent_at": "2026-09-29T16:39:34.558Z",
+  "verified_at": "2026-09-30T01:39:35.133441+09:00"
+}
