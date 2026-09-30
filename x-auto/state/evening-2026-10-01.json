@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-01",
+  "target_date": "2026-10-01",
+  "status": "sent",
+  "content_sha256": "d3b3702a41e9756add9ef33c61d80e323e4117d5fc4f90df9f46bf3e110de6cc",
+  "selected_halls": [
+    {
+      "hall_id": "4bf8c4b18adae9a0",
+      "name": "ピーアーク相模大野",
+      "category": "rainbow",
+      "score": 17.1,
+      "details": "スロパチガール来店S ・ 月初ポスター掲載 ・ オススメ機種掲載 ※『エヴァ・喰種・リコリスリコイル』",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6abd3950b5b6f849a57ffafb",
+  "external_link": "https://twitter.com/rapomaru777/status/2105334660473434594",
+  "x_root_post_id": "2105334660473434594",
+  "sent_at": "2026-09-30T16:31:13.371Z",
+  "verified_at": "2026-10-01T01:31:13.924257+09:00"
+}
