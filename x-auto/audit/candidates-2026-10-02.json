@@ -1,0 +1,129 @@
+{
+  "target_date": "2026-10-02",
+  "generated_at_jst": "2026-10-01T01:02:39.336516+09:00",
+  "source_url": "https://hall-navi.com/osusume_list?kbn=sche_yosou&ken=all&ymd=2026-10-02",
+  "thresholds": {
+    "rainbow_min": 16.0,
+    "trophy_min": 14.0
+  },
+  "minimum_post_count": 1,
+  "post_weighted_chars": {
+    "min": 200,
+    "max": 250
+  },
+  "candidate_count": 16,
+  "candidates": [
+    {
+      "hall": "パラッツォ鳩ヶ谷店",
+      "score": 16.7,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (2のつく日) ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "エクス・アリーナ柏",
+      "score": 16.1,
+      "rank": "S",
+      "details": "スロパチガール来店S ・ 百戦錬磨X",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "PIA町田新館",
+      "score": 15.1,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 C ナビ子AI独自予想 N +4.0",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パラッツォ三郷中央店",
+      "score": 14.8,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (2のつく日) ・ 特定日 ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "新！ガーデン北戸田駅前",
+      "score": 14.6,
+      "rank": "A",
+      "details": "きむちゃんねる 番組収録 ※『「金欠！大運動会 × 花組 大運動会」/松本バッチ,くり,まりも,JIRO,青山りょう,神谷玲子,ayasi,水樹あや』 B 四賢者 ・ スロトレ調査団 全員集合来店取材 ※『初』 ・ 旧イベ過去状況評価 +2.5 ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ジアス大船",
+      "score": 14.2,
+      "rank": "S",
+      "details": "紅の龍 B スロミュー調査隊応援ホール ・ クロロ調査隊チーム関東喰種Ｐ",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ビックディッパー木場店",
+      "score": 13.9,
+      "rank": "A",
+      "details": "ナビ子AI予想【差枚プラス】★1 (2のつく日) 分岐4/6(66.7%) 平均 +73 枚 平均5,465G 2026/09/22( 火 ) 54 / 123台 平均 4,928G 平均 -63 枚 2026/09/12( 土 ) 46 / 123台 平均 5,280G 平均 +64 枚 2026/09/02( 水 ) 53 / 123台 平均 5,342G 平均 +421 枚 [木場駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "スーパーD'ステーション 錦糸町店",
+      "score": 13.4,
+      "rank": "A",
+      "details": "スロパチステーション来店取材(黒) [錦糸町駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "アサヒ2鹿島田店",
+      "score": 13.2,
+      "rank": "S",
+      "details": "ナビ子AI予想【差枚プラス】★5 (2のつく日) 分岐14/18(77.8%) 平均 +188 枚 平均7,019G 2026/09/22( 火 ) 48 / 104台 平均 7,740G 平均 +587 枚 2026/09/12( 土 ) 47 / 104台 平均 7,460G 平均 +145 枚 2026/09/02( 水 ) 49 / 104台 平均 6,748G 平均 +529 枚 B とがる！ B あいみん来店 B あいみん取材 B アニバーサリーエンジェル取材 ※『スターズ【SS】』",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パーラースーパーセブン新高円寺店",
+      "score": 12.2,
+      "rank": "B",
+      "details": "ありまゆま来店 [新高円寺駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "プラザDo富津店",
+      "score": 11.6,
+      "rank": "B",
+      "details": "でちゃう!取材_（Ver.4）",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パラッツォ馬橋中根長津店",
+      "score": 11.5,
+      "rank": "A",
+      "details": "天草極上ホール応援団来店 B PFちゅんげー調査隊来店 B ナビ子AI予想【機種仕掛け】★2 (2のつく日) C スロフェ C 厳選ホール C 調査団・廻 来店取材 ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "せんげん台DUO",
+      "score": 11.1,
+      "rank": "A",
+      "details": "ナビ子AI予想【機種仕掛け】★3 (2のつく日) B 超キノコ狩り2nd ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "スーパーハリウッド",
+      "score": 10.4,
+      "rank": "A",
+      "details": "でちゃう！取材（金）",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "キコーナ平井店",
+      "score": 9.9,
+      "rank": "A",
+      "details": "ミリテレ実践来店 ※『てんてん』 [平井駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パラッツォ秦野渋沢店",
+      "score": 9.1,
+      "rank": "A",
+      "details": "スロトレ調査団 ハーフテン C 2のつく日 ・ 旧イベ過去状況評価 +0.5 ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    }
+  ]
+}
