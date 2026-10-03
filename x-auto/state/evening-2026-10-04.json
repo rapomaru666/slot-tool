@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-04",
+  "target_date": "2026-10-04",
+  "status": "sent",
+  "content_sha256": "e4bbdb33f742d459e7aee558a2a5800434b62d1240375b48563febd269525445",
+  "selected_halls": [
+    {
+      "hall_id": "682c545ab5a84829",
+      "name": "エスパス日拓新宿歌舞伎町店",
+      "category": "rainbow",
+      "score": 17.1,
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (4のつく日)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ac117b6814d657011c961d4",
+  "external_link": "https://twitter.com/rapomaru777/status/2106398090030612564",
+  "x_root_post_id": "2106398090030612564",
+  "sent_at": "2026-10-03T14:56:54.626Z",
+  "verified_at": "2026-10-03T23:56:55.268716+09:00"
+}
