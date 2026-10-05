@@ -294,6 +294,11 @@
       "buffer_post_id": "6ac1f1c0814d657011e61875",
       "sent_at": "2026-10-04T06:27:12.716Z",
       "external_link": "https://twitter.com/renatotaikun/status/2106632208840524215"
+    },
+    "2026-10-05": {
+      "status": "skipped",
+      "reason": "occasional_rest_day",
+      "planned_time_jst": "10:04"
     }
   }
 }
