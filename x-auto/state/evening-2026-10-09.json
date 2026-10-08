@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-09",
+  "target_date": "2026-10-09",
+  "status": "sent",
+  "content_sha256": "adce7efc582f0e89f6f650851c0c19e26ae7535b48da11a3afac76ec31457e48",
+  "selected_halls": [
+    {
+      "hall_id": "ad7b9c09ccddd18a",
+      "name": "ビックマーチひたちなか店",
+      "category": "rainbow",
+      "score": 16.8,
+      "details": "ナビ子AI予想【差枚プラス】★5 (9のつく日) 分岐15/18(83.3%) 平均 +171 枚 平均5,747G 2026/09/29( 火 ) 238 / 584台 平均 5,049G 平均 +49 枚 2026/09/19( 土 ) 233 / 589台 平均 6,195G 平均 -187 枚 2026/09/09( 水 ) 263 / 589台 平均 6,561G 平均 +299 枚 S ナビ子AI予想【機種仕掛け】★5+ (9のつく日)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ac7d4a5357f26ef519965b0",
+  "external_link": "https://twitter.com/rapomaru777/status/2108250223726203305",
+  "x_root_post_id": "2108250223726203305",
+  "sent_at": "2026-10-08T17:36:37.745Z",
+  "verified_at": "2026-10-09T02:36:38.351296+09:00"
+}
