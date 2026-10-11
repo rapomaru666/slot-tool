@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-12",
+  "target_date": "2026-10-12",
+  "status": "sent",
+  "content_sha256": "0ca8ce04b6ee350217a0ed8f2d0c05f8087b6d12ba47b4f426d3bd0a6f56f1f5",
+  "selected_halls": [
+    {
+      "hall_id": "5295c850244222f7",
+      "name": "新！ガーデン北戸田駅前",
+      "category": "rainbow",
+      "score": 17.0,
+      "details": "天草ヤスヲ来店 B くろむ来店 B 四賢者 ・ スロトレ調査団 全員集合来店取材 ・ 旧イベ過去状況評価 +2.5 ・ 旧イベ(2のつく日)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6acbb88cd9cab260a703892d",
+  "external_link": "https://twitter.com/rapomaru777/status/2109319568912957543",
+  "x_root_post_id": "2109319568912957543",
+  "sent_at": "2026-10-11T16:25:49.496Z",
+  "verified_at": "2026-10-12T01:25:50.112571+09:00"
+}
