@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-14",
+  "target_date": "2026-10-14",
+  "status": "sent",
+  "content_sha256": "5b770bdb9aa709440eb84218f2595666b931f7f9f453fb21f8b081281b03b12f",
+  "selected_halls": [
+    {
+      "hall_id": "d53064a6f897a076",
+      "name": "アイランド秋葉原",
+      "category": "rainbow",
+      "score": 16.6,
+      "details": "ナビ子AI予想【差枚プラス】★5 (4のつく日) 分岐16/18(88.9%) 平均 +251 枚 平均6,703G 2026/10/04( 日 ) 155 / 395台 平均 6,872G 平均 +71 枚 2026/09/24( 木 ) 180 / 395台 平均 7,213G 平均 +464 枚 2026/09/14( 月 ) 176 / 395台 平均 6,499G 平均 +332 枚 S ナビ子AI予想【機種仕掛け】★5+ (4のつく日) ・ 推し機種が一日中打ちたい！取材 [秋葉原駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ace6eff7f833fd8d30e08ad",
+  "external_link": "https://twitter.com/rapomaru777/status/2110065225940468116",
+  "x_root_post_id": "2110065225940468116",
+  "sent_at": "2026-10-13T17:48:48.052Z",
+  "verified_at": "2026-10-14T02:48:48.588789+09:00"
+}
