@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-18",
+  "target_date": "2026-10-18",
+  "status": "sent",
+  "content_sha256": "2efcf660aca11b926d14ffb0a6d749ccc384987c69f13398c6a01966896cfeb2",
+  "selected_halls": [
+    {
+      "hall_id": "4bf8c4b18adae9a0",
+      "name": "ピーアーク相模大野",
+      "category": "rainbow",
+      "score": 17.5,
+      "details": "ナビ子AI予想【機種仕掛け】★5 (8のつく日) A すろぱちガール来店P C サヤカ(ゆるバナ)来店 C アナスロ予測(紫) C アナスロ予測(赤) ・ 8のつく日 ・ オススメ機種掲載 ※『エヴァ・喰種・リコリスリコイル』",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ad37ecd0a208cb323224cd1",
+  "external_link": "https://twitter.com/rapomaru777/status/2111456587885768787",
+  "x_root_post_id": "2111456587885768787",
+  "sent_at": "2026-10-17T13:57:34.535Z",
+  "verified_at": "2026-10-17T22:57:35.140391+09:00"
+}
