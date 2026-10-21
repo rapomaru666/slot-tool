@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-22",
+  "target_date": "2026-10-22",
+  "status": "sent",
+  "content_sha256": "ab0a23d6f0520c2d0235d99afd0456bf4d5ad9e6d22291422a3a5aade63ad101",
+  "selected_halls": [
+    {
+      "hall_id": "682c545ab5a84829",
+      "name": "エスパス日拓新宿歌舞伎町店",
+      "category": "rainbow",
+      "score": 17.6,
+      "details": "ナビ子AI予想【差枚プラス】★3 (ゾロ目の日) 分岐10/12(83.3%) 平均 +92 枚 平均5,671G 2026/10/11( 日 ) 306 / 749台 平均 6,058G 平均 -77 枚 2026/09/22( 火 ) 348 / 749台 平均 6,716G 平均 +166 枚 2026/09/11( 金 ) 322 / 749台 平均 5,099G 平均 +84 枚 A 撃パス B 極上取材(まぐろくん)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ad8dca9d7ec68457b6be0fa",
+  "external_link": "https://twitter.com/rapomaru777/status/2112931758312239426",
+  "x_root_post_id": "2112931758312239426",
+  "sent_at": "2026-10-21T15:39:22.589Z",
+  "verified_at": "2026-10-22T00:39:23.177491+09:00"
+}
