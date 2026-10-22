@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-23",
+  "target_date": "2026-10-23",
+  "status": "sent",
+  "content_sha256": "3780617fbf45a55cc5dd34a06ed9332cb07c4cd157f407916831ccdde627f3d2",
+  "selected_halls": [
+    {
+      "hall_id": "4bf8c4b18adae9a0",
+      "name": "ピーアーク相模大野",
+      "category": "rainbow",
+      "score": 17.6,
+      "details": "スロパチガール来店S ・ 挑戦 ・ サミー総力取材 ・ オススメ機種掲載 ※『エヴァ・喰種・リコリスリコイル』 ・ 近隣対抗ポスター掲載",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ada2e8da6a09108d273467d",
+  "external_link": "https://twitter.com/rapomaru777/status/2113294561556496657",
+  "x_root_post_id": "2113294561556496657",
+  "sent_at": "2026-10-22T15:41:01.681Z",
+  "verified_at": "2026-10-23T00:41:02.202597+09:00"
+}
