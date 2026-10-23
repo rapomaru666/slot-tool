@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-24",
+  "target_date": "2026-10-24",
+  "status": "sent",
+  "content_sha256": "2c2eae2fdadf8e5b9e38a38813683918b74770d5862eabc2fceade3d2c525ed9",
+  "selected_halls": [
+    {
+      "hall_id": "04138e2cd3c7c38f",
+      "name": "パラッツォ鳩ヶ谷店",
+      "category": "rainbow",
+      "score": 17.5,
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (毎週 土曜日) A マッティー実践来店 B 極上マッティー調査隊潜入取材 C 調査団・廻 来店取材",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6adb7d536bf37011a381918c",
+  "external_link": "https://twitter.com/rapomaru777/status/2113654025350426627",
+  "x_root_post_id": "2113654025350426627",
+  "sent_at": "2026-10-23T15:29:24.488Z",
+  "verified_at": "2026-10-24T00:29:25.097980+09:00"
+}
