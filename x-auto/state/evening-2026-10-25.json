@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-25",
+  "target_date": "2026-10-25",
+  "status": "sent",
+  "content_sha256": "7bc848ad7a67949a8cfe24de8fb48ffa83f0e365ca68e74f2487cc2e793b19a5",
+  "selected_halls": [
+    {
+      "hall_id": "04138e2cd3c7c38f",
+      "name": "パラッツォ鳩ヶ谷店",
+      "category": "rainbow",
+      "score": 17.7,
+      "details": "ｙｔｒ来店実践 S ナビ子AI予想【機種仕掛け】★5 (毎週 日曜日) B 月周年日 ※『毎月25日』",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6adcbbabe4be8a4d86616a91",
+  "external_link": "https://twitter.com/rapomaru777/status/2113995842021478742",
+  "x_root_post_id": "2113995842021478742",
+  "sent_at": "2026-10-24T14:07:39.872Z",
+  "verified_at": "2026-10-24T23:07:40.462956+09:00"
+}
