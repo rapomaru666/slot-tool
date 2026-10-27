@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-28",
+  "target_date": "2026-10-28",
+  "status": "sent",
+  "content_sha256": "2f8a59a1ae298ea5c782f4103b83b3263136a6cf968920afc5fafe730fc13fdc",
+  "selected_halls": [
+    {
+      "hall_id": "04138e2cd3c7c38f",
+      "name": "パラッツォ鳩ヶ谷店",
+      "category": "rainbow",
+      "score": 17.0,
+      "details": "ナビ子AI予想【機種仕掛け】★5 (8のつく日) C 8のつく日",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ae0cb381a002b267294ebe1",
+  "external_link": "https://twitter.com/rapomaru777/status/2115112052972822562",
+  "x_root_post_id": "2115112052972822562",
+  "sent_at": "2026-10-27T16:03:05.328Z",
+  "verified_at": "2026-10-28T01:03:05.958939+09:00"
+}
