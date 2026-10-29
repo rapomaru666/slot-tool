@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-10-30",
+  "target_date": "2026-10-30",
+  "status": "sent",
+  "content_sha256": "9784c9cf7b519bc1e78d995211ae671db136e46777ba3fd5922752ed9f4ba3fd",
+  "selected_halls": [
+    {
+      "hall_id": "ebab90b121aa5a55",
+      "name": "エクス・アリーナ東京",
+      "category": "rainbow",
+      "score": 16.5,
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (0のつく日) ・ 旧イベ(0のつく日) [八広駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ae37ceeae648e2953ec94a8",
+  "external_link": "https://twitter.com/rapomaru777/status/2115852623056097430",
+  "x_root_post_id": "2115852623056097430",
+  "sent_at": "2026-10-29T17:05:50.991Z",
+  "verified_at": "2026-10-30T02:05:51.652621+09:00"
+}
