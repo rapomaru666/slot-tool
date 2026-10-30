@@ -1,0 +1,129 @@
+{
+  "target_date": "2026-11-01",
+  "generated_at_jst": "2026-10-31T01:10:02.372946+09:00",
+  "source_url": "https://hall-navi.com/osusume_list?kbn=sche_yosou&ken=all&ymd=2026-11-01",
+  "thresholds": {
+    "rainbow_min": 16.0,
+    "trophy_min": 14.0
+  },
+  "minimum_post_count": 1,
+  "post_weighted_chars": {
+    "min": 200,
+    "max": 250
+  },
+  "candidate_count": 16,
+  "candidates": [
+    {
+      "hall": "ピーアーク相模大野",
+      "score": 17.6,
+      "rank": "S",
+      "details": "スロパチガール来店S A タレント・ライター ※『バケゆか来店』 A すろぱちガール来店P ・ 月初ポスター掲載 ・ オススメ機種掲載 ※『エヴァ・喰種』",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パラッツォ鳩ヶ谷店",
+      "score": 17.2,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 日曜日) C ビンゴ8 来店取材(スロ) ・ ビンゴ8 来店取材(パチ)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "エクス・アリーナ東京",
+      "score": 16.6,
+      "rank": "S",
+      "details": "スロパチステーション来店取材(オレンジ) S ナビ子AI予想【機種仕掛け】★5+ (毎週 日曜日) [八広駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "アイランド足利店",
+      "score": 16.4,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (毎週 日曜日) A でちゃう編集部来店(ピスタチオ田中) C でちゃう!取材_（禅・超）",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "メガフェイス1180座間",
+      "score": 16.1,
+      "rank": "S",
+      "details": "スロパチガール来店S S ナビ子AI予想【機種仕掛け】★5 ・ 挑戦",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ水戸赤塚",
+      "score": 15.9,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (1のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "新！ガーデン戸塚",
+      "score": 15.8,
+      "rank": "S",
+      "details": "スロパチステーション来店取材(オレンジ) ・ Let'sGO取材",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "新！ガーデン八潮店",
+      "score": 15.5,
+      "rank": "S",
+      "details": "天草ヤスヲ来店 C えりな来店 ・ 連日リザルト ・ 週刊りみっとくん",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ柏店",
+      "score": 15.4,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (1のつく日) B ゆうちゃろ来店 ・ ニャンギラス賞品入荷",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ビックマーチ宇都宮店",
+      "score": 15.2,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 日曜日) A ヒカルの一致団結（スロミュー×ヒカル）",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ2000 蒲田1",
+      "score": 15.1,
+      "rank": "S",
+      "details": "ナビ子AI予想【差枚プラス】★3 (1のつく日) 分岐16/21(76.2%) 平均 +140 枚 平均4,064G 2026/10/21( 水 ) 126 / 365台 平均 2,726G 平均 +131 枚 2026/10/11( 日 ) 149 / 365台 平均 5,197G 平均 +160 枚 2026/10/01( 木 ) 139 / 365台 平均 3,818G 平均 +91 枚 B でちゃう編集部来店(あしなっくす) C 四星 7EYEZ [蒲田駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "アイランド筑西店",
+      "score": 15.0,
+      "rank": "S",
+      "details": "ナビ子AI予想【差枚プラス】★3 (1のつく日) 分岐15/18(83.3%) 平均 +130 枚 平均3,530G 2026/10/21( 水 ) 122 / 320台 平均 2,247G 平均 -81 枚 2026/10/01( 木 ) 132 / 320台 平均 2,744G 平均 +152 枚 2026/09/21( 月 ) 127 / 320台 平均 4,558G 平均 +72 枚",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "楽園南越谷店",
+      "score": 15.0,
+      "rank": "A",
+      "details": "ナビ子AI予想【機種仕掛け】★4 (1のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ハイパージアス立川",
+      "score": 14.9,
+      "rank": "S",
+      "details": "スロパチガール来店S [立川駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "楽園蒲田店",
+      "score": 14.7,
+      "rank": "S",
+      "details": "苺ゆい来店 B スロトレ調査団 アルマゲドン [蒲田駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "PIA伊勢佐木町",
+      "score": 14.5,
+      "rank": "A",
+      "details": "ナビ子AI予想【機種仕掛け】★4 (1のつく日) B ドラゴン来店取材玉ハイパー C ナビ子AI独自予想 N +4.5",
+      "source": "hall-navi"
+    }
+  ]
+}
