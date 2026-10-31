@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-01",
+  "target_date": "2026-11-01",
+  "status": "sent",
+  "content_sha256": "b82e5f9c296b837373880a684b3eefddb5cf2149585ff4189949c0367c30942a",
+  "selected_halls": [
+    {
+      "hall_id": "4bf8c4b18adae9a0",
+      "name": "ピーアーク相模大野",
+      "category": "rainbow",
+      "score": 17.6,
+      "details": "スロパチガール来店S A タレント・ライター ※『バケゆか来店』 A すろぱちガール来店P ・ 月初ポスター掲載 ・ オススメ機種掲載 ※『エヴァ・喰種』",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ae60eeecf3a3112f3ae771a",
+  "external_link": "https://twitter.com/rapomaru777/status/2116559145801253192",
+  "x_root_post_id": "2116559145801253192",
+  "sent_at": "2026-10-31T15:53:19.179Z",
+  "verified_at": "2026-11-01T00:53:19.769750+09:00"
+}

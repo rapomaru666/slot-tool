@@ -491,5 +491,13 @@
     "external_link": "https://twitter.com/rapomaru777/status/2116210964244652067",
     "buffer_post_id": "6ae4caa910a950f1373265b8",
     "content_sha256": "5be1f5b7a612def076e282249ba60813fdcd3170b549b18cc137aca2f7cc219a"
+  },
+  {
+    "target_date": "2026-11-01",
+    "status": "sent",
+    "sent_at": "2026-10-31T15:53:19.179Z",
+    "external_link": "https://twitter.com/rapomaru777/status/2116559145801253192",
+    "buffer_post_id": "6ae60eeecf3a3112f3ae771a",
+    "content_sha256": "b82e5f9c296b837373880a684b3eefddb5cf2149585ff4189949c0367c30942a"
   }
 ]
