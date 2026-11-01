@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-02",
+  "target_date": "2026-11-02",
+  "status": "sent",
+  "content_sha256": "3ffe0fe8464837fb1632b4673c91423dbd41a315827a2e4f6f159cd2b536649f",
+  "selected_halls": [
+    {
+      "hall_id": "9711ce1a2f6b59d9",
+      "name": "メガフェイス1180座間",
+      "category": "rainbow",
+      "score": 17.3,
+      "details": "777.LEAGUE ※『BLUE 第7回戦 橘リノ, ドテチン, 南こうめ, コウタロー』 S ナビ子AI予想【機種仕掛け】★5 A ぱちタウンタレント来店(南こうめ) B 橘リノ来店 ・ 新台入替 ・ 激闘",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6ae76ef3142f545151ee2245",
+  "external_link": "https://twitter.com/rapomaru777/status/2116937124939235375",
+  "x_root_post_id": "2116937124939235375",
+  "sent_at": "2026-11-01T16:55:16.392Z",
+  "verified_at": "2026-11-02T01:55:16.989553+09:00"
+}
