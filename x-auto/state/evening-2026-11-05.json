@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-05",
+  "target_date": "2026-11-05",
+  "status": "sent",
+  "content_sha256": "f2240b2b306a4fa7a9c8a429f866b8355fd89bcae5117ec12b1a28d977ad39c4",
+  "selected_halls": [
+    {
+      "hall_id": "f52195c89620b87a",
+      "name": "キクヤ千葉店",
+      "category": "rainbow",
+      "score": 16.5,
+      "details": "ナビ子AI予想【機種仕掛け】★5 (5のつく日) ・ 新装開店",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aeb761eed27fe14cf9bc9ae",
+  "external_link": "https://twitter.com/rapomaru777/status/2118044331042902387",
+  "x_root_post_id": "2118044331042902387",
+  "sent_at": "2026-11-04T18:14:54.947Z",
+  "verified_at": "2026-11-05T03:14:55.378515+09:00"
+}
