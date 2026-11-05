@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-06",
+  "target_date": "2026-11-06",
+  "status": "sent",
+  "content_sha256": "8a29013eff9fb255dc3a44e720a1df1d14a3811575285896b925649a8fa6790e",
+  "selected_halls": [
+    {
+      "hall_id": "2e5ec8777f67d529",
+      "name": "エスパス日拓秋葉原駅前店",
+      "category": "rainbow",
+      "score": 17.4,
+      "details": "狂鬼の宴 S ナビ子AI予想【差枚プラス】★5 (6のつく日) 分岐15/18(83.3%) 平均 +202 枚 平均5,406G 2026/10/26( 月 ) 246 / 522台 平均 4,341G 平均 +286 枚 2026/10/16( 金 ) 226 / 522台 平均 4,982G 平均 +187 枚 2026/10/06( 火 ) 240 / 522台 平均 4,709G 平均 +216 枚 S ナビ子AI予想【機種仕掛け】★5+ (6のつく日) [秋葉原駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aecc873d7d39142cf54ed9a",
+  "external_link": "https://twitter.com/rapomaru777/status/2118407612773372095",
+  "x_root_post_id": "2118407612773372095",
+  "sent_at": "2026-11-05T18:18:28.037Z",
+  "verified_at": "2026-11-06T03:18:28.612010+09:00"
+}
