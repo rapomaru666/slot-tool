@@ -1,0 +1,129 @@
+{
+  "target_date": "2026-11-07",
+  "generated_at_jst": "2026-11-06T02:34:39.415858+09:00",
+  "source_url": "https://hall-navi.com/osusume_list?kbn=sche_yosou&ken=all&ymd=2026-11-07",
+  "thresholds": {
+    "rainbow_min": 16.0,
+    "trophy_min": 14.0
+  },
+  "minimum_post_count": 1,
+  "post_weighted_chars": {
+    "min": 200,
+    "max": 250
+  },
+  "candidate_count": 16,
+  "candidates": [
+    {
+      "hall": "ピーアーク相模大野",
+      "score": 17.8,
+      "rank": "S",
+      "details": "スロパチガール来店S A すろぱちガール来店P B 佐々木来店 ・ 挑戦 ・ オススメ機種掲載 ※『エヴァ・東京喰種』 ・ 近隣対抗ポスター掲載",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ横浜町田",
+      "score": 17.3,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (7のつく日) ・ 旧イベ(7のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "楽園大宮店",
+      "score": 16.9,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (毎週 土曜日) B 動画収録 ※『よっしー』 C 新x準新ダッ!",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "キクヤ千葉店",
+      "score": 16.6,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (7のつく日) A 全力厳選ホール ・ 旧イベ(7のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ビックマーチひたちなか店",
+      "score": 16.4,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (毎週 土曜日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ビックマーチ西川田店",
+      "score": 16.1,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) C にしかわ打！",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ビックつばめ高崎店",
+      "score": 16.0,
+      "rank": "S",
+      "details": "いそまる来店実践",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ピーアーク北綾瀬駅前",
+      "score": 16.0,
+      "rank": "S",
+      "details": "スロパチガール来店S A すろぱちガール来店P B Makoto案内人のピックアップホール ・ リアルシックス注目期間 ・ 週刊りみっとくん ・ 足立区3000ポスター掲載 ・ Makoto案内人マルっとパチンコver. ・ オススメ機種掲載 ※『パチンコ：・東京喰種・リコリスリコイル・牙狼 スロット：・ネオアイム・GOジャグ・東京喰種・カバネリ海門・GOD』 [北綾瀬駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ柏店",
+      "score": 15.7,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (7のつく日) B えみりは今日もパチスロ 来店 C にゃんまる賞品入荷 ・ まる推し取材 ・ 旧イベ(7のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "麗都ARAKAWAOKI",
+      "score": 15.5,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "レイトギャップ平和島店",
+      "score": 15.2,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) C 覇弾来店取材 [平和島駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "メガガーデン所沢スロット館",
+      "score": 15.1,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) B 月周年日 ・ GARDENCHAMPIONSHIP ・ オススメ機種ローテーション風？ポスター掲載6日目 ※『A館北斗転生２ B館戦国乙女５』",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "Dステーション新小岩",
+      "score": 14.9,
+      "rank": "S",
+      "details": "スロパチガール来店S [新小岩駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "本八幡UNO",
+      "score": 14.9,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (毎週 土曜日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ東大和店",
+      "score": 14.8,
+      "rank": "S",
+      "details": "ナビ子AI予想【差枚プラス】★3 (7のつく日) 分岐15/17(88.2%) 平均 +105 枚 平均5,552G 2026/10/17( 土 ) 237 / 573台 平均 5,860G 平均 +37 枚 2026/10/07( 水 ) 244 / 573台 平均 5,391G 平均 +247 枚 2026/09/27( 日 ) 249 / 573台 平均 5,833G 平均 +91 枚 S ナビ子AI予想【機種仕掛け】★5+ (7のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ビッグアップル.秋葉原店",
+      "score": 14.5,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) ・ 真実のデータ10円スロット＆6.25円スロット ・ 十円の陣 [秋葉原駅]",
+      "source": "hall-navi"
+    }
+  ]
+}
