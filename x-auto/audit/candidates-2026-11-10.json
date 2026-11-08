@@ -1,0 +1,129 @@
+{
+  "target_date": "2026-11-10",
+  "generated_at_jst": "2026-11-09T01:13:15.599734+09:00",
+  "source_url": "https://hall-navi.com/osusume_list?kbn=sche_yosou&ken=all&ymd=2026-11-10",
+  "thresholds": {
+    "rainbow_min": 16.0,
+    "trophy_min": 14.0
+  },
+  "minimum_post_count": 1,
+  "post_weighted_chars": {
+    "min": 200,
+    "max": 250
+  },
+  "candidate_count": 16,
+  "candidates": [
+    {
+      "hall": "ビックディッパー新橋1号店",
+      "score": 16.9,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (0のつく日) B リアルアイ予想 B とある来店取材【輝光操作】 C とある来店取材【半心半技】 C とある来店取材【極上至極】 ・ とある来店取材【薔薇領域】 [新橋駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "アイランド足利店",
+      "score": 16.2,
+      "rank": "S",
+      "details": "ナビ子AI予想【差枚プラス】★5 (0のつく日) 分岐18/18(100%) 平均 +264 枚 平均6,350G 2026/10/30( 金 ) 181 / 434台 平均 5,534G 平均 +111 枚 2026/10/20( 火 ) 200 / 434台 平均 5,940G 平均 +329 枚 2026/10/10( 土 ) 234 / 434台 平均 7,069G 平均 +810 枚 S ナビ子AI予想【機種仕掛け】★5+ (0のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "麗都ARAKAWAOKI",
+      "score": 15.5,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (0のつく日) ・ 旧イベ(0のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "アビバ鶴見店",
+      "score": 15.0,
+      "rank": "S",
+      "details": "スロパチステーション来店取材(オレンジ) A スロトレ調査団 ZEUS",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "麗都水戸南",
+      "score": 14.7,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (0のつく日) ・ 旧イベ(0のつく日) C 新台入替(P-WORLD引用) ※『09:00|マイジャグラーVI / e 東京喰種 超デカ超一撃ver.』",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "麗都横倉店",
+      "score": 14.4,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (0のつく日) ・ 旧イベ(0のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "PIA柏店",
+      "score": 14.2,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 A 伝説の刻",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "麗都守谷",
+      "score": 13.6,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (0のつく日) ・ 旧イベ(0のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "スーパーDステーション太田",
+      "score": 13.0,
+      "rank": "A",
+      "details": "真骨超",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "みとや錦糸町北口店",
+      "score": 12.7,
+      "rank": "A",
+      "details": "旧イベ過去状況評価 +6.0 ・ 旧イベ(0のつく日) [錦糸町駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "北越谷UNO",
+      "score": 12.4,
+      "rank": "S",
+      "details": "スロパチガール来店S",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "PIA京急川崎",
+      "score": 12.1,
+      "rank": "A",
+      "details": "S級ホール調査-赤-",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "みとや大森町店",
+      "score": 11.9,
+      "rank": "B",
+      "details": "旧イベ過去状況評価 +5.0 ・ 旧イベ(毎月 10日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "大山オーシャンスロット専門館",
+      "score": 11.7,
+      "rank": "A",
+      "details": "ナビ子AI予想【差枚プラス】★1 (0のつく日) 分岐7/9(77.8%) 平均 +123 枚 平均2,834G 2026/10/30( 金 ) 71 / 182台 平均 2,504G 平均 +189 枚 2026/10/20( 火 ) 71 / 182台 平均 2,224G 平均 +292 枚 2026/10/10( 土 ) 71 / 182台 平均 3,814G 平均 +24 枚",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "アイランド日光店",
+      "score": 11.2,
+      "rank": "S",
+      "details": "ナビ子AI予想【差枚プラス】★3 (0のつく日) 分岐14/18(77.8%) 平均 +173 枚 平均4,058G 2026/10/30( 金 ) 50 / 128台 平均 3,541G 平均 -136 枚 2026/10/20( 火 ) 41 / 128台 平均 3,151G 平均 -500 枚 2026/10/10( 土 ) 59 / 126台 平均 4,371G 平均 +304 枚",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "麗都スロットステージ土浦",
+      "score": 10.4,
+      "rank": "B",
+      "details": "ナビ子AI予想【機種仕掛け】★2 (0のつく日) ・ 旧イベ(0のつく日)",
+      "source": "hall-navi"
+    }
+  ]
+}
