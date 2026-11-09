@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-10",
+  "target_date": "2026-11-10",
+  "status": "sent",
+  "content_sha256": "7437af9d417a4a61b8d1b42fbdeee6f0ada23d4e5e7447d2ac817f43547b287f",
+  "selected_halls": [
+    {
+      "hall_id": "79b2dcb8860228bc",
+      "name": "ビックディッパー新橋1号店",
+      "category": "rainbow",
+      "score": 16.9,
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (0のつく日) B リアルアイ予想 B とある来店取材【輝光操作】 C とある来店取材【半心半技】 C とある来店取材【極上至極】 ・ とある来店取材【薔薇領域】 [新橋駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6af23608740f5b7fb9aeafe8",
+  "external_link": "https://twitter.com/rapomaru777/status/2119899664287699132",
+  "x_root_post_id": "2119899664287699132",
+  "sent_at": "2026-11-09T21:07:20.891Z",
+  "verified_at": "2026-11-10T06:07:21.451272+09:00"
+}
