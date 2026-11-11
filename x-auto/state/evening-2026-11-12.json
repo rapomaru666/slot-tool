@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-12",
+  "target_date": "2026-11-12",
+  "status": "sent",
+  "content_sha256": "b34ad867163318db841c907c9f0aa10345a3d45989b5abb66bc4a5e016e85338",
+  "selected_halls": [
+    {
+      "hall_id": "4bf8c4b18adae9a0",
+      "name": "ピーアーク相模大野",
+      "category": "rainbow",
+      "score": 16.9,
+      "details": "スロパチガール来店S ・ オススメ機種掲載 ※『エヴァ・東京喰種』",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6af4aeb17d06ac3b9c80139f",
+  "external_link": "https://twitter.com/rapomaru777/status/2120578979891437950",
+  "x_root_post_id": "2120578979891437950",
+  "sent_at": "2026-11-11T18:06:42.253Z",
+  "verified_at": "2026-11-12T03:06:42.976497+09:00"
+}
