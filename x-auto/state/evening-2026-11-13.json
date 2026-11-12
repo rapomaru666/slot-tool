@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-13",
+  "target_date": "2026-11-13",
+  "status": "sent",
+  "content_sha256": "5ddaa41bd117732486ebf38afbddd5dde53d6487bc410709003f73eff1859906",
+  "selected_halls": [
+    {
+      "hall_id": "4bf8c4b18adae9a0",
+      "name": "ピーアーク相模大野",
+      "category": "rainbow",
+      "score": 17.6,
+      "details": "スロパチガール来店S ・ サミー総力取材 ・ オススメ機種掲載 ※『エヴァ・東京喰種』 ・ 挑戦 ・ 近隣対抗ポスター掲載",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6af60747b50c5271d1cc376f",
+  "external_link": "https://twitter.com/rapomaru777/status/2120948977617023177",
+  "x_root_post_id": "2120948977617023177",
+  "sent_at": "2026-11-12T18:36:56.672Z",
+  "verified_at": "2026-11-13T03:36:57.195719+09:00"
+}
