@@ -1,0 +1,129 @@
+{
+  "target_date": "2026-11-14",
+  "generated_at_jst": "2026-11-13T02:42:09.131154+09:00",
+  "source_url": "https://hall-navi.com/osusume_list?kbn=sche_yosou&ken=all&ymd=2026-11-14",
+  "thresholds": {
+    "rainbow_min": 16.0,
+    "trophy_min": 14.0
+  },
+  "minimum_post_count": 1,
+  "post_weighted_chars": {
+    "min": 200,
+    "max": 250
+  },
+  "candidate_count": 16,
+  "candidates": [
+    {
+      "hall": "ピーアーク相模大野",
+      "score": 17.6,
+      "rank": "S",
+      "details": "スロパチステーション来店取材(オレンジ) C パチ連単 LITE ※『神奈川ピーアーク 相模の頂』 ・ あゆあゆ来店 ・ 相模の頂 ・ オススメ機種掲載 ※『エヴァ・東京喰種』",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "エスパス日拓新宿歌舞伎町店",
+      "score": 17.0,
+      "rank": "S",
+      "details": "ナビ子AI予想【差枚プラス】★3 (4のつく日) 分岐7/9(77.8%) 平均 +84 枚 平均4,943G 2026/11/04( 水 ) 293 / 749台 平均 3,342G 平均 +22 枚 2026/10/24( 土 ) 345 / 749台 平均 5,901G 平均 +139 枚 2026/10/14( 水 ) 334 / 749台 平均 4,978G 平均 -23 枚 S ナビ子AI予想【機種仕掛け】★5+ (4のつく日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "キクヤ千葉店",
+      "score": 16.7,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) A 沖ドキの楽園 C Half strong取材",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "アミューズ千葉",
+      "score": 16.4,
+      "rank": "S",
+      "details": "アルティメットCG調査隊 S 天草超絶ホール応援団来店 B スロトレ調査団 エニグマ",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "ビックディッパー新橋1号店",
+      "score": 16.2,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (4のつく日) C リアルアイ予想 ・ スロトレ調査団 ぶちアゲ無双 [新橋駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "PIA八王子",
+      "score": 16.1,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) C ナビ子AI独自予想 N +4.5 C 暗槓新ドラ取材 [八王子駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "新！ガーデン北戸田駅前",
+      "score": 15.7,
+      "rank": "S",
+      "details": "スロパチステーション来店取材(紫) ・ スロトレ調査団 全員集合来店取材 ・ 旧イベ(毎週 土曜日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハンメガシティ前橋インター",
+      "score": 15.6,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5+ (毎週 土曜日) C ファン感謝祭 C ネクスタ来店取材 ・ 4のつく日",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "麗都ARAKAWAOKI",
+      "score": 15.5,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日)",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "メガガーデン所沢スロット館",
+      "score": 15.2,
+      "rank": "S",
+      "details": "格付けスピリッツ ・ オススメ機種ローテーション風？ポスター掲載6日目 ※『A館リコリコ B館禁書目録』",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "パラッツォ三郷中央店",
+      "score": 15.1,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) B 四賢者 ・ TAGMATCH ・ 副店長の山菜ポスター掲載",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "マルハン鹿浜店",
+      "score": 14.9,
+      "rank": "S",
+      "details": "ナビ子AI予想【機種仕掛け】★5 (毎週 土曜日) [江北駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "エスパス日拓高田馬場本店",
+      "score": 14.8,
+      "rank": "S",
+      "details": "アナスロ予測(虹) S ナビ子AI予想【機種仕掛け】★5+ (毎週 土曜日) A 紅の龍",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "新！ガーデン北与野店",
+      "score": 14.8,
+      "rank": "S",
+      "details": "るいべえ実践取材(青) C 厳選ホール",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "エスパス日拓上野本館",
+      "score": 14.6,
+      "rank": "S",
+      "details": "格付けスピリッツ A ナビ子AI予想【差枚プラス】★1 (4のつく日) 分岐7/9(77.8%) 平均 +65 枚 平均3,820G 2026/11/04( 水 ) 156 / 375台 平均 2,779G 平均 +24 枚 2026/10/24( 土 ) 164 / 375台 平均 4,830G 平均 +203 枚 2026/10/14( 水 ) 160 / 375台 平均 3,063G 平均 -1 枚 A ナビ子AI予想【機種仕掛け】★4 (毎週 土曜日) [上野駅]",
+      "source": "hall-navi"
+    },
+    {
+      "hall": "スーパーDステーション鴻巣",
+      "score": 14.5,
+      "rank": "S",
+      "details": "スロパチガール来店S",
+      "source": "hall-navi"
+    }
+  ]
+}
