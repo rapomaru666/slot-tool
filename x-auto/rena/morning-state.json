@@ -1,10 +1,5 @@
 {
   "days": {
-    "2026-09-14": {
-      "status": "skipped",
-      "reason": "occasional_rest_day",
-      "planned_time_jst": "10:00"
-    },
     "2026-09-15": {
       "status": "published",
       "planned_time_jst": "09:59",
@@ -605,6 +600,17 @@
       "buffer_post_id": "6af5735415999d2da11ddc42",
       "sent_at": "2026-11-12T08:05:40.820Z",
       "external_link": "https://twitter.com/renatotaikun/status/2120790115840565649"
+    },
+    "2026-11-13": {
+      "status": "published",
+      "planned_time_jst": "10:09",
+      "text": "おはよう〜！\n今日もいい日にしよ☺️",
+      "text_source": "normal",
+      "context_category": null,
+      "context_source_url": null,
+      "buffer_post_id": "6af6bf81ba218f3263876194",
+      "sent_at": "2026-11-13T07:42:58.147Z",
+      "external_link": "https://twitter.com/renatotaikun/status/2121146788249825376"
     }
   }
 }
