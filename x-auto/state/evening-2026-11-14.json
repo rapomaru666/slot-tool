@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-14",
+  "target_date": "2026-11-14",
+  "status": "sent",
+  "content_sha256": "a90999b92d816f3e52dd8a4a3a5acc385bc6d528e634506853157848d913a9b3",
+  "selected_halls": [
+    {
+      "hall_id": "4bf8c4b18adae9a0",
+      "name": "ピーアーク相模大野",
+      "category": "rainbow",
+      "score": 17.6,
+      "details": "スロパチステーション来店取材(オレンジ) C パチ連単 LITE ※『神奈川ピーアーク 相模の頂』 ・ あゆあゆ来店 ・ 相模の頂 ・ オススメ機種掲載 ※『エヴァ・東京喰種』",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6af751e4357fdb912a6ff1e1",
+  "external_link": "https://twitter.com/rapomaru777/status/2121303969800544639",
+  "x_root_post_id": "2121303969800544639",
+  "sent_at": "2026-11-13T18:07:33.401Z",
+  "verified_at": "2026-11-14T03:07:33.912961+09:00"
+}
