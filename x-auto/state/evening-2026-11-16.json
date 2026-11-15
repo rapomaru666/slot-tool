@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-16",
+  "target_date": "2026-11-16",
+  "status": "sent",
+  "content_sha256": "3bf7af71f3388483bad29e50d3c6337a4739fe4bc9e70f5e19b3ecd1c8cc9ea5",
+  "selected_halls": [
+    {
+      "hall_id": "cd1d8d6d190c07a6",
+      "name": "マルハン新宿東宝ビル店",
+      "category": "rainbow",
+      "score": 17.8,
+      "details": "ナビ子AI予想【差枚プラス】★5 (6のつく日) 分岐16/18(88.9%) 平均 +184 枚 平均6,096G 2026/11/06( 金 ) 288 / 664台 平均 5,640G 平均 +173 枚 2026/10/26( 月 ) 281 / 664台 平均 5,593G 平均 +232 枚 2026/10/16( 金 ) 299 / 664台 平均 5,672G 平均 +278 枚 [西武新宿駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6af9eb3bb9a106584cc325ef",
+  "external_link": "https://twitter.com/rapomaru777/status/2122018371080229357",
+  "x_root_post_id": "2122018371080229357",
+  "sent_at": "2026-11-15T17:26:19.881Z",
+  "verified_at": "2026-11-16T02:26:20.485946+09:00"
+}
