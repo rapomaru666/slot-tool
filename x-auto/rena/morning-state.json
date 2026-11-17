@@ -1,16 +1,5 @@
 {
   "days": {
-    "2026-09-18": {
-      "status": "published",
-      "planned_time_jst": "09:55",
-      "text": "おはよ〜☺️\n今日もよろしくね🌷",
-      "text_source": "normal",
-      "context_category": null,
-      "context_source_url": null,
-      "buffer_post_id": "6aacca8f3193d9f8002c57eb",
-      "sent_at": "2026-09-18T05:22:23.894Z",
-      "external_link": "https://twitter.com/renatotaikun/status/2100817692110262761"
-    },
     "2026-09-19": {
       "status": "published",
       "planned_time_jst": "09:50",
@@ -605,6 +594,17 @@
       "buffer_post_id": "6afab0e5d7e5fee638ab5caa",
       "sent_at": "2026-11-16T07:29:42.090Z",
       "external_link": "https://twitter.com/renatotaikun/status/2122230613134496202"
+    },
+    "2026-11-17": {
+      "status": "published",
+      "planned_time_jst": "09:52",
+      "text": "おはよう〜☺️\n今日もよろしくね！",
+      "text_source": "normal",
+      "context_category": null,
+      "context_source_url": null,
+      "buffer_post_id": "6afc11c0dfcbde96ef6f181e",
+      "sent_at": "2026-11-17T08:35:12.910Z",
+      "external_link": "https://twitter.com/renatotaikun/status/2122609488029000159"
     }
   }
 }
