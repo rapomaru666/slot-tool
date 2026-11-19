@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-20",
+  "target_date": "2026-11-20",
+  "status": "sent",
+  "content_sha256": "78b8811af9a11d35e42b5f6f7c86cc87ff7d825b24691d504ba0131a02b6731a",
+  "selected_halls": [
+    {
+      "hall_id": "79b2dcb8860228bc",
+      "name": "ビックディッパー新橋1号店",
+      "category": "rainbow",
+      "score": 16.5,
+      "details": "ｙｔｒ来店実践 B リアルアイ予想 [新橋駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6aff49ce83849986f3051692",
+  "external_link": "https://twitter.com/rapomaru777/status/2123494311991955904",
+  "x_root_post_id": "2123494311991955904",
+  "sent_at": "2026-11-19T19:11:11.627Z",
+  "verified_at": "2026-11-20T04:11:12.246863+09:00"
+}
