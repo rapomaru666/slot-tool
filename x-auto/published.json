@@ -643,5 +643,13 @@
     "external_link": "https://twitter.com/rapomaru777/status/2124564665170596268",
     "buffer_post_id": "6b032ea7cc364169c174245b",
     "content_sha256": "4fc5ff6e8c556f8fa64a4f6b3336346a272ccb85aa13219cabd19a34ca1e8cdd"
+  },
+  {
+    "target_date": "2026-11-24",
+    "status": "sent",
+    "sent_at": "2026-11-23T22:15:37.694Z",
+    "external_link": "https://twitter.com/rapomaru777/status/2124990277920129398",
+    "buffer_post_id": "6b04bb09f72f10e188390323",
+    "content_sha256": "d25fc10c47117d5e84e148dbe5347223cdd86321caca36fb80b140ff93cb1b06"
   }
 ]

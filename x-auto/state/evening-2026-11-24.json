@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-24",
+  "target_date": "2026-11-24",
+  "status": "sent",
+  "content_sha256": "d25fc10c47117d5e84e148dbe5347223cdd86321caca36fb80b140ff93cb1b06",
+  "selected_halls": [
+    {
+      "hall_id": "2e5ec8777f67d529",
+      "name": "エスパス日拓秋葉原駅前店",
+      "category": "rainbow",
+      "score": 16.6,
+      "details": "ナビ子AI予想【差枚プラス】★3 (4のつく日) 分岐14/18(77.8%) 平均 +117 枚 平均4,863G 2026/11/14( 土 ) 233 / 522台 平均 5,173G 平均 +171 枚 2026/11/04( 水 ) 202 / 522台 平均 4,225G 平均 +116 枚 2026/10/24( 土 ) 239 / 522台 平均 5,822G 平均 +226 枚 [秋葉原駅]",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6b04bb09f72f10e188390323",
+  "external_link": "https://twitter.com/rapomaru777/status/2124990277920129398",
+  "x_root_post_id": "2124990277920129398",
+  "sent_at": "2026-11-23T22:15:37.694Z",
+  "verified_at": "2026-11-24T07:15:38.278769+09:00"
+}
