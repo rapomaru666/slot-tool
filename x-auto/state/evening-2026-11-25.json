@@ -1,0 +1,22 @@
+{
+  "publication_key": "evening:2026-11-25",
+  "target_date": "2026-11-25",
+  "status": "sent",
+  "content_sha256": "d1d6ad7e02d335e6e86e07b5832b8033be0aa49c31b7dbfcdcdf4f0eba88f629",
+  "selected_halls": [
+    {
+      "hall_id": "be5bf54d0ccf29b1",
+      "name": "マルハンメガシティ横浜町田",
+      "category": "rainbow",
+      "score": 16.9,
+      "details": "スロパチステーション来店取材(青)",
+      "source": "hall-navi"
+    }
+  ],
+  "expected_thread_count": 2,
+  "buffer_post_id": "6b05f95ada2eab4595a4f2cd",
+  "external_link": "https://twitter.com/rapomaru777/status/2125332069907652916",
+  "x_root_post_id": "2125332069907652916",
+  "sent_at": "2026-11-24T20:53:47.278Z",
+  "verified_at": "2026-11-25T05:53:47.812171+09:00"
+}
